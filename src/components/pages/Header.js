@@ -6,11 +6,16 @@ class Header extends React.Component {
 
   render(){
     return(
-      <div>
-        <p>This is where Header shows up</p>
+      <div className = "Header">
+       <ul>
+  <li><a href="#News">News</a></li>
+  <li><a href="#Opinions">Opinions</a></li>
+  <li><a href="#Solutions">Solutions</a></li>
+</ul>
       </div>
     )
   }
 }
 
 export default Header;
+
