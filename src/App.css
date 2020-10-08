@@ -1,4 +1,87 @@
-.App {
+#dummy-nav {
+  background-color: #1307c9 !important;
+  color: #ffffff;
+}
+
+#dropdown-basic-button {
+  background-color: #2c1c59;
+}
+
+/* =================
+LOGIN COMPONENT STYLES
+================= */
+
+#login-card {
+  background-color: #f3f2f2;
+  margin-bottom: 40px;
+}
+
+.form-check-label {
+  font-weight: 700;
+}
+
+#login-card-title {
+  text-align: center;
+  font-size: 34px;
+}
+
+#login-card-subtitle {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+#sign-up {
+  margin-left: 10px;
+}
+
+#remember-group {
+  margin-top: 40px;
+}
+
+#forgot {
+  float: right;
+}
+
+#login-btn {
+  background-color: #2c1c59;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+#facebook-login-btn {
+  background-color: #3b5998;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+#twitter-login-btn {
+  background-color: #1da1f2;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+h2 span {
+  background: #f3f2f2;
+  padding: 0 10px;
+}
+
+#or-text {
+  font-size: 16px;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +118,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
