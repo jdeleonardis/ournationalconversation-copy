@@ -31,6 +31,15 @@ export class Home extends Component {
               >
                 Login
               </Button>
+              <Button
+                style={{
+                  margin: '10px',
+                }}
+                variant='success'
+                href='/contact'
+              >
+                Contact
+              </Button>
             </div>
           </Container>
         </div>
