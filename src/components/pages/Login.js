@@ -63,19 +63,21 @@ export class Login extends Component {
                         Log In to ONC
                       </Card.Title>
                       <Card.Subtitle id='login-card-subtitle' className='mb-2'>
-                        New to this site?{' '}
-                        <span id='sign-up'>
-                          <a href='/login'>Sign Up</a>
-                        </span>
+                        <div id='new-to-site'>
+                          New to this site?
+                          <span id='sign-up'>
+                            <a href='/login'>Sign Up</a>
+                          </span>
+                        </div>
                       </Card.Subtitle>
                       <Form>
                         <Form.Group controlId='formBasicEmail'>
                           <Form.Label>USERNAME OR EMAIL</Form.Label>
-                          <Form.Control type='email' />
+                          <Form.Control type='email' required />
                         </Form.Group>
                         <Form.Group controlId='formBasicPassword'>
                           <Form.Label>PASSWORD</Form.Label>
-                          <Form.Control type='password' />
+                          <Form.Control type='password' required />
                         </Form.Group>
                         <Form.Group
                           id='remember-group'

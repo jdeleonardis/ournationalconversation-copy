@@ -28,11 +28,21 @@ LOGIN COMPONENT STYLES
 #login-card-subtitle {
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
+}
+
+#new-to-site {
+  margin-bottom: 35px;
 }
 
 #sign-up {
   margin-left: 10px;
+}
+
+.form-check-input {
+  position: absolute;
+  margin-top: 0.4rem !important;
+  margin-left: -1.25rem;
 }
 
 #remember-group {
@@ -149,4 +159,3 @@ li a {
 li a:hover:not(.active) {
   background-color: rgb(224, 211, 211);
 }
-
