@@ -11,7 +11,6 @@ import {
   FormControl,
   Button,
   Card,
-  InputGroup,
 } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 
@@ -66,7 +65,7 @@ export class Login extends Component {
                       <Card.Subtitle id='login-card-subtitle' className='mb-2'>
                         New to this site?{' '}
                         <span id='sign-up'>
-                          <a href='#'>Sign Up</a>
+                          <a href='/login'>Sign Up</a>
                         </span>
                       </Card.Subtitle>
                       <Form>
@@ -83,7 +82,7 @@ export class Login extends Component {
                           controlId='formBasicCheckbox'
                         >
                           <span id='forgot'>
-                            <a href='#'>Forgot Password?</a>
+                            <a href='/login'>Forgot Password?</a>
                           </span>
                           <Form.Check
                             id='remember-me'
