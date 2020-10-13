@@ -27,6 +27,15 @@ export class Home extends Component {
                   margin: '10px',
                 }}
                 variant='success'
+                href='/signup'
+              >
+                Sign Up
+              </Button>
+              <Button
+                style={{
+                  margin: '10px',
+                }}
+                variant='success'
                 href='/login'
               >
                 Login

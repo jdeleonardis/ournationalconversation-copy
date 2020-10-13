@@ -8,6 +8,31 @@
 }
 
 /* =================
+SIGNUP COMPONENT STYLES
+================= */
+
+#my-country-field-id {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  /* padding: 0.375rem 0.75rem; */
+  background-color: #ffffff;
+  /* color: #2c1c59; */
+  color: #727f8c;
+  /* border-color: #d4d8de; */
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+}
+/* #my-country-field-id:active {
+  border-color: #005cbf;
+} */
+
+select #my-country-field-id {
+  color: #cccccc;
+}
+
+/* =================
 LOGIN COMPONENT STYLES
 ================= */
 
@@ -24,6 +49,7 @@ LOGIN COMPONENT STYLES
 #contact-card-title {
   text-align: center;
   font-size: 34px;
+  font-weight: 700;
 }
 
 #login-card-subtitle {
@@ -56,7 +82,8 @@ LOGIN COMPONENT STYLES
   float: right;
 }
 
-#login-btn {
+#login-btn,
+#signup-btn {
   clear: both;
   background-color: #2c1c59;
   margin-top: 40px;

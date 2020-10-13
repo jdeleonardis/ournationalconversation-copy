@@ -112,7 +112,12 @@ export class Contact extends Component {
                         </Form.Group>
                         <Form.Group controlId='exampleForm.ControlTextarea1'>
                           <Form.Label>Message</Form.Label>
-                          <Form.Control as='textarea' rows='3' required />
+                          <Form.Control
+                            as='textarea'
+                            rows='4'
+                            placeholder='Write your message'
+                            required
+                          />
                         </Form.Group>
                         <Button
                           id='login-btn'

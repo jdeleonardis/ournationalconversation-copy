@@ -12,7 +12,14 @@ import {
   Button,
   Card,
 } from 'react-bootstrap';
+
 import { Helmet } from 'react-helmet';
+
+import {
+  CountryDropdown,
+  // RegionDropdown,
+  //   CountryRegionData,
+} from 'react-country-region-selector';
 
 const initialState = {
   userName: '',
@@ -23,7 +30,20 @@ const initialState = {
   passwordError: '',
 };
 
-export class Login extends Component {
+export class Signup extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { country: '', region: '' };
+  }
+
+  selectCountry(val) {
+    this.setState({ country: val });
+  }
+
+  // selectRegion(val) {
+  //   this.setState({ region: val });
+  // }
+
   state = initialState;
 
   // Handle change of the inputs
@@ -103,7 +123,7 @@ export class Login extends Component {
     event.preventDefault();
     const isValid = this.validate();
     if (isValid) {
-      console.log(this.state);
+      // console.log(this.state);
 
       // Clear form if submission is valid
       this.setState(initialState);
@@ -111,11 +131,13 @@ export class Login extends Component {
   };
 
   render() {
+    // const { country, region } = this.state;
+    const { country } = this.state;
     return (
       <Fragment>
         <div>
           <Helmet>
-            <title>Our National Conversation | Login</title>
+            <title>Our National Conversation | Sign Up</title>
           </Helmet>
 
           {/* START DUMMY NAVBARS */}
@@ -154,26 +176,26 @@ export class Login extends Component {
                 <div>
                   <Card id='login-card'>
                     <Card.Body>
-                      <Card.Title id='login-card-title'>
-                        Log In to ONC
-                      </Card.Title>
+                      <Card.Title id='login-card-title'>SIGN UP</Card.Title>
                       <Card.Subtitle id='login-card-subtitle' className='mb-2'>
                         <div id='new-to-site'>
-                          New to this site?
-                          <span id='sign-up'>
+                          It's easy and quick!
+                          <hr />
+                          {/* <span id='sign-up'>
                             <a href='/login'>Sign Up</a>
-                          </span>
+                          </span> */}
                         </div>
                       </Card.Subtitle>
                       <Form onSubmit={this.handleSubmit}>
                         <Form.Group controlId='formBasicEmail'>
-                          <Form.Label>USERNAME OR EMAIL</Form.Label>
+                          {/* <Form.Label>USERNAME</Form.Label> */}
                           <Form.Control
                             // type='email'
-                            name='email'
+                            name='username'
                             // placeholder='Username or Email'
-                            value={this.state.email}
+                            value={this.state.userName}
                             onChange={this.handleChange}
+                            placeholder='USERNAME'
                           />
                           <div
                             style={{
@@ -185,13 +207,55 @@ export class Login extends Component {
                             {this.state.emailError}
                           </div>
                         </Form.Group>
+                        <Form.Group controlId='formBasicEmail'>
+                          {/* <Form.Label>EMAIL</Form.Label> */}
+                          <Form.Control
+                            // type='email'
+                            name='email'
+                            // placeholder='Username or Email'
+                            value={this.state.email}
+                            onChange={this.handleChange}
+                            placeholder='EMAIL'
+                          />
+                          <div
+                            style={{
+                              fontSize: 12,
+                              color: '#FF0000',
+                              marginTop: '5px',
+                            }}
+                          >
+                            {this.state.emailError}
+                          </div>
+                        </Form.Group>
+
                         <Form.Group controlId='formBasicPassword'>
-                          <Form.Label>PASSWORD</Form.Label>
+                          {/* <Form.Label>PASSWORD</Form.Label> */}
                           <Form.Control
                             type='password'
                             name='password'
-                            // placeholder='password'
+                            placeholder='PASSWORD'
                             value={this.state.password}
+                            onChange={this.handleChange}
+                          />
+
+                          <div
+                            style={{
+                              fontSize: 12,
+                              color: '#FF0000',
+                              marginTop: '5px',
+                            }}
+                          >
+                            {this.state.passwordError}
+                          </div>
+                        </Form.Group>
+
+                        <Form.Group controlId='formBasicPassword'>
+                          {/* <Form.Label>CONFIRM PASSWORD</Form.Label> */}
+                          <Form.Control
+                            type='password2'
+                            name='password2'
+                            placeholder='CONFIRM PASSWORD'
+                            value={this.state.password2}
                             onChange={this.handleChange}
                           />
                           <div
@@ -204,47 +268,29 @@ export class Login extends Component {
                             {this.state.passwordError}
                           </div>
                         </Form.Group>
-                        <Form.Group
-                          id='remember-group'
-                          controlId='formBasicCheckbox'
-                        >
-                          <span id='forgot'>
-                            <a href='/login'>Forgot Password?</a>
-                          </span>
-                          <Form.Check
-                            id='remember-me'
-                            type='checkbox'
-                            label='Remember me'
+
+                        <Form.Group>
+                          <CountryDropdown
+                            id='my-country-field-id'
+                            value={country}
+                            onChange={(val) => this.selectCountry(val)}
                           />
+                          {/* <RegionDropdown
+                            country={country}
+                            value={region}
+                            onChange={(val) => this.selectRegion(val)}
+                            blankOptionLabel='No country selected'
+                            defaultOptionLabel='Select a region'
+                          /> */}
                         </Form.Group>
+
                         <Button
-                          id='login-btn'
+                          id='signup-btn'
                           variant='primary'
                           type='submit'
                           block
                         >
-                          LOG IN
-                        </Button>
-                        <h2 id='or-text'>
-                          <span>OR</span>
-                        </h2>
-                        <Button
-                          id='facebook-login-btn'
-                          variant='primary'
-                          type='submit'
-                          block
-                        >
-                          SIGN IN WITH&nbsp;&nbsp;
-                          <i class='fab fa-facebook'></i>
-                        </Button>
-                        <Button
-                          id='twitter-login-btn'
-                          variant='primary'
-                          type='submit'
-                          block
-                        >
-                          SIGN IN WITH&nbsp;&nbsp;
-                          <i class='fab fa-twitter'></i>
+                          SIGN UP
                         </Button>
                       </Form>
                     </Card.Body>
@@ -260,4 +306,4 @@ export class Login extends Component {
   }
 }
 
-export default Login;
+export default Signup;
