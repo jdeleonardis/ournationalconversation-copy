@@ -6,7 +6,7 @@ import Signup from './components/pages/Signup';
 import Login from './components/pages/Login';
 import Contact from './components/pages/Contact';
 import Header from './components/pages/Header';
-import Footer from './components/pages/Footer';
+import Footer from './components/layout/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
