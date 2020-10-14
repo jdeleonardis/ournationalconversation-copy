@@ -12,14 +12,9 @@ import {
   Button,
   Card,
 } from 'react-bootstrap';
+import CountryDropdown from '../layout/CountryDropdown';
 
 import { Helmet } from 'react-helmet';
-
-import {
-  CountryDropdown,
-  // RegionDropdown,
-  //   CountryRegionData,
-} from 'react-country-region-selector';
 
 const initialState = {
   userName: '',
@@ -31,19 +26,6 @@ const initialState = {
 };
 
 export class Signup extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { country: '', region: '' };
-  }
-
-  selectCountry(val) {
-    this.setState({ country: val });
-  }
-
-  // selectRegion(val) {
-  //   this.setState({ region: val });
-  // }
-
   state = initialState;
 
   // Handle change of the inputs
@@ -57,21 +39,41 @@ export class Signup extends Component {
   };
 
   validate = () => {
-    // let userNameError = '';
+    let userNameError = '';
     let emailError = '';
     let passwordError = '';
+    const userNameRegex = /^[a-z0-9_-]{3,15}$/;
     const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
 
     // General Email Regex (RFC 5322 Official Standard)
     // /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/
 
-    // if (!this.state.userName) {
-    //   userNameError = 'name cannot be blank';
-    // }
+    if (!this.state.userName) {
+      userNameError = 'Username cannot be blank';
+    }
+
+    // Username RegEx: Username must be any lowercase character, digit, or the symbols "_" and "-", having a length of 3 to 16 characters.
+    if (!this.state.userName.match(userNameRegex)) {
+      userNameError = 'Please enter a valid username.';
+    } else {
+      userNameError = '';
+      console.log('Username is valid');
+    }
+
+    console.log(this.state.userName);
+
+    if (!this.state.userName) {
+      userNameError = 'Username cannot be blank.';
+    }
+
+    if (userNameError) {
+      this.setState({ userNameError });
+      return false;
+    }
 
     // if (!this.state.email) {
-    //   emailError = 'Please enter your email address or username.';
+    //   emailError = 'Email cannot be blank.';
     // }
 
     // Email validation: basic version
@@ -91,7 +93,7 @@ export class Signup extends Component {
       return false;
     }
 
-    // RegEx version: password between 6 to 20 characters which contain at least one numeric digit, one uppercase and one lowercase letter
+    // Password RegEx: Password must be between 6 to 20 characters, and contain at least one numeric digit, one uppercase and one lowercase letter
     if (!this.state.password.match(passwordRegex)) {
       passwordError = 'Please enter a valid password.';
     } else {
@@ -123,7 +125,7 @@ export class Signup extends Component {
     event.preventDefault();
     const isValid = this.validate();
     if (isValid) {
-      // console.log(this.state);
+      console.log(this.state);
 
       // Clear form if submission is valid
       this.setState(initialState);
@@ -131,7 +133,7 @@ export class Signup extends Component {
   };
 
   render() {
-    // const { country, region } = this.state;
+    // const { country, region } = this.state; // use this if including region in dropdown
     const { country } = this.state;
     return (
       <Fragment>
@@ -187,12 +189,12 @@ export class Signup extends Component {
                         </div>
                       </Card.Subtitle>
                       <Form onSubmit={this.handleSubmit}>
-                        <Form.Group controlId='formBasicEmail'>
+                        <Form.Group controlId='formBasicUserName'>
                           {/* <Form.Label>USERNAME</Form.Label> */}
                           <Form.Control
-                            // type='email'
-                            name='username'
-                            // placeholder='Username or Email'
+                            // type='name'
+                            name='userName'
+                            // placeholder='USERNAME'
                             value={this.state.userName}
                             onChange={this.handleChange}
                             placeholder='USERNAME'
@@ -204,7 +206,7 @@ export class Signup extends Component {
                               marginTop: '5px',
                             }}
                           >
-                            {this.state.emailError}
+                            {this.state.userNameError}
                           </div>
                         </Form.Group>
                         <Form.Group controlId='formBasicEmail'>
@@ -231,13 +233,14 @@ export class Signup extends Component {
                         <Form.Group controlId='formBasicPassword'>
                           {/* <Form.Label>PASSWORD</Form.Label> */}
                           <Form.Control
+                            className='fas fa-eye'
+                            id='eye'
                             type='password'
                             name='password'
-                            placeholder='PASSWORD'
+                            placeholder='PASSWORD &#xf06e;' // Font Awesome Unicode
                             value={this.state.password}
                             onChange={this.handleChange}
                           />
-
                           <div
                             style={{
                               fontSize: 12,
@@ -275,6 +278,11 @@ export class Signup extends Component {
                             value={country}
                             onChange={(val) => this.selectCountry(val)}
                           />
+                          {/* <CountryDropdown
+                            id='my-country-field-id'
+                            value={country}
+                            onChange={(val) => this.selectCountry(val)}
+                          /> */}
                           {/* <RegionDropdown
                             country={country}
                             value={region}

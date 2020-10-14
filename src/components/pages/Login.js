@@ -71,7 +71,7 @@ export class Login extends Component {
       return false;
     }
 
-    // RegEx version: password between 6 to 20 characters which contain at least one numeric digit, one uppercase and one lowercase letter
+    // Password RegEx: Password must be between 6 to 20 characters, and contain at least one numeric digit, one uppercase and one lowercase letter
     if (!this.state.password.match(passwordRegex)) {
       passwordError = 'Please enter a valid password.';
     } else {
