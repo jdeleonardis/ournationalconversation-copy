@@ -49,6 +49,12 @@ export class Home extends Component {
               >
                 Contact
               </Button>
+              <br /> <br />
+              <p>Dummy home page.</p>
+              <p>
+                Whoever works on the home page can go ahead and get ride of all
+                this code and use this file for the home page.
+              </p>
             </div>
           </Container>
         </div>
