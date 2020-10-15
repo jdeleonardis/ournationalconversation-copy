@@ -4,7 +4,8 @@ import { CountryDropdown } from 'react-country-region-selector';
 class Dropdown extends Component {
   constructor(props) {
     super(props);
-    this.state = { country: '', region: '' };
+    // this.state = { country: '', region: '' };
+    this.state = { country: '' };
   }
 
   selectCountry(val) {

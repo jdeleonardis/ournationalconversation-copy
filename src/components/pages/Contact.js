@@ -3,12 +3,9 @@ import {
   Container,
   Row,
   Col,
-  Navbar,
-  Nav,
   DropdownButton,
   Dropdown,
   Form,
-  FormControl,
   Button,
   Card,
 } from 'react-bootstrap';
@@ -22,33 +19,6 @@ export class Contact extends Component {
           <Helmet>
             <title>Our National Conversation | Contact</title>
           </Helmet>
-
-          {/* START DUMMY NAVBARS */}
-          <Navbar id='dummy-nav' bg='dark' variant='dark'>
-            <Navbar.Brand>Dummy Navbar: Login Component</Navbar.Brand>
-          </Navbar>
-          <Navbar bg='light' variant='light'>
-            <DropdownButton id='dropdown-basic-button' title='NEWS FILTERS'>
-              <Dropdown.Item href='#/action-1'>Action</Dropdown.Item>
-              <Dropdown.Item href='#/action-2'>Another action</Dropdown.Item>
-              <Dropdown.Item href='#/action-3'>Something else</Dropdown.Item>
-            </DropdownButton>
-            <Nav className='mr-auto'>
-              <Nav.Link href='#'>Covid-19 Alert</Nav.Link>
-              <Nav.Link href='#'>Biden VP Pick</Nav.Link>
-              <Nav.Link href='#'>School Reopenings</Nav.Link>
-            </Nav>
-            <Form inline>
-              <FormControl
-                type='text'
-                placeholder='Search'
-                className='mr-sm-2'
-              />
-              <Button variant='outline-primary'>Search</Button>
-            </Form>
-          </Navbar>
-
-          {/* END DUMMY NAVBARS */}
 
           <Container className='container' fluid>
             <br />

@@ -7,7 +7,7 @@ import Login from './components/pages/Login';
 import Contact from './components/pages/Contact';
 import Header from './components/pages/Header';
 import Footer from './components/layout/Footer';
-import Comment from './components/layout/Comments'
+import Comment from './components/layout/Comments';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -16,6 +16,7 @@ function App() {
   return (
     <Router>
       <div className='App'>
+        {/* <Header /> */}
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/login' component={Login} />
@@ -24,7 +25,7 @@ function App() {
         </Switch>
         <Header />
       </div>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }
