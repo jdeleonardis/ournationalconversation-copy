@@ -9,11 +9,12 @@ class Dropdown extends Component {
 
   selectCountry(val) {
     this.setState({ country: val });
+    console.log(val);
   }
 
-  selectRegion(val) {
-    this.setState({ region: val });
-  }
+  // selectRegion(val) {
+  //   this.setState({ region: val });
+  // }
 
   render() {
     const { country } = this.state;

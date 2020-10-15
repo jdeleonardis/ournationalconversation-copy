@@ -19,10 +19,12 @@ import { Helmet } from 'react-helmet';
 const initialState = {
   userName: '',
   email: '',
-  password: '',
-  userNameError: '',
   emailError: '',
   passwordError: '',
+  password: '',
+  userNameError: '',
+  password2: '',
+  password2Error: '',
 };
 
 export class Signup extends Component {
@@ -42,6 +44,7 @@ export class Signup extends Component {
     let userNameError = '';
     let emailError = '';
     let passwordError = '';
+    let password2Error = '';
     const userNameRegex = /^[a-z0-9_-]{3,15}$/;
     const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
@@ -53,6 +56,7 @@ export class Signup extends Component {
       userNameError = 'Username cannot be blank';
     }
 
+    // USERNAME VALIDATION
     // Username RegEx: Username must be any lowercase character, digit, or the symbols "_" and "-", having a length of 3 to 16 characters.
     if (!this.state.userName.match(userNameRegex)) {
       userNameError = 'Please enter a valid username.';
@@ -72,20 +76,21 @@ export class Signup extends Component {
       return false;
     }
 
-    // if (!this.state.email) {
-    //   emailError = 'Email cannot be blank.';
-    // }
-
     // Email validation: basic version
     // if (!this.state.email.includes('@')) {
     //   emailError = 'Please enter a valid email.';
     // }
 
-    // RegEx version
+    // EMAIL VALIDATION
+    // Email RegEx version
     if (!this.state.email.match(emailRegex)) {
       emailError = 'Please enter a valid email.';
     } else {
       console.log('Email is valid');
+    }
+
+    if (!this.state.email) {
+      emailError = 'Email cannot be blank.';
     }
 
     if (emailError) {
@@ -93,6 +98,7 @@ export class Signup extends Component {
       return false;
     }
 
+    // PASSWORD VALIDATION
     // Password RegEx: Password must be between 6 to 20 characters, and contain at least one numeric digit, one uppercase and one lowercase letter
     if (!this.state.password.match(passwordRegex)) {
       passwordError = 'Please enter a valid password.';
@@ -102,18 +108,44 @@ export class Signup extends Component {
       );
     }
 
-    // Password validation: basic version
-    // console.log(this.state.password);
-    // if (this.state.password < 6) {
-    //   passwordError = 'Invalid password. Please try again.';
-    // }
-
-    // if (!this.state.password) {
-    //   passwordError = 'Password is required.';
-    // }
+    if (!this.state.password) {
+      passwordError = 'Password is required.';
+    }
 
     if (passwordError) {
       this.setState({ passwordError });
+      return false;
+    }
+
+    // PASSWORD CONFIRMATION VALIDATION
+    // Password Confirmation RegEx (same as password): Password must be between 6 to 20 characters, and contain at least one numeric digit, one uppercase and one lowercase letter
+
+    // if (!this.state.password2.match(passwordRegex)) {
+    //   password2Error = 'Please enter a valid password.';
+    // } else {
+    //   console.log('Password confirmation matches password');
+    // }
+
+    if (this.state.password2 === this.state.password) {
+      console.log('Password confirmation matches password');
+    }
+
+    if (this.state.password2 !== this.state.password) {
+      console.error('Passwords do not match.');
+      password2Error = 'Passwords do not match.';
+    }
+
+    if (!this.state.password2) {
+      password2Error = 'Please confirm your password.';
+    }
+
+    // if (this.state.password2 !== this.state.password) {
+    //   // if (this.state.password2.match(!this.state.password)) {
+    //   passwordError = 'Passwords do not match.';
+    // }
+
+    if (password2Error) {
+      this.setState({ password2Error });
       return false;
     }
 
@@ -233,11 +265,12 @@ export class Signup extends Component {
                         <Form.Group controlId='formBasicPassword'>
                           {/* <Form.Label>PASSWORD</Form.Label> */}
                           <Form.Control
-                            className='fas fa-eye'
-                            id='eye'
+                            // className='fas fa-eye'
+                            // id='eye'
                             type='password'
                             name='password'
-                            placeholder='PASSWORD &#xf06e;' // Font Awesome Unicode
+                            // placeholder='PASSWORD &#xf06e;' // Font Awesome Unicode
+                            placeholder='PASSWORD'
                             value={this.state.password}
                             onChange={this.handleChange}
                           />
@@ -252,10 +285,10 @@ export class Signup extends Component {
                           </div>
                         </Form.Group>
 
-                        <Form.Group controlId='formBasicPassword'>
+                        <Form.Group controlId='formBasicPassword2'>
                           {/* <Form.Label>CONFIRM PASSWORD</Form.Label> */}
                           <Form.Control
-                            type='password2'
+                            type='password'
                             name='password2'
                             placeholder='CONFIRM PASSWORD'
                             value={this.state.password2}
@@ -268,7 +301,7 @@ export class Signup extends Component {
                               marginTop: '5px',
                             }}
                           >
-                            {this.state.passwordError}
+                            {this.state.password2Error}
                           </div>
                         </Form.Group>
 

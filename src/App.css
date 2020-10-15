@@ -32,20 +32,20 @@ select #my-country-field-id {
   color: #cccccc;
 }
 
-.fa-eye {
+/* Password Field Eye Icon Styles --------- */
+
+/* .fa-eye {
   display: flex;
   float: right !important;
-  /* text-align: right; */
-  /* font-family: inherit; */
   margin-bottom: 15px;
-  /* font-family: 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */
 }
+
 #eye::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: red !important;
-  opacity: 1; /* Firefox */
-}
+  opacity: 1;
+} */
+
+/* --------------------------------------- */
 
 /* =================
 LOGIN COMPONENT STYLES
