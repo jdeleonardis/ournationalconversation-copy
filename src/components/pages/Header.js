@@ -1,6 +1,5 @@
 import React from 'react';
-// import { MenuItems } from './MenuItems';
-// import './Header.css';
+import '../styles/Header.css';
 import { MenuItems } from '../layout/MenuItems';
 import '../styles/footer.css';
 
