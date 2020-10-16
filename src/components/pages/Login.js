@@ -28,6 +28,7 @@ export class Login extends Component {
     // let userNameError = '';
     let emailError = '';
     let passwordError = '';
+    // const userNameRegex = /^[a-z0-9_-]{3,15}$/;
     const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
 
@@ -47,11 +48,16 @@ export class Login extends Component {
     //   emailError = 'Please enter a valid email.';
     // }
 
-    // RegEx version
+    // EMAIL VALIDATION
+    // Email RegEx version
     if (!this.state.email.match(emailRegex)) {
       emailError = 'Please enter a valid email.';
     } else {
       console.log('Email is valid');
+    }
+
+    if (!this.state.email) {
+      emailError = 'Email cannot be blank.';
     }
 
     if (emailError) {
@@ -59,6 +65,7 @@ export class Login extends Component {
       return false;
     }
 
+    // PASSWORD VALIDATION
     // Password RegEx: Password must be between 6 to 20 characters, and contain at least one numeric digit, one uppercase and one lowercase letter
     if (!this.state.password.match(passwordRegex)) {
       passwordError = 'Please enter a valid password.';
@@ -68,15 +75,9 @@ export class Login extends Component {
       );
     }
 
-    // Password validation: basic version
-    // console.log(this.state.password);
-    // if (this.state.password < 6) {
-    //   passwordError = 'Invalid password. Please try again.';
-    // }
-
-    // if (!this.state.password) {
-    //   passwordError = 'Password is required.';
-    // }
+    if (!this.state.password) {
+      passwordError = 'Password is required.';
+    }
 
     if (passwordError) {
       this.setState({ passwordError });
@@ -116,7 +117,7 @@ export class Login extends Component {
                   <Card id='login-card'>
                     <Card.Body id='login-card-body'>
                       <Card.Title id='login-card-title'>
-                        Log In to ONC
+                        Log in to ONC
                       </Card.Title>
                       <Card.Subtitle id='login-card-subtitle' className='mb-2'>
                         <div id='new-to-site'>
@@ -129,6 +130,7 @@ export class Login extends Component {
                       <Form onSubmit={this.handleSubmit}>
                         <Form.Group controlId='formBasicEmail'>
                           <Form.Control
+                            className='form-input-field'
                             // type='email'
                             name='email'
                             placeholder='USERNAME OR EMAIL'
@@ -147,6 +149,7 @@ export class Login extends Component {
                         </Form.Group>
                         <Form.Group controlId='formBasicPassword'>
                           <Form.Control
+                            className='form-input-field'
                             type='password'
                             name='password'
                             placeholder='PASSWORD'
@@ -184,7 +187,7 @@ export class Login extends Component {
                         >
                           LOG IN
                         </Button>
-                        <h2 id='or-text'>
+                        <h2 className='or-h2' id='or-text'>
                           <span>OR</span>
                         </h2>
                         <Button

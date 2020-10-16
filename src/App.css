@@ -1,6 +1,9 @@
 /* =================
 SIGNUP COMPONENT STYLES
 ================= */
+.form-input-field::placeholder {
+  color: #bfbfbf !important;
+}
 
 #my-country-field-id {
   display: block;
@@ -8,7 +11,7 @@ SIGNUP COMPONENT STYLES
   padding: 6px 12px;
   /* padding: 0.375rem 0.75rem; */
   background-color: #ffffff;
-  color: #727f8c;
+  color: #bfbfbf;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   text-transform: uppercase;
@@ -82,6 +85,7 @@ LOGIN COMPONENT STYLES
 }
 
 #sign-up {
+  text-decoration: underline;
   margin-left: 10px;
 }
 
@@ -92,13 +96,14 @@ LOGIN COMPONENT STYLES
 }
 
 #remember-group {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 #forgot {
   position: relative;
   z-index: 99;
   float: right;
+  text-decoration: underline;
 }
 
 #login-btn,
@@ -106,47 +111,48 @@ LOGIN COMPONENT STYLES
   clear: both;
   background-color: #2c1c59;
   margin-top: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-radius: 4px;
 }
 
 #facebook-login-btn {
-  font-size: 14px;
+  font-size: 12px;
   background-color: #3b5998;
-  width: 48%;
+  width: 49%;
   border-radius: 4px;
   float: left;
 }
 
 #google-login-btn {
-  font-size: 14px;
+  font-size: 12px;
   background-color: #d54b3d;
-  width: 48%;
+  width: 49%;
   border-radius: 4px;
   float: right;
 }
 
 #facebook-login-btn,
 #google-login-btn {
-  margin-top: 25px;
+  margin-top: 10px;
   /* margin-bottom: 20px; */
 }
 
-h2 {
+.or-h2 {
   clear: both;
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #bfbfbf;
   line-height: 0.1em;
   margin: 10px 0 20px;
 }
 
-h2 span {
+.or-h2 span {
   background: #f3f2f2;
   padding: 0 10px;
 }
 
 #or-text {
+  color: #bfbfbf;
   font-size: 16px;
 }
 
@@ -172,9 +178,27 @@ CONTACT PAGE COMPONENT STYLES
 /* =================
 HEADER COMPONENT STYLES
 ================= */
-* {
-  box-sizing: border-box;
+ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  background-color: rgb(105, 70, 70);
+}
+
+li {
+  float: left;
+  margin: 20px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(224, 211, 211);
 }

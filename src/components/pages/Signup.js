@@ -167,24 +167,18 @@ export class Signup extends Component {
                   <Card id='signup-card'>
                     <Card.Body id='signup-card-body'>
                       <Card.Title id='signup-card-title'>
-                        SIGN UP TO ONC
+                        Sign up for ONC
                       </Card.Title>
                       <Card.Subtitle id='signup-card-subtitle' className='mb-2'>
-                        <div id='new-to-site'>
-                          It's easy and quick!
-                          <hr />
-                          {/* <span id='sign-up'>
-                            <a href='/login'>Sign Up</a>
-                          </span> */}
-                        </div>
+                        <div id='new-to-site'>It's quick and easy.</div>
                       </Card.Subtitle>
                       <Form onSubmit={this.handleSubmit}>
                         <Form.Group controlId='formBasicUserName'>
                           {/* <Form.Label>USERNAME</Form.Label> */}
                           <Form.Control
+                            className='form-input-field'
                             // type='name'
                             name='userName'
-                            // placeholder='USERNAME'
                             value={this.state.userName}
                             onChange={this.handleChange}
                             placeholder='USERNAME'
@@ -202,9 +196,9 @@ export class Signup extends Component {
                         <Form.Group controlId='formBasicEmail'>
                           {/* <Form.Label>EMAIL</Form.Label> */}
                           <Form.Control
+                            className='form-input-field'
                             // type='email'
                             name='email'
-                            // placeholder='Username or Email'
                             value={this.state.email}
                             onChange={this.handleChange}
                             placeholder='EMAIL'
@@ -223,6 +217,7 @@ export class Signup extends Component {
                         <Form.Group controlId='formBasicPassword'>
                           {/* <Form.Label>PASSWORD</Form.Label> */}
                           <Form.Control
+                            className='form-input-field'
                             // className='fas fa-eye'
                             // id='eye'
                             type='password'
@@ -246,6 +241,7 @@ export class Signup extends Component {
                         <Form.Group controlId='formBasicPassword2'>
                           {/* <Form.Label>CONFIRM PASSWORD</Form.Label> */}
                           <Form.Control
+                            className='form-input-field'
                             type='password'
                             name='password2'
                             placeholder='CONFIRM PASSWORD'
