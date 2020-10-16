@@ -1,6 +1,8 @@
 import React from 'react';
-import { MenuItems } from './MenuItems';
-import './Header.css';
+// import { MenuItems } from './MenuItems';
+// import './Header.css';
+import { MenuItems } from '../layout/MenuItems';
+import '../styles/footer.css';
 
 class Header extends React.Component {
   render() {
@@ -26,3 +28,5 @@ class Header extends React.Component {
     );
   }
 }
+
+export default Header;
