@@ -114,6 +114,106 @@ export class Login extends Component {
               <Col md={6}>
                 <div>
                   <Card id='login-card'>
+                    <Card.Body id='login-card-body'>
+                      <Card.Title id='login-card-title'>
+                        Log In to ONC
+                      </Card.Title>
+                      <Card.Subtitle id='login-card-subtitle' className='mb-2'>
+                        <div id='new-to-site'>
+                          New to this site?
+                          <span id='sign-up'>
+                            <a href='/login'>Sign Up</a>
+                          </span>
+                        </div>
+                      </Card.Subtitle>
+                      <Form onSubmit={this.handleSubmit}>
+                        <Form.Group controlId='formBasicEmail'>
+                          <Form.Control
+                            // type='email'
+                            name='email'
+                            placeholder='USERNAME OR EMAIL'
+                            value={this.state.email}
+                            onChange={this.handleChange}
+                          />
+                          <div
+                            style={{
+                              fontSize: 12,
+                              color: '#FF0000',
+                              marginTop: '5px',
+                            }}
+                          >
+                            {this.state.emailError}
+                          </div>
+                        </Form.Group>
+                        <Form.Group controlId='formBasicPassword'>
+                          <Form.Control
+                            type='password'
+                            name='password'
+                            placeholder='PASSWORD'
+                            value={this.state.password}
+                            onChange={this.handleChange}
+                          />
+                          <div
+                            style={{
+                              fontSize: 12,
+                              color: '#FF0000',
+                              marginTop: '5px',
+                            }}
+                          >
+                            {this.state.passwordError}
+                          </div>
+                        </Form.Group>
+                        <Form.Group
+                          id='remember-group'
+                          controlId='formBasicCheckbox'
+                        >
+                          <span id='forgot'>
+                            <a href='/login'>Forgot Password?</a>
+                          </span>
+                          <Form.Check
+                            id='remember-me'
+                            type='checkbox'
+                            label='Remember me'
+                          />
+                        </Form.Group>
+                        <Button
+                          id='login-btn'
+                          variant='primary'
+                          type='submit'
+                          block
+                        >
+                          LOG IN
+                        </Button>
+                        <h2 id='or-text'>
+                          <span>OR</span>
+                        </h2>
+                        <Button
+                          id='facebook-login-btn'
+                          variant='primary'
+                          type='submit'
+                        >
+                          LOG IN WITH FACEBOOK
+                        </Button>
+                        <Button
+                          id='google-login-btn'
+                          variant='danger'
+                          type='submit'
+                        >
+                          LOG IN WITH GOOGLE
+                        </Button>
+                      </Form>
+                    </Card.Body>
+                  </Card>
+                </div>
+              </Col>
+              <Col md={3}></Col>
+            </Row>
+
+            {/* <Row>
+              <Col md={3}></Col>
+              <Col md={6}>
+                <div>
+                  <Card id='login-card'>
                     <Card.Body>
                       <Card.Title id='login-card-title'>
                         Log In to ONC
@@ -213,7 +313,7 @@ export class Login extends Component {
                 </div>
               </Col>
               <Col md={3}></Col>
-            </Row>
+            </Row> */}
           </Container>
         </div>
       </Fragment>

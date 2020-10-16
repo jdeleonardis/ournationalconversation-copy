@@ -164,12 +164,12 @@ export class Signup extends Component {
               <Col md={3}></Col>
               <Col md={6}>
                 <div>
-                  <Card id='login-card'>
-                    <Card.Body>
-                      <Card.Title id='login-card-title'>
+                  <Card id='signup-card'>
+                    <Card.Body id='signup-card-body'>
+                      <Card.Title id='signup-card-title'>
                         SIGN UP TO ONC
                       </Card.Title>
-                      <Card.Subtitle id='login-card-subtitle' className='mb-2'>
+                      <Card.Subtitle id='signup-card-subtitle' className='mb-2'>
                         <div id='new-to-site'>
                           It's easy and quick!
                           <hr />
