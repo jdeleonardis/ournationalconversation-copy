@@ -1,0 +1,21 @@
+/* Subhead */
+.search {
+  position: absolute;
+  width: 1440px;
+  height: 70px;
+  left: 0px;
+  top: 174px;
+}
+/* Frame 12 */
+
+dropdown-item-button {
+  position: absolute;
+  left: 6.94%;
+  right: 79.79%;
+  top: 21.43%;
+  bottom: 20%;
+  /* Purple */
+
+  background: #2c1c59;
+  border-radius: 5px;
+}

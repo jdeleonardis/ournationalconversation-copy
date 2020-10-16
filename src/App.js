@@ -7,7 +7,9 @@ import Login from './components/pages/Login';
 import Contact from './components/pages/Contact';
 import Header from './components/pages/Header';
 import Footer from './components/layout/Footer';
-import Comment from './components/layout/Comments'
+import Comment from './components/layout/Comments';
+import SearchBar from './components/layout/SearchBar';
+import Filter from './components/layout/Filter'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -21,6 +23,8 @@ function App() {
           <Route exact path='/login' component={Login} />
           <Route exact path='/signup' component={Signup} />
           <Route exact path='/contact' component={Contact} />
+          <Route exact path='/search' component={SearchBar} />
+          <Route exact path='/filter' component={Filter} />
         </Switch>
         <Header />
       </div>

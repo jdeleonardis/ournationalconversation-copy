@@ -10,7 +10,7 @@ import {
   Form,
   FormControl,
   Button,
-  Card,
+  Card
 } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 
