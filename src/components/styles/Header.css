@@ -20,3 +20,14 @@ font-size: 1.2rem;
     font-size: 1.6rem;
 }
 
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 100px;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    width: 70vw;
+    margin-top: 50px;
+    color: white;
+}
