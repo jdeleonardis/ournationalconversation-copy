@@ -17,21 +17,25 @@ SIGNUP COMPONENT STYLES
   padding: 6px 12px;
   /* padding: 0.375rem 0.75rem; */
   background-color: #ffffff;
-  /* color: #2c1c59; */
   color: #727f8c;
-  /* border-color: #d4d8de; */
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   text-transform: uppercase;
 }
-/* #my-country-field-id:active {
-  border-color: #005cbf;
-} */
 
-select #my-country-field-id {
-  color: #cccccc;
+#my-country-field-id:focus {
+  outline: none !important;
+  /* border: 3px solid #92c7ff; */
+  /* box-shadow: 0 0 10px #719ece; */
 }
 
+<<<<<<< HEAD
+=======
+/* select #my-country-field-id {
+  color: #cccccc;
+} */
+
+>>>>>>> 1a812b1f64d90a63ab18fff5926a33a8a6a7d1d4
 /* Password Field Eye Icon Styles --------- */
 
 /* .fa-eye {
@@ -103,21 +107,21 @@ LOGIN COMPONENT STYLES
   background-color: #2c1c59;
   margin-top: 40px;
   margin-bottom: 40px;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 #facebook-login-btn {
   background-color: #3b5998;
   margin-top: 40px;
   margin-bottom: 20px;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 #twitter-login-btn {
   background-color: #1da1f2;
   margin-top: 20px;
   margin-bottom: 40px;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 h2 {
@@ -159,27 +163,9 @@ CONTACT PAGE COMPONENT STYLES
 /* =================
 HEADER COMPONENT STYLES
 ================= */
-ul {
-  list-style-type: none;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: rgb(105, 70, 70);
-}
-
-li {
-  float: left;
-  margin: 20px;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: rgb(224, 211, 211);
+  font-family: 'Roboto', sans-serif;
 }

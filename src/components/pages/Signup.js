@@ -1,17 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import {
-  Container,
-  Row,
-  Col,
-  Navbar,
-  Nav,
-  DropdownButton,
-  Dropdown,
-  Form,
-  FormControl,
-  Button,
-  Card,
-} from 'react-bootstrap';
+import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
 import CountryDropdown from '../layout/CountryDropdown';
 
 import { Helmet } from 'react-helmet';
@@ -111,6 +99,7 @@ export class Signup extends Component {
     if (!this.state.password) {
       passwordError = 'Password is required.';
     }
+<<<<<<< HEAD
 
     if (passwordError) {
       this.setState({ passwordError });
@@ -143,6 +132,35 @@ export class Signup extends Component {
     //   // if (this.state.password2.match(!this.state.password)) {
     //   passwordError = 'Passwords do not match.';
     // }
+=======
+>>>>>>> 1a812b1f64d90a63ab18fff5926a33a8a6a7d1d4
+
+    if (password2Error) {
+      this.setState({ password2Error });
+      return false;
+    }
+
+    // PASSWORD CONFIRMATION VALIDATION
+    // Password Confirmation RegEx (same as password): Password must be between 6 to 20 characters, and contain at least one numeric digit, one uppercase and one lowercase letter
+
+    // if (!this.state.password2.match(passwordRegex)) {
+    //   password2Error = 'Please enter a valid password.';
+    // } else {
+    //   console.log('Password confirmation matches password');
+    // }
+
+    if (this.state.password2 === this.state.password) {
+      console.log('Password confirmation matches password');
+    }
+
+    if (this.state.password2 !== this.state.password) {
+      console.log('Passwords do not match.');
+      password2Error = 'Passwords do not match.';
+    }
+
+    if (!this.state.password2) {
+      password2Error = 'Please confirm your password.';
+    }
 
     if (password2Error) {
       this.setState({ password2Error });
@@ -166,40 +184,13 @@ export class Signup extends Component {
 
   render() {
     // const { country, region } = this.state; // use this if including region in dropdown
-    const { country } = this.state;
+    // const { country } = this.state;
     return (
       <Fragment>
         <div>
           <Helmet>
             <title>Our National Conversation | Sign Up</title>
           </Helmet>
-
-          {/* START DUMMY NAVBARS */}
-          <Navbar id='dummy-nav' bg='dark' variant='dark'>
-            <Navbar.Brand>Dummy Navbar: Login Component</Navbar.Brand>
-          </Navbar>
-          <Navbar bg='light' variant='light'>
-            <DropdownButton id='dropdown-basic-button' title='NEWS FILTERS'>
-              <Dropdown.Item href='#/action-1'>Action</Dropdown.Item>
-              <Dropdown.Item href='#/action-2'>Another action</Dropdown.Item>
-              <Dropdown.Item href='#/action-3'>Something else</Dropdown.Item>
-            </DropdownButton>
-            <Nav className='mr-auto'>
-              <Nav.Link href='#'>Covid-19 Alert</Nav.Link>
-              <Nav.Link href='#'>Biden VP Pick</Nav.Link>
-              <Nav.Link href='#'>School Reopenings</Nav.Link>
-            </Nav>
-            <Form inline>
-              <FormControl
-                type='text'
-                placeholder='Search'
-                className='mr-sm-2'
-              />
-              <Button variant='outline-primary'>Search</Button>
-            </Form>
-          </Navbar>
-
-          {/* END DUMMY NAVBARS */}
 
           <Container className='container' fluid>
             <br />
@@ -210,7 +201,9 @@ export class Signup extends Component {
                 <div>
                   <Card id='login-card'>
                     <Card.Body>
-                      <Card.Title id='login-card-title'>SIGN UP</Card.Title>
+                      <Card.Title id='login-card-title'>
+                        SIGN UP TO ONC
+                      </Card.Title>
                       <Card.Subtitle id='login-card-subtitle' className='mb-2'>
                         <div id='new-to-site'>
                           It's easy and quick!
@@ -305,25 +298,7 @@ export class Signup extends Component {
                           </div>
                         </Form.Group>
 
-                        <Form.Group>
-                          <CountryDropdown
-                            id='my-country-field-id'
-                            value={country}
-                            onChange={(val) => this.selectCountry(val)}
-                          />
-                          {/* <CountryDropdown
-                            id='my-country-field-id'
-                            value={country}
-                            onChange={(val) => this.selectCountry(val)}
-                          /> */}
-                          {/* <RegionDropdown
-                            country={country}
-                            value={region}
-                            onChange={(val) => this.selectRegion(val)}
-                            blankOptionLabel='No country selected'
-                            defaultOptionLabel='Select a region'
-                          /> */}
-                        </Form.Group>
+                        <CountryDropdown />
 
                         <Button
                           id='signup-btn'
