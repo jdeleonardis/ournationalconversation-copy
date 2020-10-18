@@ -119,6 +119,38 @@ export class Signup extends Component {
     }
 
     if (this.state.password2 !== this.state.password) {
+      console.error('Passwords do not match.');
+      password2Error = 'Passwords do not match.';
+    }
+
+    if (!this.state.password2) {
+      password2Error = 'Please confirm your password.';
+    }
+
+    // if (this.state.password2 !== this.state.password) {
+    //   // if (this.state.password2.match(!this.state.password)) {
+    //   passwordError = 'Passwords do not match.';
+    // }
+
+    if (password2Error) {
+      this.setState({ password2Error });
+      return false;
+    }
+
+    // PASSWORD CONFIRMATION VALIDATION
+    // Password Confirmation RegEx (same as password): Password must be between 6 to 20 characters, and contain at least one numeric digit, one uppercase and one lowercase letter
+
+    // if (!this.state.password2.match(passwordRegex)) {
+    //   password2Error = 'Please enter a valid password.';
+    // } else {
+    //   console.log('Password confirmation matches password');
+    // }
+
+    if (this.state.password2 === this.state.password) {
+      console.log('Password confirmation matches password');
+    }
+
+    if (this.state.password2 !== this.state.password) {
       console.log('Passwords do not match.');
       password2Error = 'Passwords do not match.';
     }
