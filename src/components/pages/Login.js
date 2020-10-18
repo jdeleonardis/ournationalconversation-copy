@@ -146,8 +146,37 @@ export class Login extends Component {
                           >
                             {this.state.emailError}
                           </div>
+
+                          <Form.Group controlId='formBasicPassword'>
+                            <div className='input-div'>
+                              <Form.Control
+                                className='form-input-field form-control'
+                                id='password'
+                                type='password'
+                                name='password'
+                                placeholder='PASSWORD'
+                                value={this.state.password}
+                                onChange={this.handleChange}
+                              />
+                              <span className='toggle-span'>
+                                <span
+                                  id='show_password'
+                                  className='eye-con fas fa-eye'
+                                ></span>
+                              </span>
+                            </div>
+                            <div
+                              style={{
+                                fontSize: 12,
+                                color: '#FF0000',
+                                marginTop: '5px',
+                              }}
+                            >
+                              {this.state.passwordError}
+                            </div>
+                          </Form.Group>
                         </Form.Group>
-                        <Form.Group controlId='formBasicPassword'>
+                        {/* <Form.Group controlId='formBasicPassword'>
                           <Form.Control
                             className='form-input-field'
                             type='password'
@@ -165,7 +194,7 @@ export class Login extends Component {
                           >
                             {this.state.passwordError}
                           </div>
-                        </Form.Group>
+                        </Form.Group> */}
                         <Form.Group
                           id='remember-group'
                           controlId='formBasicCheckbox'

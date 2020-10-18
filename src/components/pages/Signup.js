@@ -150,6 +150,7 @@ export class Signup extends Component {
   render() {
     // const { country, region } = this.state; // use this if including region in dropdown
     // const { country } = this.state;
+
     return (
       <Fragment>
         <div>
@@ -215,18 +216,23 @@ export class Signup extends Component {
                         </Form.Group>
 
                         <Form.Group controlId='formBasicPassword'>
-                          {/* <Form.Label>PASSWORD</Form.Label> */}
-                          <Form.Control
-                            className='form-input-field'
-                            // className='fas fa-eye'
-                            // id='eye'
-                            type='password'
-                            name='password'
-                            // placeholder='PASSWORD &#xf06e;' // Font Awesome Unicode
-                            placeholder='PASSWORD'
-                            value={this.state.password}
-                            onChange={this.handleChange}
-                          />
+                          <div className='input-div'>
+                            <Form.Control
+                              className='form-input-field form-control'
+                              id='password'
+                              type='password'
+                              name='password'
+                              placeholder='PASSWORD'
+                              value={this.state.password}
+                              onChange={this.handleChange}
+                            />
+                            <span className='toggle-span'>
+                              <span
+                                id='show_password'
+                                className='eye-con fas fa-eye'
+                              ></span>
+                            </span>
+                          </div>
                           <div
                             style={{
                               fontSize: 12,
@@ -238,8 +244,73 @@ export class Signup extends Component {
                           </div>
                         </Form.Group>
 
+                        {/* https://stackoverflow.com/questions/47854041/how-to-add-see-password-icon-just-for-chrome-and-firefox
+                        (scroll down to bottom) */}
+                        {/* <input
+                          type='password'
+                          class='form-control'
+                          id='password'
+                          placeholder='password'
+                          name='password'
+                        />
+                        <span class='input-group-btn'>
+                          <button
+                            id='show_password'
+                            class='btn btn-secondary'
+                            type='button'
+                          >
+                            <span class='eye-con fas fa-eye'></span>
+                          </button>
+                        </span> */}
+
+                        {/* ===================== WORKING SOLUTION ===================== */}
+
+                        {/* <div className='input-div'>
+                          <input
+                            className='form-control'
+                            type='password'
+                            placeholder='PASSWORD'
+                            id='password'
+                            name='password'
+                          />
+                          <span>
+                            <span
+                              id='show_password'
+                              className='eye-con fas fa-eye'
+                            ></span>
+                          </span>
+                        </div> */}
+                        {/* ============================================================ */}
                         <Form.Group controlId='formBasicPassword2'>
-                          {/* <Form.Label>CONFIRM PASSWORD</Form.Label> */}
+                          <div className='input-div'>
+                            <Form.Control
+                              className='form-input-field form-control'
+                              id='password2'
+                              type='password'
+                              name='password2'
+                              placeholder='CONFIRM PASSWORD'
+                              value={this.state.password2}
+                              onChange={this.handleChange}
+                            />
+                            <span className='toggle-span'>
+                              <span
+                                id='show_password2'
+                                className='eye-con fas fa-eye'
+                              ></span>
+                            </span>
+                          </div>
+                          <div
+                            style={{
+                              fontSize: 12,
+                              color: '#FF0000',
+                              marginTop: '5px',
+                            }}
+                          >
+                            {this.state.password2Error}
+                          </div>
+                        </Form.Group>
+
+                        {/* <Form.Group controlId='formBasicPassword2'>
                           <Form.Control
                             className='form-input-field'
                             type='password'
@@ -257,7 +328,7 @@ export class Signup extends Component {
                           >
                             {this.state.password2Error}
                           </div>
-                        </Form.Group>
+                        </Form.Group> */}
 
                         <CountryDropdown />
 

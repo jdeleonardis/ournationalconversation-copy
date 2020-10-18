@@ -33,4 +33,42 @@
     -->
 </body>
 
+<script>
+
+  // Password Toggle
+  function togglePassword() {
+    let passInput = document.getElementById("password")
+    let toggleBtn = document.getElementById("show_password")
+
+    if (password.type === "password") {
+      password.type = "text"
+      toggleBtn.classList.toggle('fa-eye-slash')
+    } else {
+      password.type = "password"
+      toggleBtn.classList.toggle('fa-eye-slash')
+    }
+  }
+
+  const showPassword = document.getElementById('show_password');
+  showPassword.addEventListener('click', togglePassword);
+
+  // Password Confirm Toggle
+  function togglePassword2() {
+    let passInput2 = document.getElementById("password2")
+    let toggleBtn2 = document.getElementById("show_password2")
+
+    if (password2.type === "password") {
+      password2.type = "text"
+      toggleBtn2.classList.toggle('fa-eye-slash')
+    } else {
+      password2.type = "password"
+      toggleBtn2.classList.toggle('fa-eye-slash')
+    }
+  }
+
+  const showPassword2 = document.getElementById('show_password2');
+  showPassword2.addEventListener('click', togglePassword2);
+
+</script>
+
 </html>
