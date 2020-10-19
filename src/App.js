@@ -28,6 +28,7 @@ function App() {
 				</Switch>
 				<Header />
 			</div>
+			<Comment />
 			<Footer />
 		</Router>
 	);
