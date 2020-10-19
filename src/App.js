@@ -28,7 +28,7 @@ function App() {
 				</Switch>
 				<Header />
 			</div>
-			<Comment />
+			{/*  <Comment /> */}
 			<Footer />
 		</Router>
 	);
