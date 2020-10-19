@@ -1,5 +1,7 @@
 import React from 'react';
 import { Card, Image, Col, Row, Container } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCommentAlt } from '@fortawesome/free-solid-svg-icons';
 import '../styles/comments.css';
 
 function Comment() {
@@ -34,7 +36,9 @@ function Comment() {
 
 								<Row>
 									<div style={{ fontWeight: 'bold' }}>RJ Varona</div>
-									<Col className="text-right">eer</Col>
+									<Col className="text-right">
+										<FontAwesomeIcon icon={faCommentAlt} />
+									</Col>
 								</Row>
 								<Row>Los Angeles, California</Row>
 							</Col>
