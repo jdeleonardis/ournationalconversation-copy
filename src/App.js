@@ -15,23 +15,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
-  return (
-    <Router>
-      <div className='App'>
-        {/* <Header /> */}
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/login' component={Login} />
-          <Route exact path='/signup' component={Signup} />
-          <Route exact path='/contact' component={Contact} />
-          <Route exact path='/search' component={SearchBar} />
-          <Route exact path='/filter' component={Filter} />
-        </Switch>
-        <Header />
-      </div>
-      <Footer />
-    </Router>
-  );
+	return (
+		<Router>
+			<div className="App">
+				<Switch>
+					<Route exact path="/" component={Home} />
+					<Route exact path="/login" component={Login} />
+					<Route exact path="/signup" component={Signup} />
+					<Route exact path="/contact" component={Contact} />
+					<Route exact path="/search" component={SearchBar} />
+					<Route exact path="/filter" component={Filter} />
+				</Switch>
+				<Header />
+			</div>
+			<Footer />
+		</Router>
+	);
 }
 
 export default App;
