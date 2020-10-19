@@ -37,7 +37,7 @@ function Comment() {
 								<Row>
 									<div style={{ fontWeight: 'bold' }}>RJ Varona</div>
 									<Col className="text-right">
-										<FontAwesomeIcon icon={faCommentAlt} />
+										<FontAwesomeIcon icon={faCommentAlt} /> {'   '}122
 									</Col>
 								</Row>
 								<Row>Los Angeles, California</Row>
