@@ -1,5 +1,14 @@
 import React, { Component, Fragment } from 'react';
-import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
+import {
+  Container,
+  Row,
+  Col,
+  Form,
+  // Button,
+  Card,
+  // Dropdown,
+  // DropdownButton,
+} from 'react-bootstrap';
 import CountryDropdown from '../layout/CountryDropdown';
 
 import { Helmet } from 'react-helmet';
@@ -13,6 +22,8 @@ const initialState = {
   userNameError: '',
   password2: '',
   password2Error: '',
+  country: '',
+  countryError: '',
 };
 
 export class Signup extends Component {
@@ -43,6 +54,33 @@ export class Signup extends Component {
     if (!this.state.userName) {
       userNameError = 'Username cannot be blank';
     }
+
+    //--------------------------------------------------------------------------
+    // TIMEOUT for ERROR MESSAGE (if using, add an ID to 'userNameError' div below called 'fade')
+    // VERSION 1:
+    // setTimeout(function () {
+    //   document.getElementById('fade').style.display = 'none';
+    // }, 3000);
+
+    // VERSION 2:
+    // setTimeout(function () {
+    //   // start a delay
+    //   var fade = document.getElementById('fade'); // get required element
+    //   fade.style.opacity = 1; // set opacity for the element to 1
+    //   fade.style.innerHTML = '';
+    //   var timerId = setInterval(function () {
+    //     // start interval loop
+    //     var opacity = fade.style.opacity; // get current opacity
+    //     if (opacity === 0) {
+    //       // check if its 0 yet
+    //       clearInterval(timerId); // if so, exit from interval loop
+    //     } else {
+    //       fade.style.opacity = opacity - 0.05; // else remove 0.05 from opacity
+    //     }
+    //   }, 100); // run every 0.1 second
+    // }, 1000); // wait to run after 5 seconds
+
+    //--------------------------------------------------------------------------
 
     // USERNAME VALIDATION
     // Username RegEx: Username must be any lowercase character, digit, or the symbols "_" and "-", having a length of 3 to 16 characters.
@@ -167,12 +205,38 @@ export class Signup extends Component {
     return true;
   };
 
+  // Dropdown Menu Function
+  // singleSelectChangeText() {
+  //   //Getting Value
+  //   var selObj = document.getElementById('singleSelectTextDDJS');
+  //   var selValue = selObj.options[selObj.selectedIndex].text;
+
+  //   //Setting Value
+  //   document.getElementById('textFieldTextJS').value = selValue;
+  //   console.log(selValue);
+  // }
+
   // Submit the state
   handleSubmit = (event) => {
     event.preventDefault();
+
+    // Country Dropdown
+    // let selObj = document.getElementById('singleSelectTextDDJS');
+    // let country = selObj.options[selObj.selectedIndex].text;
+
+    // //Setting Value
+    // document.getElementById('textFieldTextJS').value = country;
+    // // console.log(country);
+
     const isValid = this.validate();
     if (isValid) {
-      console.log(this.state);
+      console.table(this.state);
+      // console.log(country);
+
+      // let userInfo = [this.state];
+      // userInfo.push(country);
+      // // console.table(userInfo[0][1][4][5][6][10]);
+      // console.table(userInfo);
 
       // Clear form if submission is valid
       this.setState(initialState);
@@ -182,6 +246,10 @@ export class Signup extends Component {
   render() {
     // const { country, region } = this.state; // use this if including region in dropdown
     // const { country } = this.state;
+
+    // const handleSelect = (e) => {
+    //   console.log(e);
+    // };
 
     return (
       <Fragment>
@@ -197,18 +265,18 @@ export class Signup extends Component {
               <Col md={3}></Col>
               <Col md={6}>
                 <div>
-                  <Card id='signup-card'>
+                  {/* <Card id='signup-card'>
                     <Card.Body id='signup-card-body'>
                       <Card.Title id='signup-card-title'>
                         Sign up for ONC
                       </Card.Title>
                       <Card.Subtitle id='signup-card-subtitle' className='mb-2'>
                         <div id='new-to-site'>It's quick and easy.</div>
-                      </Card.Subtitle>
-                      <Form onSubmit={this.handleSubmit}>
-                        <Form.Group controlId='formBasicUserName'>
-                          {/* <Form.Label>USERNAME</Form.Label> */}
-                          <Form.Control
+                      </Card.Subtitle> */}
+                  {/* <Form onSubmit={this.handleSubmit}>
+                        <Form.Group controlId='formBasicUserName'> */}
+                  {/* <Form.Label>USERNAME</Form.Label> */}
+                  {/* <Form.Control
                             className='form-input-field'
                             // type='name'
                             name='userName'
@@ -225,12 +293,10 @@ export class Signup extends Component {
                           >
                             {this.state.userNameError}
                           </div>
-                        </Form.Group>
-                        <Form.Group controlId='formBasicEmail'>
-                          {/* <Form.Label>EMAIL</Form.Label> */}
+                        </Form.Group> */}
+                  {/* <Form.Group controlId='formBasicEmail'>
                           <Form.Control
                             className='form-input-field'
-                            // type='email'
                             name='email'
                             value={this.state.email}
                             onChange={this.handleChange}
@@ -245,9 +311,9 @@ export class Signup extends Component {
                           >
                             {this.state.emailError}
                           </div>
-                        </Form.Group>
+                        </Form.Group> */}
 
-                        <Form.Group controlId='formBasicPassword'>
+                  {/* <Form.Group controlId='formBasicPassword'>
                           <div className='input-div'>
                             <Form.Control
                               className='form-input-field form-control'
@@ -274,11 +340,11 @@ export class Signup extends Component {
                           >
                             {this.state.passwordError}
                           </div>
-                        </Form.Group>
+                        </Form.Group> */}
 
-                        {/* https://stackoverflow.com/questions/47854041/how-to-add-see-password-icon-just-for-chrome-and-firefox
+                  {/* https://stackoverflow.com/questions/47854041/how-to-add-see-password-icon-just-for-chrome-and-firefox
                         (scroll down to bottom) */}
-                        {/* <input
+                  {/* <input
                           type='password'
                           class='form-control'
                           id='password'
@@ -295,9 +361,9 @@ export class Signup extends Component {
                           </button>
                         </span> */}
 
-                        {/* ===================== WORKING SOLUTION ===================== */}
+                  {/* ===================== WORKING SOLUTION ===================== */}
 
-                        {/* <div className='input-div'>
+                  {/* <div className='input-div'>
                           <input
                             className='form-control'
                             type='password'
@@ -312,8 +378,8 @@ export class Signup extends Component {
                             ></span>
                           </span>
                         </div> */}
-                        {/* ============================================================ */}
-                        <Form.Group controlId='formBasicPassword2'>
+                  {/* ============================================================ */}
+                  {/* <Form.Group controlId='formBasicPassword2'>
                           <div className='input-div'>
                             <Form.Control
                               className='form-input-field form-control'
@@ -340,9 +406,9 @@ export class Signup extends Component {
                           >
                             {this.state.password2Error}
                           </div>
-                        </Form.Group>
+                        </Form.Group> */}
 
-                        {/* <Form.Group controlId='formBasicPassword2'>
+                  {/* <Form.Group controlId='formBasicPassword2'>
                           <Form.Control
                             className='form-input-field'
                             type='password'
@@ -362,19 +428,93 @@ export class Signup extends Component {
                           </div>
                         </Form.Group> */}
 
-                        <CountryDropdown />
+                  <CountryDropdown />
+                  {/* <select
+                          id='singleSelectValueDDJS'
+                          className='form-control'
+                          onChange={this.singleSelectChangeValue}
+                        >
+                          <option value='Japan'>Japan</option>
+                          <option value='U.S.'>U.S.</option>
+                          <option value='Korea'>Korea</option>
+                          <option value='Mexico'>Mexico</option>
+                        </select>
+                        <input
+                          type='text'
+                          id='textFieldValueJS'
+                          class='form-control'
+                          placeholder='SELECT COUNTRY'
+                        ></input> */}
 
-                        <Button
+                  {/* <select
+                          id='singleSelectTextDDJS'
+                          class='form-control'
+                          onChange={this.singleSelectChangeText}
+                        >
+                          <option value='0'>SELECT COUNTRY</option>
+                          <option value='1'>Japan</option>
+                          <option value='2'>Korea</option>
+                          <option value='3'>Mexico</option>
+                        </select>
+
+                        <input
+                          style={{
+                            display: 'none',
+                          }}
+                          type='text'
+                          id='textFieldTextJS'
+                          class='form-control'
+                          placeholder='SELECT COUNTRY'
+                        ></input> */}
+
+                  {/* <div
+                          style={{
+                            fontSize: 12,
+                            color: '#FF0000',
+                            marginTop: '5px',
+                          }}
+                        >
+                          {this.state.countryError}
+                        </div> */}
+                  {/* <Form.Group>
+                          <DropdownButton
+                            id='dropdown-basic-button'
+                            title='SELECT COUNTRY'
+                            value={this.state.country}
+                            // onSelect={handleSelect}
+                          >
+                            <Dropdown.Item href='#/action-1'>
+                              Japan
+                            </Dropdown.Item>
+                            <Dropdown.Item href='#/action-2'>
+                              U.S.
+                            </Dropdown.Item>
+                            <Dropdown.Item href='#/action-3'>
+                              Korea
+                            </Dropdown.Item>
+                          </DropdownButton>
+                          <div
+                            style={{
+                              fontSize: 12,
+                              color: '#FF0000',
+                              marginTop: '5px',
+                            }}
+                          >
+                            {this.state.countryError}
+                          </div>
+                        </Form.Group> */}
+
+                  {/* <Button
                           id='signup-btn'
                           variant='primary'
                           type='submit'
                           block
                         >
                           SIGN UP
-                        </Button>
-                      </Form>
-                    </Card.Body>
-                  </Card>
+                        </Button> */}
+                  {/* </Form> */}
+                  {/* </Card.Body>
+                  </Card> */}
                 </div>
               </Col>
               <Col md={3}></Col>

@@ -17,10 +17,18 @@ SIGNUP COMPONENT STYLES
   text-transform: uppercase;
 }
 
+#country-dropdown {
+  margin-top: 15px;
+}
+
 #my-country-field-id:focus {
   outline: none !important;
   /* border: 3px solid #92c7ff; */
   /* box-shadow: 0 0 10px #719ece; */
+}
+
+#singleSelectTextDDJS {
+  color: #bfbfbf;
 }
 
 /* select #my-country-field-id {
@@ -39,7 +47,6 @@ PASSWORD TOGGLE STYLES
 
 .form-control {
   width: 100%;
-
   display: block;
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);

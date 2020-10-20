@@ -28,7 +28,7 @@ export class Login extends Component {
     // let userNameError = '';
     let emailError = '';
     let passwordError = '';
-    // const userNameRegex = /^[a-z0-9_-]{3,15}$/;
+    const userNameRegex = /^[a-z0-9_-]{3,15}$/;
     const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
 
@@ -47,6 +47,15 @@ export class Login extends Component {
     // if (!this.state.email.includes('@')) {
     //   emailError = 'Please enter a valid email.';
     // }
+
+    if (
+      this.state.email.match(emailRegex) ||
+      this.state.userName.match(userNameRegex)
+    ) {
+      alert('Great!');
+    } else {
+      emailError = 'Please enter a valid username or email.';
+    }
 
     // EMAIL VALIDATION
     // Email RegEx version
