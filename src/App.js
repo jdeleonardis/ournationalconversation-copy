@@ -18,6 +18,7 @@ function App() {
 	return (
 		<Router>
 			<div className="App">
+				<Header />
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/login" component={Login} />
@@ -26,7 +27,6 @@ function App() {
 					<Route exact path="/search" component={SearchBar} />
 					<Route exact path="/filter" component={Filter} />
 				</Switch>
-				<Header />
 			</div>
 			<Solutions />
 			<Footer />
