@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Image, Col, Row, Container } from 'react-bootstrap';
+import { Card, Image, Col, Row, Container, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Comment from './Comments';
 import '../styles/comments.css';
@@ -35,6 +35,10 @@ function Solutions() {
 				<Comment />
 				<br />
 				<Comment />
+				<br />
+				<div className="text-center">
+					<Button variant="light">SEE MORE PODCASTS</Button>
+				</div>
 			</Container>
 		</div>
 	);
