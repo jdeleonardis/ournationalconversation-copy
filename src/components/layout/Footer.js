@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCommentAlt } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram } from '@fortawesome/free-solid-svg-icons';
 import '../styles/footer.css';
 
 function Footer() {
@@ -56,10 +56,24 @@ function Footer() {
 					}}
 				/>
 			</Container>
-			<Row>
-				<Col> © Our National Conversation | All rights reserved</Col>
+			<Row style={{ fontSize: '20px' }}>
+				<Col className="text-right">
+					{' '}
+					© Our National Conversation | All rights reserved
+				</Col>
 
-				<Col> Follow ONC</Col>
+				<Col>
+					Follow ONC |{' '}
+					<span>
+						<i class="fab fa-instagram"></i>
+					</span>{' '}
+					<span>
+						<i class="fab fa-twitter"></i>
+					</span>{' '}
+					<span>
+						<i class="fab fa-facebook"></i>
+					</span>
+				</Col>
 			</Row>
 		</footer>
 	);
