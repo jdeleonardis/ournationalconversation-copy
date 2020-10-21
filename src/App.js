@@ -28,7 +28,7 @@ function App() {
 					<Route exact path="/filter" component={Filter} />
 				</Switch>
 			</div>
-			<Solutions />
+
 			<Footer />
 		</Router>
 	);

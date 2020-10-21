@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Container, Button } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
+import Solution from '../layout/Solutions';
 
 export class Home extends Component {
 	render() {
@@ -58,6 +59,7 @@ export class Home extends Component {
 						</div>
 					</Container>
 				</div>
+				<Solution />
 			</Fragment>
 		);
 	}
