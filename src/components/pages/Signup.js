@@ -3,13 +3,13 @@ import {
   Container,
   Row,
   Col,
-  Form,
+  // Form,
   // Button,
-  Card,
+  // Card,
   // Dropdown,
   // DropdownButton,
 } from 'react-bootstrap';
-import CountryDropdown from '../layout/CountryDropdown';
+import SignupComponent from '../layout/SignupComponent';
 
 import { Helmet } from 'react-helmet';
 
@@ -220,23 +220,9 @@ export class Signup extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
 
-    // Country Dropdown
-    // let selObj = document.getElementById('singleSelectTextDDJS');
-    // let country = selObj.options[selObj.selectedIndex].text;
-
-    // //Setting Value
-    // document.getElementById('textFieldTextJS').value = country;
-    // // console.log(country);
-
     const isValid = this.validate();
     if (isValid) {
       console.table(this.state);
-      // console.log(country);
-
-      // let userInfo = [this.state];
-      // userInfo.push(country);
-      // // console.table(userInfo[0][1][4][5][6][10]);
-      // console.table(userInfo);
 
       // Clear form if submission is valid
       this.setState(initialState);
@@ -257,264 +243,13 @@ export class Signup extends Component {
           <Helmet>
             <title>Our National Conversation | Sign Up</title>
           </Helmet>
-
           <Container className='container' fluid>
             <br />
-
             <Row>
               <Col md={3}></Col>
               <Col md={6}>
                 <div>
-                  {/* <Card id='signup-card'>
-                    <Card.Body id='signup-card-body'>
-                      <Card.Title id='signup-card-title'>
-                        Sign up for ONC
-                      </Card.Title>
-                      <Card.Subtitle id='signup-card-subtitle' className='mb-2'>
-                        <div id='new-to-site'>It's quick and easy.</div>
-                      </Card.Subtitle> */}
-                  {/* <Form onSubmit={this.handleSubmit}>
-                        <Form.Group controlId='formBasicUserName'> */}
-                  {/* <Form.Label>USERNAME</Form.Label> */}
-                  {/* <Form.Control
-                            className='form-input-field'
-                            // type='name'
-                            name='userName'
-                            value={this.state.userName}
-                            onChange={this.handleChange}
-                            placeholder='USERNAME'
-                          />
-                          <div
-                            style={{
-                              fontSize: 12,
-                              color: '#FF0000',
-                              marginTop: '5px',
-                            }}
-                          >
-                            {this.state.userNameError}
-                          </div>
-                        </Form.Group> */}
-                  {/* <Form.Group controlId='formBasicEmail'>
-                          <Form.Control
-                            className='form-input-field'
-                            name='email'
-                            value={this.state.email}
-                            onChange={this.handleChange}
-                            placeholder='EMAIL'
-                          />
-                          <div
-                            style={{
-                              fontSize: 12,
-                              color: '#FF0000',
-                              marginTop: '5px',
-                            }}
-                          >
-                            {this.state.emailError}
-                          </div>
-                        </Form.Group> */}
-
-                  {/* <Form.Group controlId='formBasicPassword'>
-                          <div className='input-div'>
-                            <Form.Control
-                              className='form-input-field form-control'
-                              id='password'
-                              type='password'
-                              name='password'
-                              placeholder='PASSWORD'
-                              value={this.state.password}
-                              onChange={this.handleChange}
-                            />
-                            <span className='toggle-span'>
-                              <span
-                                id='show_password'
-                                className='eye-con fas fa-eye'
-                              ></span>
-                            </span>
-                          </div>
-                          <div
-                            style={{
-                              fontSize: 12,
-                              color: '#FF0000',
-                              marginTop: '5px',
-                            }}
-                          >
-                            {this.state.passwordError}
-                          </div>
-                        </Form.Group> */}
-
-                  {/* https://stackoverflow.com/questions/47854041/how-to-add-see-password-icon-just-for-chrome-and-firefox
-                        (scroll down to bottom) */}
-                  {/* <input
-                          type='password'
-                          class='form-control'
-                          id='password'
-                          placeholder='password'
-                          name='password'
-                        />
-                        <span class='input-group-btn'>
-                          <button
-                            id='show_password'
-                            class='btn btn-secondary'
-                            type='button'
-                          >
-                            <span class='eye-con fas fa-eye'></span>
-                          </button>
-                        </span> */}
-
-                  {/* ===================== WORKING SOLUTION ===================== */}
-
-                  {/* <div className='input-div'>
-                          <input
-                            className='form-control'
-                            type='password'
-                            placeholder='PASSWORD'
-                            id='password'
-                            name='password'
-                          />
-                          <span>
-                            <span
-                              id='show_password'
-                              className='eye-con fas fa-eye'
-                            ></span>
-                          </span>
-                        </div> */}
-                  {/* ============================================================ */}
-                  {/* <Form.Group controlId='formBasicPassword2'>
-                          <div className='input-div'>
-                            <Form.Control
-                              className='form-input-field form-control'
-                              id='password2'
-                              type='password'
-                              name='password2'
-                              placeholder='CONFIRM PASSWORD'
-                              value={this.state.password2}
-                              onChange={this.handleChange}
-                            />
-                            <span className='toggle-span'>
-                              <span
-                                id='show_password2'
-                                className='eye-con fas fa-eye'
-                              ></span>
-                            </span>
-                          </div>
-                          <div
-                            style={{
-                              fontSize: 12,
-                              color: '#FF0000',
-                              marginTop: '5px',
-                            }}
-                          >
-                            {this.state.password2Error}
-                          </div>
-                        </Form.Group> */}
-
-                  {/* <Form.Group controlId='formBasicPassword2'>
-                          <Form.Control
-                            className='form-input-field'
-                            type='password'
-                            name='password2'
-                            placeholder='CONFIRM PASSWORD'
-                            value={this.state.password2}
-                            onChange={this.handleChange}
-                          />
-                          <div
-                            style={{
-                              fontSize: 12,
-                              color: '#FF0000',
-                              marginTop: '5px',
-                            }}
-                          >
-                            {this.state.password2Error}
-                          </div>
-                        </Form.Group> */}
-
-                  <CountryDropdown />
-                  {/* <select
-                          id='singleSelectValueDDJS'
-                          className='form-control'
-                          onChange={this.singleSelectChangeValue}
-                        >
-                          <option value='Japan'>Japan</option>
-                          <option value='U.S.'>U.S.</option>
-                          <option value='Korea'>Korea</option>
-                          <option value='Mexico'>Mexico</option>
-                        </select>
-                        <input
-                          type='text'
-                          id='textFieldValueJS'
-                          class='form-control'
-                          placeholder='SELECT COUNTRY'
-                        ></input> */}
-
-                  {/* <select
-                          id='singleSelectTextDDJS'
-                          class='form-control'
-                          onChange={this.singleSelectChangeText}
-                        >
-                          <option value='0'>SELECT COUNTRY</option>
-                          <option value='1'>Japan</option>
-                          <option value='2'>Korea</option>
-                          <option value='3'>Mexico</option>
-                        </select>
-
-                        <input
-                          style={{
-                            display: 'none',
-                          }}
-                          type='text'
-                          id='textFieldTextJS'
-                          class='form-control'
-                          placeholder='SELECT COUNTRY'
-                        ></input> */}
-
-                  {/* <div
-                          style={{
-                            fontSize: 12,
-                            color: '#FF0000',
-                            marginTop: '5px',
-                          }}
-                        >
-                          {this.state.countryError}
-                        </div> */}
-                  {/* <Form.Group>
-                          <DropdownButton
-                            id='dropdown-basic-button'
-                            title='SELECT COUNTRY'
-                            value={this.state.country}
-                            // onSelect={handleSelect}
-                          >
-                            <Dropdown.Item href='#/action-1'>
-                              Japan
-                            </Dropdown.Item>
-                            <Dropdown.Item href='#/action-2'>
-                              U.S.
-                            </Dropdown.Item>
-                            <Dropdown.Item href='#/action-3'>
-                              Korea
-                            </Dropdown.Item>
-                          </DropdownButton>
-                          <div
-                            style={{
-                              fontSize: 12,
-                              color: '#FF0000',
-                              marginTop: '5px',
-                            }}
-                          >
-                            {this.state.countryError}
-                          </div>
-                        </Form.Group> */}
-
-                  {/* <Button
-                          id='signup-btn'
-                          variant='primary'
-                          type='submit'
-                          block
-                        >
-                          SIGN UP
-                        </Button> */}
-                  {/* </Form> */}
-                  {/* </Card.Body>
-                  </Card> */}
+                  <SignupComponent />
                 </div>
               </Col>
               <Col md={3}></Col>
