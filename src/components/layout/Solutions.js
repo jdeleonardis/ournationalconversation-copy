@@ -4,27 +4,38 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Comment from './Comments';
 import '../styles/comments.css';
 const ColoredLine = ({ color }) => (
-	<hr
-		style={{
-			backgroundColor: 'red',
-			height: 10,
-		}}
-	/>
+	<div>
+		<Row>
+			<Col
+				md={2}
+				style={{ fontWeight: 'bold', fontFamily: 'Calibri', fontSize: '20px' }}
+			>
+				Newly Arrived
+			</Col>
+
+			<Col md={10}>
+				<hr
+					style={{
+						backgroundColor: '#491542',
+						height: 10,
+					}}
+				/>
+			</Col>
+		</Row>
+	</div>
 );
 
 function Solutions() {
 	return (
 		<div>
-			<Card>
-				<Container>
-					<div>Newly Arrived</div> <ColoredLine />
-					<Comment />
-					<br />
-					<Comment />
-					<br />
-					<Comment />
-				</Container>
-			</Card>
+			<Container>
+				<ColoredLine />
+				<Comment />
+				<br />
+				<Comment />
+				<br />
+				<Comment />
+			</Container>
 		</div>
 	);
 }
