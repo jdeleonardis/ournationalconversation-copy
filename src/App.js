@@ -7,7 +7,7 @@ import Login from './components/pages/Login';
 import Contact from './components/pages/Contact';
 import Header from './components/pages/Header';
 import Footer from './components/layout/Footer';
-import Comment from './components/layout/Comments';
+import Solutions from './components/layout/Solutions';
 import SearchBar from './components/layout/SearchBar';
 import Filter from './components/layout/Filter';
 
@@ -28,7 +28,7 @@ function App() {
 				</Switch>
 				<Header />
 			</div>
-			{/*  <Comment /> */}
+			<Solutions />
 			<Footer />
 		</Router>
 	);
