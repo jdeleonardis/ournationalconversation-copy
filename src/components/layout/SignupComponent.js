@@ -11,6 +11,28 @@ export default function App() {
   const [password2, setPassword2] = React.useState('');
   const [country, setCountry] = React.useState('');
 
+  // Password Icon Toggle
+  function pwToggle() {
+    document.getElementById('show_password').classList.toggle('fa-eye-slash');
+    document.getElementById('show_password').classList.toggle('fa-eye');
+    document.getElementById('show_password2').classList.toggle('fa-eye-slash');
+    document.getElementById('show_password2').classList.toggle('fa-eye');
+
+    var x = document.getElementById('password');
+    if (x.type === 'password') {
+      x.type = 'text';
+    } else {
+      x.type = 'password';
+    }
+
+    var y = document.getElementById('password2');
+    if (y.type === 'password') {
+      y.type = 'text';
+    } else {
+      y.type = 'password';
+    }
+  }
+
   const handleSubmit = (event) => {
     console.log('Form submitted.');
 
@@ -243,7 +265,8 @@ export default function App() {
                     <span className='toggle-span'>
                       <span
                         id='show_password'
-                        className='eye-con fas fa-eye'
+                        onClick={pwToggle}
+                        className='eye-con fas fa-eye-slash'
                       ></span>
                     </span>
                   </div>
@@ -265,7 +288,8 @@ export default function App() {
                     <span className='toggle-span'>
                       <span
                         id='show_password2'
-                        className='eye-con fas fa-eye'
+                        onClick={pwToggle}
+                        className='eye-con fas fa-eye-slash'
                       ></span>
                     </span>
                   </div>
@@ -292,7 +316,13 @@ export default function App() {
                   </div>
                 </label>
 
-                <Button id='signup-btn' variant='primary' type='submit' block>
+                <Button
+                  // href='/'
+                  id='signup-btn'
+                  variant='primary'
+                  type='submit'
+                  block
+                >
                   SIGN UP
                 </Button>
               </form>

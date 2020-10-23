@@ -1,13 +1,19 @@
 /* =================
 SIGNUP COMPONENT STYLES
 ================= */
-/* .notvalid-msg {
-  font-size: 12 !important;
-  color: '#FF0000' !important;
-  margin-top: '5px' !important;
-  display: 'none' !important;
-} */
 
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .notvalid-msg-clear {
   display: none;
 }
@@ -16,29 +22,9 @@ SIGNUP COMPONENT STYLES
   color: #bfbfbf !important;
 }
 
-#my-country-field-id {
-  display: block;
-  width: 100%;
-  padding: 6px 12px;
-  /* padding: 0.375rem 0.75rem; */
-  background-color: #ffffff;
-  color: #bfbfbf;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  text-transform: uppercase;
-}
-
-#country-dropdown {
-  margin-top: 15px;
-}
-
-#my-country-field-id:focus {
-  outline: none !important;
-}
-
-#singleSelectTextDDJS {
-  color: #bfbfbf;
-}
+/* =================
+COUNTRY DROPDOWN STYLES
+================= */
 
 #dropdown-label {
   width: 100%;
@@ -75,10 +61,6 @@ select {
   text-overflow: '';
 }
 
-/* select #my-country-field-id {
-  color: #cccccc;
-} */
-
 /* =================
 PASSWORD TOGGLE STYLES
 ================= */
@@ -88,6 +70,25 @@ PASSWORD TOGGLE STYLES
   display: inline-block;
   width: 100%;
 }
+
+.toggle-span,
+.icon-span {
+  position: absolute;
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.eye-con,
+.country-con {
+  margin-right: 15px;
+  color: #bfbfbf;
+}
+
+/* .eye-con-error-msg {
+  margin-top: -50px !important;
+} */
 
 .form-control {
   width: 100%;
@@ -106,16 +107,6 @@ PASSWORD TOGGLE STYLES
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.eye-con,
-.country-con {
-  margin-right: 15px;
-  color: #bfbfbf;
-}
-
-.eye-con-error-msg {
-  margin-top: -50px !important;
-}
-
 input {
   padding-right: 2.4em;
   height: 2em;
@@ -124,22 +115,6 @@ input {
 input::-ms-reveal {
   display: none;
 }
-
-.toggle-span,
-.icon-span {
-  position: absolute;
-  right: 1px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 100;
-}
-
-/* background-color: white;
-  display: block;
-  padding: 0.2em;
-  width: 1.3em;
-  height: 1.3em;
-} */
 
 /* =================
 LOGIN COMPONENT STYLES
@@ -208,6 +183,7 @@ label {
   padding-left: 15px;
   text-indent: -15px;
 }
+
 input {
   width: 13px;
   height: 13px;
@@ -259,7 +235,6 @@ input {
 #facebook-login-btn,
 #google-login-btn {
   margin-top: 10px;
-  /* margin-bottom: 20px; */
 }
 
 .or-h2 {

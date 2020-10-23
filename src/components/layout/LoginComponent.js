@@ -8,6 +8,19 @@ export default function App() {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
 
+  // Password Icon Toggle
+  function pwToggle() {
+    document.getElementById('show_password').classList.toggle('fa-eye-slash');
+    document.getElementById('show_password').classList.toggle('fa-eye');
+
+    var x = document.getElementById('password');
+    if (x.type === 'password') {
+      x.type = 'text';
+    } else {
+      x.type = 'password';
+    }
+  }
+
   const handleSubmit = (event) => {
     console.log('Form submitted.');
 
@@ -202,7 +215,8 @@ export default function App() {
                     <span className='toggle-span'>
                       <span
                         id='show_password'
-                        className='eye-con fas fa-eye'
+                        onClick={pwToggle}
+                        className='eye-con fas fa-eye-slash'
                       ></span>
                     </span>
                   </div>
@@ -218,7 +232,13 @@ export default function App() {
                   />
                 </Form.Group>
 
-                <Button id='login-btn' variant='primary' type='submit' block>
+                <Button
+                  // href='/'
+                  id='login-btn'
+                  variant='primary'
+                  type='submit'
+                  block
+                >
                   LOG IN
                 </Button>
                 <h2 className='or-h2' id='or-text'>
