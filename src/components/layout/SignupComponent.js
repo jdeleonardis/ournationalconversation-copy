@@ -214,120 +214,120 @@ export default function App() {
   return (
     <Fragment>
       <div>
-        <Container className='container' fluid>
-          <Card id='signup-card'>
-            <Card.Body id='signup-card-body'>
-              <Card.Title id='signup-card-title'>Sign up for ONC</Card.Title>
-              <Card.Subtitle id='signup-card-subtitle' className='mb-2'>
-                <div id='new-to-site'>It's quick and easy.</div>
-              </Card.Subtitle>
+        <Container className='modal-container-signup' fluid>
+          {/* <Card id='signup-card'> */}
+          <Card.Body id='signup-card-body'>
+            <Card.Title id='signup-card-title'>Sign up for ONC</Card.Title>
+            <Card.Subtitle id='signup-card-subtitle' className='mb-2'>
+              <div id='new-to-site'>It's quick and easy.</div>
+            </Card.Subtitle>
 
-              <form onSubmit={handleSubmit}>
-                <Form.Group controlId='formBasicName'>
+            <form onSubmit={handleSubmit}>
+              <Form.Group controlId='formBasicName'>
+                <Form.Control
+                  className='form-input-field'
+                  name='userName'
+                  // type='name'
+                  placeholder='USERNAME'
+                  value={userName}
+                  onChange={(e) => setUserName(e.target.value)}
+                />
+                <div id='username-notblank'></div>
+                <div id='username-notvalid'></div>
+              </Form.Group>
+
+              <Form.Group controlId='formBasicEmail'>
+                <Form.Control
+                  className='form-input-field'
+                  name='email'
+                  // type='email'
+                  placeholder='EMAIL'
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <div id='email-notblank'></div>
+                <div id='email-notvalid'></div>
+              </Form.Group>
+
+              <Form.Group controlId='formBasicPassword'>
+                <div className='input-div'>
                   <Form.Control
-                    className='form-input-field'
-                    name='userName'
-                    // type='name'
-                    placeholder='USERNAME'
-                    value={userName}
-                    onChange={(e) => setUserName(e.target.value)}
+                    className='form-input-field form-control'
+                    id='password'
+                    name='password'
+                    type='password'
+                    placeholder='PASSWORD'
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                   />
-                  <div id='username-notblank'></div>
-                  <div id='username-notvalid'></div>
-                </Form.Group>
+                  <div id='password-notblank'></div>
+                  <div id='password-notvalid'></div>
+                  <span className='toggle-span'>
+                    <span
+                      id='show_password'
+                      onClick={pwToggle}
+                      className='eye-con fas fa-eye-slash'
+                    ></span>
+                  </span>
+                </div>
+              </Form.Group>
 
-                <Form.Group controlId='formBasicEmail'>
+              <Form.Group controlId='formBasicPassword2'>
+                <div className='input-div'>
                   <Form.Control
-                    className='form-input-field'
-                    name='email'
-                    // type='email'
-                    placeholder='EMAIL'
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    className='form-input-field form-control'
+                    id='password2'
+                    name='password'
+                    type='password'
+                    placeholder='CONFIRM PASSWORD'
+                    value={password2}
+                    onChange={(e) => setPassword2(e.target.value)}
                   />
-                  <div id='email-notblank'></div>
-                  <div id='email-notvalid'></div>
-                </Form.Group>
+                  <div id='password2-notblank'></div>
+                  <div id='password2-notvalid'></div>
+                  <span className='toggle-span'>
+                    <span
+                      id='show_password2'
+                      onClick={pwToggle}
+                      className='eye-con fas fa-eye-slash'
+                    ></span>
+                  </span>
+                </div>
+              </Form.Group>
 
-                <Form.Group controlId='formBasicPassword'>
-                  <div className='input-div'>
-                    <Form.Control
-                      className='form-input-field form-control'
-                      id='password'
-                      name='password'
-                      type='password'
-                      placeholder='PASSWORD'
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                    />
-                    <div id='password-notblank'></div>
-                    <div id='password-notvalid'></div>
-                    <span className='toggle-span'>
-                      <span
-                        id='show_password'
-                        onClick={pwToggle}
-                        className='eye-con fas fa-eye-slash'
-                      ></span>
-                    </span>
-                  </div>
-                </Form.Group>
+              {/* icon unicode: &#xf017; */}
+              <label id='dropdown-label'>
+                <div className='input-div'>
+                  <select
+                    id='dropdown'
+                    name='country'
+                    value={country}
+                    onChange={(e) => setCountry(e.target.value)}
+                    required
+                  >
+                    <option key=''>SELECT COUNTRY</option>
+                    {countries.map((country) => (
+                      <option key={country}>{country}</option>
+                    ))}
+                  </select>
+                  <span className='icon-span '>
+                    <span className='country-con far fa-clock'></span>
+                  </span>
+                </div>
+              </label>
 
-                <Form.Group controlId='formBasicPassword2'>
-                  <div className='input-div'>
-                    <Form.Control
-                      className='form-input-field form-control'
-                      id='password2'
-                      name='password'
-                      type='password'
-                      placeholder='CONFIRM PASSWORD'
-                      value={password2}
-                      onChange={(e) => setPassword2(e.target.value)}
-                    />
-                    <div id='password2-notblank'></div>
-                    <div id='password2-notvalid'></div>
-                    <span className='toggle-span'>
-                      <span
-                        id='show_password2'
-                        onClick={pwToggle}
-                        className='eye-con fas fa-eye-slash'
-                      ></span>
-                    </span>
-                  </div>
-                </Form.Group>
-
-                {/* icon unicode: &#xf017; */}
-                <label id='dropdown-label'>
-                  <div className='input-div'>
-                    <select
-                      id='dropdown'
-                      name='country'
-                      value={country}
-                      onChange={(e) => setCountry(e.target.value)}
-                      required
-                    >
-                      <option key=''>SELECT COUNTRY</option>
-                      {countries.map((country) => (
-                        <option key={country}>{country}</option>
-                      ))}
-                    </select>
-                    <span className='icon-span '>
-                      <span className='country-con far fa-clock'></span>
-                    </span>
-                  </div>
-                </label>
-
-                <Button
-                  // href='/'
-                  id='signup-btn'
-                  variant='primary'
-                  type='submit'
-                  block
-                >
-                  SIGN UP
-                </Button>
-              </form>
-            </Card.Body>
-          </Card>
+              <Button
+                // href='/'
+                id='signup-btn'
+                variant='primary'
+                type='submit'
+                block
+              >
+                SIGN UP
+              </Button>
+            </form>
+          </Card.Body>
+          {/* </Card> */}
         </Container>
       </div>
     </Fragment>

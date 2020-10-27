@@ -8,6 +8,28 @@ export default function App() {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
 
+  // Redirect to Home Page after submitting form
+  // function redirect() {
+  //   // window.location.replace('/');
+  //   window.location.href = '/';
+  //   return false;
+  // }
+
+  // function closeModal() {
+  //   // Reload page to prevent freezing page after modal close:
+  //   document.location.reload(true);
+
+  //   document.querySelector('.modal-body').classList.add('modal-close');
+  //   document.querySelector('.modal-body').classList.add('hidden');
+
+  //   document.querySelector('.modal-backdrop').style.backgroundColor =
+  //     'transparent';
+
+  //   setTimeout(function () {
+  //     document.location.reload(true);
+  //   }, 70);
+  // }
+
   // Password Icon Toggle
   function pwToggle() {
     document.getElementById('show_password').classList.toggle('fa-eye-slash');
@@ -161,21 +183,29 @@ export default function App() {
   return (
     <Fragment>
       <div>
-        <Container className='container' fluid>
-          <Card id='login-card'>
-            <Card.Body id='login-card-body'>
-              <Card.Title id='login-card-title'>Log in to ONC</Card.Title>
-              <Card.Subtitle id='login-card-subtitle' className='mb-2'>
-                <div id='new-to-site'>
-                  New to this site?
-                  <span id='sign-up'>
-                    <a href='/login'>Sign Up</a>
-                  </span>
-                </div>
-              </Card.Subtitle>
+        <Container className='modal-container-login' fluid>
+          {/* <Card id='login-card'> */}
+          {/* <i
+              onClick={closeModal}
+              class='far fa-times-circle fa-lg'
+              style={{
+                cursor: 'pointer',
+              }}
+            ></i> */}
 
-              <form onSubmit={handleSubmit}>
-                {/* <Form.Group controlId='formBasicName'>
+          <Card.Body id='login-card-body'>
+            <Card.Title id='login-card-title'>Log in to ONC</Card.Title>
+            <Card.Subtitle id='login-card-subtitle' className='mb-2'>
+              <div id='new-to-site'>
+                New to this site?
+                <span id='sign-up'>
+                  <a href='/login'>Sign Up</a>
+                </span>
+              </div>
+            </Card.Subtitle>
+
+            <form onSubmit={handleSubmit}>
+              {/* <Form.Group controlId='formBasicName'>
                   <Form.Control
                     className='form-input-field'
                     name='userName'
@@ -187,72 +217,74 @@ export default function App() {
                   <div id='username-notvalid'></div>
                 </Form.Group> */}
 
-                <Form.Group controlId='formBasicEmail'>
+              <Form.Group controlId='formBasicEmail'>
+                <Form.Control
+                  className='form-input-field'
+                  name='email'
+                  placeholder='USERNAME OR EMAIL'
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <div id='email-notblank'></div>
+                <div id='email-notvalid'></div>
+              </Form.Group>
+
+              <Form.Group controlId='formBasicPassword'>
+                <div className='input-div'>
                   <Form.Control
-                    className='form-input-field'
-                    name='email'
-                    placeholder='USERNAME OR EMAIL'
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    className='form-input-field form-control'
+                    id='password'
+                    name='password'
+                    type='password'
+                    placeholder='PASSWORD'
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                   />
-                  <div id='email-notblank'></div>
-                  <div id='email-notvalid'></div>
-                </Form.Group>
-
-                <Form.Group controlId='formBasicPassword'>
-                  <div className='input-div'>
-                    <Form.Control
-                      className='form-input-field form-control'
-                      id='password'
-                      name='password'
-                      type='password'
-                      placeholder='PASSWORD'
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                    />
-                    <div id='password-notblank'></div>
-                    <div id='password-notvalid'></div>
-                    <span className='toggle-span'>
-                      <span
-                        id='show_password'
-                        onClick={pwToggle}
-                        className='eye-con fas fa-eye-slash'
-                      ></span>
-                    </span>
-                  </div>
-                </Form.Group>
-                <Form.Group id='remember-group' controlId='formBasicCheckbox'>
-                  <span id='forgot'>
-                    <a href='/login'>Forgot Password?</a>
+                  <div id='password-notblank'></div>
+                  <div id='password-notvalid'></div>
+                  <span className='toggle-span'>
+                    <span
+                      id='show_password'
+                      onClick={pwToggle}
+                      className='eye-con fas fa-eye-slash'
+                    ></span>
                   </span>
-                  <Form.Check
-                    id='remember-me'
-                    type='checkbox'
-                    label='Remember me'
-                  />
-                </Form.Group>
+                </div>
+              </Form.Group>
+              <Form.Group id='remember-group' controlId='formBasicCheckbox'>
+                <span id='forgot'>
+                  <a href='/login'>Forgot Password?</a>
+                </span>
+                <Form.Check
+                  id='remember-me'
+                  type='checkbox'
+                  label='Remember me'
+                />
+              </Form.Group>
 
-                <Button
-                  // href='/'
-                  id='login-btn'
-                  variant='primary'
-                  type='submit'
-                  block
-                >
-                  LOG IN
-                </Button>
-                <h2 className='or-h2' id='or-text'>
-                  <span>OR</span>
-                </h2>
-                <Button id='facebook-login-btn' variant='primary' type='submit'>
-                  LOG IN WITH FACEBOOK
-                </Button>
-                <Button id='google-login-btn' variant='danger' type='submit'>
-                  LOG IN WITH GOOGLE
-                </Button>
-              </form>
-            </Card.Body>
-          </Card>
+              <Button
+                // href='/'
+                id='login-btn'
+                variant='primary'
+                type='submit'
+                block
+              >
+                LOG IN
+              </Button>
+              <h2 className='or-h2' id='or-text'>
+                <span>OR</span>
+              </h2>
+              <Button id='facebook-login-btn' variant='primary' type='submit'>
+                LOG IN WITH <br />
+                FACEBOOK
+              </Button>
+              <Button id='google-login-btn' variant='danger' type='submit'>
+                LOG IN WITH <br />
+                GOOGLE
+              </Button>
+            </form>
+          </Card.Body>
+          {/* </Card> */}
         </Container>
       </div>
     </Fragment>
