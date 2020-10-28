@@ -8,18 +8,18 @@ SIGNUP COMPONENT STYLES
 .container-md,
 .container-sm,
 .container-xl {
-  width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+	width: 100%;
+	padding-top: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 .notvalid-msg-clear {
-  display: none;
+	display: none;
 }
 
 .form-input-field::placeholder {
-  color: #bfbfbf !important;
+	color: #bfbfbf !important;
 }
 
 /* =================
@@ -27,38 +27,38 @@ COUNTRY DROPDOWN STYLES
 ================= */
 
 #dropdown-label {
-  width: 100%;
-  display: block;
-  padding-left: 0 !important;
-  text-indent: 0 !important;
+	width: 100%;
+	display: block;
+	padding-left: 0 !important;
+	text-indent: 0 !important;
 }
 
 #dropdown {
-  display: block;
-  width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #bfbfbf;
-  background-color: #ffffff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	display: block;
+	width: 100%;
+	height: calc(1.5em + 0.75rem + 2px);
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #bfbfbf;
+	background-color: #ffffff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 #dropdown:focus {
-  outline: none !important;
+	outline: none !important;
 }
 
 /* Hide default dropdown caret icon */
 select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  text-indent: 1px;
-  text-overflow: '';
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 1px;
+	text-overflow: '';
 }
 
 /* =================
@@ -66,30 +66,30 @@ PASSWORD TOGGLE STYLES
 ================= */
 
 .input-div {
-  position: relative;
-  display: inline-block;
-  width: 100%;
+	position: relative;
+	display: inline-block;
+	width: 100%;
 }
 
 .toggle-span,
 .icon-span {
-  position: absolute;
-  right: 1px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 100;
+	position: absolute;
+	right: 1px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 100;
 }
 
 .fa-lg {
-  text-align: right;
-  margin-right: 6px;
-  margin-top: 10px;
+	text-align: right;
+	margin-right: 6px;
+	margin-top: 10px;
 }
 
 .eye-con,
 .country-con {
-  margin-right: 15px;
-  color: #bfbfbf;
+	margin-right: 15px;
+	color: #bfbfbf;
 }
 
 /* .eye-con-error-msg {
@@ -97,29 +97,29 @@ PASSWORD TOGGLE STYLES
 } */
 
 .form-control {
-  width: 100%;
-  display: block;
-  width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	width: 100%;
+	display: block;
+	width: 100%;
+	height: calc(1.5em + 0.75rem + 2px);
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 input {
-  padding-right: 2.4em;
-  height: 2em;
+	padding-right: 2.4em;
+	height: 2em;
 }
 
 input::-ms-reveal {
-  display: none;
+	display: none;
 }
 
 /* =================
@@ -127,23 +127,23 @@ LOGIN COMPONENT STYLES
 ================= */
 #login-card-body,
 #signup-card-body {
-  background-color: #f3f2f2;
-  flex: 1 1 auto;
-  min-height: 1px;
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
-  padding-right: 4.5rem !important;
-  padding-left: 4.5rem !important;
+	background-color: #f3f2f2;
+	flex: 1 1 auto;
+	min-height: 1px;
+	padding-top: 3rem !important;
+	padding-bottom: 3rem !important;
+	padding-right: 4.5rem !important;
+	padding-left: 4.5rem !important;
 
-  /* margin-bottom: 40px; */
+	/* margin-bottom: 40px; */
 }
 
 #login-card-body {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 #signup-card-body {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 /* .card-body {
@@ -152,9 +152,9 @@ LOGIN COMPONENT STYLES
 } */
 
 .react-responsive-modal-modalCenter {
-  /* margin: auto; */
-  background-color: #f3f2f2 !important;
-  border-radius: 0.25rem;
+	/* margin: auto; */
+	background-color: #f3f2f2 !important;
+	border-radius: 0.25rem;
 }
 
 .modal-container-signup,
@@ -164,14 +164,14 @@ LOGIN COMPONENT STYLES
 .container-md,
 .container-sm,
 .container-xl {
-  width: 100%;
-  padding-top: 0;
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-  /* padding-left: 15px; */
+	width: 100%;
+	padding-top: 0;
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+	/* padding-left: 15px; */
 
-  margin-right: 150px !important;
-  margin-left: auto;
+	margin-right: 150px !important;
+	margin-left: auto;
 }
 
 /* .modal-close {
@@ -188,135 +188,135 @@ LOGIN COMPONENT STYLES
 } */
 
 button.react-responsive-modal-closeButton:active {
-  outline: none !important;
+	outline: none !important;
 }
 
 #login-card,
 #signup-card {
-  background-color: #f3f2f2;
-  margin-bottom: 40px;
+	background-color: #f3f2f2;
+	margin-bottom: 40px;
 }
 
 .form-check-label {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 #login-card-title,
 #signup-card-title,
 #contact-card-title {
-  text-align: center;
-  font-size: 34px;
-  font-weight: 700;
+	text-align: center;
+	font-size: 34px;
+	font-weight: 700;
 }
 
 #login-card-subtitle,
 #signup-card-subtitle {
-  text-align: center;
-  margin-top: 10px;
+	text-align: center;
+	margin-top: 10px;
 }
 
 #new-to-site,
 #contact-subtitle {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 #sign-up {
-  text-decoration: underline;
-  margin-left: 10px;
+	text-decoration: underline;
+	margin-left: 10px;
 }
 
 #email-login-input {
-  margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 
 .form-check-input {
-  position: absolute;
-  margin-top: 0.4rem !important;
-  margin-left: -1.25rem;
+	position: absolute;
+	margin-top: 0.4rem !important;
+	margin-left: -1.25rem;
 }
 
 #remember-group {
-  margin-top: 15px;
+	margin-top: 15px;
 }
 
 /* Align remember me checkbox */
 label {
-  display: block;
-  padding-left: 15px;
-  text-indent: -15px;
+	display: block;
+	padding-left: 15px;
+	text-indent: -15px;
 }
 
 input {
-  width: 13px;
-  height: 13px;
-  padding: 0;
-  margin: 0;
-  vertical-align: bottom;
-  position: relative;
-  top: 0;
-  *overflow: hidden;
+	width: 13px;
+	height: 13px;
+	padding: 0;
+	margin: 0;
+	vertical-align: bottom;
+	position: relative;
+	top: 0;
+	*overflow: hidden;
 }
 /* -------------------------- */
 
 #forgot {
-  position: relative;
-  z-index: 99;
-  float: right;
-  text-decoration: underline;
+	position: relative;
+	z-index: 99;
+	float: right;
+	text-decoration: underline;
 }
 
 #login-btn,
 #signup-btn {
-  clear: both;
-  background-color: #2c1c59;
-  margin-top: 20px !important;
-  margin-bottom: 30px;
-  border-radius: 4px;
+	clear: both;
+	background-color: #2c1c59;
+	margin-top: 20px !important;
+	margin-bottom: 30px;
+	border-radius: 4px;
 }
 
 #signup-btn {
-  margin-top: 15px;
-  margin-bottom: 0;
+	margin-top: 15px;
+	margin-bottom: 0;
 }
 
 #facebook-login-btn {
-  font-size: 12px;
-  background-color: #3b5998;
-  width: 49%;
-  border-radius: 4px;
-  float: left;
+	font-size: 12px;
+	background-color: #3b5998;
+	width: 49%;
+	border-radius: 4px;
+	float: left;
 }
 
 #google-login-btn {
-  font-size: 12px;
-  background-color: #d54b3d;
-  width: 49%;
-  border-radius: 4px;
-  float: right;
+	font-size: 12px;
+	background-color: #d54b3d;
+	width: 49%;
+	border-radius: 4px;
+	float: right;
 }
 
 #facebook-login-btn,
 #google-login-btn {
-  margin-top: 10px;
+	margin-top: 10px;
 }
 
 .or-h2 {
-  clear: both;
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid #bfbfbf;
-  line-height: 0.1em;
-  margin: 10px 0 20px;
+	clear: both;
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #bfbfbf;
+	line-height: 0.1em;
+	margin: 10px 0 20px;
 }
 
 .or-h2 span {
-  background: #f3f2f2;
-  padding: 0 10px;
+	background: #f3f2f2;
+	padding: 0 10px;
 }
 
 #or-text {
-  color: #bfbfbf;
-  font-size: 16px;
+	color: #bfbfbf;
+	font-size: 16px;
 }
 
 /* =================
@@ -325,43 +325,43 @@ CONTACT PAGE COMPONENT STYLES
 
 .dropdown-toggle,
 .dropdown-menu {
-  width: 100%;
+	width: 100%;
 }
 
 #dropdown-basic-button {
-  text-align: left;
+	text-align: left;
 }
 
 #dropdown-basic-button {
-  background-color: #ffffff;
-  color: #2c1c59;
-  border-color: #d4d8de;
+	background-color: #ffffff;
+	color: #2c1c59;
+	border-color: #d4d8de;
 }
 
 /* =================
 HEADER COMPONENT STYLES
 ================= */
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(105, 70, 70);
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgb(105, 70, 70);
 }
 
 li {
-  float: left;
-  margin: 20px;
+	float: left;
+	margin: 20px;
 }
 
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 
 li a:hover:not(.active) {
-  background-color: rgb(224, 211, 211);
+	background-color: rgb(224, 211, 211);
 }
