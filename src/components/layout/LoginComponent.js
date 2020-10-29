@@ -88,6 +88,7 @@ export default function App() {
       eBlank.style.fontSize = '12px';
       eBlank.style.color = '#FF0000';
       eBlank.style.marginTop = '5px';
+      document.querySelector('.eye-con').style.marginTop = '-20px';
     }
 
     function emailNotValid() {
@@ -96,6 +97,7 @@ export default function App() {
       eValid.style.fontSize = '12px';
       eValid.style.color = '#FF0000';
       eValid.style.marginTop = '5px';
+      document.querySelector('.eye-con').style.marginTop = '-20px';
     }
 
     // PASSWORD VALIDATION
@@ -174,6 +176,7 @@ export default function App() {
       console.log('Password is valid');
       const pNotValid = document.getElementById('password-notvalid');
       pNotValid.classList.add('notvalid-msg-clear');
+      document.querySelector('.eye-con').style.marginTop = '0';
       // document.querySelector('.form-input-field').reset();
     }
 
@@ -242,12 +245,18 @@ export default function App() {
                   />
                   <div id='password-notblank'></div>
                   <div id='password-notvalid'></div>
-                  <span className='toggle-span'>
-                    <span
+
+                  <span
+                    id='show_password'
+                    onClick={pwToggle}
+                    className='toggle-span eye-con fas fa-eye-slash'
+                    // className='toggle-span'
+                  >
+                    {/* <span
                       id='show_password'
                       onClick={pwToggle}
                       className='eye-con fas fa-eye-slash'
-                    ></span>
+                    ></span> */}
                   </span>
                 </div>
               </Form.Group>

@@ -75,6 +75,8 @@ export default function App() {
       eBlank.style.fontSize = '12px';
       eBlank.style.color = '#FF0000';
       eBlank.style.marginTop = '5px';
+      document.querySelector('.eye-con').style.marginTop = '-20px';
+      document.querySelector('.eye-con-2').style.marginTop = '-20px';
     }
 
     function emailNotValid() {
@@ -83,6 +85,8 @@ export default function App() {
       eValid.style.fontSize = '12px';
       eValid.style.color = '#FF0000';
       eValid.style.marginTop = '5px';
+      document.querySelector('.eye-con').style.marginTop = '-20px';
+      document.querySelector('.eye-con-2').style.marginTop = '-20px';
     }
 
     // PASSWORD VALIDATION
@@ -101,6 +105,9 @@ export default function App() {
       pValid.style.fontSize = '12px';
       pValid.style.color = '#FF0000';
       pValid.style.marginTop = '5px';
+
+      document.querySelector('.eye-con').style.marginTop = '-20px';
+      document.querySelector('.eye-con-2').style.marginTop = '-20px';
     }
 
     // PASSWORD CONFIRMATION VALIDATION
@@ -111,6 +118,9 @@ export default function App() {
       p2Blank.style.color = '#FF0000';
       p2Blank.style.marginTop = '5px';
       // document.querySelector('.eye-con').classList.add('eye-con-error-msg');
+
+      document.querySelector('.eye-con').style.marginTop = '-20px';
+      document.querySelector('.eye-con-2').style.marginTop = '-20px';
     }
 
     function password2NotValid() {
@@ -166,6 +176,7 @@ export default function App() {
       console.log('Password required.');
       const pNotBlank = document.getElementById('password-notblank');
       pNotBlank.addEventListener('change', pNotBlank);
+
       passwordNotBlank();
     } else if (!password.match(passwordRegex)) {
       console.log(
@@ -180,6 +191,10 @@ export default function App() {
       console.log('Password is valid');
       const pNotValid = document.getElementById('password-notvalid');
       pNotValid.classList.add('notvalid-msg-clear');
+      document.querySelector('.eye-con').style.marginTop = '0';
+
+      document.querySelector('.eye-con-2').style.marginTop = '0';
+
       // document.querySelector('.form-input-field').reset();
     }
 
@@ -188,6 +203,7 @@ export default function App() {
       console.log('Please confirm your password.');
       const p2NotBlank = document.getElementById('password2-notblank');
       p2NotBlank.addEventListener('change', p2NotBlank);
+
       password2NotBlank();
     } else if (password2 !== password) {
       console.log('Passwords do not match.');
@@ -196,10 +212,14 @@ export default function App() {
       password2NotValid();
       const p2NotBlank = document.getElementById('password2-notblank');
       p2NotBlank.classList.add('notvalid-msg-clear');
+
+      document.querySelector('.eye-con').style.marginTop = '0';
+      document.querySelector('.eye-con-2').style.marginTop = '0';
     } else {
       console.log('Passwords confirmed!');
       const pNotValid = document.getElementById('password2-notvalid');
       pNotValid.classList.add('notvalid-msg-clear');
+
       // document.querySelector('.form-input-field').reset();
     }
     if (password2 === password) {
@@ -216,7 +236,16 @@ export default function App() {
       <div>
         <Container className='modal-container-signup' fluid>
           {/* <Card id='signup-card'> */}
+
           <Card.Body id='signup-card-body'>
+            {/* <Alert
+              className='alert-msg'
+              // style={{ display: 'none' }}
+              id='email-notblank'
+              variant='danger'
+            >
+              Email required
+            </Alert> */}
             <Card.Title id='signup-card-title'>Sign up for ONC</Card.Title>
             <Card.Subtitle id='signup-card-subtitle' className='mb-2'>
               <div id='new-to-site'>It's quick and easy.</div>
@@ -262,12 +291,18 @@ export default function App() {
                   />
                   <div id='password-notblank'></div>
                   <div id='password-notvalid'></div>
-                  <span className='toggle-span'>
-                    <span
+
+                  <span
+                    id='show_password'
+                    onClick={pwToggle}
+                    className='toggle-span eye-con fas fa-eye-slash'
+                    // className='toggle-span'
+                  >
+                    {/* <span
                       id='show_password'
                       onClick={pwToggle}
                       className='eye-con fas fa-eye-slash'
-                    ></span>
+                    ></span> */}
                   </span>
                 </div>
               </Form.Group>
@@ -285,12 +320,17 @@ export default function App() {
                   />
                   <div id='password2-notblank'></div>
                   <div id='password2-notvalid'></div>
-                  <span className='toggle-span'>
-                    <span
-                      id='show_password2'
+                  <span
+                    id='show_password2'
+                    onClick={pwToggle}
+                    className='toggle-span eye-con eye-con-2 fas fa-eye-slash'
+                    // className='toggle-span'
+                  >
+                    {/* <span
+                      id='show_password'
                       onClick={pwToggle}
                       className='eye-con fas fa-eye-slash'
-                    ></span>
+                    ></span> */}
                   </span>
                 </div>
               </Form.Group>

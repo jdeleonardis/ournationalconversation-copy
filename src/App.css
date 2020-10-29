@@ -1,4 +1,17 @@
 /* =================
+BUTTON OUTLINE COMPONENT STYLES
+================= */
+.global-btn {
+  color: #2c1c59 !important;
+  border-color: #2c1c59 !important;
+}
+
+.global-btn:hover {
+  background-color: #2c1c59 !important;
+  color: #ffffff !important;
+}
+
+/* =================
 SIGNUP COMPONENT STYLES
 ================= */
 

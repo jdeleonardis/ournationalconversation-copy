@@ -5,8 +5,10 @@ import Solution from '../layout/Solutions';
 import SignupModalComponent from '../layout/SignupModalButtonAndComponent';
 import LoginModalComponent from '../layout/LoginModalButtonAndComponent';
 
+import GlobalButton from '../layout/GlobalButton';
+
 // Bootstrap React Modal: Modal clicks when you click the CLOSE button AND anywhere else
-const Home = () => {
+const Home = (props) => {
   return (
     <Fragment>
       <div>
@@ -66,6 +68,21 @@ const Home = () => {
                 >
                   Contact
                 </Button>
+                <GlobalButton
+                  link='/'
+                  label='Small Button'
+                  width='auto'
+                  padding='4px 8px'
+                  fontSize='12px'
+                />
+                <br />
+                <GlobalButton link='/' label='Large Button' width='auto' />
+                <br />
+                <GlobalButton
+                  link='/contact'
+                  label='BLOCK LEVEL BUTTON'
+                  width='100%'
+                />
                 <br /> <br />
                 <p>Dummy home page.</p>
                 <p>

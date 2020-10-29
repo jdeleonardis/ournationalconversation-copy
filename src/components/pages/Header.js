@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Header.css';
 import { MenuItems } from '../layout/MenuItems';
 import '../styles/footer.css';
-import {Button} from "../layout/Button";
+import { Button } from '../layout/Button';
 
 class Header extends React.Component {
   render() {
@@ -24,8 +24,8 @@ class Header extends React.Component {
             );
           })}
         </ul>
-      <Button>LOG IN</Button>
-      <Button>SIGN UP</Button>
+        <Button>LOG IN</Button>
+        <Button>SIGN UP</Button>
       </nav>
     );
   }
