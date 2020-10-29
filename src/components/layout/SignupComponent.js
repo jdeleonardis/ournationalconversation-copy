@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import countries from './Countries';
 import { Container, Card, Form, Button } from 'react-bootstrap';
-
 import '../../App.css';
 
 export default function App() {
@@ -35,8 +34,6 @@ export default function App() {
 
   const handleSubmit = (event) => {
     console.log('Form submitted.');
-
-    // Clear form if submission is valid
 
     console.log(`
       Username: ${userName}
@@ -194,7 +191,6 @@ export default function App() {
       document.querySelector('.eye-con').style.marginTop = '0';
 
       document.querySelector('.eye-con-2').style.marginTop = '0';
-
       // document.querySelector('.form-input-field').reset();
     }
 
@@ -235,8 +231,6 @@ export default function App() {
     <Fragment>
       <div>
         <Container className='modal-container-signup' fluid>
-          {/* <Card id='signup-card'> */}
-
           <Card.Body id='signup-card-body'>
             {/* <Alert
               className='alert-msg'
@@ -367,7 +361,6 @@ export default function App() {
               </Button>
             </form>
           </Card.Body>
-          {/* </Card> */}
         </Container>
       </div>
     </Fragment>

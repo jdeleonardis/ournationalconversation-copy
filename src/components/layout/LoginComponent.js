@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import { Container, Card, Form, Button } from 'react-bootstrap';
-
 import '../../App.css';
 
 export default function App() {
@@ -13,21 +12,6 @@ export default function App() {
   //   // window.location.replace('/');
   //   window.location.href = '/';
   //   return false;
-  // }
-
-  // function closeModal() {
-  //   // Reload page to prevent freezing page after modal close:
-  //   document.location.reload(true);
-
-  //   document.querySelector('.modal-body').classList.add('modal-close');
-  //   document.querySelector('.modal-body').classList.add('hidden');
-
-  //   document.querySelector('.modal-backdrop').style.backgroundColor =
-  //     'transparent';
-
-  //   setTimeout(function () {
-  //     document.location.reload(true);
-  //   }, 70);
   // }
 
   // Password Icon Toggle
@@ -46,14 +30,6 @@ export default function App() {
   const handleSubmit = (event) => {
     console.log('Form submitted.');
 
-    // Clear form if submission is valid
-
-    // console.log(`
-    //   Username: ${userName}
-    //   Email: ${email}
-    //   Password: ${password}
-
-    // `);
     console.log(`
     Email: ${email}
     Password: ${password}
@@ -187,7 +163,6 @@ export default function App() {
     <Fragment>
       <div>
         <Container className='modal-container-login' fluid>
-          {/* <Card id='login-card'> */}
           {/* <i
               onClick={closeModal}
               class='far fa-times-circle fa-lg'
@@ -293,7 +268,6 @@ export default function App() {
               </Button>
             </form>
           </Card.Body>
-          {/* </Card> */}
         </Container>
       </div>
     </Fragment>

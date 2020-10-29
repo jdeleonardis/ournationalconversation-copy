@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import '../../App.css';
 
-const ButtonOutline = (props) => {
+const GlobalButton = (props) => {
   return (
     <div>
       <Button
@@ -21,4 +21,4 @@ const ButtonOutline = (props) => {
   );
 };
 
-export default ButtonOutline;
+export default GlobalButton;

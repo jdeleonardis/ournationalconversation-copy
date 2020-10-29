@@ -4,10 +4,8 @@ import { Helmet } from 'react-helmet';
 import Solution from '../layout/Solutions';
 import SignupModalComponent from '../layout/SignupModalButtonAndComponent';
 import LoginModalComponent from '../layout/LoginModalButtonAndComponent';
-
 import GlobalButton from '../layout/GlobalButton';
 
-// Bootstrap React Modal: Modal clicks when you click the CLOSE button AND anywhere else
 const Home = (props) => {
   return (
     <Fragment>
@@ -29,26 +27,6 @@ const Home = (props) => {
                 >
                   Home
                 </Button>
-                {/* Sign up as its own page */}
-                {/* <Button
-                  style={{
-                    margin: '10px',
-                  }}
-                  variant='success'
-                  href='/signup'
-                >
-                  Sign Up
-                </Button> */}
-                {/* Login as its own page */}
-                {/* <Button
-                  style={{
-                    margin: '10px',
-                  }}
-                  variant='success'
-                  href='/login'
-                >
-                  Login
-                </Button> */}
                 <div
                   class='flexbox-container'
                   style={{
