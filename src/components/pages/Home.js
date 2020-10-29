@@ -76,7 +76,7 @@ const Home = (props) => {
                   fontSize='12px'
                 />
                 <br />
-                <GlobalButton link='/' label='Large Button' width='auto' />
+                <GlobalButton link='/' label='Large Button' />
                 <br />
                 <GlobalButton
                   link='/contact'
