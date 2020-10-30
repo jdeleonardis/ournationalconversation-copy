@@ -8,10 +8,9 @@ class Header extends React.Component {
   render() {
     return (
       <nav className='NavbarItems'>
-        <h1 className='navbar-logo'>
-          ONC<i class Name='fab fa-react'></i>
-        </h1>
-        <div className='menu-icon'></div>
+        <a href = "/" className = "header-logo"><img src = "/images/Logo_Shorthand.png"></img></a>
+        <h1 className = "menu-title">One National Conversation</h1>
+        <div className = "menu-icon" onClick = {this.handleClick}></div>
 
         <ul>
           {MenuItems.map((item, index) => {
