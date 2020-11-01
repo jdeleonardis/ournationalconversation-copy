@@ -6,6 +6,9 @@ import SignupModalComponent from '../layout/SignupModalButtonAndComponent';
 import LoginModalComponent from '../layout/LoginModalButtonAndComponent';
 import GlobalButton from '../layout/GlobalButton';
 
+// import Login2ModalComponent from '../layout/Login2ModalButtonAndComponent';
+// import Signup2ModalComponent from '../layout/Signup2ModalButtonAndComponent';
+
 const Home = (props) => {
   return (
     <Fragment>
@@ -35,7 +38,9 @@ const Home = (props) => {
                   }}
                 >
                   <SignupModalComponent />
+                  {/* <Signup2ModalComponent /> */}
                   <LoginModalComponent />
+                  {/* <Login2ModalComponent /> */}
                 </div>
                 <Button
                   style={{
