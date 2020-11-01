@@ -7,18 +7,14 @@ align-items: center;
 font-size: 1.2rem;
 }
 
-.navbar-logo{
+.header-logo{
   color: #fff;
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 50px;
   cursor: pointer;
 
 }
 
-.fa-react{
-    margin-left: 0.5rem;
-    font-size: 1.6rem;
-}
 
 .nav-menu{
     display: grid;
@@ -29,5 +25,36 @@ font-size: 1.2rem;
     justify-content: center;
     width: 70vw;
     margin-top: 50px;
+    margin-right: 100px;
     color: white;
+    padding-left: 20px;
+    border-top: solid;
+    border-width: 1px;
+   
 }
+
+.nav-link:hover{
+
+        padding: 10px 13px;
+        transition: all 0.4s ease-out;
+        background: white;
+        color: red;
+    
+}
+
+
+
+.menu-title{
+    text-align: center;
+    justify-content: center;
+    width: 70vw;
+    margin-bottom: 50px;
+    margin-left: 500px;
+    color: white;
+    padding: 50px;
+}
+
+
+
+
+
