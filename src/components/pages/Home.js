@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 import { Row, Col, Container, Button } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
-import Solution from '../layout/SolutionBoard';
+import Solution from '../layout/ContentBoards/SolutionBoard';
 import SignupModalComponent from '../layout/SignupModalButtonAndComponent';
 import LoginModalComponent from '../layout/LoginModalButtonAndComponent';
 import GlobalButton from '../layout/GlobalButton';
-import News from '../layout/NewsBoard';
+import News from '../layout/ContentBoards/NewsBoard';
 
 // import Login2ModalComponent from '../layout/Login2ModalButtonAndComponent';
 

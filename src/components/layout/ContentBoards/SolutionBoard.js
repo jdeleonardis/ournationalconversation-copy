@@ -1,9 +1,8 @@
 import React from 'react';
 import { Card, Image, Col, Row, Container, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Comment from './Comments';
-import '../styles/comments.css';
-import VerticalCard from './ContentCards/VerticalCard';
+import Comment from '../ContentCards/Comments';
+import VerticalCard from '../ContentCards/VerticalCard';
 
 const ColoredLine = ({ color }) => (
 	<div>
@@ -12,7 +11,7 @@ const ColoredLine = ({ color }) => (
 				md={2}
 				style={{ fontWeight: 'bold', fontFamily: 'Calibri', fontSize: '20px' }}
 			>
-				Top Stories
+				Newly Arrived
 			</Col>
 
 			<Col md={10}>
@@ -27,27 +26,22 @@ const ColoredLine = ({ color }) => (
 	</div>
 );
 
-function News() {
+function Solutions() {
 	return (
 		<div>
 			<Container>
 				<ColoredLine />
-				<Row>
-					<Col>
-						<VerticalCard />
-					</Col>
-
-					<Col>
-						<VerticalCard />
-					</Col>
-
-					<Col>
-						<VerticalCard />
-					</Col>
-				</Row>
+				<br />
+				<Comment />
+				<br />
+				<Comment />
+				<br />
+				<div className="text-center">
+					<Button variant="light">SEE MORE PODCASTS</Button>
+				</div>
 			</Container>
 		</div>
 	);
 }
 
-export default News;
+export default Solutions;

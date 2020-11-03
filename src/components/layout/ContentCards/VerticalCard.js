@@ -9,7 +9,7 @@ function VerticalCard() {
 	return (
 		<div>
 			<Container>
-				<Card>
+				<Card style={{ height: '750px' }}>
 					<Container>
 						<Card.Img
 							src="https://avatars3.githubusercontent.com/u/27324719?s=460&u=407b4f55702b082ae1e79b662ed96e0749a02a84&v=4"
