@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* =================
 BUTTON OUTLINE COMPONENT STYLES
 ================= */
@@ -469,6 +475,7 @@ input {
   z-index: 99;
   float: right;
   text-decoration: underline;
+  margin-top: 1px;
 }
 
 #login-btn,
@@ -573,4 +580,198 @@ li a {
 
 li a:hover:not(.active) {
   background-color: rgb(224, 211, 211);
+}
+
+/* =================
+MEDIA QUERIES
+================= */
+
+@media screen and (min-width: 981px) and (max-width: 1200px) {
+  /* #login-card-body,
+  #signup-card-body {
+    background-color: red;
+  } */
+
+  #forgot {
+    margin-top: 1px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  /* #login-card-body,
+  #signup-card-body {
+    background-color: yellow;
+  } */
+
+  #forgot {
+    margin-top: 1px;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  /* #login-card-body,
+  #signup-card-body {
+    background-color: orange;
+  } */
+
+  #forgot {
+    margin-top: 1px;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 640px) {
+  /* #login-card-body,
+  #signup-card-body {
+    background-color: brown;
+  } */
+
+  #forgot {
+    margin-top: 2px;
+  }
+}
+
+@media screen and (min-width: 471px) and (max-width: 550px) {
+  /* #login-card-body,
+  #signup-card-body {
+    background-color: salmon;
+  } */
+
+  #signup-card-title,
+  #login-card-title {
+    font-size: 30px;
+  }
+
+  #new-to-site,
+  #sign-up {
+    font-size: 14px;
+  }
+
+  .input-container-name .name-input,
+  .input-container-email .email-input {
+    font-size: 14px;
+  }
+
+  .input-container .pw-input {
+    font-size: 14px;
+  }
+
+  .input-container2 .pw-input2 {
+    font-size: 14px;
+  }
+
+  #dropdown {
+    font-size: 14px;
+  }
+
+  .caret-con {
+    margin-right: 25px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  #forgot {
+    margin-top: 2px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 470px) {
+  /* #login-card-body,
+  #signup-card-body {
+    background-color: blue;
+    font-size: 10px;
+  } */
+
+  #signup-card-title,
+  #login-card-title {
+    font-size: 30px;
+  }
+
+  #new-to-site,
+  #sign-up {
+    font-size: 14px;
+  }
+
+  .input-container-name .name-input,
+  .input-container-email .email-input {
+    font-size: 12px;
+  }
+
+  .input-container .pw-input {
+    font-size: 12px;
+  }
+
+  .input-container2 .pw-input2 {
+    font-size: 12px;
+  }
+
+  #dropdown {
+    font-size: 12px;
+  }
+
+  .caret-con {
+    margin-right: 14px;
+  }
+
+  label,
+  #forgot {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 430px) {
+  /* #login-card-body,
+  #signup-card-body {
+    background-color: burlywood;
+  } */
+  .input-container-name .name-input,
+  .input-container-email .email-input {
+    font-size: 12px;
+  }
+
+  .input-container .pw-input {
+    font-size: 12px;
+  }
+
+  .input-container2 .pw-input2 {
+    font-size: 12px;
+  }
+
+  #dropdown {
+    font-size: 12px;
+  }
+
+  .caret-con {
+    margin-right: 14px;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 400px) {
+  /* #login-card-body,
+  #signup-card-body {
+    background-color: pink;
+  } */
+  .input-container-name .name-input,
+  .input-container-email .email-input {
+    font-size: 12px;
+  }
+
+  .input-container .pw-input {
+    font-size: 12px;
+  }
+
+  .input-container2 .pw-input2 {
+    font-size: 12px;
+  }
+
+  #dropdown {
+    font-size: 12px;
+  }
+
+  .caret-con {
+    margin-right: 14px;
+  }
 }
