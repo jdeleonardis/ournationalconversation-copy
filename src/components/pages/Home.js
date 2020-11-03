@@ -8,7 +8,6 @@ import GlobalButton from '../layout/GlobalButton';
 import News from '../layout/NewsBoard';
 
 // import Login2ModalComponent from '../layout/Login2ModalButtonAndComponent';
-// import Signup2ModalComponent from '../layout/Signup2ModalButtonAndComponent';
 
 const Home = props => {
 	return (
