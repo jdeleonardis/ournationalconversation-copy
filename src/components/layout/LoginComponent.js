@@ -50,23 +50,6 @@ export default function App() {
     const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
     // Password must be between 6 to 20 characters, and contain at least one numeric digit, one uppercase and one lowercase letter.
 
-    // USERNAME VALIDATION
-    // function usernameNotBlank() {
-    //   const eBlank = document.getElementById('username-notblank');
-    //   eBlank.innerHTML = '<p>Username cannot be blank.</p>';
-    //   eBlank.style.fontSize = '12px';
-    //   eBlank.style.color = '#FF0000';
-    //   eBlank.style.marginTop = '5px';
-    // }
-
-    // function usernameNotValid() {
-    //   const uValid = document.getElementById('username-notvalid');
-    //   uValid.innerHTML = '<p>Please enter a valid username.</p>';
-    //   uValid.style.fontSize = '12px';
-    //   uValid.style.color = '#FF0000';
-    //   uValid.style.marginTop = '5px';
-    // }
-
     // EMAIL/USERNAME VALIDATION
     function emailNotBlank() {
       const eBlank = document.getElementById('email-notblank');
