@@ -37,8 +37,12 @@ export default function App() {
 
     // REGEX VARIABLES
     // const userNameRegex = /^[a-z0-9_-]{3,15}$/;
-    const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    // const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const emailUsernameRegex = /^(?:[A-Z\d][A-Z\d_-]{5,10}|[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4})$/i;
+    // First part of RegEx: Username must be at least 6 characters and cannot be longer than 11 characters. The characters - and _ are allowed.
+    // Second part of RegEx: This validates 99% of emails in use.
     const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+    // Password must be between 6 to 20 characters, and contain at least one numeric digit, one uppercase and one lowercase letter.
 
     // USERNAME VALIDATION
     // function usernameNotBlank() {
@@ -57,10 +61,10 @@ export default function App() {
     //   uValid.style.marginTop = '5px';
     // }
 
-    // EMAIL VALIDATION
+    // EMAIL/USERNAME VALIDATION
     function emailNotBlank() {
       const eBlank = document.getElementById('email-notblank');
-      eBlank.innerHTML = '<p>Email cannot be blank.</p>';
+      eBlank.innerHTML = '<p>Username / Email cannot be blank.</p>';
       eBlank.style.fontSize = '12px';
       eBlank.style.color = '#FF0000';
       eBlank.style.marginTop = '-10px';
@@ -68,7 +72,7 @@ export default function App() {
 
     function emailNotValid() {
       const eValid = document.getElementById('email-notvalid');
-      eValid.innerHTML = '<p>Please enter a valid email.</p>';
+      eValid.innerHTML = '<p>Please enter a valid username or email.</p>';
       eValid.style.fontSize = '12px';
       eValid.style.color = '#FF0000';
       eValid.style.marginTop = '-10px';
@@ -97,7 +101,7 @@ export default function App() {
       const eNotBlank = document.getElementById('email-notblank');
       eNotBlank.addEventListener('change', eNotBlank);
       emailNotBlank();
-    } else if (!email.match(emailRegex)) {
+    } else if (!email.match(emailUsernameRegex)) {
       console.log('Please enter a valid email.');
       const eNotValid = document.getElementById('email-notvalid');
       eNotValid.addEventListener('change', eNotValid);
