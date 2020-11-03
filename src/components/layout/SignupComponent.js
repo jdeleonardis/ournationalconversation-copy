@@ -45,6 +45,7 @@ export default function App() {
 
     // REGEX VARIABLES
     const userNameRegex = /^[a-z0-9_-]{3,15}$/;
+    // Username must be at least 3 characters and cannot be longer than 15 characters. The characters - and _ are allowed.
     const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
 

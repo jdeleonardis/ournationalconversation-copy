@@ -38,9 +38,15 @@ export default function App() {
     // REGEX VARIABLES
     // const userNameRegex = /^[a-z0-9_-]{3,15}$/;
     // const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    const emailUsernameRegex = /^(?:[A-Z\d][A-Z\d_-]{5,10}|[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4})$/i;
+
+    // const emailUsernameRegex = /^(?:[A-Z\d][A-Z\d_-]{5,10}|[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4})$/i;
     // First part of RegEx: Username must be at least 6 characters and cannot be longer than 11 characters. The characters - and _ are allowed.
     // Second part of RegEx: This validates 99% of emails in use.
+
+    const emailUsernameRegex = /^(?:[a-z0-9_-]{3,15}|[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4})$/i;
+    // First part of RegEx: Username must be at least 3 characters and cannot be longer than 15 characters. The characters - and _ are allowed.
+    // Second part of RegEx: This validates 99% of emails in use.
+
     const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
     // Password must be between 6 to 20 characters, and contain at least one numeric digit, one uppercase and one lowercase letter.
 
