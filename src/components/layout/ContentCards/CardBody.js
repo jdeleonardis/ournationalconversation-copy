@@ -31,32 +31,35 @@ function CardBody(props) {
 					<OpenPage />
 				</div>
 			</Row>
+			<br />
 
 			<Row>
 				<Col>
 					<div>
-						<ClockSvg />4 minutes ago
+						<span>
+							<ClockSvg />
+						</span>
+						<span className="actionBtnTexts"> 4 min ago</span>
 					</div>
 				</Col>
+
 				<Col>
-					<div>
-						<div>
+					<Row>
+						<Col>
 							<Row>
-								<Col>
-									<Row>
+								<Col className="text-right">
+									<span style={{ marginRight: '5%' }}>
 										<ShareSvg />
-									</Row>
-									<Row>shares</Row>
-								</Col>
-								<Col>
-									<Row>
+									</span>
+									<span style={{ marginRight: '2%' }}>
 										<SaveSvg />
-									</Row>
-									<Row>save</Row>
+									</span>
+									<br />
+									<span className="actionBtnTexts">share save</span>
 								</Col>
 							</Row>
-						</div>
-					</div>
+						</Col>
+					</Row>
 				</Col>
 			</Row>
 		</Card.Body>
@@ -75,10 +78,13 @@ function CardBody(props) {
 			</Row>
 			<Row>
 				<Col>
-					<div>
-						<FontAwesomeIcon icon={faClock} />4 minutes ago Read Source{' '}
-						<OpenPage />
-					</div>
+					<span>
+						<ClockSvg />
+					</span>
+					<span className="actionBtnTexts"> 4 min ago</span>
+				</Col>
+				<Col className="text-left">
+					<OpenPage />
 				</Col>
 			</Row>
 		</Card.Body>

@@ -15,3 +15,7 @@
 .cardText:after {
 	position: absolute;
 }
+
+.actionBtnTexts {
+	color: #929292;
+}

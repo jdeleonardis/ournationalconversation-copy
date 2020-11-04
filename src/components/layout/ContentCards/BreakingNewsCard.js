@@ -10,10 +10,9 @@ function BreakingNews() {
 	return (
 		<div>
 			<Container>
-				<Card style={{ height: '750px' }}>
+				<Card>
 					<Container>
 						<div className="title">BREAKING NEWS</div>
-						<CardBody />
 						<CardBody />
 						<CardBody />
 					</Container>

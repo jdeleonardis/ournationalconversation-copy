@@ -50,6 +50,7 @@ function News() {
 				<Row>
 					{/**fix this later */}
 					<Col></Col>
+					<br />
 					<GlobalButton label={'See More News'} />
 					<Col></Col>
 				</Row>
