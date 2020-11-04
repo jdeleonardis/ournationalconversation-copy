@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faShare, faPlus } from '@fortawesome/free-solid-svg-icons';
 import CardBody from './CardBody';
 import './syles/verticalcard.css';
-import ShareSvg from './syles/sharesvg';
+import ShareSvg from './syles/openSrc';
 
 function BreakingNews() {
 	return (

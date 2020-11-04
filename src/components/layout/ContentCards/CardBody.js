@@ -3,7 +3,10 @@ import { Card, Image, Col, Row, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faShare, faPlus } from '@fortawesome/free-solid-svg-icons';
 import './syles/verticalcard.css';
-import ShareSvg from './syles/sharesvg';
+import OpenPage from './syles/openSrc';
+import ShareSvg from './syles/shareSvg';
+import SaveSvg from './syles/saveSvg';
+import ClockSvg from './syles/clockSvg';
 
 function CardBody(props) {
 	return props.withText ? (
@@ -25,23 +28,33 @@ function CardBody(props) {
 					Once upon a time there was a lovely princess. But she had an
 					enchantment upon her of a fearful sort which could only be broken by
 					love's first kiss. She was locked away... Read Source{'   '}
-					<ShareSvg />
+					<OpenPage />
 				</div>
 			</Row>
 
 			<Row>
 				<Col>
 					<div>
-						<FontAwesomeIcon icon={faClock} />4 minutes ago
+						<ClockSvg />4 minutes ago
 					</div>
 				</Col>
 				<Col>
 					<div>
 						<div>
-							<FontAwesomeIcon icon={faShare} />
-							share
-							<FontAwesomeIcon icon={faPlus} />
-							save
+							<Row>
+								<Col>
+									<Row>
+										<ShareSvg />
+									</Row>
+									<Row>shares</Row>
+								</Col>
+								<Col>
+									<Row>
+										<SaveSvg />
+									</Row>
+									<Row>save</Row>
+								</Col>
+							</Row>
 						</div>
 					</div>
 				</Col>
@@ -64,7 +77,7 @@ function CardBody(props) {
 				<Col>
 					<div>
 						<FontAwesomeIcon icon={faClock} />4 minutes ago Read Source{' '}
-						<ShareSvg />
+						<OpenPage />
 					</div>
 				</Col>
 			</Row>
