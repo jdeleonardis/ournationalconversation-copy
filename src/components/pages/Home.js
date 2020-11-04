@@ -6,6 +6,7 @@ import SignupModalComponent from '../layout/SignupModalButtonAndComponent';
 import LoginModalComponent from '../layout/LoginModalButtonAndComponent';
 import GlobalButton from '../layout/GlobalButton';
 import News from '../layout/ContentBoards/NewsBoard';
+import NewsCard from '../layout/ContentCards/NewsCard';
 
 // import Login2ModalComponent from '../layout/Login2ModalButtonAndComponent';
 
@@ -77,6 +78,8 @@ const Home = props => {
 					</div>
 				</Container>
 			</div>
+
+			<NewsCard />
 			<News />
 			<Solution />
 		</Fragment>

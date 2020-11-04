@@ -2,8 +2,10 @@ import React from 'react';
 import { Card, Image, Col, Row, Container, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Comment from '../ContentCards/Comments';
-import VerticalCard from '../ContentCards/VerticalCard';
+import NewsCard from '../ContentCards/NewsCard';
 import BreakingNews from '../ContentCards/BreakingNewsCard';
+import VerticalCard from '../ContentCards/VerticalCard';
+import GlobalButton from '../GlobalButton';
 
 const ColoredLine = ({ color }) => (
 	<div>
@@ -44,6 +46,12 @@ function News() {
 					<Col>
 						<BreakingNews />
 					</Col>
+				</Row>
+				<Row>
+					{/**fix this later */}
+					<Col></Col>
+					<GlobalButton label={'See More News'} />
+					<Col></Col>
 				</Row>
 			</Container>
 		</div>
