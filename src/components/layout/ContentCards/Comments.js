@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Image, Col, Row, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentAlt } from '@fortawesome/free-solid-svg-icons';
-import '../styles/comments.css';
+import '../ContentCards/syles/comments.css';
 
 function Comment() {
 	return (
