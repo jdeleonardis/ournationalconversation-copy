@@ -132,6 +132,8 @@ export default function App() {
       eNotBlank.classList.add('notvalid-msg-clear');
     } else {
       console.log('Email is valid');
+      const eNotBlank = document.getElementById('email-notblank');
+      eNotBlank.classList.add('notvalid-msg-clear');
       const eNotValid = document.getElementById('email-notvalid');
       eNotValid.classList.add('notvalid-msg-clear');
     }
@@ -151,6 +153,8 @@ export default function App() {
       uNotBlank.classList.add('notvalid-msg-clear');
     } else {
       console.log('Username is valid');
+      const uNotBlank = document.getElementById('username-notblank');
+      uNotBlank.classList.add('notvalid-msg-clear');
       const uNotValid = document.getElementById('username-notvalid');
       uNotValid.classList.add('notvalid-msg-clear');
     }
