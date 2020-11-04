@@ -3,7 +3,7 @@
 
 }
 
-.btn{
+.headerbtn{
     padding: 8px 20px;
     border-radius: 4px;
     outline: none;
@@ -11,7 +11,7 @@
     cursor: pointer;
 }
 
-.btn:hover{
+.headerbtn:hover{
     padding: 10px 13px;
     transition: all 0.4s ease-out;
     background: white;
