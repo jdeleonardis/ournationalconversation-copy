@@ -7,7 +7,7 @@ import CommentSvg from './syles/commentSvg';
 import HeartSvg from './syles/heartSvg';
 import DotSvg from './syles/dotSvg';
 import SaveSvg from './syles/saveSvg';
-import ShareSvg from './syles/shareSvg';
+import ShareSvg from './syles/sharesSvg';
 
 function Comment() {
 	return (
