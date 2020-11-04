@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faShare, faPlus } from '@fortawesome/free-solid-svg-icons';
 import './syles/verticalcard.css';
 import OpenPage from './syles/openSrc';
-import ShareSvg from './syles/sharesSvg';
+import ShareSvg from './syles/shareSvg';
 import SaveSvg from './syles/saveSvg';
 import ClockSvg from './syles/clockSvg';
 
