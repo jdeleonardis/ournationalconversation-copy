@@ -3,9 +3,9 @@ import { Card, Image, Col, Row, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faShare, faPlus } from '@fortawesome/free-solid-svg-icons';
 import './syles/verticalcard.css';
-import ShareSvg from './syles/sharesvg';
+import ShareSvg from './syles/openSrc';
 import CardBody from './CardBody';
-
+import TagLine from './TagLines';
 function VerticalCard() {
 	return (
 		<div>
@@ -23,7 +23,12 @@ function VerticalCard() {
 								<CardBody withText={true} />
 							</Col>
 						</Row>
-						<Row>Additional Content</Row>
+						<Row>
+							<Col>
+								<div className="addiContentVert">Additional Sources</div>
+							</Col>
+						</Row>
+						<Row style={{ marginBottom: '15px' }}></Row>
 					</Container>
 				</Card>
 			</Container>

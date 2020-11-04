@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import './syles/verticalcard.css';
 import GlobalButton from '../GlobalButton';
-
+//TagLine Carouselll......
 function TagLine() {
 	return (
 		<div>

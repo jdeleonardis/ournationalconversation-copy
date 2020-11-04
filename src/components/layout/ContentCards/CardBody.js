@@ -3,7 +3,10 @@ import { Card, Image, Col, Row, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faShare, faPlus } from '@fortawesome/free-solid-svg-icons';
 import './syles/verticalcard.css';
-import ShareSvg from './syles/sharesvg';
+import OpenPage from './syles/openSrc';
+import ShareSvg from './syles/shareSvg';
+import SaveSvg from './syles/saveSvg';
+import ClockSvg from './syles/clockSvg';
 
 function CardBody(props) {
 	return props.withText ? (
@@ -25,25 +28,38 @@ function CardBody(props) {
 					Once upon a time there was a lovely princess. But she had an
 					enchantment upon her of a fearful sort which could only be broken by
 					love's first kiss. She was locked away... Read Source{'   '}
-					<ShareSvg />
+					<OpenPage />
 				</div>
 			</Row>
+			<br />
 
 			<Row>
 				<Col>
 					<div>
-						<FontAwesomeIcon icon={faClock} />4 minutes ago
+						<span>
+							<ClockSvg />
+						</span>
+						<span className="actionBtnTexts"> 4 min ago</span>
 					</div>
 				</Col>
+
 				<Col>
-					<div>
-						<div>
-							<FontAwesomeIcon icon={faShare} />
-							share
-							<FontAwesomeIcon icon={faPlus} />
-							save
-						</div>
-					</div>
+					<Row>
+						<Col>
+							<Row>
+								<Col className="text-right">
+									<span style={{ marginRight: '5%' }}>
+										<ShareSvg />
+									</span>
+									<span style={{ marginRight: '2%' }}>
+										<SaveSvg />
+									</span>
+									<br />
+									<span className="actionBtnTexts">share save</span>
+								</Col>
+							</Row>
+						</Col>
+					</Row>
 				</Col>
 			</Row>
 		</Card.Body>
@@ -62,10 +78,13 @@ function CardBody(props) {
 			</Row>
 			<Row>
 				<Col>
-					<div>
-						<FontAwesomeIcon icon={faClock} />4 minutes ago Read Source{' '}
-						<ShareSvg />
-					</div>
+					<span>
+						<ClockSvg />
+					</span>
+					<span className="actionBtnTexts"> 4 min ago</span>
+				</Col>
+				<Col className="text-left">
+					<OpenPage />
 				</Col>
 			</Row>
 		</Card.Body>
