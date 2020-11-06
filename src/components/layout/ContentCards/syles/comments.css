@@ -1,0 +1,38 @@
+.header {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.addiContent {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.addiContentVert {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.sectionHeader {
+	font-size: 20px;
+	font-weight: bold;
+	color: #808182;
+}
+
+.sectionSubHeader {
+	font-size: 20px;
+	color: #808182;
+}
+.titleName {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.location {
+	font-size: 15px;
+	color: #808182;
+}
+
+.dateTitle {
+	font-weight: bold;
+}

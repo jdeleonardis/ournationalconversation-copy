@@ -1,0 +1,31 @@
+.footer {
+	flex-shrink: 0;
+	text-align: center;
+	background-color: #2c1d59;
+	color: white;
+}
+
+.footer-container {
+	width: 1250px;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+}
+
+.footer-icons {
+	margin-left: 0.8rem;
+}
+.footer-followONC {
+	margin-right: 0.8rem;
+	font-weight: bold;
+}
+
+a:after {
+	content: ' ';
+	display: block;
+}
+
+footer {
+	font-family: 'Montserrat';
+}
