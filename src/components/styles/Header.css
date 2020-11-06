@@ -4,8 +4,6 @@ height: 150px;
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: 1.2rem;
-flex-shrink: 0;
 
 }
 
@@ -19,25 +17,22 @@ flex-shrink: 0;
 
 .nav-menu{
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(8, auto);
     grid-gap: 60%;
     list-style: none;
     margin-top: 6%;
     margin-right: 10%;
+    margin-left: 5%;
     color: #D1D0D0;
-    padding-right: 5%;
-    font-size: 110%;
+    font-size: 130%;
     align-items: center;
-    justify-content: center;
-    border-top: solid thin;
-    position: static;
-    
+    cursor: pointer;
+    justify-content: center;  
      
 }
 
 li:hover{
     color:white;
-    
 }
 
 
@@ -48,7 +43,10 @@ li:hover{
   margin-bottom: 6%;
   align-items: center;
   justify-items: center;
-  margin-left: 50%;
+  justify-content: center;
+  margin-left: 40%;
+  white-space: nowrap;
+  border-bottom: solid thin;
   
 }
 
