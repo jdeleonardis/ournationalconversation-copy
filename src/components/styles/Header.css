@@ -5,12 +5,13 @@ display: flex;
 justify-content: center;
 align-items: center;
 font-size: 1.2rem;
+flex-shrink: 0;
+
 }
 
 .header-logo{
   color: #fff;
   justify-self: start;
-  margin-left: 50px;
   cursor: pointer;
 
 }
@@ -19,40 +20,35 @@ font-size: 1.2rem;
 .nav-menu{
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 120px;
+    grid-gap: 60%;
     list-style: none;
-    text-align: center;
+    margin-top: 6%;
+    margin-right: 10%;
+    color: #D1D0D0;
+    padding-right: 5%;
+    font-size: 110%;
+    align-items: center;
     justify-content: center;
-    width: 70vw;
-    margin-top: 100px;
-    margin-right: 150px;
-    color: white;
-    padding-left: 20px;
-    border-top: solid;
-    border-width: 1px;
-   
+    border-top: solid thin;
+    position: static;
+    
+     
 }
 
-.nav-link:hover{
-
-        padding: 10px 13px;
-        transition: all 0.4s ease-out;
-        background: white;
-        color: red;
+li:hover{
+    color:white;
     
 }
 
 
-
 .menu-title{
-    text-align: center;
-    width: 70vw;
-    margin-bottom: 50px;
-    margin-left: 200px;
-    color: white;
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 6%;
+  align-items: center;
+  justify-items: center;
+  margin-left: 50%;
+  
 }
-
-
-
-
 
