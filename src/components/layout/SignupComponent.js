@@ -186,7 +186,6 @@ export default function App() {
       console.log('Please confirm your password.');
       const p2NotBlank = document.getElementById('password2-notblank');
       p2NotBlank.addEventListener('change', p2NotBlank);
-
       password2NotBlank();
     } else if (password2 !== password) {
       console.log('Passwords do not match.');

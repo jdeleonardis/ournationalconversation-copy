@@ -3,7 +3,6 @@ import { Container, Card, Form, Button } from 'react-bootstrap';
 import '../../App.css';
 
 export default function App() {
-  //   const [userName, setUserName] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
 
@@ -36,6 +35,7 @@ export default function App() {
   `);
 
     // REGEX VARIABLES
+    // Original RegEx
     // const userNameRegex = /^[a-z0-9_-]{3,15}$/;
     // const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
