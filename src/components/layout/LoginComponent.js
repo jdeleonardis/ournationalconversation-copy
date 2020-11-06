@@ -103,25 +103,6 @@ export default function App() {
       eNotValid.classList.add('notvalid-msg-clear');
     }
 
-    // Username
-    // if (!userName) {
-    //   console.log('Username cannot be blank.');
-    //   const uNotBlank = document.getElementById('username-notblank');
-    //   uNotBlank.addEventListener('change', uNotBlank);
-    //   usernameNotBlank();
-    // } else if (!userName.match(userNameRegex)) {
-    //   console.log('Please enter a valid username.');
-    //   const uNotValid = document.getElementById('username-notvalid');
-    //   uNotValid.addEventListener('change', uNotValid);
-    //   usernameNotValid();
-    //   const uNotBlank = document.getElementById('username-notblank');
-    //   uNotBlank.classList.add('notvalid-msg-clear');
-    // } else {
-    //   console.log('Username is valid');
-    //   const uNotValid = document.getElementById('username-notvalid');
-    //   uNotValid.classList.add('notvalid-msg-clear');
-    // }
-
     // Password
     if (!password) {
       console.log('Password required.');
@@ -205,24 +186,6 @@ export default function App() {
                   label='Remember me'
                 />
               </Form.Group>
-
-              {/*             
-              <span id='forgot'>
-                <a href='/'>Forgot Password?</a>
-              </span>
-              <div class='custom'>
-                <input
-                  type='checkbox'
-                  value='None'
-                  id='checkmark'
-                  name='check'
-                />
-                <label for='checkmark'></label>
-                <span></span>
-                <span style={{ marginLeft: '10px', marginBottom: '10px' }}>
-                  Remember me
-                </span>
-              </div> */}
 
               <Button
                 // href='/'
