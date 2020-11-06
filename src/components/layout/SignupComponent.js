@@ -195,12 +195,11 @@ export default function App() {
       password2NotValid();
       const p2NotBlank = document.getElementById('password2-notblank');
       p2NotBlank.classList.add('notvalid-msg-clear');
-    } else {
+    } else if (password2 === password) {
       console.log('Passwords confirmed!');
       const pNotValid = document.getElementById('password2-notvalid');
       pNotValid.classList.add('notvalid-msg-clear');
-    }
-    if (password2 === password) {
+    } else {
       console.log('Passwords match.');
       const pNotValid = document.getElementById('password2-notvalid');
       pNotValid.classList.add('notvalid-msg-clear');
