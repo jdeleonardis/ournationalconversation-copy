@@ -9,7 +9,9 @@ class Header extends React.Component {
     return (
       <nav className='NavbarItems'>
         <a href = "/" className = "header-logo"><img src = "/images/Logo_Shorthand.png"></img></a>
-        <h1 className = "menu-title">One National Conversation</h1>
+         <nav className = "new nav">
+        <div className="menu-title"><p>OURNATIONALCONVERSATION</p></div>
+        </nav>
         <div className = "menu-icon" onClick = {this.handleClick}></div>
 
         <ul className = "nav-menu">
