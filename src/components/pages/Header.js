@@ -8,13 +8,17 @@ class Header extends React.Component {
   render() {
     return (
       <nav className='NavbarItems'>
-        <a href = "/" className = "header-logo"><img src = "/images/Logo_Shorthand.png"></img></a>
-         <nav className = "new nav">
-        <div className="menu-title"><p>OURNATIONALCONVERSATION</p></div>
+        <a href='/' className='header-logo'>
+          <img src='/images/Logo_Shorthand.png'></img>
+        </a>
+        <nav className='new nav'>
+          <div className='menu-title'>
+            <p>OURNATIONALCONVERSATION</p>
+          </div>
         </nav>
-        <div className = "menu-icon" onClick = {this.handleClick}></div>
+        <div className='menu-icon' onClick={this.handleClick}></div>
 
-        <ul className = "nav-menu">
+        <ul className='nav-menu'>
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>

@@ -7,7 +7,7 @@ import {
   Container,
   Col,
   Row,
-  Form
+  Form,
 } from 'react-bootstrap';
 import '../styles/filter.css';
 class FilterBar extends Component {
@@ -16,81 +16,103 @@ class FilterBar extends Component {
       <Container>
         <Form>
           <h2>Filter by:</h2>
-          <p className='filter'><i class="fas fa-chevron-up"></i> 
-          TOPIC
-          CLEAR
+          <p className='filter'>
+            <i class='fas fa-chevron-up'></i>
+            TOPIC CLEAR
           </p>
-  {[ 'radio'].map((type) => (
-    <div key={`custom-${type}`} className="mb-3">
-      <Form.Check
-        custom
-        type='radio'
-        label='US'
-        className={`custom-${type}`}
-      />
-      <Form.Check
-        custom
-        type='radio'
-        label='World'
-        className={`custom-${type}`}
-      />
-      <Form.Check
-        custom
-        type='radio'
-        label='Politics'
-        className={`custom-${type}`}
-      />
-      <Form.Check
-        custom
-        type='radio'
-        label='Business'
-        className={`custom-${type}`}
-      />
-      <Form.Check
-        custom
-        type='radio'
-        label='Tech'
-        className={`custom-${type}`}
-      />
-      <Form.Check
-        custom
-        type='radio'
-        label='Health'
-        className={`custom-${type}`}
-      />
-      <Form.Check
-        custom
-        type='radio'
-        label='Science & Environment'
-        className={`custom-${type}`}
-      />
-      <Form.Check
-        custom
-        type='radio'
-        label='Media'
-        className={`custom-${type}`}
-      />
-      <Form.Check
-        custom
-        type='radio'
-        label='Polls'
-        className={`custom-${type}`}
-      />
-      <Form.Check
-        custom
-        type='radio'
-        label='Faith / Spirituality'
-        className={`custom-${type}`}
-      />
-      <Form.Check
-        custom
-        type='radio'
-        label='Fact Check'
-        className={`custom-${type}`}
-      />
-    </div>
-  ))}
-</Form>
+          {['radio'].map((type) => (
+            <div key={`custom-${type}`} className='mb-3'>
+              <Form.Check
+                custom
+                type='radio'
+                label='US'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios1'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                custom
+                type='radio'
+                label='World'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios2'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                custom
+                type='radio'
+                label='Politics'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios3'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                custom
+                type='radio'
+                label='Business'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios4'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                custom
+                type='radio'
+                label='Tech'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios5'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                custom
+                type='radio'
+                label='Health'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios6'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                custom
+                type='radio'
+                label='Science & Environment'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios7'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                custom
+                type='radio'
+                label='Media'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios8'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                custom
+                type='radio'
+                label='Polls'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios9'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                custom
+                type='radio'
+                label='Faith / Spirituality'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios10'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                custom
+                type='radio'
+                label='Fact Check'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios11'
+                // className={`custom-${type}`}
+              />
+            </div>
+          ))}
+        </Form>
 
         {/* <Row className='justify-content-md-center'>
           <Col xs lg='9'>
@@ -160,7 +182,6 @@ class FilterBar extends Component {
           </Col>
         </Row> 
       */}
-
       </Container>
     );
   }
