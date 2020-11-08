@@ -21,13 +21,13 @@
   list-style: none;
   margin-top: 6%;
   margin-right: 10%;
+  margin-left: none;
   color: #d1d0d0;
-  padding-right: 5%;
-  font-size: 110%;
+  font-size: 130%;
   align-items: center;
   justify-content: center;
-  border-top: solid thin;
-  position: static;
+  cursor: pointer;
+  
 }
 
 li:hover {
@@ -41,5 +41,8 @@ li:hover {
   margin-bottom: 6%;
   align-items: center;
   justify-items: center;
-  margin-left: 50%;
+  margin-left: 40%;
+  white-space: nowrap;
+  border-bottom: solid thin;
+  border-width: 2px;
 }
