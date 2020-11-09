@@ -1,3 +1,4 @@
+import { faCalendarPlus } from '@fortawesome/free-solid-svg-icons';
 import React, { Component } from 'react';
 import {
   Button,
@@ -8,21 +9,180 @@ import {
   Col,
   Row,
   Form,
+  Card,
 } from 'react-bootstrap';
 import '../styles/filter.css';
-class FilterBar extends Component {
-  render() {
-    return (
-      <Container>
+
+function handleUS() {
+  let a, u, i;
+  a = document.querySelectorAll('.article');
+  for (i = 0; i < a.length; i++) {
+    a[i].style.display = 'none';
+  }
+  u = document.querySelectorAll('.us');
+  for (i = 0; i < u.length; i++) {
+    u[i].style.display = 'block';
+  }
+}
+
+function handlePolitics() {
+  let a, p, i;
+  a = document.querySelectorAll('.article');
+  for (i = 0; i < a.length; i++) {
+    a[i].style.display = 'none';
+  }
+  p = document.querySelectorAll('.politics');
+  for (i = 0; i < p.length; i++) {
+    p[i].style.display = 'block';
+  }
+}
+
+function handleWorld() {
+  let a, w, i;
+  a = document.querySelectorAll('.article');
+  for (i = 0; i < a.length; i++) {
+    a[i].style.display = 'none';
+  }
+  w = document.querySelectorAll('.world');
+  for (i = 0; i < w.length; i++) {
+    w[i].style.display = 'block';
+  }
+}
+
+function handleBusiness() {
+  let a, b, i;
+  a = document.querySelectorAll('.article');
+  for (i = 0; i < a.length; i++) {
+    a[i].style.display = 'none';
+  }
+  b = document.querySelectorAll('.business');
+  for (i = 0; i < b.length; i++) {
+    b[i].style.display = 'block';
+  }
+}
+
+function handleTech() {
+  let a, t, i;
+  a = document.querySelectorAll('.article');
+  for (i = 0; i < a.length; i++) {
+    a[i].style.display = 'none';
+  }
+  t = document.querySelectorAll('.tech');
+  for (i = 0; i < t.length; i++) {
+    t[i].style.display = 'block';
+  }
+}
+
+function handleHealth() {
+  let a, h, i;
+  a = document.querySelectorAll('.article');
+  for (i = 0; i < a.length; i++) {
+    a[i].style.display = 'none';
+  }
+  h = document.querySelectorAll('.health');
+  for (i = 0; i < h.length; i++) {
+    h[i].style.display = 'block';
+  }
+}
+
+function handleSciEnv() {
+  let a, s, i;
+  a = document.querySelectorAll('.article');
+  for (i = 0; i < a.length; i++) {
+    a[i].style.display = 'none';
+  }
+  s = document.querySelectorAll('.sci-env');
+  for (i = 0; i < s.length; i++) {
+    s[i].style.display = 'block';
+  }
+}
+
+function handleMedia() {
+  let a, m, i;
+  a = document.querySelectorAll('.article');
+  for (i = 0; i < a.length; i++) {
+    a[i].style.display = 'none';
+  }
+  m = document.querySelectorAll('.media');
+  for (i = 0; i < m.length; i++) {
+    m[i].style.display = 'block';
+  }
+}
+
+function handlePolls() {
+  let a, ps, i;
+  a = document.querySelectorAll('.article');
+  for (i = 0; i < a.length; i++) {
+    a[i].style.display = 'none';
+  }
+  ps = document.querySelectorAll('.polls');
+  for (i = 0; i < ps.length; i++) {
+    ps[i].style.display = 'block';
+  }
+}
+
+function handleFaith() {
+  let a, fs, i;
+  a = document.querySelectorAll('.article');
+  for (i = 0; i < a.length; i++) {
+    a[i].style.display = 'none';
+  }
+  fs = document.querySelectorAll('.faith-spirituality');
+  for (i = 0; i < fs.length; i++) {
+    fs[i].style.display = 'block';
+  }
+}
+
+function handleFactCheck() {
+  let a, fc, i;
+  a = document.querySelectorAll('.article');
+  for (i = 0; i < a.length; i++) {
+    a[i].style.display = 'none';
+  }
+  fc = document.querySelectorAll('.fact-check');
+  for (i = 0; i < fc.length; i++) {
+    fc[i].style.display = 'block';
+  }
+}
+
+function handleSelectAll() {
+  let all, i;
+  all = document.querySelectorAll('.article');
+  for (i = 0; i < all.length; i++) {
+    all[i].style.display = 'block';
+  }
+}
+
+function handleChevron() {
+  document.querySelector('.chev').classList.toggle('fa-chevron-down');
+  document.querySelector('.chev').classList.toggle('fa-chevron-up');
+}
+
+// class FilterBar extends Component {
+const FilterBar = () => {
+  // render() {
+  return (
+    <Container>
+      <h2>Filter by:</h2>
+      <a onClick={handleChevron} id='topic' href='#demo' data-toggle='collapse'>
+        <i class='chev fas fa-chevron-down'></i>&nbsp;&nbsp;TOPIC
+      </a>
+
+      <div
+        style={{ marginTop: '10px', marginLeft: '20px' }}
+        id='demo'
+        className='collapse'
+      >
         <Form>
-          <h2>Filter by:</h2>
-          <p className='filter'>
+          {/* <h2>Filter by:</h2> */}
+          {/* <p className='filter'>
             <i class='fas fa-chevron-up'></i>
             TOPIC CLEAR
-          </p>
+          </p> */}
           {['radio'].map((type) => (
             <div key={`custom-${type}`} className='mb-3'>
               <Form.Check
+                onClick={handleUS}
                 custom
                 type='radio'
                 label='US'
@@ -31,6 +191,7 @@ class FilterBar extends Component {
                 // className={`custom-${type}`}
               />
               <Form.Check
+                onClick={handleWorld}
                 custom
                 type='radio'
                 label='World'
@@ -39,6 +200,7 @@ class FilterBar extends Component {
                 // className={`custom-${type}`}
               />
               <Form.Check
+                onClick={handlePolitics}
                 custom
                 type='radio'
                 label='Politics'
@@ -47,6 +209,7 @@ class FilterBar extends Component {
                 // className={`custom-${type}`}
               />
               <Form.Check
+                onClick={handleBusiness}
                 custom
                 type='radio'
                 label='Business'
@@ -55,6 +218,7 @@ class FilterBar extends Component {
                 // className={`custom-${type}`}
               />
               <Form.Check
+                onClick={handleTech}
                 custom
                 type='radio'
                 label='Tech'
@@ -63,6 +227,7 @@ class FilterBar extends Component {
                 // className={`custom-${type}`}
               />
               <Form.Check
+                onClick={handleHealth}
                 custom
                 type='radio'
                 label='Health'
@@ -71,6 +236,7 @@ class FilterBar extends Component {
                 // className={`custom-${type}`}
               />
               <Form.Check
+                onClick={handleSciEnv}
                 custom
                 type='radio'
                 label='Science & Environment'
@@ -79,6 +245,7 @@ class FilterBar extends Component {
                 // className={`custom-${type}`}
               />
               <Form.Check
+                onClick={handleMedia}
                 custom
                 type='radio'
                 label='Media'
@@ -87,6 +254,7 @@ class FilterBar extends Component {
                 // className={`custom-${type}`}
               />
               <Form.Check
+                onClick={handlePolls}
                 custom
                 type='radio'
                 label='Polls'
@@ -95,6 +263,7 @@ class FilterBar extends Component {
                 // className={`custom-${type}`}
               />
               <Form.Check
+                onClick={handleFaith}
                 custom
                 type='radio'
                 label='Faith / Spirituality'
@@ -103,6 +272,7 @@ class FilterBar extends Component {
                 // className={`custom-${type}`}
               />
               <Form.Check
+                onClick={handleFactCheck}
                 custom
                 type='radio'
                 label='Fact Check'
@@ -110,11 +280,20 @@ class FilterBar extends Component {
                 id='formHorizontalRadios11'
                 // className={`custom-${type}`}
               />
+              <Form.Check
+                onClick={handleSelectAll}
+                custom
+                type='radio'
+                label='Select All'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios12'
+                // className={`custom-${type}`}
+              />
             </div>
           ))}
         </Form>
-
-        {/* <Row className='justify-content-md-center'>
+      </div>
+      {/* <Row className='justify-content-md-center'>
           <Col xs lg='9'>
             <h3>Healthcare</h3>
             <hr />
@@ -182,9 +361,9 @@ class FilterBar extends Component {
           </Col>
         </Row> 
       */}
-      </Container>
-    );
-  }
-}
+    </Container>
+  );
+};
+// }
 
 export default FilterBar;

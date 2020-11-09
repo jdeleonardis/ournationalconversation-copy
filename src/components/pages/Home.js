@@ -10,7 +10,7 @@ import NewsCard from '../layout/ContentCards/NewsCard';
 
 // import Login2ModalComponent from '../layout/Login2ModalButtonAndComponent';
 
-const Home = (props) => {
+const Home = () => {
   return (
     <Fragment>
       <div>

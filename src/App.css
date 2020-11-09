@@ -536,6 +536,17 @@ input {
 }
 
 /* =================
+FILTER BAR COMPONENT STYLES
+================= */
+#topic {
+  color: #2c1c59;
+}
+
+#topic:hover {
+  text-decoration: none;
+}
+
+/* =================
 CONTACT PAGE COMPONENT STYLES
 ================= */
 
@@ -655,7 +666,7 @@ MEDIA QUERIES
   }
 
   .caret-con {
-    margin-right: 25px;
+    margin-right: 28px;
   }
 
   label {
@@ -703,7 +714,7 @@ MEDIA QUERIES
   }
 
   .caret-con {
-    margin-right: 14px;
+    margin-right: 17px;
   }
 
   label,
