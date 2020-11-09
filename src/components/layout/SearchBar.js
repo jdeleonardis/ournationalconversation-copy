@@ -85,7 +85,6 @@ class SearchBar extends Component {
               <i className="fas fa-minus"  > </i>
               <i className="fas fa-minus"  > </i>
               <i className="fas fa-minus"  > </i>
-             
                  Sort by: DEFAULT
               <i class="fas fa-caret-down"></i>
               </p>
