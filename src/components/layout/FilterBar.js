@@ -13,6 +13,11 @@ import {
 } from 'react-bootstrap';
 import '../styles/filter.css';
 
+function handleChevron() {
+  document.querySelector('.chev').classList.toggle('fa-chevron-down');
+  document.querySelector('.chev').classList.toggle('fa-chevron-up');
+}
+
 function handleUS() {
   let a, u, i;
   a = document.querySelectorAll('.article');
@@ -151,11 +156,6 @@ function handleSelectAll() {
   for (i = 0; i < all.length; i++) {
     all[i].style.display = 'block';
   }
-}
-
-function handleChevron() {
-  document.querySelector('.chev').classList.toggle('fa-chevron-down');
-  document.querySelector('.chev').classList.toggle('fa-chevron-up');
 }
 
 // class FilterBar extends Component {
