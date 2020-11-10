@@ -12,7 +12,9 @@ class News extends React.Component {
             <title>Our National Conversation | News</title>
             <h1 className = "NewsTitle">NEWS</h1>
         
+            <div className = "NewsFilter">
               <FilterBar />
+            </div>
               <NewsBoard />
               
           </div>

@@ -794,3 +794,9 @@ NEWS PAGE STYLES
   font-weight: bold;
   color: #2C1C59;
 }
+
+.NewsFilter{
+  padding-left: 5%;
+  padding-top: 0%;
+  
+}
