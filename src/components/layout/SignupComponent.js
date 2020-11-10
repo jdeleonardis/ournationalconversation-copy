@@ -300,7 +300,7 @@ export default function App() {
                   </select>
 
                   <span className='icon-span '>
-                    <span className='caret-con fas fa-angle-down fa-2x'></span>
+                    <span className='caret-con fas fa-chevron-down fa-lg'></span>
                   </span>
                 </div>
               </label>
