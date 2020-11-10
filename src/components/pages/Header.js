@@ -13,7 +13,7 @@ class Header extends React.Component {
         </a>
         <nav className='new nav'>
           <div className='menu-title'>
-            <p>OURNATIONALCONVERSATION</p>
+            <p>OUR NATIONAL CONVERSATION</p>
           </div>
         </nav>
         <div className='menu-icon' onClick={this.handleClick}></div>

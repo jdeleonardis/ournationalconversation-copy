@@ -850,3 +850,21 @@ MEDIA QUERIES
     margin-right: 14px;
   }
 }
+
+/* ========================
+NEWS PAGE STYLES
+======================== */
+.NewsTitle{
+  padding-left: 20%;
+  padding-top: 2%;
+  padding-bottom: none;
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #2C1C59;
+}
+
+.NewsFilter{
+  padding-left: 5%;
+  padding-top: 0%;
+  
+}
