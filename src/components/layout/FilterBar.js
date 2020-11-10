@@ -5,7 +5,6 @@ import {
   DropdownButton,
   ButtonGroup,
   InputGroup,
-  Container,
   Col,
   Row,
   Form,
@@ -162,7 +161,7 @@ function handleSelectAll() {
 const FilterBar = () => {
   // render() {
   return (
-    <Container>
+    <div>
       <h2>Filter by:</h2>
       <a onClick={handleChevron} id='topic' href='#demo' data-toggle='collapse'>
         <i class='chev fas fa-chevron-down'></i>&nbsp;&nbsp;TOPIC
@@ -361,7 +360,7 @@ const FilterBar = () => {
           </Col>
         </Row> 
       */}
-    </Container>
+    </div>
   );
 };
 // }

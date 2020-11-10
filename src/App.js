@@ -4,6 +4,7 @@ import Home from './components/pages/Home';
 import Opinions from './components/pages/Opinions';
 import Contact from './components/pages/Contact';
 import Header from './components/pages/Header';
+import Searchbar from './components/layout/SearchBar';
 import Footer from './components/layout/Footer';
 import SearchBar from './components/layout/SearchBar';
 import Filter from './components/layout/Filter';
@@ -18,6 +19,7 @@ function App() {
     <Router>
       <div className='App'>
         <Header />
+        <SearchBar />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/opinions' component={Opinions} />

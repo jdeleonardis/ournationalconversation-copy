@@ -4,9 +4,9 @@
   padding: 0;
 }
 
-/* =================
-BUTTON OUTLINE COMPONENT STYLES
-================= */
+/* ========================
+GLOBAL BUTTON COMPONENT STYLES
+======================== */
 .global-btn {
   font-family: 'Montserrat', sans-serif;
   color: #2c1c59 !important;
@@ -18,9 +18,9 @@ BUTTON OUTLINE COMPONENT STYLES
   color: #ffffff !important;
 }
 
-/* =================
+/* ========================
 SIGNUP COMPONENT STYLES
-================= */
+======================== */
 
 .container,
 .container-fluid,
@@ -47,9 +47,9 @@ SIGNUP COMPONENT STYLES
   font-family: 'Roboto', sans-serif;
 }
 
-/* =================
+/* ========================
 COUNTRY DROPDOWN STYLES
-================= */
+======================== */
 
 #dropdown-label {
   width: 100%;
@@ -87,9 +87,9 @@ select {
   text-overflow: '';
 }
 
-/* =================
+/* ========================
 PASSWORD TOGGLE STYLES
-================= */
+======================== */
 
 .input-div {
   position: relative;
@@ -123,9 +123,9 @@ PASSWORD TOGGLE STYLES
   color: #bfbfbf;
 }
 
-/* =======================
+/* ========================
 /* CUSTOM CHECKBOX */
-/* ======================= */
+/* ======================== */
 
 /* input[type='checkbox'] {
   visibility: hidden;
@@ -176,9 +176,9 @@ PASSWORD TOGGLE STYLES
   opacity: 1;
 } */
 
-/* =======================
+/* ========================
 /* END CUSTOM CHECKBOX */
-/* ======================= */
+/* ======================== */
 .input-container-name,
 .input-container-email {
   width: 100%;
@@ -346,9 +346,9 @@ input::-ms-reveal {
   display: none;
 }
 
-/* =================
+/* ========================
 LOGIN COMPONENT STYLES
-================= */
+======================== */
 #login-card-body,
 #signup-card-body {
   background-color: #f3f2f2;
@@ -535,17 +535,25 @@ input {
   font-size: 16px;
 }
 
-/* =================
+/* ========================
+SORT BY COMPONENT STYLES
+======================== */
+
+#small-search {
+  width: 100%;
+}
+
+/* ========================
 FILTER BAR COMPONENT STYLES
-================= */
+======================== */
 #topic {
   color: #2c1c59;
   text-decoration: none;
 }
 
-/* =================
+/* ========================
 CONTACT PAGE COMPONENT STYLES
-================= */
+======================== */
 
 .dropdown-toggle,
 .dropdown-menu {
@@ -562,9 +570,9 @@ CONTACT PAGE COMPONENT STYLES
   border-color: #d4d8de;
 }
 
-/* =================
+/* ========================
 SEARCH BOX COMPONENT STYLES
-================= */
+======================== */
 .search {
   padding: 4px 18px;
   border-color: #2c1d59;
@@ -581,9 +589,9 @@ input[type='search'] {
   box-sizing: border-box;
 }
 
-/* =================
+/* =========================
 MEDIA QUERIES
-================= */
+======================== */
 
 @media screen and (min-width: 981px) and (max-width: 1200px) {
   /* #login-card-body,
