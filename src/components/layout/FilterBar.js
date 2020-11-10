@@ -10,7 +10,7 @@ import {
   Form,
   Card,
 } from 'react-bootstrap';
-import '../styles/filter.css';
+
 
 function handleChevron() {
   document.querySelector('.chev').classList.toggle('fa-chevron-down');
