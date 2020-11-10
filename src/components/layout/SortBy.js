@@ -6,9 +6,10 @@ const SortBy = (props) => {
   return (
     <div>
       <Row>
-        <Col md={4}>
-          <p>Search Opinions:</p>
-          <Form inline>
+        <Col md={3}>
+          <div id='search-div'>
+            <p id='small-search-text'>Search {props.pageName}:</p>
+            {/* <Form inline>
             <FormControl
               id='small-search'
               type='text'
@@ -16,14 +17,21 @@ const SortBy = (props) => {
               className='mr-sm-2'
             ></FormControl>
             <i class='fas fa-search'></i>
-          </Form>
+          </Form> */}
+            <input
+              id='small-search-field'
+              type='text'
+              placeholder='ENTER KEYWORDS'
+            />
+            <i id='searchsubmit' className='fa fa-search'></i>
+          </div>
         </Col>
 
-        <Col md={5}>
-          <h2>
-            <strong>OPINIONS</strong>
+        <Col md={6}>
+          <h2 className='page-title'>
+            <strong>{props.pageTitle}</strong>
           </h2>
-          <p>
+          {/* <p>
             Newly Arrived&nbsp;&nbsp;&nbsp;
             <i className='fas fa-minus'> </i>
             <i className='fas fa-minus'> </i>
@@ -40,7 +48,16 @@ const SortBy = (props) => {
             <i className='fas fa-minus'> </i>
             &nbsp;&nbsp;&nbsp;Sort by: DEFAULT
             <i class='fas fa-caret-down'></i>
-          </p>
+          </p> */}
+
+          <div class='textdiv'>
+            <div class='texttitle'>
+              {props.horizLineTextLeft} &nbsp;&nbsp;&nbsp;
+            </div>
+            <div class='divider'></div> &nbsp;&nbsp;&nbsp;
+            <span id='sort-by'>Sort by: DEFAULT</span>&nbsp;&nbsp;
+            <i class='fas fa-caret-down'></i>
+          </div>
         </Col>
       </Row>
     </div>
