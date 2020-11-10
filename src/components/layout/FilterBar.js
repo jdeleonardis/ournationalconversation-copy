@@ -167,7 +167,9 @@ const FilterBar = () => {
       <a onClick={handleChevron} id='topic' href='#demo' data-toggle='collapse'>
         <i class='chev fas fa-chevron-down'></i>&nbsp;&nbsp;TOPIC
       </a>
-
+      <a onClick={handleChevron} id='clear' href='#demo' data-toggle='collapse'>
+        <i class='chev fas fa-chevron-down'></i>&nbsp;&nbsp;CLEAR
+      </a>
       <div
         style={{ marginTop: '10px', marginLeft: '20px' }}
         id='demo'

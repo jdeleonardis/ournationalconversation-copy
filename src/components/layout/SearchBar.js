@@ -21,7 +21,7 @@ class SearchBar extends Component {
     return (
       <Container>
         <Row className='justify-content-md-center'>
-          <Navbar bg='light' variant='' fixed='top'>
+          <Navbar bg='light' variant='' >
             <Col className='mb-2' xs lg='2'></Col>
             <Col md='auto'>
               <Nav className='mr-auto'>
@@ -45,72 +45,7 @@ class SearchBar extends Component {
             <Col xs lg='2'></Col>
           </Navbar>
         </Row>
-        <Row>
-          <Navbar>
-            <Col md='auto'>
-              <p>Search Opinions:</p>
-              <Form inline>
-                <FormControl
-                  type='text'
-                  placeholder='ENTER KEYWORDS'
-                  className='mr-sm-2'
-                ></FormControl>
-                <i class='fas fa-search'></i>
-              </Form>
-            </Col>
-            <hr />
-
-            <Col md='auto'>
-              <h2>OPINIONS</h2>
-              <p>
-                Newly Arrived
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                <i className='fas fa-minus'> </i>
-                Sort by: DEFAULT
-                <i class='fas fa-caret-down'></i>
-              </p>
-            </Col>
-          </Navbar>
-        </Row>
-        <FilterBar />
+       
       </Container>
     );
   }
