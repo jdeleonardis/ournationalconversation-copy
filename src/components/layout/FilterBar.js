@@ -163,6 +163,7 @@ const FilterBar = () => {
   return (
     <div>
       <h2>Filter by:</h2>
+      <div>
       <a onClick={handleChevron} id='topic' href='#demo' data-toggle='collapse'>
         <i class='chev fas fa-chevron-down'></i>&nbsp;&nbsp;TOPIC
       </a>
@@ -289,8 +290,136 @@ const FilterBar = () => {
                 // className={`custom-${type}`}
               />
             </div>
+            
           ))}
         </Form>
+        </div>
+        
+      </div>
+      <div>
+      <a onClick={handleChevron} id='source' href='#demo' data-toggle='collapse'>
+        <i class='chev fas fa-chevron-down'></i>&nbsp;&nbsp;SOURCE
+      </a>
+
+      <div
+        style={{ marginTop: '10px', marginLeft: '20px' }}
+        id='demo'
+        className='collapse'
+      >
+        <Form>
+          {/* <h2>Filter by:</h2> */}
+          {/* <p className='filter'>
+            <i class='fas fa-chevron-up'></i>
+            TOPIC CLEAR
+          </p> */}
+          {['radio'].map((type) => (
+            <div key={`custom-${type}`} className='mb-3'>
+              <Form.Check
+                onClick={handleUS}
+                custom
+                type='radio'
+                label='NEW YORK Times'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios1'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                onClick={handleWorld}
+                custom
+                type='radio'
+                label='Fox News'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios2'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                onClick={handlePolitics}
+                custom
+                type='radio'
+                label='Washington Post'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios3'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                onClick={handleBusiness}
+                custom
+                type='radio'
+                label='BBC'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios4'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                onClick={handleTech}
+                custom
+                type='radio'
+                label='Al Jazeera'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios5'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                onClick={handleHealth}
+                custom
+                type='radio'
+                label='LA Times'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios6'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                onClick={handleSciEnv}
+                custom
+                type='radio'
+                label='Huffington Post'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios7'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                onClick={handleMedia}
+                custom
+                type='radio'
+                label='The Blaze'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios8'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                onClick={handlePolls}
+                custom
+                type='radio'
+                label='CNN'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios9'
+                // className={`custom-${type}`}
+              />
+              <Form.Check
+                onClick={handleFaith}
+                custom
+                type='radio'
+                label='My Sources'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios10'
+                // className={`custom-${type}`}
+              />
+              
+              <Form.Check
+                onClick={handleSelectAll}
+                custom
+                type='radio'
+                label='Select All'
+                name='formHorizontalRadios'
+                id='formHorizontalRadios12'
+                // className={`custom-${type}`}
+              />
+            </div>
+            
+          ))}
+        </Form>
+        </div>
+        
       </div>
       {/* <Row className='justify-content-md-center'>
           <Col xs lg='9'>
