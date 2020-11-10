@@ -4,9 +4,8 @@ import Home from './components/pages/Home';
 import Opinions from './components/pages/Opinions';
 import Contact from './components/pages/Contact';
 import Header from './components/pages/Header';
-import Searchbar from './components/layout/SearchBar';
-import Footer from './components/layout/Footer';
 import SearchBar from './components/layout/SearchBar';
+import Footer from './components/layout/Footer';
 
 import MockArticles from './components/layout/MockArticles';
 
@@ -24,7 +23,6 @@ function App() {
           <Route exact path='/opinions' component={Opinions} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/search' component={SearchBar} />
-
 
           <Route exact path='/mockarticles' component={MockArticles} />
         </Switch>
