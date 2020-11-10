@@ -1,19 +1,9 @@
-import React, { Component } from 'react';
-import {
-  Button,
-  DropdownButton,
-  ButtonGroup,
-  InputGroup,
-  Container,
-  Col,
-  Row
-} from 'react-bootstrap';
-import '../styles/filter.css';
-class Filter extends Component {
-  render() {
-    return (
-      <Container>
-        <Row className='justify-content-md-center'>
+import React from 'react'
+
+export const SortBy = () => {
+  return (
+    <div>
+      <Row className='justify-content-md-center'>
           <Col xs lg='9'>
             <h3>Healthcare</h3>
             <hr />
@@ -36,11 +26,11 @@ class Filter extends Component {
               <Button variant='outline-primary'>Topic</Button>
             </p>
             <p>
-              {/* <DropdownButton
+               <DropdownButton
                 id='dropdown-basic-button'
                 title='All'
                 variant='outline-primary'
-              ></DropdownButton> */}
+              ></DropdownButton> 
               <Button variant='outline-primary' defaultChecked>
                 All
               </Button>{' '}
@@ -61,30 +51,9 @@ class Filter extends Component {
               <InputGroup className='mb-3'></InputGroup>
             </p>
           </Col>
-          <Col xs lg='3'>
-            <div className='mb-2'>
-              <Button variant='primary' size='lg'>
-                ONC NEWSLETTERS
-              </Button>
-            </div>
-            <div className='mb-2'>
-              <Button variant='primary' size='lg'>
-                ONC WEBISODES
-              </Button>
-            </div>
-            <div className='mb-2'>
-              <Button variant='primary' size='lg'>
-                ONC PODCASTS
-              </Button>
-              {/* <Button variant='primary' size='lg'>
-                ONC STORE
-              </Button> */}
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    );
-  }
+          
+        </Row> 
+     
+    </div>
+  )
 }
-
-export default Filter;

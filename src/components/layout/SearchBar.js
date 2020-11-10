@@ -21,7 +21,7 @@ class SearchBar extends Component {
     return (
       <Container>
         <Row className='justify-content-md-center'>
-          <Navbar bg='light' variant='' fixed='top'>
+          <Navbar bg='light' variant='' >
             <Col className='mb-2' xs lg='2'>
             </Col>
             <Col md='auto'>

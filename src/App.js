@@ -6,7 +6,6 @@ import Contact from './components/pages/Contact';
 import Header from './components/pages/Header';
 import Footer from './components/layout/Footer';
 import SearchBar from './components/layout/SearchBar';
-import Filter from './components/layout/Filter';
 
 import MockArticles from './components/layout/MockArticles';
 
@@ -23,7 +22,7 @@ function App() {
           <Route exact path='/opinions' component={Opinions} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/search' component={SearchBar} />
-          <Route exact path='/filter' component={Filter} />
+
 
           <Route exact path='/mockarticles' component={MockArticles} />
         </Switch>
