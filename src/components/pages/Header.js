@@ -3,19 +3,20 @@ import '../styles/Header.css';
 import { MenuItems } from '../layout/MenuItems';
 import '../styles/footer.css';
 import { Button } from '../layout/Button';
+import { Container, Row, Col } from 'react-bootstrap';
 
 class Header extends React.Component {
   render() {
     return (
-      <nav className='NavbarItems'>
+      <Row className='NavbarItems'>
         <a href='/' className='header-logo'>
           <img src='/images/Logo_Shorthand.png'></img>
         </a>
-        <nav className='new nav'>
+        <Col className='new nav'>
           <div className='menu-title'>
             <p>OUR NATIONAL CONVERSATION</p>
           </div>
-        </nav>
+        </Col>
         <div className='menu-icon' onClick={this.handleClick}></div>
 
         <ul className='nav-menu'>
@@ -28,10 +29,13 @@ class Header extends React.Component {
               </li>
             );
           })}
+          
         </ul>
         <Button>LOG IN</Button>
         <Button>SIGN UP</Button>
-      </nav>
+        
+      </Row>
+      
     );
   }
 }

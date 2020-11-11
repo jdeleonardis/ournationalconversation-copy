@@ -12,6 +12,7 @@
   color: #fff;
   justify-self: start;
   cursor: pointer;
+  margin-left: 6%;
 }
 
 .nav-menu {
@@ -19,8 +20,8 @@
   grid-template-columns: repeat(5, auto);
   grid-gap: 60%;
   list-style: none;
-  margin-top: 6%;
-  margin-right: 10%;
+  margin-top: 5%;
+  margin-right: 25%;
   margin-left: none;
   color: #d1d0d0;
   font-size: 130%;
@@ -41,7 +42,7 @@ li:hover {
   margin-bottom: 6%;
   align-items: center;
   justify-items: center;
-  margin-left: 40%;
+  margin-left: 50%;
   white-space: nowrap;
   border-bottom: solid thin;
   border-width: 2px;
