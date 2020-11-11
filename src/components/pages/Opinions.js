@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import SortBy from '../layout/SortBy';
 import FilterBar from '../layout/FilterBar';
 import Comments from '../layout/ContentCards/Comments';
+import RailButtons from '../layout/RailButtons';
 
 export class Opinions extends Component {
   render() {
@@ -32,6 +33,9 @@ export class Opinions extends Component {
               </Col>
               <Col md={6}>
                 <Comments />
+              </Col>
+              <Col md={3}>
+                <RailButtons />
               </Col>
             </Row>
           </Container>
