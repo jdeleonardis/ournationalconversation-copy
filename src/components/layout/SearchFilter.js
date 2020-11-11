@@ -7,12 +7,10 @@ import ButtonBox from './ButtonBox'
 class SearchFilter extends Component {
   render() {
     return (
- 
     <div>
-      <SearchBar/>
       <SortBy/>
-        <FilterBar/>
-        <ButtonBox/>
+      <FilterBar/>
+      <ButtonBox/>
     </div>
     );
   }
