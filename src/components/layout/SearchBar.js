@@ -4,9 +4,6 @@ import {
   Navbar,
   Nav,
   Form,
-  ButtonGroup,
-  DropdownButton,
-  Dropdown,
   Container,
   Row,
   Col,
@@ -14,40 +11,37 @@ import {
 } from 'react-bootstrap';
 import '../styles/searchBar.css';
 
-// import FilterBar from './FilterBar';
 
 class SearchBar extends Component {
   render() {
     return (
-      <Container>
-        <Row className='justify-content-md-center'>
-          <Navbar bg='light' variant=''>
-            <Col className='mb-2' xs lg='2'></Col>
-            <Col md='auto'>
+      // <Container>
+          <Navbar variant='' >
+            <Col className='mb-2' xs lg='9'>
               <Nav className='mr-auto'>
                 <Button href='#'>
-                  NEWS FILTERS <i class='fas fa-caret-down'></i>
+                  NEWS FILTERS <i class='chev fas fa-chevron-down'/>
                 </Button>
                 <Nav.Link href='#'>HOT TOPICS: </Nav.Link>
                 <Nav.Link href='#'>COVID-19 Alert</Nav.Link>
                 <Nav.Link href='#'>Biden VP Pick</Nav.Link>
                 <Nav.Link href='#'>School Reopenings</Nav.Link>
-                <Form inline>
+              </Nav>
+            </Col>
+            <Col lg='3' md='auto'>
+              <Form inline>
                   <FormControl
                     type='text'
                     placeholder='Search'
                     className='mr-sm-2'
-                  />
+                  ></FormControl>
                   <i class='fas fa-search'></i>
                 </Form>
-              </Nav>
             </Col>
-            <Col xs lg='2'></Col>
           </Navbar>
-        </Row>
-      </Container>
+      // </Container>
     );
-  }
+  } 
 }
 
 export default SearchBar;

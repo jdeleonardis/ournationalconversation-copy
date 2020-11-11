@@ -8,7 +8,7 @@
 }
 /* Frame 12 */
 
-dropdown-item-button {
+.dropdown-item-button {
   position: absolute;
   left: 6.94%;
   right: 79.79%;
@@ -18,4 +18,29 @@ dropdown-item-button {
 
   background: #2c1c59;
   border-radius: 5px;
+}
+
+.mytextdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 75%;
+}
+.mytexttitle {
+  flex-grow: 0;
+}
+.divider {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #9f9f9f;
+}
+
+/* Right Rail Buttons */
+.gb-5 {
+  position: absolute;
+  width: 291px;
+  height: 260px;
+  left: 1048px;
+  top: 294px;
+  padding: 2px ;
 }
