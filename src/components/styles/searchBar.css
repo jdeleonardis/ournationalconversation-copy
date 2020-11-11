@@ -38,6 +38,7 @@
   background: #2C1C59;
   border-radius: 5px;
   color: white;
+  
 }
 
 /* Frame 67 */
@@ -49,7 +50,8 @@
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  
+  font-family: Montserrat;
+
   /* position: static; */
   /* width: 154px; */
   height: 20px;
@@ -109,7 +111,8 @@
   top: 35.71%;
   bottom: 35.71%; */
   padding: 0px 40px 0px 100px;
-  
+  font-family: Montserrat;
+  color: #2C1C59;
 }
 
 /* SearchBar Text */
@@ -303,7 +306,7 @@ color: #1E1E1E;
   height: 260px;
   left: 648px;
   top: 0px;
-  
+  font-family: Montserrat;
 }
 
 /* Frame 43 */
