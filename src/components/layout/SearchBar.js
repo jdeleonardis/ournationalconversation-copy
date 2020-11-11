@@ -20,7 +20,7 @@ class SearchBar extends Component {
           <Nav className='group-68 mr-auto '>
             <button className='news-filters-btn' href='#'>
               NEWS FILTERS{' '}
-              <i class='chev fas fa-chevron-down news-filters-btn' />
+              <i class='fas fa-chevron-down news-filters-btn' />
             </button>
             <Nav.Link href='#'>
               <span className='hot-topics'>HOT TOPICS: </span>
