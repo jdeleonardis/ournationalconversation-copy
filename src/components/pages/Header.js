@@ -12,11 +12,11 @@ class Header extends React.Component {
         <a href='/' className='header-logo'>
           <img src='/images/Logo_Shorthand.png'></img>
         </a>
-        <Col className='new nav'>
-          <div className='menu-title'>
+        <nav className='new nav'>
+          <div className='header-title'>
             <p>OUR NATIONAL CONVERSATION</p>
           </div>
-        </Col>
+        </nav>
         <div className='menu-icon' onClick={this.handleClick}></div>
 
         <ul className='nav-menu'>
