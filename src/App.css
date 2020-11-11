@@ -829,15 +829,21 @@ MEDIA QUERIES
     font-size: 12px;
   }
 
-  .page-title {
+  .page-title,
+  #filter-by {
     margin-top: 20px;
+    font-size: 28px;
+  }
+
+  #filter-by {
+    margin-top: 0;
   }
 
   #small-search-text,
   #sort-by,
   .texttitle,
   #topic {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   #small-search-field::placeholder {
