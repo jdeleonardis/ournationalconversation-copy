@@ -6,31 +6,61 @@ import {
 class RailButtons extends Component {
   render() {
     return (
-    <Container fluid="xl" className = "gb-5">
-      <ButtonGroup vertical >
-         
-              <Button variant='outline-primary' size='lg'>
+    // <Container fluid="xl" >
+      <div vertical className = "gb-5"> 
+        <div class=" mb-2" role="toolbar" aria-label="Toolbar with button groups">
+         <button className='gb-text btn-block ' type="button"
+               size='lg'>
                 ONC STORE
-              </Button>
-           
-              <Button variant='outline-primary' size='lg'>
+          </button> 
+        </div> 
+        <div class="btn-toolbar  mb-2" role="toolbar" aria-label="Toolbar with button groups">
+         <button className='gb-text btn-block'
+               size='lg'>
                 ONC NEWSLETTERS
-              </Button>
-           
-              <Button variant='outline-primary' size='lg'>
+          </button> 
+        </div> 
+        <div class="btn-toolbar  mb-2" role="toolbar" aria-label="Toolbar with button groups">
+         <button className='gb-text btn-block'
+               size='lg'>
                 WEBISODES
-              </Button>
-            
-              <Button variant='outline-primary' size='lg'>
+          </button> 
+        </div> 
+        <div class="btn-toolbar  mb-2" role="toolbar" aria-label="Toolbar with button groups">
+         <button className='gb-text btn-block'
+               size='lg'>
                 PODCASTS
-              </Button>
-          
-              <Button variant='outline-primary' size='lg'>
+          </button> 
+        </div> 
+        <div class="btn-toolbar  mb-2" role="toolbar" aria-label="Toolbar with button groups">
+         <button className='gb-text btn-block'
+               size='lg'>
                 RESOURCES
-              </Button>
+          </button> 
+        </div> 
+              {/* <button className='gb-text'
+               size='lg'>
+                ONC STORE
+              </button>
+           
+              <button className='gb-text' size='lg'>
+                ONC NEWSLETTERS
+              </button>
+           
+              <button className='gb-text' size='lg'>
+                WEBISODES
+              </button>
+            
+              <button className='gb-text' size='lg'>
+                PODCASTS
+              </button>
           
-      </ButtonGroup>
-    </Container>
+              <button className='gb-text' size='lg'>
+                RESOURCES
+              </button> */}
+
+      </div>
+    // </Container>
   )
  }
 }

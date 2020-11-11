@@ -141,11 +141,11 @@ color: #1E1E1E;
 
 .search{
   /* position: absolute; */
-  left: 22.85%;
+  left: 18%;
   right: 6.94%;
   top: 21.43%;
   bottom: 21.43%;
-  width: 70%;
+  width: 85%;
   padding: 17px;
   border-radius: 0.25rem;
   /* border: 1px solid #d1d0d0 !important; */
@@ -153,10 +153,10 @@ color: #1E1E1E;
   background-color: #ffffff;
 }
 .search-i{
-   position: relative;
+  position: relative;
   z-index: 1;
   top: -6px !important;
-  left: 30px;
+  left: 10px;
   top: 1px;
   /* color: #7b7b7b; */
   color: #000000;
@@ -299,12 +299,12 @@ color: #1E1E1E;
 
 /* Right Rail Buttons */
 .gb-5 {
-  position: absolute;
+  /* position: absolute; */
   width: 291px;
   height: 260px;
-  left: 1048px;
-  top: 294px;
-  padding: 2px ;
+  left: 648px;
+  top: 0px;
+  
 }
 
 /* Frame 43 */
@@ -313,19 +313,20 @@ color: #1E1E1E;
   /* Auto Layout */
   
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: flex-start;
-  padding: 10px 0px 0px 10px;
+  padding: 10px 5px 5px 10px;
   
-  position: static;
+  /* position: static; */
   left: 0%;
   right: 0%;
   top: 0%;
   bottom: 84.62%;
-  
+  width: 100%;
   /* Purple */
   
   border: 1px solid #2C1C59;
+  background-color:white;
   box-sizing: border-box;
   border-radius: 5px;
   
