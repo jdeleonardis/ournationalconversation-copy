@@ -545,6 +545,7 @@ SORT BY COMPONENT STYLES
 
 .page-title {
   color: #2c1c59;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #small-search-field {
@@ -595,7 +596,7 @@ SORT BY COMPONENT STYLES
 
 .divider {
   flex-grow: 1;
-  height: 5px !important;
+  height: 4px !important;
   background-color: #2c1c59 !important;
   margin-top: 2px;
 }
