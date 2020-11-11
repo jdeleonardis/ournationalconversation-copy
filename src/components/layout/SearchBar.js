@@ -14,7 +14,7 @@ import {
 } from 'react-bootstrap';
 import '../styles/searchBar.css';
 
-import FilterBar from './FilterBar';
+// import FilterBar from './FilterBar';
 
 class SearchBar extends Component {
   render() {

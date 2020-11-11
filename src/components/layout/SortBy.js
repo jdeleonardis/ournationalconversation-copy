@@ -51,10 +51,10 @@ const SortBy = (props) => {
           </p> */}
 
           <div class='textdiv'>
-            <div class='texttitle'>
+            <div className='texttitle'>
               {props.horizLineTextLeft} &nbsp;&nbsp;&nbsp;
             </div>
-            <div class='divider'></div> &nbsp;&nbsp;&nbsp;
+            <div className='divider'></div> &nbsp;&nbsp;&nbsp;
             <span id='sort-by'>Sort by: DEFAULT</span>&nbsp;&nbsp;
             <i class='fas fa-caret-down'></i>
           </div>
