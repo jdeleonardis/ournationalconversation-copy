@@ -3,7 +3,7 @@ import {
   ButtonGroup,
   Button, Container,
 } from 'react-bootstrap';
-class GroupButtons extends Component {
+class RailButtons extends Component {
   render() {
     return (
     <Container fluid="xl" className = "gb-5">
@@ -34,4 +34,4 @@ class GroupButtons extends Component {
   )
  }
 }
-export default GroupButtons;
+export default RailButtons;

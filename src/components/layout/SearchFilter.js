@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SearchBar from './SearchBar'
 import SortBy from './SortBy'
 import FilterBar from './FilterBar'
-import ButtonBox from './ButtonBox'
+import RailButtons from './RailButtons';
 
 class SearchFilter extends Component {
   render() {
@@ -10,7 +10,7 @@ class SearchFilter extends Component {
     <div>
       <SortBy/>
       <FilterBar/>
-      <ButtonBox/>
+      <RailButtons/>
     </div>
     );
   }
