@@ -4,9 +4,6 @@ import {
   Navbar,
   Nav,
   Form,
-  ButtonGroup,
-  DropdownButton,
-  Dropdown,
   Container,
   Row,
   Col,
@@ -14,38 +11,46 @@ import {
 } from 'react-bootstrap';
 import '../styles/searchBar.css';
 
+
 class SearchBar extends Component {
   render() {
     return (
-      <Container>
-        <Row className='justify-content-md-center'>
-          <Navbar bg='light' variant=''>
-            <Col className='mb-2' xs lg='2'></Col>
-            <Col md='auto'>
-              <Nav className='mr-auto'>
-                <Button href='#'>
-                  NEWS FILTERS <i class='fas fa-caret-down'></i>
-                </Button>
-                <Nav.Link href='#'>HOT TOPICS: </Nav.Link>
-                <Nav.Link href='#'>COVID-19 Alert</Nav.Link>
-                <Nav.Link href='#'>Biden VP Pick</Nav.Link>
-                <Nav.Link href='#'>School Reopenings</Nav.Link>
-                <Form inline>
+      // <Container>
+          <Navbar className='search-bar'
+          variant='' >
+            <Col className='mb-2' xs lg='9'>
+              <Nav className='group-68 mr-auto '>
+                <button className='news-filters-btn' href='#' >
+                  NEWS FILTERS <i class='chev fas fa-chevron-down news-filters-btn'/>
+                </button>
+                <Nav.Link href='#'><span className='hot-topics'>
+                  HOT TOPICS: </span></Nav.Link>
+                <Nav.Link className='search-bar-text' href='#'>COVID-19 Alert</Nav.Link>
+                <Nav.Link className='search-bar-text' href='#'>Biden VP Pick</Nav.Link>
+                <Nav.Link className='search-bar-text' href='#'>School Reopenings</Nav.Link>
+              </Nav>
+              
+            </Col>
+            <Col lg='3' md='auto'>
+              {/* <Form inline>
                   <FormControl
                     type='text'
                     placeholder='Search'
                     className='mr-sm-2'
-                  />
+                  ></FormControl>
                   <i class='fas fa-search'></i>
-                </Form>
-              </Nav>
+                </Form> */}
+              <input
+              className='search'
+              type='text'
+              placeholder='SEARCH'
+            />
+            <i className='fa fa-search search-i'/>
             </Col>
-            <Col xs lg='2'></Col>
           </Navbar>
-        </Row>
-      </Container>
+      // </Container>
     );
-  }
+  } 
 }
 
 export default SearchBar;

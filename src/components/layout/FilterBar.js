@@ -1,5 +1,15 @@
-import React from 'react';
-import { Form } from 'react-bootstrap';
+import React, { Component } from 'react';
+import {
+  Button,
+  DropdownButton,
+  ButtonGroup,
+  InputGroup,
+  Col,
+  Row,
+  Form,
+  Card,
+} from 'react-bootstrap';
+
 
 function handleChevron() {
   document.querySelector('.chev').classList.toggle('fa-chevron-down');
@@ -159,7 +169,7 @@ const FilterBar = () => {
           href='#demo'
           data-toggle='collapse'
         >
-          <i class='chev fas fa-chevron-down'></i>&nbsp;&nbsp;TOPIC
+          <i class='chev fas fa-chevron-down'></i>&nbsp;&nbsp;TOPIC 
         </a>
 
         <div
@@ -168,25 +178,6 @@ const FilterBar = () => {
           className='collapse'
         >
           <Form>
-            {/* <h2>Filter by:</h2> */}
-            {/* <p className='filter'>
-      <a onClick={handleChevron} id='topic' href='#demo' data-toggle='collapse'>
-        <i class='chev fas fa-chevron-down'></i>&nbsp;&nbsp;TOPIC
-      </a>
-      <a onClick={handleChevron} id='clear' href='#demo' data-toggle='collapse'>
-        <i class='chev fas fa-chevron-down'></i>&nbsp;&nbsp;CLEAR
-      </a>
-      <div
-        style={{ marginTop: '10px', marginLeft: '20px' }}
-        id='demo'
-        className='collapse'
-      >
-        <Form>
-          {/* <h2>Filter by:</h2> */}
-            {/* <p className='filter'>
-            <i class='fas fa-chevron-up'></i>
-            TOPIC CLEAR
-          </p> */}
             {['radio'].map((type) => (
               <div key={`custom-${type}`} className='mb-3'>
                 <Form.Check
@@ -196,8 +187,8 @@ const FilterBar = () => {
                   label='US'
                   name='formHorizontalRadios'
                   id='formHorizontalRadios1'
-                  className='filter-dropdown-text'
-                  // className={`custom-${type}`}
+                  className='filter-dropdown-text custom-radio'
+
                 />
                 <Form.Check
                   onClick={handleWorld}
@@ -206,8 +197,8 @@ const FilterBar = () => {
                   label='World'
                   name='formHorizontalRadios'
                   id='formHorizontalRadios2'
-                  className='filter-dropdown-text'
-                  // className={`custom-${type}`}
+                  className='filter-dropdown-text custom-radio'
+                 
                 />
                 <Form.Check
                   onClick={handlePolitics}
@@ -216,8 +207,8 @@ const FilterBar = () => {
                   label='Politics'
                   name='formHorizontalRadios'
                   id='formHorizontalRadios3'
-                  className='filter-dropdown-text'
-                  // className={`custom-${type}`}
+                  className='filter-dropdown-text custom-radio'
+
                 />
                 <Form.Check
                   onClick={handleBusiness}
@@ -226,8 +217,8 @@ const FilterBar = () => {
                   label='Business'
                   name='formHorizontalRadios'
                   id='formHorizontalRadios4'
-                  className='filter-dropdown-text'
-                  // className={`custom-${type}`}
+                  className='filter-dropdown-text custom-radio'
+
                 />
                 <Form.Check
                   onClick={handleTech}
@@ -236,8 +227,8 @@ const FilterBar = () => {
                   label='Tech'
                   name='formHorizontalRadios'
                   id='formHorizontalRadios5'
-                  className='filter-dropdown-text'
-                  // className={`custom-${type}`}
+                  className='filter-dropdown-text custom-radio'
+
                 />
                 <Form.Check
                   onClick={handleHealth}
@@ -246,8 +237,8 @@ const FilterBar = () => {
                   label='Health'
                   name='formHorizontalRadios'
                   id='formHorizontalRadios6'
-                  className='filter-dropdown-text'
-                  // className={`custom-${type}`}
+                  className='filter-dropdown-text custom-radio'
+
                 />
                 <Form.Check
                   onClick={handleSciEnv}
@@ -256,8 +247,8 @@ const FilterBar = () => {
                   label='Science & Environment'
                   name='formHorizontalRadios'
                   id='formHorizontalRadios7'
-                  className='filter-dropdown-text'
-                  // className={`custom-${type}`}
+                  className='filter-dropdown-text custom-radio'
+
                 />
                 <Form.Check
                   onClick={handleMedia}
@@ -266,8 +257,8 @@ const FilterBar = () => {
                   label='Media'
                   name='formHorizontalRadios'
                   id='formHorizontalRadios8'
-                  className='filter-dropdown-text'
-                  // className={`custom-${type}`}
+                  className='filter-dropdown-text custom-radio'
+
                 />
                 <Form.Check
                   onClick={handlePolls}
@@ -276,8 +267,8 @@ const FilterBar = () => {
                   label='Polls'
                   name='formHorizontalRadios'
                   id='formHorizontalRadios9'
-                  className='filter-dropdown-text'
-                  // className={`custom-${type}`}
+                  className='filter-dropdown-text custom-radio'
+
                 />
                 <Form.Check
                   onClick={handleFaith}
@@ -286,8 +277,8 @@ const FilterBar = () => {
                   label='Faith / Spirituality'
                   name='formHorizontalRadios'
                   id='formHorizontalRadios10'
-                  className='filter-dropdown-text'
-                  // className={`custom-${type}`}
+                  className='filter-dropdown-text custom-radio'
+
                 />
                 <Form.Check
                   onClick={handleFactCheck}
@@ -296,8 +287,8 @@ const FilterBar = () => {
                   label='Fact Check'
                   name='formHorizontalRadios'
                   id='formHorizontalRadios11'
-                  className='filter-dropdown-text'
-                  // className={`custom-${type}`}
+                  className='filter-dropdown-text custom-radio'
+
                 />
                 <Form.Check
                   onClick={handleSelectAll}
@@ -306,86 +297,17 @@ const FilterBar = () => {
                   label='Select All'
                   name='formHorizontalRadios'
                   id='formHorizontalRadios12'
-                  className='filter-dropdown-text'
-                  // className={`custom-${type}`}
+                  className='filter-dropdown-text custom-radio'
+
                 />
               </div>
             ))}
           </Form>
         </div>
       </div>
-
-      {/* <Row className='justify-content-md-center'>
-          <Col xs lg='9'>
-            <h3>Healthcare</h3>
-            <hr />
-            <p>
-              Show me:{' '}
-              <Button variant='primary' defaultChecked>
-                All
-              </Button>{' '}
-              <Button variant='outline-primary'>News</Button>{' '}
-              <Button variant='outline-primary'>Opinions</Button>{' '}
-              <Button variant='outline-primary'>Solutions</Button>
-            </p>
-            <p>
-              Filter By:{' '}
-              <Button variant='primary' defaultChecked>
-                All
-              </Button>{' '}
-              <Button variant='outline-primary'>Slant</Button>{' '}
-              <Button variant='outline-primary'>Source</Button>{' '}
-              <Button variant='outline-primary'>Topic</Button>
-            </p>
-            <p>
-               <DropdownButton
-                id='dropdown-basic-button'
-                title='All'
-                variant='outline-primary'
-              ></DropdownButton> 
-              <Button variant='outline-primary' defaultChecked>
-                All
-              </Button>{' '}
-              <Button variant='outline-primary'>Liberal</Button>{' '}
-              <Button variant='outline-primary'>Moderate</Button>{' '}
-              <Button variant='outline-primary'>Conservative</Button>{' '}
-            </p>
-            <p>
-              <Button variant='outline-primary'>Governance</Button>{' '}
-              <Button variant='outline-primary'>Economy</Button>{' '}
-              <Button variant='outline-primary'>Freigh Policy & Defence</Button>{' '}
-              <Button variant='outline-primary'>Healthcare</Button>{' '}
-              <Button variant='outline-primary'>Justice & Public Safety</Button>{' '}
-              <Button variant='outline-primary'>Infrastructure</Button>{' '}
-              <Button variant='outline-primary'>
-                Cllimate,Science, & Tech
-              </Button>{' '}
-              <InputGroup className='mb-3'></InputGroup>
-            </p>
-          </Col>
-          <Col xs lg='3'>
-            <div className='mb-2'>
-              <Button variant='primary' size='lg'>
-                ONC NEWSLETTERS
-              </Button>
-            </div>
-            <div className='mb-2'>
-              <Button variant='primary' size='lg'>
-                ONC WEBISODES
-              </Button>
-            </div>
-            <div className='mb-2'>
-              <Button variant='primary' size='lg'>
-                ONC PODCASTS
-              </Button>
-   
-            </div>
-          </Col>
-        </Row> 
-      */}
-    </div>
+  </div>
   );
 };
-// }
+
 
 export default FilterBar;
