@@ -1,26 +1,25 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import FilterBar from '../layout/FilterBar';
-import NewsBoard from '../layout/ContentBoards/NewsBoard'
-
-
+import NewsBoard from '../layout/ContentBoards/NewsBoard';
 
 class News extends React.Component {
-    render() {
-      return (
-       
-          <div>
-            <title>Our National Conversation | News</title>
-            <h1 className = "NewsTitle">NEWS</h1>
-        
-            <div className = "NewsFilter">
-              <FilterBar />
-            </div>
-              <NewsBoard />
-              
-          </div>
-       
-      );
-    }
-  }
+  render() {
+    return (
+      <div>
+        <Helmet>
+          <title>Our National Conversation | News</title>
+        </Helmet>
+        {/* <title>Our National Conversation | News</title> */}
+        <h1 className='NewsTitle'>NEWS</h1>
 
-  export default News;
+        <div className='NewsFilter'>
+          <FilterBar />
+        </div>
+        <NewsBoard />
+      </div>
+    );
+  }
+}
+
+export default News;

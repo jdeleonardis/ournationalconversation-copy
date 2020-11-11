@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import SortBy from '../layout/SortBy';
 import FilterBar from '../layout/FilterBar';
+import Comments from '../layout/ContentCards/Comments';
+import RailButtons from '../layout/RailButtons';
 
 export class Opinions extends Component {
   render() {
@@ -14,10 +16,28 @@ export class Opinions extends Component {
           </Helmet>
 
           <Container className='container' fluid>
-            {/* <br />
-            <h3>Opinions</h3> */}
-            <SortBy />
-            <FilterBar />
+            <br />
+            <Row>
+              <Col>
+                <SortBy
+                  pageName='Opinions'
+                  pageTitle='OPINIONS'
+                  horizLineTextLeft='Newly Arrived'
+                />
+                <br />
+              </Col>
+            </Row>
+            <Row>
+              <Col md={3}>
+                <FilterBar />
+              </Col>
+              <Col md={6}>
+                <Comments />
+              </Col>
+              <Col md={3}>
+                <RailButtons />
+              </Col>
+            </Row>
           </Container>
         </div>
       </Fragment>
