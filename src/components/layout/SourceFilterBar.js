@@ -137,12 +137,11 @@ function handleSelectAll() {
 const SearchFilterBar = () => {
   return (
     <div>
-      <h2>Filter by:</h2>
       <div>
         <a
           onClick={handleSourceChevron}
           id='source-topic'
-          href='#demo'
+          href='#demo2'
           data-toggle='collapse'
         >
           <i class='source-chev fas fa-chevron-down'></i>&nbsp;&nbsp;SOURCE
@@ -150,7 +149,7 @@ const SearchFilterBar = () => {
 
         <div
           style={{ marginTop: '10px', marginLeft: '20px' }}
-          //   id='demo'
+          id='demo2'
           className='collapse'
         >
           <Form>
@@ -162,7 +161,7 @@ const SearchFilterBar = () => {
                   type='radio'
                   label='New York Times'
                   name='formHorizontalRadios'
-                  id='formHorizontalRadios1'
+                  id='formHorizontalRadios13'
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
                 />
@@ -172,7 +171,7 @@ const SearchFilterBar = () => {
                   type='radio'
                   label='Fox News'
                   name='formHorizontalRadios'
-                  id='formHorizontalRadios2'
+                  id='formHorizontalRadios14'
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
                 />
@@ -182,7 +181,7 @@ const SearchFilterBar = () => {
                   type='radio'
                   label='Washington Post'
                   name='formHorizontalRadios'
-                  id='formHorizontalRadios3'
+                  id='formHorizontalRadios15'
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
                 />
@@ -192,7 +191,7 @@ const SearchFilterBar = () => {
                   type='radio'
                   label='BBC'
                   name='formHorizontalRadios'
-                  id='formHorizontalRadios4'
+                  id='formHorizontalRadios16'
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
                 />
@@ -202,7 +201,7 @@ const SearchFilterBar = () => {
                   type='radio'
                   label='Al Jazeera'
                   name='formHorizontalRadios'
-                  id='formHorizontalRadios5'
+                  id='formHorizontalRadios17'
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
                 />
@@ -212,7 +211,7 @@ const SearchFilterBar = () => {
                   type='radio'
                   label='LA Times'
                   name='formHorizontalRadios'
-                  id='formHorizontalRadios6'
+                  id='formHorizontalRadios18'
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
                 />
@@ -222,7 +221,7 @@ const SearchFilterBar = () => {
                   type='radio'
                   label='Huffington Post'
                   name='formHorizontalRadios'
-                  id='formHorizontalRadios7'
+                  id='formHorizontalRadios19'
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
                 />
@@ -232,7 +231,7 @@ const SearchFilterBar = () => {
                   type='radio'
                   label='The Blaze'
                   name='formHorizontalRadios'
-                  id='formHorizontalRadios8'
+                  id='formHorizontalRadios20'
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
                 />
@@ -242,7 +241,7 @@ const SearchFilterBar = () => {
                   type='radio'
                   label='CNN'
                   name='formHorizontalRadios'
-                  id='formHorizontalRadios9'
+                  id='formHorizontalRadios21'
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
                 />
@@ -252,7 +251,7 @@ const SearchFilterBar = () => {
                   type='radio'
                   label='My Sources'
                   name='formHorizontalRadios'
-                  id='formHorizontalRadios10'
+                  id='formHorizontalRadios22'
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
                 />
@@ -263,7 +262,7 @@ const SearchFilterBar = () => {
                   type='radio'
                   label='Select All'
                   name='formHorizontalRadios'
-                  id='formHorizontalRadios11'
+                  id='formHorizontalRadios23'
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
                 />

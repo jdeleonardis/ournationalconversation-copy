@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Form, FormControl } from 'react-bootstrap';
 import '../../App.css';
 import '../styles/searchBar.css';
+
 const SortBy = (props) => {
   return (
     <div>
@@ -29,7 +30,6 @@ const SortBy = (props) => {
             <span id='sort-by'>Sort by: DEFAULT</span>&nbsp;&nbsp;
             <i class='fas fa-caret-down'></i>
           </div>
-
         </Col>
       </Row>
     </div>

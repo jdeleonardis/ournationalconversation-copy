@@ -19,8 +19,7 @@ class SearchBar extends Component {
         <Col className='mb-2' xs lg='9'>
           <Nav className='group-68 mr-auto '>
             <button className='news-filters-btn' href='#'>
-              NEWS FILTERS{' '}
-              <i class='fas fa-chevron-down news-filters-btn' />
+              NEWS FILTERS <i class='fas fa-chevron-down news-filters-btn' />
             </button>
             <Nav.Link href='#'>
               <span className='hot-topics'>HOT TOPICS: </span>

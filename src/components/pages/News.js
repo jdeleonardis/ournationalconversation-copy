@@ -10,7 +10,6 @@ class News extends React.Component {
         <Helmet>
           <title>Our National Conversation | News</title>
         </Helmet>
-        {/* <title>Our National Conversation | News</title> */}
         <h1 className='NewsTitle'>NEWS</h1>
 
         <div className='NewsFilter'>
