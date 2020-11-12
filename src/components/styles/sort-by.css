@@ -1,0 +1,194 @@
+.page-title {
+  color: #2c1c59;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#small-search-field {
+  width: 100%;
+  padding: 17px;
+  border-radius: 0.25rem;
+  border: 1px solid #000000 !important;
+  background-color: #ffffff;
+}
+
+#small-search-text {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#small-search-field::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  color: #bfbfbf !important;
+}
+
+#searchsubmit {
+  position: relative;
+  z-index: 1;
+  top: -6px !important;
+  left: -25px;
+  top: 1px;
+  color: #000000;
+  cursor: pointer;
+  width: 0;
+}
+
+.textdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.texttitle {
+  flex-grow: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#sort-by {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.divider {
+  flex-grow: 1;
+  height: 4px !important;
+  background-color: #2c1c59 !important;
+  margin-top: 2px;
+}
+
+/* ========================
+MEDIA QUERIES
+======================== */
+@media screen and (min-width: 981px) and (max-width: 1200px) {
+  /* .container {
+      background-color: red;
+    } */
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  /* .container {
+      background-color: yellow;
+    } */
+
+  #small-search-field::placeholder {
+    font-size: 10px;
+  }
+
+  #searchsubmit {
+    top: -7px !important;
+    left: -25px;
+    top: 1px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  /* .container {
+      background-color: orange;
+    } */
+
+  .page-title {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 640px) {
+  /* .container {
+      background-color: brown;
+    } */
+
+  .page-title {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 471px) and (max-width: 550px) {
+  /* .container {
+      background-color: salmon;
+    } */
+
+  .page-title {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 470px) {
+  /* .container {
+    background-color: blue;
+    font-size: 10px;
+  } */
+
+  .page-title {
+    margin-top: 20px;
+    font-size: 28px;
+  }
+
+  #small-search-text,
+  #sort-by,
+  .texttitle {
+    font-size: 14px;
+  }
+
+  #small-search-field::placeholder {
+    font-size: 12px;
+  }
+
+  #searchsubmit {
+    top: -8px !important;
+    left: -25px;
+    top: 1px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 430px) {
+  /* .container {
+      background-color: burlywood;
+    } */
+
+  .page-title {
+    margin-top: 18px;
+  }
+
+  #small-search-text,
+  #sort-by,
+  .texttitle {
+    font-size: 14px;
+  }
+
+  #small-search-field::placeholder {
+    font-size: 12px;
+  }
+
+  #searchsubmit {
+    top: -8px !important;
+    left: -25px;
+    top: 1px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 400px) {
+  /* .container {
+      background-color: pink;
+    } */
+
+  .page-title {
+    margin-top: 18px;
+  }
+
+  #small-search-text,
+  #sort-by,
+  .texttitle {
+    font-size: 14px;
+  }
+
+  #small-search-field::placeholder {
+    font-size: 12px;
+  }
+
+  #searchsubmit {
+    top: -8px !important;
+    left: -25px;
+    top: 1px;
+    font-size: 12px;
+  }
+}
