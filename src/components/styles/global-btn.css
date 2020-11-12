@@ -1,0 +1,10 @@
+.global-btn {
+  font-family: 'Montserrat', sans-serif;
+  color: #2c1c59 !important;
+  border-color: #2c1c59 !important;
+}
+
+.global-btn:hover {
+  background-color: #2c1c59 !important;
+  color: #ffffff !important;
+}
