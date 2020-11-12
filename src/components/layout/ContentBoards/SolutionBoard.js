@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Image, Col, Row, Container, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Comment from '../ContentCards/ContentCard';
+import ContentCard from '../ContentCards/ContentCard';
 import VerticalCard from '../ContentCards/VerticalCard';
 
 const ColoredLine = ({ color }) => (
@@ -32,9 +32,9 @@ function Solutions() {
 			<Container>
 				<ColoredLine />
 				<br />
-				<Comment />
+				<ContentCard />
 				<br />
-				<Comment />
+				<ContentCard />
 				<br />
 				<div className="text-center">
 					<Button variant="light">SEE MORE PODCASTS</Button>

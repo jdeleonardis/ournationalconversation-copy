@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, Image, Col, Row, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faShare, faPlus } from '@fortawesome/free-solid-svg-icons';
-import './syles/verticalcard.css';
 import OpenPage from './syles/openSrc';
 import ShareSvg from './syles/shareSvg';
 import SaveSvg from './syles/saveSvg';
