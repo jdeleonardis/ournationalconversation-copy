@@ -1,11 +1,13 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
 
+// Icon Toggle
 function handleChevron() {
   document.querySelector('.chev').classList.toggle('fa-chevron-down');
   document.querySelector('.chev').classList.toggle('fa-chevron-up');
 }
 
+// Filter Effect
 function handleUS() {
   let a, u, i;
   a = document.querySelectorAll('.article');
@@ -146,9 +148,7 @@ function handleSelectAll() {
   }
 }
 
-// class FilterBar extends Component {
 const FilterBar = () => {
-  // render() {
   return (
     <div>
       <h2 id='filter-by'>Filter by:</h2>
@@ -168,25 +168,6 @@ const FilterBar = () => {
           className='collapse'
         >
           <Form>
-            {/* <h2>Filter by:</h2> */}
-            {/* <p className='filter'>
-      <a onClick={handleChevron} id='topic' href='#demo' data-toggle='collapse'>
-        <i class='chev fas fa-chevron-down'></i>&nbsp;&nbsp;TOPIC
-      </a>
-      <a onClick={handleChevron} id='clear' href='#demo' data-toggle='collapse'>
-        <i class='chev fas fa-chevron-down'></i>&nbsp;&nbsp;CLEAR
-      </a>
-      <div
-        style={{ marginTop: '10px', marginLeft: '20px' }}
-        id='demo'
-        className='collapse'
-      >
-        <Form>
-          {/* <h2>Filter by:</h2> */}
-            {/* <p className='filter'>
-            <i class='fas fa-chevron-up'></i>
-            TOPIC CLEAR
-          </p> */}
             {['radio'].map((type) => (
               <div key={`custom-${type}`} className='mb-3'>
                 <Form.Check
