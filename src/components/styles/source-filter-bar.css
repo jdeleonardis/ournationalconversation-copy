@@ -1,0 +1,82 @@
+#source-topic {
+  color: #2c1c59;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.filter-dropdown-text {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ========================
+MEDIA QUERIES
+======================== */
+
+@media screen and (min-width: 981px) and (max-width: 1200px) {
+  /* .container {
+      background-color: red;
+    } */
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  /* .container {
+      background-color: yellow;
+    } */
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  /* .container {
+      background-color: orange;
+    } */
+  #source-div {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 640px) {
+  /* .container {
+    background-color: brown;
+  } */
+
+  #source-div {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 471px) and (max-width: 550px) {
+  /* .container {
+      background-color: salmon;
+    } */
+  #source-div {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 470px) {
+  /* .container {
+      background-color: blue;
+      font-size: 10px;
+    } */
+  #source-div {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 430px) {
+  /* .container {
+      background-color: burlywood;
+    } */
+  #source-div {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 400px) {
+  /* .container {
+      background-color: pink;
+    } */
+  #source-div {
+    margin-bottom: 20px;
+  }
+}

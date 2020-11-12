@@ -467,29 +467,6 @@ input {
 }
 
 /* ========================
-SORT BY COMPONENT STYLES
-======================== */
-
-/* ========================
-FILTER BARS COMPONENT STYLES
-======================== */
-#topic,
-#source-topic {
-  color: #2c1c59;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
-
-.filter-dropdown-text {
-  font-family: 'Montserrat', sans-serif;
-}
-
-#filter-by {
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* ========================
 CONTACT PAGE COMPONENT STYLES
 ======================== */
 
@@ -676,19 +653,6 @@ MEDIA QUERIES
     margin-top: 5px;
     font-size: 12px;
   }
-
-  #filter-by {
-    margin-top: 20px;
-    font-size: 28px;
-  }
-
-  #filter-by {
-    margin-top: 0;
-  }
-
-  #topic {
-    font-size: 14px;
-  }
 }
 
 @media screen and (min-width: 401px) and (max-width: 430px) {
@@ -716,10 +680,6 @@ MEDIA QUERIES
   .caret-con {
     margin-right: 14px;
   }
-
-  #topic {
-    font-size: 14px;
-  }
 }
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
@@ -746,9 +706,5 @@ MEDIA QUERIES
 
   .caret-con {
     margin-right: 14px;
-  }
-
-  #topic {
-    font-size: 14px;
   }
 }

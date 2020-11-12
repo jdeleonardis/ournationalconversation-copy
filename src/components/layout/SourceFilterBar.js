@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
+import '../styles/source-filter-bar.css';
 
 // Icon Toggle
 function handleSourceChevron() {
@@ -139,7 +140,7 @@ function handleSelectAll() {
 const SearchFilterBar = () => {
   return (
     <div>
-      <div>
+      <div id='source-div'>
         <a
           onClick={handleSourceChevron}
           id='source-topic'
