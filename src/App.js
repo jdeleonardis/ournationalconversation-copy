@@ -27,7 +27,7 @@ function App() {
 
           <Route exact path='/news' component={News} />
 
-        {/* Test Components by Judy */}
+          {/* Test Components by Judy */}
           <Route exact path='/searchfilter' component={SearchFilter} />
 
           <Route exact path='/mockarticles' component={MockArticles} />

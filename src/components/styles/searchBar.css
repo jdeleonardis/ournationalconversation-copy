@@ -1,10 +1,9 @@
- *{
+* {
   /* font-family: Montserrat;
   color: #2C1C59; */
 }
 
 /* Subhead - SearchBar */
-
 
 .search-bar {
   /* position: absolute; */
@@ -12,7 +11,6 @@
   height: 70px;
   left: 250px;
   /* top: 174px; */
-
 }
 
 /* Frame 12 */
@@ -23,29 +21,27 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 0px 0px 15px;
-  
+
   /* position: absolute; */
   left: 6.94%;
   right: 80.28%;
   top: 21.43%;
   bottom: 21.43%;
   height: 40px;
-  Width: 184px;
+  width: 184px;
 
-  
   /* Purple */
-  
-  background: #2C1C59;
+
+  background: #2c1c59;
   border-radius: 5px;
   color: white;
-  
 }
 
 /* Frame 67 */
 
-.news-filters{
+.news-filters {
   /* Auto Layout */
-  
+
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -57,28 +53,24 @@
   height: 20px;
   left: 15px;
   top: 10px;
-  
-  
+
   /* Inside Auto Layout */
-  
+
   flex: none;
   order: 0;
   align-self: center;
   flex-grow: 0;
   margin: 0px 10px;
-
 }
 
 .fa-chevron-down {
   /* Vector */
-
 
   position: static;
   width: 20px;
   height: 12px;
   left: 134px;
   top: 4px;
-
 
   /* Inside Auto Layout */
 
@@ -89,12 +81,9 @@
   margin: 10px 0px;
 }
 
-
-
 /* Group 68 */
 
-.group-68{
-
+.group-68 {
   /* position: absolute; */
   /* width: 580px; */
   height: 20px;
@@ -112,11 +101,11 @@
   bottom: 35.71%; */
   padding: 0px 40px 0px 100px;
   font-family: Montserrat;
-  color: #2C1C59;
+  color: #2c1c59;
 }
 
 /* SearchBar Text */
-.search-bar-text{
+.search-bar-text {
   /* position: absolute; */
   /* left: 35.49%;
   right: 56.04%;
@@ -129,19 +118,18 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-/* identical to box height */
+  /* identical to box height */
 
-letter-spacing: 0.001em;
+  letter-spacing: 0.001em;
 
-/* Black - Text Color */
+  /* Black - Text Color */
 
-color: #1E1E1E;
+  color: #1e1e1e;
 }
-
 
 /* Search */
 
-.search{
+.search {
   /* position: absolute; */
   left: 18%;
   right: 6.94%;
@@ -154,7 +142,7 @@ color: #1E1E1E;
   border: 1px solid #000000 !important;
   background-color: #ffffff;
 }
-.search-i{
+.search-i {
   position: relative;
   z-index: 1;
   top: -6px !important;
@@ -175,14 +163,10 @@ color: #1E1E1E;
   bottom: 25%;
   
   /* True Black */
-  
-  /* background: #000000; 
+
+/* background: #000000; 
 
 } */
-
-
-
-
 
 /* SearchBox */
 /* Group 87    */
@@ -198,51 +182,46 @@ color: #1E1E1E;
 
 /* Search Opinions: */
 
-.search-opinions{
+.search-opinions {
   /* position: absolute; */
   width: 137.96px;
   height: 20px;
   left: 100px;
   top: 294px;
-  
+
   /* Subhead */
-  
+
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   /* identical to box height */
-  
-  letter-spacing: 0.004em;
-  
-  color: #000000;
 
+  letter-spacing: 0.004em;
+
+  color: #000000;
 }
 
 /* Search */
-.search-input{
+.search-input {
   /* position: absolute; */
   width: 291px;
   height: 40px;
   left: 100px;
   top: 319px;
-  
+
   /* True Black */
-  
+
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 4px;
-
 }
-
-
-
 
 /* SortBy */
 
 .headline-3 {
-/* PODCASTS */
+  /* PODCASTS */
   /* position: absolute; */
   width: 202px;
   height: 43px;
@@ -258,7 +237,6 @@ color: #1E1E1E;
   line-height: 43px;
   /* identical to box height */
 
-
   /* color: #2C1C59; */
 }
 
@@ -266,23 +244,20 @@ color: #1E1E1E;
 
 .sortby {
   /* Auto Layout */
-  
+
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  
+
   /* position: absolute; */
   width: 607px;
   height: 21px;
   left: 416px;
   top: 362px;
 
-  color: #2C1C59;
+  color: #2c1c59;
 }
-
-
-
 
 .mytextdiv {
   display: flex;
@@ -313,12 +288,12 @@ color: #1E1E1E;
 
 .gb-text {
   /* Auto Layout */
-  
+
   display: flex;
   /* flex-direction: column; */
   align-items: flex-start;
   padding: 10px 5px 5px 10px;
-  
+
   /* position: static; */
   left: 0%;
   right: 0%;
@@ -326,47 +301,42 @@ color: #1E1E1E;
   bottom: 84.62%;
   width: 100%;
   /* Purple */
-  
-  border: 1px solid #2C1C59;
-  background-color:white;
+
+  border: 1px solid #2c1c59;
+  background-color: white;
   box-sizing: border-box;
   border-radius: 5px;
-  
+
   /* Inside Auto Layout */
-  
+
   flex: none;
   /* order: 0; */
   align-self: center;
   flex-grow: 0;
   margin: 0px 15px;
-  
-}  
-
-
+}
 
 /* FilterBar */
-.filter-by{
+.filter-by {
   /* Filter by: */
-  
+
   /* position: absolute; */
   width: 109px;
   height: 30px;
   left: 0px;
   top: 0px;
-  
+
   /* Headline 5 */
-  
+
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
   line-height: 30px;
   letter-spacing: 0.001em;
-  
+
   color: #000000;
-
 }
-
 
 /* CLEAR ALL FILTERS disabled */
 
@@ -376,97 +346,81 @@ color: #1E1E1E;
   right: 0%;
   top: 6.61%;
   bottom: 78.51%;
-  
+
   /* Subhead 3 */
-  
+
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
   letter-spacing: 0.0025em;
-  
-  color: rgba(44, 28, 89, 0.25);
-  
-}
 
+  color: rgba(44, 28, 89, 0.25);
+}
 
 /* Topic filter */
 .topic-filter {
   /* Auto Layout */
-  
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  
+
   position: static;
   width: 291px;
   height: 21px;
   left: 0px;
   top: 55px;
-  
-  
+
   /* Inside Auto Layout */
-  
+
   flex: none;
   order: 1;
   align-self: center;
   flex-grow: 0;
   margin: 0px 25px;
-
 }
 
 /* Source filter */
 
-.source-filter{
+.source-filter {
   /* Auto Layout */
-  
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  
+
   position: static;
   width: 291px;
   height: 20px;
   left: 0px;
   top: 101px;
-  
-  
+
   /* Inside Auto Layout */
-  
+
   flex: none;
   order: 2;
   align-self: center;
   flex-grow: 0;
   margin: 0px 25px;
-
-
-}  
+}
 
 /* Topics & Sources */
-.custom-radio{
+.custom-radio {
   position: static;
   width: 269px;
   height: 0px;
   right: 15px;
   top: 0px;
-  
-  
+
   /* Inside Auto Layout */
-  
+
   flex: none;
   order: 1;
   align-self: flex-start;
   flex-grow: 0;
   margin: 0px 15px;
-
 }
-
-
-
-
-
-
-

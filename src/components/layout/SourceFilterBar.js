@@ -1,11 +1,13 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
 
+// Icon Toggle
 function handleSourceChevron() {
   document.querySelector('.source-chev').classList.toggle('fa-chevron-down');
   document.querySelector('.source-chev').classList.toggle('fa-chevron-up');
 }
 
+// Filter Effect
 function handleNYT() {
   let a, nyt, i;
   a = document.querySelectorAll('.article');
