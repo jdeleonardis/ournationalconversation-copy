@@ -28,7 +28,7 @@ function VerticalCard() {
 								<div className="addiContentVert">Additional Sources</div>
 							</Col>
 						</Row>
-						<Row style={{ marginBottom: '15px' }}></Row>
+						<TagLine />
 					</Container>
 				</Card>
 			</Container>

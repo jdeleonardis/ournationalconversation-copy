@@ -27,9 +27,8 @@ function NewsCard() {
 								<div className="addiContent">Additional Sources</div>
 							</Col>
 						</Row>
-						<Row style={{ marginBottom: '15px' }}>
-							<TagLine />
-						</Row>
+
+						<TagLine />
 					</Container>
 				</Card>
 			</Container>
