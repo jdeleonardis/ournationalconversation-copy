@@ -99,7 +99,11 @@ function ContentCard(props) {
 					<Card.Body>
 						<Row>
 							<Col className="text-left">
-								<span className="sectionHeader">Opinions</span>
+								<span className="sectionHeader">
+									{props.type != null
+										? props.type
+										: 'Pass in name please as type'}
+								</span>
 								<span className="sectionSubHeader">
 									{' '}
 									| Science {'&'} Technology
