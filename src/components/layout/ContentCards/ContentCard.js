@@ -91,7 +91,7 @@ function BodyType(props) {
 	);
 }
 
-function Comment(props) {
+function ContentCard(props) {
 	return (
 		<div>
 			<Container>
@@ -137,4 +137,4 @@ function Comment(props) {
 	);
 }
 
-export default Comment;
+export default ContentCard;
