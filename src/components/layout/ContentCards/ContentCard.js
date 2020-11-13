@@ -2,12 +2,12 @@ import React from 'react';
 import { Card, Image, Col, Row, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentAlt } from '@fortawesome/free-solid-svg-icons';
-import '../ContentCards/syles/comments.css';
-import CommentSvg from './syles/commentSvg';
-import HeartSvg from './syles/heartSvg';
-import DotSvg from './syles/dotSvg';
-import SaveSvg from './syles/saveSvg';
-import ShareSvg from './syles/shareSvg';
+import './styles/comments.css';
+import CommentSvg from './styles/commentSvg';
+import HeartSvg from './styles/heartSvg';
+import DotSvg from './styles/dotSvg';
+import SaveSvg from './styles/saveSvg';
+import ShareSvg from './styles/shareSvg';
 import * as library from './constants/cardConstants';
 
 debugger;
