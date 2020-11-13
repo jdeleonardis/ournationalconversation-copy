@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, Image, Col, Row, Container, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ContentCard from '../ContentCards/ContentCard';
-import VerticalCard from '../ContentCards/VerticalCard';
 
 const ColoredLine = ({ color }) => (
 	<div>

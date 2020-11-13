@@ -26,6 +26,7 @@ function NewsCard(props) {
 								<div className="addiContent">Additional Sources</div>
 							</Col>
 						</Row>
+						<br />
 
 						<TagLine />
 					</Container>

@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Comment from '../ContentCards/ContentCard';
 import NewsCard from '../ContentCards/NewsCard';
 import BreakingNews from '../ContentCards/BreakingNewsCard';
-import VerticalCard from '../ContentCards/VerticalCard';
 
 import GlobalButton from '../GlobalButton';
 
