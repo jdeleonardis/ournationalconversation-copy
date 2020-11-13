@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Image, Col, Row, Container } from 'react-bootstrap';
-import '../ContentCards/syles/comments.css';
+import './styles/comments.css';
 import CardBody from './CardBody';
 import TagLine from './TagLines';
 
