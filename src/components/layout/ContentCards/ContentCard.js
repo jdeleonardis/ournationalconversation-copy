@@ -8,10 +8,8 @@ import HeartSvg from './styles/heartSvg';
 import DotSvg from './styles/dotSvg';
 import SaveSvg from './styles/saveSvg';
 import ShareSvg from './styles/shareSvg';
-import * as library from './constants/cardConstants';
 import bodymap from '../ContentCards/CardBodyDictionary';
 
-debugger;
 function BodyType(props) {
 	return (
 		bodymap.get(props.type) || (
