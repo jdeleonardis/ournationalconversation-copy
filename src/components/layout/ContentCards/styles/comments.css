@@ -36,3 +36,9 @@
 .dateTitle {
 	font-weight: bold;
 }
+
+.boxImage {
+	height: 100px;
+	float: left;
+	margin-right: 1rem;
+}
