@@ -3,21 +3,19 @@
 
 }
 
-.headerbtn{
+.btn{
+    padding: 8px 20px;
     border-radius: 4px;
     outline: none;
     border: none;
     cursor: pointer;
-    margin-bottom: 3%;
-    float: left;
 }
 
-.headerbtn:hover{
+.btn:hover{
     padding: 10px 13px;
     transition: all 0.4s ease-out;
     background: white;
     color: red;
-    
     
 }
 

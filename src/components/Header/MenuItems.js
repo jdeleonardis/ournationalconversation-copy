@@ -1,17 +1,17 @@
 export const MenuItems = [
 	{
 		title: 'News',
-		url: '#',
+		url: '/news',
 		cName: 'nav-links',
 	},
 	{
 		title: 'Opinions',
-		url: '#',
+		url: '/opinions',
 		cName: 'nav-links',
 	},
 	{
 		title: 'Solutions',
-		url: '#',
+		url: '/solutions',
 		cName: 'nav-links',
 	},
 ];

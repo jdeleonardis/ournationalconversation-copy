@@ -1,0 +1,24 @@
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.notvalid-msg-clear {
+  display: none;
+}
+
+.form-input-field::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  color: #bfbfbf !important; 
+}
+
+.hidden-err-msg {
+  font-family: 'Roboto', sans-serif;
+}

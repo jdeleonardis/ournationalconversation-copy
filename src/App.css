@@ -1,14 +1,17 @@
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+*/
+
+
 
 /* ========================
 SIGNUP COMPONENT STYLES
 ======================== */
 
-.container,
+/*.container,
 .container-fluid,
 .container-lg,
 .container-md,
@@ -32,12 +35,13 @@ SIGNUP COMPONENT STYLES
 .hidden-err-msg {
   font-family: 'Roboto', sans-serif;
 }
+*/
 
 /* ========================
 COUNTRY DROPDOWN STYLES
 ======================== */
 
-#dropdown-label {
+/*#dropdown-label {
   width: 100%;
   display: block;
   padding-left: 0 !important;
@@ -65,13 +69,14 @@ COUNTRY DROPDOWN STYLES
   outline: none !important;
 }
 
-/* Hide default dropdown caret icon */
+ Hide default dropdown caret icon 
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
   text-overflow: '';
 }
+*/
 
 /* ========================
 PASSWORD TOGGLE STYLES

@@ -1,0 +1,69 @@
+.NavbarItems {
+  background: linear-gradient(90deg, #1f27c9 0%, #bd0819 100%);
+  height: 10rem;
+  display: grid; /* Use a grid layout to minimize difficulties with vertical spacing */
+  font-size: 1.2rem;
+}
+
+.header-logo {
+  color: #fff;
+  justify-self: start; 
+  margin-top: 2%;
+  position: absolute;
+  left: 6%;
+  cursor: pointer;
+
+}
+
+.top {
+  display: flex;
+  /* Add padding so that the bottom border extends past the length of the flexbox */
+  padding-left: 10%;
+  padding-right: 4%;
+
+  position: absolute; /*Positioned relative to its parent element */
+
+  /*Set margins so that everything still appears centered in proportion to the border line and logo */
+  margin-left: 17%;
+  margin-top: 2%;
+
+  gap: 10%; /*Specifies the space between the title and the login/signup buttons */
+
+  border-bottom: solid thin;
+  color: white;
+}
+
+
+#header-button {
+  /* Use flex display so that buttons are positioned next to each other. */
+  display: flex; 
+  gap: 5%;
+  white-space: nowrap;
+  margin-top: -3%;
+  margin-left: -20;
+}
+
+.nav-menu {
+  display: inline-flex;
+  grid-gap: 15%; 
+  list-style: none;
+  margin-left: 29%;
+  margin-top: 8%;
+  color: #d1d0d0;
+  font-size: 130%;
+  cursor: pointer;
+ 
+  
+}
+
+li:hover {
+  color: white;
+  font-weight: bold;
+}
+
+#title {
+  color: white;
+  font-weight: bold;
+  font-size: 215%;
+  white-space: nowrap;
+}
