@@ -13,15 +13,27 @@ Basically its the same data, just different stylings according to figma doc
 
     e.g.
     ```
-        <ContentCard type="podcast">
+        <ContentCard type="PODCAST">
     ```
     Should render card type  podcast, all card is solution by default
 
+    Available types can be found in constants;
+    In your js, you can import it as a library and use the types
+
+    e.g.
+    ```
+    import * as type from ../constants/cardConstants.js
+
+    <ContentCard type={type.OPINION}>
+    <ContentCard type={type.PODCAST}>
+    etc...
+
+    ```
     Available types
-    - "solution"
-    - "webisode"
-    - "podcast"
-    - "opinion"
+        OPINION
+        WEBISODE
+        PODCAST
+        SOLUTION
 
 News Card is a card specifically for the news there are
 1 type - vertical
