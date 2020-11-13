@@ -36,11 +36,11 @@ function News() {
 				<ColoredLine />
 				<Row>
 					<Col>
-						<NewsCard mdwidth={12} />
+						<NewsCard vertical={true} />
 					</Col>
 
 					<Col>
-						<NewsCard mdwidth={12} />
+						<NewsCard vertical={true} />
 					</Col>
 
 					<Col>

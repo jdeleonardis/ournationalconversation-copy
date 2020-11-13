@@ -11,13 +11,13 @@ function NewsCard(props) {
 				<Card>
 					<Container>
 						<Row>
-							<Col xs={12} sm={12} md={props.mdwidth ? props.mdwidth : 6}>
+							<Col xs={12} sm={12} md={props.vertical ? 12 : 6}>
 								<Card.Img
 									src="https://c.ndtvimg.com/2020-10/el6r9e5c_xi-jinping-afp_625x300_31_October_20.jpg"
 									alt="Card image"
 								/>
 							</Col>
-							<Col xs={12} sm={12} md={props.mdwidth ? props.mdwidth : 6}>
+							<Col xs={12} sm={12} md={props.vertical ? 12 : 6}>
 								<CardBody withText={true} />
 							</Col>
 						</Row>
