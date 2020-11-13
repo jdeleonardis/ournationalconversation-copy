@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import countries from './Countries';
 import { Container, Card, Button } from 'react-bootstrap';
-import '../../App.css';
+import '../styles/signup.css';
 
 export default function App() {
   const [userName, setUserName] = React.useState('');

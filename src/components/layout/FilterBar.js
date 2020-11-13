@@ -153,7 +153,7 @@ const FilterBar = () => {
   return (
     <div>
       <h2 id='filter-by'>Filter by:</h2>
-      <div>
+      <div id='filter-div'>
         <a
           onClick={handleChevron}
           id='topic'

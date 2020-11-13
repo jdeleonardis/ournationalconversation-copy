@@ -6,13 +6,13 @@ import FilterBar from '../layout/FilterBar';
 import Comments from '../layout/ContentCards/ContentCard';
 import RailButtons from '../layout/RailButtons';
 
-export class Opinions extends Component {
+export class Podcasts extends Component {
   render() {
     return (
       <Fragment>
         <div>
           <Helmet>
-            <title>Our National Conversation | Opinions</title>
+            <title>Our National Conversation | Podcasts</title>
           </Helmet>
 
           <Container className='container' fluid>
@@ -20,8 +20,8 @@ export class Opinions extends Component {
             <Row>
               <Col>
                 <SortBy
-                  pageName='Opinions'
-                  pageTitle='OPINIONS'
+                  pageName='Podcasts'
+                  pageTitle='PODCASTS'
                   horizLineTextLeft='Newly Arrived'
                 />
                 <br />
@@ -45,4 +45,4 @@ export class Opinions extends Component {
   }
 }
 
-export default Opinions;
+export default Podcasts;

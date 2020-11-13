@@ -3,16 +3,17 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import SortBy from '../layout/SortBy';
 import FilterBar from '../layout/FilterBar';
-import Comments from '../layout/ContentCards/ContentCard';
+// import Comments from '../layout/ContentCards/ContentCard';
+import ContentCard from '../layout/ContentCards/ContentCard';
 import RailButtons from '../layout/RailButtons';
 
-export class Opinions extends Component {
+export class Webisodes extends Component {
   render() {
     return (
       <Fragment>
         <div>
           <Helmet>
-            <title>Our National Conversation | Opinions</title>
+            <title>Our National Conversation | Webisodes</title>
           </Helmet>
 
           <Container className='container' fluid>
@@ -20,8 +21,8 @@ export class Opinions extends Component {
             <Row>
               <Col>
                 <SortBy
-                  pageName='Opinions'
-                  pageTitle='OPINIONS'
+                  pageName='Webisodes'
+                  pageTitle='WEBISODES'
                   horizLineTextLeft='Newly Arrived'
                 />
                 <br />
@@ -32,7 +33,8 @@ export class Opinions extends Component {
                 <FilterBar />
               </Col>
               <Col md={6}>
-                <Comments />
+                <ContentCard type='webisode' />
+                {/* <Comments /> */}
               </Col>
               <Col md={3}>
                 <RailButtons />
@@ -45,4 +47,4 @@ export class Opinions extends Component {
   }
 }
 
-export default Opinions;
+export default Webisodes;
