@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Comment from '../ContentCards/ContentCard';
 import NewsCard from '../ContentCards/NewsCard';
 import BreakingNews from '../ContentCards/BreakingNewsCard';
-import VerticalCard from '../ContentCards/VerticalCard';
+import * as library from '../ContentCards/constants/cardConstants';
 import GlobalButton from '../GlobalButton';
 
 const ColoredLine = ({ color }) => (
@@ -36,11 +36,11 @@ function News() {
 				<ColoredLine />
 				<Row>
 					<Col>
-						<VerticalCard />
+						<NewsCard vertical={true} />
 					</Col>
 
 					<Col>
-						<VerticalCard />
+						<NewsCard vertical={true} />
 					</Col>
 
 					<Col>
@@ -48,7 +48,6 @@ function News() {
 					</Col>
 				</Row>
 				<Row>
-					{/**fix this later */}
 					<Col></Col>
 					<br />
 					<GlobalButton label={'See More News'} />

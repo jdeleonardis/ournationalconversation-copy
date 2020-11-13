@@ -1,8 +1,7 @@
 import React from 'react';
-import { Card, Image, Col, Row, Container, Button } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Comment from '../ContentCards/ContentCard';
-import VerticalCard from '../ContentCards/VerticalCard';
+import { Col, Row, Container, Button } from 'react-bootstrap';
+import ContentCard from '../ContentCards/ContentCard';
+import * as library from '../ContentCards/constants/cardConstants';
 
 const ColoredLine = ({ color }) => (
 	<div>
@@ -32,9 +31,13 @@ function Solutions() {
 			<Container>
 				<ColoredLine />
 				<br />
-				<Comment />
+				<ContentCard type={library.OPINION} />
 				<br />
-				<Comment />
+				<ContentCard type={library.PODCAST} />
+				<br />
+				<ContentCard type={library.WEBISODE} />
+				<br />
+				<ContentCard type={library.SOLUTION} />
 				<br />
 				<div className="text-center">
 					<Button variant="light">SEE MORE PODCASTS</Button>

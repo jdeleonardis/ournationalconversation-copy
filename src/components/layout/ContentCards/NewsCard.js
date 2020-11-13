@@ -1,24 +1,23 @@
 import React from 'react';
 import { Card, Image, Col, Row, Container } from 'react-bootstrap';
-import './syles/verticalcard.css';
 import '../ContentCards/syles/comments.css';
 import CardBody from './CardBody';
 import TagLine from './TagLines';
 
-function NewsCard() {
+function NewsCard(props) {
 	return (
 		<div>
 			<Container>
 				<Card>
 					<Container>
 						<Row>
-							<Col xs={12} sm={12} md={6}>
+							<Col xs={12} sm={12} md={props.vertical ? 12 : 6}>
 								<Card.Img
 									src="https://c.ndtvimg.com/2020-10/el6r9e5c_xi-jinping-afp_625x300_31_October_20.jpg"
 									alt="Card image"
 								/>
 							</Col>
-							<Col xs={12} sm={12} md={6}>
+							<Col xs={12} sm={12} md={props.vertical ? 12 : 6}>
 								<CardBody withText={true} />
 							</Col>
 						</Row>
@@ -27,6 +26,7 @@ function NewsCard() {
 								<div className="addiContent">Additional Sources</div>
 							</Col>
 						</Row>
+						<br />
 
 						<TagLine />
 					</Container>
