@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import Carousel from 'react-elastic-carousel';
 import GlobalButton from '../GlobalButton';
+import '../ContentCards/styles/tagline.css';
 
 const breakPoints = [
 	{ width: 1, itemsToShow: 1 },
@@ -10,10 +11,9 @@ const breakPoints = [
 	{ width: 1200, itemsToShow: 8 },
 ];
 
-//TagLine Carouselll......
 function TagLine() {
 	return (
-		<div>
+		<div className="styling-example">
 			<Carousel breakPoints={breakPoints}>
 				<GlobalButton label={'CNN'} />
 				<GlobalButton label={'YEET'} />
