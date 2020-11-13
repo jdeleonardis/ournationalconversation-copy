@@ -8,9 +8,11 @@ import HeartSvg from './syles/heartSvg';
 import DotSvg from './syles/dotSvg';
 import SaveSvg from './syles/saveSvg';
 import ShareSvg from './syles/shareSvg';
+import * as library from './constants/cardConstants';
+
 debugger;
 function BodyType(props) {
-	return props.type === 'opinion' ? (
+	return props.type === library.OPINION ? (
 		<div>
 			<Row>
 				<div>
@@ -21,7 +23,7 @@ function BodyType(props) {
 					/>
 				</div>
 				<Col md={10}>
-					<Row className="titleName">OPINION</Row>
+					<Row className="titleName">{library.OPINION}</Row>
 					<Row className="location">Los Angeles, California, United States</Row>
 				</Col>
 			</Row>
@@ -36,7 +38,7 @@ function BodyType(props) {
 				</Col>
 			</Row>
 		</div>
-	) : props.type === 'podcast' || props.type === 'webisode' ? (
+	) : props.type === library.PODCAST || props.type === library.WEBISODE ? (
 		<div>
 			<Row>
 				<div>
@@ -47,7 +49,11 @@ function BodyType(props) {
 					/>
 				</div>
 				<Col md={10}>
-					<Row className="titleName">PODCAST</Row>
+					<Row className="titleName">
+						{props.type === library.PODCAST
+							? library.PODCAST
+							: library.WEBISODE}
+					</Row>
 					<Row className="location">Los Angeles, California, United States</Row>
 				</Col>
 			</Row>
@@ -73,7 +79,7 @@ function BodyType(props) {
 					/>
 				</div>
 				<Col md={10}>
-					<Row className="titleName">Solution</Row>
+					<Row className="titleName">{library.SOLUTION}</Row>
 					<Row className="location">Los Angeles, California, United States</Row>
 				</Col>
 			</Row>
@@ -113,7 +119,7 @@ function ContentCard(props) {
 						<Row>
 							<Col className="text-left header">ONC Releases a New Website</Col>
 						</Row>
-						<BodyType type={'podcast'} />
+						<BodyType type={props.type ? props.type : 'kanye eazssy'} />
 						<Row>
 							<Col md={8}>
 								<span className="dateTitle">Nov 3, 2020</span>{' '}

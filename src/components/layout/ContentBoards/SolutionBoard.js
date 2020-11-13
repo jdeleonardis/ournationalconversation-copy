@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Row, Container, Button } from 'react-bootstrap';
 import ContentCard from '../ContentCards/ContentCard';
+import * as library from '../ContentCards/constants/cardConstants';
 
 const ColoredLine = ({ color }) => (
 	<div>
@@ -30,9 +31,13 @@ function Solutions() {
 			<Container>
 				<ColoredLine />
 				<br />
-				<ContentCard />
+				<ContentCard type={library.OPINION} />
 				<br />
-				<ContentCard />
+				<ContentCard type={library.PODCAST} />
+				<br />
+				<ContentCard type={library.WEBISODE} />
+				<br />
+				<ContentCard type={library.SOLUTION} />
 				<br />
 				<div className="text-center">
 					<Button variant="light">SEE MORE PODCASTS</Button>
