@@ -12,8 +12,8 @@ export class Opinions extends Component {
   render() {
     const style = {
       textAlign: 'center',
-      marginBottom: '40px',
     };
+
     return (
       <Fragment>
         <div>

@@ -12,7 +12,6 @@ export class Webisodes extends Component {
   render() {
     const style = {
       textAlign: 'center',
-      marginBottom: '40px',
     };
 
     return (
