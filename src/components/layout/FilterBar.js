@@ -141,13 +141,13 @@ function handleFactCheck() {
   }
 }
 
-function handleSelectAll() {
-  let all, i;
-  all = document.querySelectorAll('.article');
-  for (i = 0; i < all.length; i++) {
-    all[i].style.display = 'block';
-  }
-}
+// function handleSelectAll() {
+//   let all, i;
+//   all = document.querySelectorAll('.article');
+//   for (i = 0; i < all.length; i++) {
+//     all[i].style.display = 'block';
+//   }
+// }
 
 const FilterBar = () => {
   return (
@@ -281,7 +281,7 @@ const FilterBar = () => {
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
                 />
-                <Form.Check
+                {/* <Form.Check
                   onClick={handleSelectAll}
                   custom
                   type='radio'
@@ -289,8 +289,7 @@ const FilterBar = () => {
                   name='formHorizontalRadios'
                   id='formHorizontalRadios12'
                   className='filter-dropdown-text'
-                  // className={`custom-${type}`}
-                />
+                /> */}
               </div>
             ))}
           </Form>

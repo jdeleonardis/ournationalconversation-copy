@@ -3,12 +3,18 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import SortBy from '../layout/SortBy';
 import FilterBar from '../layout/FilterBar';
-// import Comments from '../layout/ContentCards/ContentCard';
+import * as type from '../layout/ContentCards/constants/cardConstants';
 import ContentCard from '../layout/ContentCards/ContentCard';
 import RailButtons from '../layout/RailButtons';
+import GlobalButton from '../layout/GlobalButton';
 
 export class Webisodes extends Component {
   render() {
+    const style = {
+      textAlign: 'center',
+      marginBottom: '40px',
+    };
+
     return (
       <Fragment>
         <div>
@@ -33,8 +39,12 @@ export class Webisodes extends Component {
                 <FilterBar />
               </Col>
               <Col md={6}>
-                <ContentCard type='webisode' />
-                {/* <Comments /> */}
+                <ContentCard type={type.WEBISODE} />
+                <ContentCard type={type.WEBISODE} />
+                <br />
+                <div style={style}>
+                  <GlobalButton label='SEE MORE WEBISODES' />
+                </div>
               </Col>
               <Col md={3}>
                 <RailButtons />
