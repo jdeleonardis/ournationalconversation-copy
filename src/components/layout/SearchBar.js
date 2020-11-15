@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
 import {
-  FormControl,
   Navbar,
   Nav,
-  Form,
-  Container,
-  Row,
-  Col,
-  Button,
+  Col
 } from 'react-bootstrap';
 import '../styles/searchBar.css';
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { ButtonGroup, Button, Container } from 'react-bootstrap';
+import '../styles/railButtons.css';
+
 class RailButtons extends Component {
   render() {
     return (

@@ -1,0 +1,42 @@
+/* Right Rail Buttons */
+.gb-5 {
+  /* position: absolute; */
+  width: 291px;
+  height: 260px;
+  left: 648px;
+  top: 0px;
+  font-family: Montserrat;
+  margin-top: -6em;
+}
+
+/* Frame 43 */
+
+.gb-text {
+  /* Auto Layout */
+
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  padding: 10px 5px 5px 10px;
+
+  /* position: static; */
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 84.62%;
+  width: 100%;
+  /* Purple */
+
+  border: 1px solid #2c1c59;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  /* order: 0; */
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 15px;
+}
