@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import '../styles/sort-by.css';
-import '../styles/searchBar.css';
+import '../../styles/sort-by.css';
+import '../../styles/searchBar.css';
 
 const SearchBox = (props) => {
   return (
