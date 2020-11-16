@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Form, FormControl } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import '../styles/sort-by.css';
 import '../styles/searchBar.css';
 

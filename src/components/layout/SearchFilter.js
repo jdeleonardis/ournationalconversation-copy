@@ -8,6 +8,7 @@ class SearchFilter extends Component {
   render() {
     return (
     <div>
+      <SearchBar/>
       <SortBy/>
       <FilterBar/>
       <RailButtons/>
