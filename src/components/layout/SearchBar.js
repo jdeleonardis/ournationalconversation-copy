@@ -14,19 +14,19 @@ const SearchBar = (props) => {
         <Col className='mb-2' xs lg='9'>
           <Nav className='group-68 mr-auto '>
             <button className='news-filters-btn' href='#'>
-              NEWS FILTERS{props.newFilters} <i class='fas fa-chevron-down news-filters-btn' />
+              NEWS FILTERS<i class='fas fa-chevron-down news-filters-btn' />
             </button>
             <Nav.Link href='#'>
-              <span className='hot-topics'>HOT TOPICS{props.hotTopics}: </span>
+              <span className='hot-topics'>HOT TOPICS: </span>
             </Nav.Link>
             <Nav.Link className='search-bar-text' href='#'>
-              COVID-19 Alert
+              COVID-19 Alert{props.hotTopics}
             </Nav.Link>
             <Nav.Link className='search-bar-text' href='#'>
-              Biden VP Pick
+              Biden VP Pick{props.hotTopics}
             </Nav.Link>
             <Nav.Link className='search-bar-text' href='#'>
-              School Reopenings
+              School Reopenings{props.hotTopics}
             </Nav.Link>
           </Nav>
         </Col>
