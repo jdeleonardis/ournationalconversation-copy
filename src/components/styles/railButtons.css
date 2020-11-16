@@ -1,13 +1,11 @@
 /* Right Rail Buttons */
 .gb-5 {
-  /* position: absolute; */
+  position: relative;
   width: 291px;
-  height: 260px;
-  left: 648px;
-  top: 0px;
+  /* height: 260px; */
+  /* left: 648px; */
+  /* top: -6em; */
   font-family: Montserrat;
-  margin-top: -6em;
-  margin-right: -100em;
 }
 
 /* Frame 43 */
@@ -18,7 +16,7 @@
   display: flex;
   /* flex-direction: column; */
   align-items: flex-start;
-  padding: 10px 5px 5px 10px;
+  padding: 10px 5px 5px 0px;
 
   /* position: static; */
   left: 0%;
@@ -35,9 +33,9 @@
 
   /* Inside Auto Layout */
 
-  flex: none;
+  /* flex: none; */
   /* order: 0; */
-  align-self: center;
-  flex-grow: 0;
-  margin: 0px 15px;
+  /* align-self: center; */
+  /* flex-grow: 0; */
+  /* margin: 0px 15px; */
 }
