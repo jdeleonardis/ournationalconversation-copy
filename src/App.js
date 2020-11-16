@@ -1,26 +1,26 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './components/pages/Home';
-import News from './components/pages/News';
-import Opinions from './components/pages/Opinions';
-import Contact from './components/pages/Contact';
+import Home from './pages/Home';
+import News from './pages/News';
+import Opinions from './pages/Opinions';
+import Contact from './pages/Contact';
 import Header from './components/Header/Header';
-import SearchBar from './components/layout/SearchBar';
-import SearchFilter from './components/layout/SearchFilter';
-import Footer from './components/layout/Footer';
+import SearchBar from './components/Filters/SearchBar';
+import SearchFilter from './components/Filters/SearchFilter';
+import Footer from './components/Misc/Footer';
 
-import MockArticles from './components/layout/MockArticles';
+import MockArticles from './components/Misc/MockArticles';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-//HELLO AMERICAWASEFJ;OASDKFJ;A
+
 function App() {
   return (
     <Router>
       <div className='App'>
         <Header />
-        {/*<SearchBar /> */}
+        <SearchBar /> 
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/opinions' component={Opinions} />

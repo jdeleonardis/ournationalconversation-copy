@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import FilterBar from '../layout/FilterBar';
-import NewsBoard from '../layout/ContentBoards/NewsBoard';
+import FilterBar from '../components/Filters/FilterBar';
+import NewsBoard from '../components/Content/ContentBoards/NewsBoard';
 
 class News extends React.Component {
   render() {

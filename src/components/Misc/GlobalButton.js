@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import '../styles/global-btn.css';
+import '../../styles/global-btn.css';
 
 const GlobalButton = (props) => {
   return (

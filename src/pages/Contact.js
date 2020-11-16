@@ -11,8 +11,6 @@ import {
 } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 
-
-
 export class Contact extends Component {
   render() {
     return (

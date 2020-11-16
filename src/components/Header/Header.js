@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/Header.css';
 import { MenuItems } from './MenuItems';
-import '../styles/footer.css';
+import '../../styles/footer.css';
 import { Button } from './Button';
 
 class Header extends React.Component {

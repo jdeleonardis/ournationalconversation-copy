@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import Carousel from 'react-elastic-carousel';
-import GlobalButton from '../GlobalButton';
+import GlobalButton from '../../Misc/GlobalButton';
 import '../ContentCards/styles/tagline.css';
 
 const breakPoints = [

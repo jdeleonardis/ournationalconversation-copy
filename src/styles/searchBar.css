@@ -1,21 +1,419 @@
-/* Subhead */
-.search {
-  position: absolute;
+/* Subhead - SearchBar */
+
+.search-bar {
+  /* position: absolute; */
   width: 1440px;
   height: 70px;
-  left: 0px;
-  top: 174px;
+  left: 250px;
+  /* top: 174px; */
 }
+
 /* Frame 12 */
 
-dropdown-item-button {
-  position: absolute;
+/* Auto Layout */
+.news-filters-btn {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 0px 0px 15px;
+
+  /* position: absolute; */
   left: 6.94%;
-  right: 79.79%;
+  right: 80.28%;
   top: 21.43%;
-  bottom: 20%;
+  bottom: 21.43%;
+  height: 40px;
+  width: 184px;
+
   /* Purple */
 
   background: #2c1c59;
   border-radius: 5px;
+  color: white;
+}
+
+/* Frame 67 */
+
+.news-filters {
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  font-family: Montserrat;
+
+  /* position: static; */
+  /* width: 154px; */
+  height: 20px;
+  left: 15px;
+  top: 10px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+
+.fa-chevron-down {
+  /* Vector */
+
+  position: static;
+  width: 20px;
+  height: 12px;
+  left: 134px;
+  top: 4px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  align-self: center;
+  flex-grow: 0;
+  margin: 10px 0px;
+}
+
+/* Group 68 */
+
+.group-68 {
+  /* position: absolute; */
+  /* width: 580px; */
+  height: 20px;
+  left: 380px;
+  top: 25px;
+  font-weight: bold;
+}
+
+/* HOT TOPICS */
+.hot-topics {
+  /* position: absolute; */
+  /* left: 36.39%;
+  right: 66.25%;
+  top: 35.71%;
+  bottom: 35.71%; */
+  padding: 0px 40px 0px 100px;
+  font-family: Montserrat;
+  color: #2c1c59;
+}
+
+/* SearchBar Text */
+.search-bar-text {
+  /* position: absolute; */
+  /* left: 35.49%;
+  right: 56.04%;
+  top: 35.71%;
+  bottom: 35.71%;
+  */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  letter-spacing: 0.001em;
+
+  /* Black - Text Color */
+
+  color: #1e1e1e;
+}
+
+/* Search */
+
+.search {
+  /* position: absolute; */
+  left: 18%;
+  right: 6.94%;
+  top: 21.43%;
+  bottom: 21.43%;
+  width: 85%;
+  padding: 17px;
+  border-radius: 0.25rem;
+  /* border: 1px solid #d1d0d0 !important; */
+  border: 1px solid #000000 !important;
+  background-color: #ffffff;
+}
+.search-i {
+  position: relative;
+  z-index: 1;
+  top: -6px !important;
+  left: 10px;
+  top: 1px;
+  /* color: #7b7b7b; */
+  color: #000000;
+  cursor: pointer;
+  width: 0;
+}
+
+/* Vector */
+/* .fa-search {
+  position: absolute;
+  left: 87.32%;
+  right: 5.43%;
+  top: 25%;
+  bottom: 25%;
+  
+  /* True Black */
+
+/* background: #000000; 
+} */
+
+/* SearchBox */
+/* Group 87    */
+
+/* .search-box{
+  position: absolute;
+  width: 291px;
+  height: 65px;
+  left: 100px;
+  top: 294px; 
+} */
+
+/* Search Opinions: */
+
+.search-opinions {
+  /* position: absolute; */
+  width: 137.96px;
+  height: 20px;
+  left: 100px;
+  top: 294px;
+
+  /* Subhead */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  letter-spacing: 0.004em;
+
+  color: #000000;
+}
+
+/* Search */
+.search-input {
+  /* position: absolute; */
+  width: 291px;
+  height: 40px;
+  left: 100px;
+  top: 319px;
+
+  /* True Black */
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* SortBy */
+
+.headline-3 {
+  /* PODCASTS */
+  /* position: absolute; */
+  width: 202px;
+  height: 43px;
+  left: 416px;
+  top: 294px;
+
+  /* Headline 3 */
+
+  /* font-family: Montserrat; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 43px;
+  /* identical to box height */
+
+  /* color: #2C1C59; */
+}
+
+/* Frame 88 */
+
+.sortby {
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  /* position: absolute; */
+  width: 607px;
+  height: 21px;
+  left: 416px;
+  top: 362px;
+
+  color: #2c1c59;
+}
+
+.mytextdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 75%;
+}
+.mytexttitle {
+  flex-grow: 0;
+}
+.divider {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #9f9f9f;
+}
+
+/* Right Rail Buttons */
+.gb-5 {
+  /* position: absolute; */
+  width: 291px;
+  height: 260px;
+  left: 648px;
+  top: 0px;
+  font-family: Montserrat;
+}
+
+/* Frame 43 */
+
+.gb-text {
+  /* Auto Layout */
+
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  padding: 10px 5px 5px 10px;
+
+  /* position: static; */
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 84.62%;
+  width: 100%;
+  /* Purple */
+
+  border: 1px solid #2c1c59;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  /* order: 0; */
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 15px;
+}
+
+/* FilterBar */
+.filter-by {
+  /* Filter by: */
+
+  /* position: absolute; */
+  width: 109px;
+  height: 30px;
+  left: 0px;
+  top: 0px;
+
+  /* Headline 5 */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.001em;
+
+  color: #000000;
+}
+
+/* CLEAR ALL FILTERS disabled */
+
+.clear {
+  /* position: absolute; */
+  left: 48.11%;
+  right: 0%;
+  top: 6.61%;
+  bottom: 78.51%;
+
+  /* Subhead 3 */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.0025em;
+
+  color: rgba(44, 28, 89, 0.25);
+}
+
+/* Topic filter */
+.topic-filter {
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 291px;
+  height: 21px;
+  left: 0px;
+  top: 55px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 25px;
+}
+
+/* Source filter */
+
+.source-filter {
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 291px;
+  height: 20px;
+  left: 0px;
+  top: 101px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 2;
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 25px;
+}
+
+/* Topics & Sources */
+.custom-radio {
+  position: static;
+  width: 269px;
+  height: 0px;
+  right: 15px;
+  top: 0px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  align-self: flex-start;
+  flex-grow: 0;
+  margin: 0px 15px;
 }

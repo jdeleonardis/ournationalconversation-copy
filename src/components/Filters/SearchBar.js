@@ -9,7 +9,7 @@ import {
   Col,
   Button,
 } from 'react-bootstrap';
-import '../styles/searchBar.css';
+import '../../styles/searchBar.css';
 
 class SearchBar extends Component {
   render() {

@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import { Card, Col, Row, Container } from 'react-bootstrap';
 
-import FilterBar from '../layout/FilterBar';
+import FilterBar from '../Filters/FilterBar';
 
-import SourceFilterBar from '../layout/SourceFilterBar';
+import SourceFilterBar from '../Filters/SourceFilterBar';
 
 export class MockArticles extends Component {
   // const mockarticles = (props) => {

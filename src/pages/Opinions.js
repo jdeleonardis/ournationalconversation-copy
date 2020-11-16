@@ -1,10 +1,10 @@
 import React, { Component, Fragment } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
-import SortBy from '../layout/SortBy';
-import FilterBar from '../layout/FilterBar';
-import Comments from '../layout/ContentCards/ContentCard';
-import RailButtons from '../layout/RailButtons';
+import SortBy from '../components/Filters/SortBy';
+import FilterBar from '../components/Filters/FilterBar';
+import Comments from '../components/Content/ContentCards/ContentCard';
+import RailButtons from '../components/Misc/RailButtons';
 
 export class Opinions extends Component {
 	render() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
-import '../styles/source-filter-bar.css';
+import '../../styles/source-filter-bar.css';
 
 // Icon Toggle
 function handleSourceChevron() {

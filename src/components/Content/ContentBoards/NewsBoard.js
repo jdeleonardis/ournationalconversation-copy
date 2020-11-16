@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Comment from '../ContentCards/ContentCard';
 import NewsCard from '../ContentCards/NewsCard';
 import BreakingNews from '../ContentCards/BreakingNewsCard';
-import GlobalButton from '../GlobalButton';
+import GlobalButton from '../../Misc/GlobalButton';
 
 const ColoredLine = ({ color }) => (
 	<div>

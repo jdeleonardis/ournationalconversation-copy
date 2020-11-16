@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-solid-svg-icons';
-import '../styles/footer.css';
+import '../../styles/footer.css';
 
 function Footer() {
 	return (
