@@ -8,14 +8,21 @@ class SearchFilter extends Component {
   render() {
     return (
     <div>
-      <SearchBox/>
-      <SortBy/>
-      <FilterBar/>
-      <RailButtons/>
+        <Row>
+          <Col md={3}>
+          <SearchBox/>
+          <FilterBar/>
+          </Col>
+          <Col md={6}>
+            <SortBy/>
+          </Col>
+          <Col md={3}>
+            <RailButtons/>
+          </Col>
+        </Row>
     </div>
     );
   }
 }
-
 export default SearchFilter;
 
