@@ -17,7 +17,7 @@ const SearchBar = (props) => {
         <Col className='mb-2' xs lg='6'>
           <Nav className='group-68 mr-auto '>
             <Nav.Link className='hot-topics search-bar-text' href='#'>
-              HOT TOPICS:
+              HOT TOPICS :
             </Nav.Link>
             <Nav.Link className='search-bar-text' href='#'>
               COVID-19 Alert{props.hotTopics}
