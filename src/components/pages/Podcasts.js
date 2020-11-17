@@ -42,7 +42,7 @@ export class Podcasts extends Component {
                 <ContentCard type={type.PODCAST} />
                 <br />
                 <div style={style}>
-                  <GlobalButton label='SEE MORE PODCASTS' />
+                  <GlobalButton fontWeight='700' label='SEE MORE PODCASTS' />
                 </div>
               </Col>
               <Col md={3}>

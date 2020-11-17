@@ -42,7 +42,7 @@ export class Opinions extends Component {
                 <ContentCard type={type.OPINION} />
                 <br />
                 <div style={style}>
-                  <GlobalButton label='SEE MORE OPINIONS' />
+                  <GlobalButton fontWeight='700' label='SEE MORE OPINIONS' />
                 </div>
               </Col>
               <Col md={3}>

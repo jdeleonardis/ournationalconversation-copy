@@ -42,7 +42,7 @@ export class Webisodes extends Component {
                 <ContentCard type={type.WEBISODE} />
                 <br />
                 <div style={style}>
-                  <GlobalButton label='SEE MORE WEBISODES' />
+                  <GlobalButton fontWeight='700' label='SEE MORE WEBISODES' />
                 </div>
               </Col>
               <Col md={3}>
