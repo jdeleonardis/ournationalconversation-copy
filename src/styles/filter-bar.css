@@ -1,3 +1,11 @@
+#filter-div {
+  margin-bottom: 15px;
+}
+
+.chev {
+  display: initial;
+}
+
 #topic {
   color: #2c1c59;
   text-decoration: none;
@@ -11,6 +19,7 @@
 
 #filter-by {
   font-family: 'Montserrat', sans-serif;
+  margin-bottom: 15px;
 }
 
 /* ========================
@@ -57,28 +66,16 @@ MEDIA QUERIES
     margin-top: 0;
     font-size: 28px;
   }
-
-  #topic {
-    font-size: 14px;
-  }
 }
 
 @media screen and (min-width: 401px) and (max-width: 430px) {
   /* .container {
       background-color: burlywood;
     } */
-
-  #topic {
-    font-size: 14px;
-  }
 }
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
   /* .container {
       background-color: pink;
     } */
-
-  #topic {
-    font-size: 14px;
-  }
 }
