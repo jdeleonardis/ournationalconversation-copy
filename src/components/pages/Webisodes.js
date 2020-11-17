@@ -12,6 +12,7 @@ export class Webisodes extends Component {
   render() {
     const style = {
       textAlign: 'center',
+      width: '104.5%',
     };
 
     return (
@@ -38,11 +39,23 @@ export class Webisodes extends Component {
                 <FilterBar />
               </Col>
               <Col md={6}>
-                <ContentCard type={type.WEBISODE} />
-                <ContentCard type={type.WEBISODE} />
+                <div
+                  style={{
+                    width: '110%',
+                    marginLeft: '-15px',
+                    // fontSize: '14px',
+                  }}
+                >
+                  <ContentCard type={type.WEBISODE} />
+                  <ContentCard type={type.WEBISODE} />
+                </div>
                 <br />
                 <div style={style}>
-                  <GlobalButton fontWeight='700' label='SEE MORE WEBISODES' />
+                  <GlobalButton
+                    padding='7px 55px'
+                    fontWeight='700'
+                    label='SEE MORE WEBISODES'
+                  />
                 </div>
               </Col>
               <Col md={3}>
