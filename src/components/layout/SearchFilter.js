@@ -9,26 +9,30 @@ import {
 } from 'react-bootstrap';
 import SortBy from './SortBy'
 import FilterBar from './FilterBar'
+import SourceFilterBar from './SourceFilterBar';
 import RailButtons from './RailButtons';
 import SearchBox from './SearchBox';
 
 class SearchFilter extends Component {
   render() {
     return (
-    <div>
+      <div>
         <Row>
           <Col md={3}>
-          <SearchBox/>
-          <FilterBar/>
+            <SearchBox />
+            <Col>
+              <FilterBar />
+              <SourceFilterBar />
+            </Col>
           </Col>
           <Col md={6}>
-            <SortBy/>
+            <SortBy />
           </Col>
           <Col md={3}>
-            <RailButtons/>
+            <RailButtons />
           </Col>
         </Row>
-    </div>
+      </div>
     );
   }
 }

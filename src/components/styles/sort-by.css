@@ -1,7 +1,64 @@
+/* SortBy */
+
+.headline-3 {
+  /* PODCASTS */
+  /* position: absolute; */
+  width: 202px;
+  height: 43px;
+  left: 416px;
+  top: 294px;
+
+  /* Headline 3 */
+
+  /* font-family: Montserrat; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 43px;
+  /* identical to box height */
+
+  /* color: #2C1C59; */
+}
+
+/* Frame 88 */
+
+.sort-by {
+  /* Auto Layout */
+
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* align-items: flex-start; */
+  /* padding: 0px; */
+
+  /* position: absolute; */
+  /* width: 607px;
+  height: 21px;
+  left: 416px;
+  top: 362px; */
+
+  color: #2c1c59;
+}
+
+.mytextdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 75%;
+}
+.mytexttitle {
+  flex-grow: 0;
+}
+.divider {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #9f9f9f;
+}
+
 .page-title {
   color: #2c1c59;
   font-family: 'Montserrat', sans-serif;
 }
+
 
 #small-search-field {
   width: 100%;
@@ -43,8 +100,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-#sort-by {
-  font-family: 'Montserrat', sans-serif;
+.sort-by {
+  font-family: 'Montserrat';
+  text-decoration-color: #2c1c59;
+  
 }
 
 .divider {
