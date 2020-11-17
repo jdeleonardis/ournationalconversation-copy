@@ -16,8 +16,8 @@ const SearchBar = (props) => {
             <button className='news-filters-btn' href='#'>
               NEWS FILTERS<i class='fas fa-chevron-down news-filters-btn' />
             </button>
-            <Nav.Link href='#'>
-              <span className='hot-topics'>HOT TOPICS: </span>
+            <Nav.Link className='hot-topics' href='#'>
+              HOT TOPICS: 
             </Nav.Link>
             <Nav.Link className='search-bar-text' href='#'>
               COVID-19 Alert{props.hotTopics}
@@ -30,11 +30,12 @@ const SearchBar = (props) => {
             </Nav.Link>
           </Nav>
         </Col>
-        <Col lg='3' md='auto'>
+        <Col lg='3' md='3'>
           <input className='search' type='text' placeholder='SEARCH' />
           <i className='fa fa-search search-i' />
         </Col>
       </Navbar>
+      <hr/>
     </div>
   )
 }
