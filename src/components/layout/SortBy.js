@@ -9,6 +9,7 @@ const SortBy = (props) => {
       <h2 className="page-title">
         <strong>{props.pageTitle}</strong>
       </h2>
+      <p>Newly Arrived</p>
       <div class="textdiv">
         <div className="texttitle">
           {props.horizLineTextLeft} &nbsp;&nbsp;&nbsp;

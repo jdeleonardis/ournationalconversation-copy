@@ -7,7 +7,7 @@ const SortByLocal = (props) => {
   return (
     <Navbar className="search-bar sort-by" expand="lg" bg="">
       <h2 className="page-title">
-        <strong>{props.pageTitle}</strong>
+        <strong>LOCAL NEWS{props.pageTitle}</strong>
       </h2>
       <div class="textdiv">
         <div className="texttitle">

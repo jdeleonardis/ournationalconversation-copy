@@ -8,6 +8,7 @@ import FilterBar from "./FilterBar";
 import SourceFilterBar from "./SourceFilterBar";
 import RailButtons from "./RailButtons";
 import SearchBox from "./SearchBox";
+// import AddLocation from "./AddLocation";
 
 class SearchFilter extends Component {
   render() {
@@ -24,6 +25,7 @@ class SearchFilter extends Component {
           <Col md={6}>
             <SortBy />
             <SortByLocal />
+            {/* <AddLocation/> */}
             <SortByStore />
           </Col>
           <Col md={3}>

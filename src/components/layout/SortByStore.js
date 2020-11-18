@@ -9,6 +9,7 @@ const SortBy = (props) => {
       <h2 className="page-title">
         <strong>{props.pageTitle}</strong>
       </h2>
+      <p>All Items {props.pageSubTitle}</p>
       <div class="textdiv">
         <div className="texttitle">
           {props.horizLineTextLeft} &nbsp;&nbsp;&nbsp;
@@ -21,6 +22,7 @@ const SortBy = (props) => {
         title="Sort by: DEFAULT"
         id="collasible-nav-dropdown"
         className="sort-by"
+        size="lg"
         bg=""
         variant="light"
       >
@@ -42,7 +44,6 @@ const SortBy = (props) => {
         <NavDropdown.Item href="#action/3.3">
           PRICE: LOW TO HIGH{props.sort}
         </NavDropdown.Item>
-
       </NavDropdown>
     </Navbar>
   );
