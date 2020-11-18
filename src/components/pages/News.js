@@ -1,7 +1,7 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import FilterBar from '../layout/FilterBar';
-import NewsBoard from '../layout/ContentBoards/NewsBoard';
+import React from "react";
+import { Helmet } from "react-helmet";
+import FilterBar from "../layout/FilterBar";
+import NewsBoard from "../layout/ContentBoards/NewsBoard";
 
 class News extends React.Component {
   render() {
@@ -10,9 +10,9 @@ class News extends React.Component {
         <Helmet>
           <title>Our National Conversation | News</title>
         </Helmet>
-        <h1 className='NewsTitle'>NEWS</h1>
+        <h1 className="NewsTitle">NEWS</h1>
 
-        <div className='NewsFilter'>
+        <div className="NewsFilter">
           <FilterBar />
         </div>
         <NewsBoard />

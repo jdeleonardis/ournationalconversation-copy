@@ -56,9 +56,8 @@
 
 .page-title {
   color: #2c1c59;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 
 #small-search-field {
   width: 100%;
@@ -69,11 +68,11 @@
 }
 
 #small-search-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #small-search-field::placeholder {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #bfbfbf !important;
 }
 
@@ -97,13 +96,12 @@
 
 .texttitle {
   flex-grow: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .sort-by {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   text-decoration-color: #2c1c59;
-  
 }
 
 .divider {

@@ -1,8 +1,8 @@
-import React from 'react';
-import 'react-responsive-modal/styles.css';
-import { Button } from 'react-bootstrap';
-import { Modal } from 'react-responsive-modal';
-import SignupComponent from './SignupComponent';
+import React from "react";
+import "react-responsive-modal/styles.css";
+import { Button } from "react-bootstrap";
+import { Modal } from "react-responsive-modal";
+import SignupComponent from "./SignupComponent";
 
 export default class App extends React.Component {
   state = {
@@ -20,9 +20,9 @@ export default class App extends React.Component {
       <div>
         <Button
           style={{
-            margin: '10px',
+            margin: "10px",
           }}
-          variant='success'
+          variant="success"
           onClick={this.onOpenModal}
         >
           Signup Modal

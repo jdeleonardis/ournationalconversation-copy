@@ -1,33 +1,43 @@
-import React from 'react';
-import { Row, Col,NavDropdown,Navbar,Nav } from 'react-bootstrap';
-import '../styles/sort-by.css';
-import '../styles/searchBar.css';
+import React from "react";
+import { Row, Col, NavDropdown, Navbar, Nav } from "react-bootstrap";
+import "../styles/sort-by.css";
+import "../styles/searchBar.css";
 
 const SortBy = (props) => {
   return (
-    <Navbar className='search-bar sort-by' expand='lg' bg=''>
-      <h2 className='page-title'>
+    <Navbar className="search-bar sort-by" expand="lg" bg="">
+      <h2 className="page-title">
         <strong>{props.pageTitle}</strong>
       </h2>
-      <div class='textdiv'>
-        <div className='texttitle'>
+      <div class="textdiv">
+        <div className="texttitle">
           {props.horizLineTextLeft} &nbsp;&nbsp;&nbsp;
         </div>
-        <div className='divider'></div> &nbsp;&nbsp;&nbsp;
+        <div className="divider"></div> &nbsp;&nbsp;&nbsp;
         {/* <span id='sort-by'>Sort by: DEFAULT</span>&nbsp;&nbsp;
         <i class='fas fa-caret-down'></i> */}
       </div>
       <NavDropdown
-        title='Sort by: DEFAULT'
-        id='collasible-nav-dropdown'
-        className='sort-by'
-        bg=''
-        variant='light'
+        title="Sort by: DEFAULT"
+        id="collasible-nav-dropdown"
+        className="sort-by"
+        bg=""
+        variant="light"
       >
-        <NavDropdown.Item href='#action/3.1'>DEFAULT</NavDropdown.Item>
-        <NavDropdown.Item href='#action/3.2'>NEWEST</NavDropdown.Item>
-        <NavDropdown.Item href='#action/3.3'>OLDEST</NavDropdown.Item>
-        <NavDropdown.Item href='#action/3.4'>MOST COMMENTS</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.1">
+          DEFAULT{props.sort}{" "}
+        </NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">
+          NEWEST{props.sort}
+        </NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">
+          OLDEST{props.sort}
+        </NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.4">
+          MOST COMMENTS{props.sort}
+        </NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
       </NavDropdown>
     </Navbar>
   );
