@@ -147,7 +147,9 @@ const SearchFilterBar = () => {
           href="#demo2"
           data-toggle="collapse"
         >
-          <i class="source-chev fas fa-chevron-down"></i>&nbsp;&nbsp;SOURCE
+          <i class="source-chev fas fa-chevron-down"></i>
+          &nbsp;&nbsp;SOURCE
+          {/* <span className='clear'>CLEAR</span> */}
         </a>
 
         <div

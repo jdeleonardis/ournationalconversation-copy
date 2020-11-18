@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, NavDropdown, Navbar, Nav } from "react-bootstrap";
+import { Row, Col, Dropdown,NavDropdown, Navbar, Nav } from "react-bootstrap";
 import "../styles/sort-by.css";
 import "../styles/searchBar.css";
 
@@ -25,18 +25,18 @@ const SortBy = (props) => {
         bg=""
         variant="light"
       >
-        <NavDropdown.Item href="#action/3.1">
+        <Dropdown.Item href="#action/4.1">
           DEFAULT{props.sort}{" "}
-        </NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">
+        </Dropdown.Item>
+        <Dropdown.Item href="#action/4.2">
           NEWEST{props.sort}
-        </NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">
+        </Dropdown.Item>
+        <Dropdown.Item href="#action/4.3">
           OLDEST{props.sort}
-        </NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.4">
+        </Dropdown.Item>
+        <Dropdown.Item href="#action/4.4">
           MOST COMMENTS{props.sort}
-        </NavDropdown.Item>
+        </Dropdown.Item>
       </NavDropdown>
     </Navbar>
   );

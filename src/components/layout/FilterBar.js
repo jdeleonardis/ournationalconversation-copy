@@ -160,7 +160,9 @@ const FilterBar = () => {
           href="#demo"
           data-toggle="collapse"
         >
-          <i class="chev fas fa-chevron-down"></i>&nbsp;&nbsp;TOPIC
+          <i class="chev fas fa-chevron-down"></i>
+          &nbsp;&nbsp;TOPIC 
+          {/* <span className='clear'>CLEAR</span> */}
         </a>
 
         <div
