@@ -3,7 +3,7 @@ import { Row, Col, NavDropdown, Navbar, Nav } from "react-bootstrap";
 import "../styles/sort-by.css";
 import "../styles/searchBar.css";
 
-const SortBy = (props) => {
+const SortByLocal = (props) => {
   return (
     <Navbar className="search-bar sort-by" expand="lg" bg="">
       <h2 className="page-title">
@@ -18,27 +18,40 @@ const SortBy = (props) => {
         <i class='fas fa-caret-down'></i> */}
       </div>
       <NavDropdown
-        title="Sort by: DEFAULT"
+        title="SAN JOSE, CA"
         id="collasible-nav-dropdown"
         className="sort-by"
         bg=""
+        size='lg'
         variant="light"
       >
         <NavDropdown.Item href="#action/3.1">
-          DEFAULT{props.sort}{" "}
+          SAN JOSE, CA <span className="remove">Remove</span>
+          {props.sort}
         </NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">
-          NEWEST{props.sort}
+          LOS ANGLELES, CA <span className="remove">Remove</span>
+          {props.sort}
         </NavDropdown.Item>
         <NavDropdown.Item href="#action/3.3">
-          OLDEST{props.sort}
+          NEW YORK,NY <span className="remove">Remove</span>
+          {props.sort}
         </NavDropdown.Item>
         <NavDropdown.Item href="#action/3.4">
-          MOST COMMENTS{props.sort}
+          PORTLAND,OR <span className="remove">Remove</span>
+          {props.sort}
+        </NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.4">
+          SAN FRANCISCO, CA <span className="remove">Remove</span>
+          {props.sort}
+        </NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#action/3.4">
+          <span>ADD NEW LOCATION +</span>
         </NavDropdown.Item>
       </NavDropdown>
     </Navbar>
   );
 };
 
-export default SortBy;
+export default SortByLocal;

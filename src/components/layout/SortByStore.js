@@ -28,14 +28,21 @@ const SortBy = (props) => {
           DEFAULT{props.sort}{" "}
         </NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">
-          NEWEST{props.sort}
+          NEWEST ADDTIONS{props.sort}
         </NavDropdown.Item>
         <NavDropdown.Item href="#action/3.3">
-          OLDEST{props.sort}
+          RATING: HIGH TO LOW{props.sort}
         </NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.4">
-          MOST COMMENTS{props.sort}
+        <NavDropdown.Item href="#action/3.3">
+          RATING: LOW TO HIGH{props.sort}
         </NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">
+          PRICE: HIGH TO LOW{props.sort}
+        </NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">
+          PRICE: LOW TO HIGH{props.sort}
+        </NavDropdown.Item>
+
       </NavDropdown>
     </Navbar>
   );
