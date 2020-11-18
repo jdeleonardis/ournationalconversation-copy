@@ -53,9 +53,9 @@ function Footer() {
 								style={{
 									backgroundColor: 'white',
 									height: 2,
-									marginTop: 0,
-									width: '9rem',
-									marginBottom: 0,
+									width: '11rem',
+									marginLeft: '2rem',
+									marginRight: '2rem',
 								}}
 							/>
 							<a style={{ fontSize: '18px' }}>JoinONC.com</a>

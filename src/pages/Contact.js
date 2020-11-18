@@ -10,6 +10,7 @@ import {
   Card,
 } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
+import '../styles/contact.css';
 
 export class Contact extends Component {
   render() {

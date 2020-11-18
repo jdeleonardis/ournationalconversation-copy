@@ -24,12 +24,11 @@ function CardBody(props) {
 				<div className="passive">Source: Reuters</div>
 			</Row>
 			<Row>
-				<div className="cardText">
+				<p className="cardText">
 					Once upon a time there was a lovely princess. But she had an
 					enchantment upon her of a fearful sort which could only be broken by
-					love's first kiss. She was locked away... Read Source{'   '}
-					<OpenPage />
-				</div>
+					love's first kiss. She was locked away {'   '}
+				</p>
 			</Row>
 			<br />
 
@@ -77,15 +76,15 @@ function CardBody(props) {
 				<div className="passive">Source: BBC</div>
 			</Row>
 			<Row>
-				<Col>
-					<span>
-						<ClockSvg />
-					</span>
-					<span className="actionBtnTexts"> 4 min ago</span>
-				</Col>
-				<Col className="text-left">
-					<OpenPage />
-				</Col>
+				<span>
+					<ClockSvg />
+				</span>
+				<span style={{ marginLeft: '1rem' }} className="actionBtnTexts">
+					4 min ago
+				</span>
+				<span style={{ marginLeft: '3rem' }} className="actionBtnTexts">
+					read source <OpenPage />
+				</span>
 			</Row>
 		</Card.Body>
 	);

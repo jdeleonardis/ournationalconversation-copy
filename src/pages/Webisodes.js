@@ -8,7 +8,7 @@ import ContentCard from '../components/Content/ContentCards/ContentCard';
 import RailButtons from '../components/Misc/RailButtons';
 import GlobalButton from '../components/Misc/GlobalButton';
 
-export class Opinions extends Component {
+export class Webisodes extends Component {
   render() {
     const style = {
       textAlign: 'center',
@@ -19,7 +19,7 @@ export class Opinions extends Component {
       <Fragment>
         <div>
           <Helmet>
-            <title>Our National Conversation | Opinions</title>
+            <title>Our National Conversation | Webisodes</title>
           </Helmet>
 
           <Container className='container' fluid>
@@ -27,8 +27,8 @@ export class Opinions extends Component {
             <Row>
               <Col>
                 <SortBy
-                  pageName='Opinions'
-                  pageTitle='OPINIONS'
+                  pageName='Webisodes'
+                  pageTitle='WEBISODES'
                   horizLineTextLeft='Newly Arrived'
                 />
                 <br />
@@ -46,18 +46,18 @@ export class Opinions extends Component {
                     // fontSize: '14px',
                   }}
                 >
-                  <ContentCard type={type.OPINION} />
-                  <ContentCard type={type.OPINION} />
-                  <ContentCard type={type.OPINION} />
-                  <ContentCard type={type.OPINION} />
-                  <ContentCard type={type.OPINION} />
+                  <ContentCard type={type.WEBISODE} />
+                  <ContentCard type={type.WEBISODE} />
+                  <ContentCard type={type.WEBISODE} />
+                  <ContentCard type={type.WEBISODE} />
+                  <ContentCard type={type.WEBISODE} />
                 </div>
                 <br />
                 <div style={style}>
                   <GlobalButton
                     padding='7px 55px'
                     fontWeight='700'
-                    label='SEE MORE OPINIONS'
+                    label='SEE MORE WEBISODES'
                   />
                 </div>
               </Col>
@@ -72,4 +72,4 @@ export class Opinions extends Component {
   }
 }
 
-export default Opinions;
+export default Webisodes;

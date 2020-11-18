@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Container, Card, Form, Button } from 'react-bootstrap';
-import '../../App.css';
+import '../../styles/login.css';
 
 export default function App() {
   const [email, setEmail] = React.useState('');

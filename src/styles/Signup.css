@@ -10,15 +10,428 @@
   margin-right: auto;
   margin-left: auto;
 }
+
 .notvalid-msg-clear {
   display: none;
 }
 
 .form-input-field::placeholder {
   font-family: 'Montserrat', sans-serif;
-  color: #bfbfbf !important; 
+  color: #bfbfbf !important;
 }
 
 .hidden-err-msg {
   font-family: 'Roboto', sans-serif;
+}
+
+/* ========================
+COUNTRY DROPDOWN STYLES
+======================== */
+
+#dropdown-label {
+  width: 100%;
+  display: block;
+  padding-left: 0 !important;
+  text-indent: 0 !important;
+}
+
+#dropdown {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #bfbfbf;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#dropdown:focus {
+  outline: none !important;
+}
+
+/* Hide default dropdown caret icon */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+.caret-con {
+  margin-right: 28px !important;
+}
+
+/* ========================
+PASSWORD TOGGLE STYLES
+======================== */
+
+.input-div {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.toggle-span,
+.icon-span {
+  position: absolute;
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.fa-lg {
+  text-align: right;
+  margin-right: 6px;
+  margin-top: 10px;
+}
+
+.eye-con {
+  margin-right: 15px;
+  color: #bfbfbf;
+}
+
+.caret-con {
+  margin-top: 3px;
+  margin-right: 26px;
+  color: #bfbfbf;
+}
+
+/* =================================== */
+
+.input-container-name,
+.input-container-email {
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  margin: 15px 0;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d0d0 !important;
+  background-color: #ffffff;
+}
+
+.input-container-name input,
+.input-container-email input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: 0;
+  outline: none;
+  color: #929292;
+}
+
+.input-container-name .name-input,
+.input-container-email .email-input {
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+}
+
+.input-container {
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d0d0 !important;
+  background-color: #ffffff;
+}
+
+.input-container input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: 0;
+  outline: none;
+  color: #929292;
+}
+
+.input-container2 {
+  margin: 15px 0;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #d1d0d0 !important;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid #aaa;
+  background-color: #ffffff;
+}
+.input-container2 input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: 0;
+  outline: none;
+  color: #929292;
+}
+
+.input-container .pw-input {
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+}
+
+.input-container2 .pw-input2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+}
+
+input::placeholder {
+  color: #bfbfbf;
+}
+
+/* Add to make placeholder text same color as in Chrome */
+input::-moz-placeholder {
+  color: #bfbfbf;
+  opacity: 1;
+}
+
+.name-input,
+.email-input,
+.pw-input,
+.pw-input2 {
+  padding: 12px 0;
+}
+
+#material-eye {
+  color: #aaa;
+  cursor: default;
+  font-size: 20px;
+  padding-right: 3px;
+}
+
+#material-eye2 {
+  color: #aaa;
+  cursor: default;
+  font-size: 20px;
+  padding-right: 3px;
+}
+
+.form-control {
+  width: 100%;
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input {
+  padding-right: 2.4em;
+  height: 2em;
+}
+
+input::-ms-reveal {
+  display: none;
+}
+
+/* ========================
+MEDIA QUERIES
+======================== */
+
+@media screen and (min-width: 981px) and (max-width: 1200px) {
+  /* .container {
+      background-color: red;
+    } */
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  /* .container {
+      background-color: yellow;
+    } */
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  /* .container {
+      background-color: orange;
+    } */
+}
+
+@media screen and (min-width: 551px) and (max-width: 640px) {
+  /* .container {
+      background-color: brown;
+    } */
+}
+
+@media screen and (min-width: 471px) and (max-width: 550px) {
+  /* .container {
+    background-color: salmon;
+  } */
+
+  #signup-card-title {
+    font-size: 30px;
+  }
+
+  #new-to-site {
+    font-size: 14px;
+  }
+
+  .input-container-name .name-input,
+  .input-container-email .email-input {
+    font-size: 14px;
+  }
+
+  .input-container .pw-input {
+    font-size: 14px;
+  }
+
+  .input-container2 .pw-input2 {
+    font-size: 14px;
+  }
+
+  #dropdown {
+    font-size: 14px;
+  }
+
+  .caret-con {
+    margin-right: 28px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  #forgot {
+    margin-top: 2px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 470px) {
+  /* .container {
+    background-color: blue;
+    font-size: 10px;
+  } */
+
+  #signup-card-title {
+    font-size: 30px;
+  }
+
+  #new-to-site {
+    font-size: 14px;
+  }
+
+  .input-container-name .name-input,
+  .input-container-email .email-input {
+    font-size: 12px;
+  }
+
+  .input-container .pw-input {
+    font-size: 12px;
+  }
+
+  .input-container2 .pw-input2 {
+    font-size: 12px;
+  }
+
+  #dropdown {
+    height: calc(1.5em + 1rem + 2px);
+    font-size: 12px;
+  }
+
+  .caret-con {
+    margin-right: 17px !important;
+  }
+
+  label {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 430px) {
+  /* .container {
+    background-color: burlywood;
+  } */
+
+  .input-container-name .name-input,
+  .input-container-email .email-input {
+    font-size: 12px;
+  }
+
+  .input-container .pw-input {
+    font-size: 12px;
+  }
+
+  .input-container2 .pw-input2 {
+    font-size: 12px;
+  }
+
+  #dropdown {
+    height: calc(1.5em + 1rem + 2px);
+    font-size: 12px;
+  }
+
+  .caret-con {
+    margin-right: 14px !important;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 400px) {
+  /* .container {
+      background-color: pink;
+    } */
+
+  .input-container-name .name-input,
+  .input-container-email .email-input {
+    font-size: 12px;
+  }
+
+  .input-container .pw-input {
+    font-size: 12px;
+  }
+
+  .input-container2 .pw-input2 {
+    font-size: 12px;
+  }
+
+  #dropdown {
+    height: calc(1.5em + 1rem + 2px);
+    font-size: 12px;
+  }
+
+  .caret-con {
+    margin-right: 14px !important;
+  }
 }

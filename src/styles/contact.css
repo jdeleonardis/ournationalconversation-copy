@@ -1,0 +1,14 @@
+.dropdown-toggle,
+.dropdown-menu {
+  width: 100%;
+}
+
+#dropdown-basic-button {
+  text-align: left;
+}
+
+#dropdown-basic-button {
+  background-color: #ffffff;
+  color: #2c1c59;
+  border-color: #d4d8de;
+}

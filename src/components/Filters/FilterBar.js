@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import {
   Button,
@@ -17,6 +18,16 @@ import '../../styles/filter-bar.css';
 function handleChevron() {
   document.querySelector(".chev").classList.toggle("fa-chevron-down");
   document.querySelector(".chev").classList.toggle("fa-chevron-up");
+
+import React from 'react';
+import { Form } from 'react-bootstrap';
+import '../../styles/filter-bar.css';
+
+// Icon Toggle
+function handleChevron() {
+  document.querySelector('.chev').classList.toggle('fa-chevron-down');
+  document.querySelector('.chev').classList.toggle('fa-chevron-up');
+
 }
 
 // Filter Effect
@@ -315,91 +326,3 @@ const FilterBar = () => {
 // }
 
 export default FilterBar;
-// class FilterBar extends Component {
-//   render() {
-//     return (
-//       <Container>
-//         <Form>
-//           <h2>Filter by:</h2>
-//           <p className='filter'><i class="fas fa-chevron-up"></i> 
-//           TOPIC
-//           CLEAR
-//           </p>
-//   {[ 'radio'].map((type) => (
-//     <div key={`custom-${type}`} className="mb-3">
-//       <Form.Check
-//         custom
-//         type='radio'
-//         label='US'
-//         className={`custom-${type}`}
-//       />
-//       <Form.Check
-//         custom
-//         type='radio'
-//         label='World'
-//         className={`custom-${type}`}
-//       />
-//       <Form.Check
-//         custom
-//         type='radio'
-//         label='Politics'
-//         className={`custom-${type}`}
-//       />
-//       <Form.Check
-//         custom
-//         type='radio'
-//         label='Business'
-//         className={`custom-${type}`}
-//       />
-//       <Form.Check
-//         custom
-//         type='radio'
-//         label='Tech'
-//         className={`custom-${type}`}
-//       />
-//       <Form.Check
-//         custom
-//         type='radio'
-//         label='Health'
-//         className={`custom-${type}`}
-//       />
-//       <Form.Check
-//         custom
-//         type='radio'
-//         label='Science & Environment'
-//         className={`custom-${type}`}
-//       />
-//       <Form.Check
-//         custom
-//         type='radio'
-//         label='Media'
-//         className={`custom-${type}`}
-//       />
-//       <Form.Check
-//         custom
-//         type='radio'
-//         label='Polls'
-//         className={`custom-${type}`}
-//       />
-//       <Form.Check
-//         custom
-//         type='radio'
-//         label='Faith / Spirituality'
-//         className={`custom-${type}`}
-//       />
-//       <Form.Check
-//         custom
-//         type='radio'
-//         label='Fact Check'
-//         className={`custom-${type}`}
-//       />
-//     </div>
-//   ))}
-// </Form>
-
-//       </Container>
-//     );
-//   }
-// }
-
-// export default FilterBar;
