@@ -76,15 +76,15 @@ function CardBody(props) {
 				<div className="passive">Source: BBC</div>
 			</Row>
 			<Row>
-				<Col>
-					<span>
-						<ClockSvg />
-					</span>
-					<span className="actionBtnTexts"> 4 min ago</span>
-				</Col>
-				<Col className="text-left">
-					<OpenPage />
-				</Col>
+				<span>
+					<ClockSvg />
+				</span>
+				<span style={{ marginLeft: '1rem' }} className="actionBtnTexts">
+					4 min ago
+				</span>
+				<span style={{ marginLeft: '3rem' }} className="actionBtnTexts">
+					read source <OpenPage />
+				</span>
 			</Row>
 		</Card.Body>
 	);
