@@ -3,7 +3,7 @@ import countries from './Countries';
 
 import { Container, Card, Button } from 'react-bootstrap';
 import '../../App.css';
-// import '../../styles/signup.css';
+import '../../styles/Signup.css';
 import '../../styles/Country.css';
 
 export default function App() {
