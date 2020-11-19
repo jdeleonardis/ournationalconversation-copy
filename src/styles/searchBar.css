@@ -170,13 +170,14 @@
 /* SearchBox */
 /* Group 87    */
 
-/* .search-box{
-  position: absolute;
-  width: 291px;
-  height: 65px;
+.search-box{
+  /* position: absolute; */
+  width: 70%;
+  /* height: 65px;
   left: 100px;
-  top: 294px; 
-} */
+  top: 294px;  */
+  margin-left: -0.5em;
+}
 
 /* Search Opinions: */
 
