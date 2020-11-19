@@ -7,18 +7,6 @@ const SortBy = (props) => {
   return (
     <div>
       <Row>
-        <Col md={3}>
-          <div id='search-div'>
-            <p id='small-search-text'>Search {props.pageName}:</p>
-            <input
-              id='small-search-field'
-              type='text'
-              placeholder='ENTER KEYWORDS'
-            />
-            <i id='searchsubmit' className='fa fa-search'></i>
-          </div>
-        </Col>
-        <Col md={6}>
           <h2 className='page-title'>
             <strong>{props.pageTitle}</strong>
           </h2>
@@ -44,7 +32,6 @@ const SortBy = (props) => {
               </Dropdown.Menu>
             </Dropdown>
           </div>
-        </Col>
       </Row>
     </div>
   );

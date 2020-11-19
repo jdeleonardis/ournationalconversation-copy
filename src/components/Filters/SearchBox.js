@@ -4,7 +4,7 @@ import '../../styles/searchBar.css';
 
 const SearchBox = (props) => {
   return (
-    <div>
+    <div className="search-box">
           <div id='search-div'>
             <p id='small-search-text'>Search {props.pageName}:</p>
             <input
