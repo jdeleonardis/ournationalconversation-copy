@@ -1,6 +1,17 @@
-import React from 'react';
-import { Form } from 'react-bootstrap';
+import React, { Component } from 'react';
+import {
+  Button,
+  DropdownButton,
+  ButtonGroup,
+  InputGroup,
+  Container,
+  Col,
+  Row,
+  Form
+} from 'react-bootstrap';
+import '../../styles/filter.css';
 import '../../styles/filter-bar.css';
+
 
 // Icon Toggle
 function handleChevron() {
