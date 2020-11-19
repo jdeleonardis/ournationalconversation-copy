@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Image, Col, Row, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faShare, faPlus } from '@fortawesome/free-solid-svg-icons';
-import './styles/verticalcard.css';
+import './styles/cardbody.css';
 import OpenPage from './styles/openSrc';
 import ShareSvg from './styles/shareSvg';
 import SaveSvg from './styles/saveSvg';

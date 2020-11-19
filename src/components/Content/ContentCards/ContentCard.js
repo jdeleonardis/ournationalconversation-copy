@@ -9,7 +9,7 @@ import DotSvg from './styles/dotSvg';
 import SaveSvg from './styles/saveSvg';
 import ShareSvg from './styles/shareSvg';
 import bodymap from '../ContentCards/CardBodyDictionary';
-import './styles/verticalcard.css';
+import './styles/cardbody.css';
 
 function BodyType(props) {
 	return (
