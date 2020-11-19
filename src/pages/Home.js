@@ -8,82 +8,79 @@ import GlobalButton from '../components/Misc/GlobalButton';
 import News from '../components/Content/ContentBoards/NewsBoard';
 import NewsCard from '../components/Content/ContentCards/NewsCard';
 import TagLine from '../components/Content/ContentCards/TagLines';
+import TopHorizontalLine from '../components/Misc/TopHorizontalLine';
+import RailButtons from '../components/Misc/RailButtons';
 
 const Home = () => {
-	return (
-		<Fragment>
-			<div>
-				<Helmet>
-					<title>Our National Conversation</title>
-				</Helmet>
-				<Container className="container" fluid>
-					<div>
-						<h1>Home</h1>
+  return (
+    <Fragment>
+      <div>
+        <Helmet>
+          <title>Our National Conversation</title>
+        </Helmet>
+        <Container className='container' fluid>
+          <br />
+          <Row>
+            <Col>
+              <TopHorizontalLine lineLabel='TOP STORIES' />
+            </Col>
+          </Row>
 
-						<Row>
-							<Col md={12}>
-								<Button
-									style={{
-										margin: '10px',
-									}}
-									variant="success"
-									href="/"
-								>
-									Home
-								</Button>
-								<div
-									className="flexbox-container"
-									style={{
-										display: 'flex',
-										flexDirection: 'row',
-									}}
-								>
-									<SignupModalComponent />
-									{/* <Signup2ModalComponent /> */}
-									<LoginModalComponent />
-									{/* <Login2ModalComponent /> */}
-								</div>
-								<Button
-									style={{
-										margin: '10px',
-									}}
-									variant="success"
-									href="/contact"
-								>
-									Contact
-								</Button>
-								<GlobalButton
-									link="/"
-									label="Small Button"
-									width="auto"
-									padding="4px 8px"
-									fontSize="12px"
-								/>
-								<br />
-								<GlobalButton link="/" label="Large Button" />
-								<br />
-								<GlobalButton
-									link="/contact"
-									label="BLOCK LEVEL BUTTON"
-									width="100%"
-								/>
-								<br /> <br />
-								<p>Dummy home page.</p>
-								<p>
-									Whoever works on the home page can go ahead and get ride of
-									all this code and use this file for the home page.
-								</p>
-							</Col>
-						</Row>
-					</div>
-				</Container>
-			</div>
+          <Row>
+            <Col md={9}>
+              <div
+                style={{
+                  width: '104%',
+                  //   width: '106.5%',
+                  marginLeft: '-15px',
+                }}
+              >
+                <NewsCard />
+              </div>
+            </Col>
+            <Col md={3}>
+              <div id='rail-group'>
+                <RailButtons />
+              </div>
+            </Col>
+          </Row>
 
-			<NewsCard />
-			<News />
-			<Solution />
-		</Fragment>
-	);
+          <Row>
+            <Col md={9}>
+              <div
+                style={{
+                  width: '104%',
+                  //   width: '106.5%',
+                  //   marginLeft: '-15px',
+                  padding: 'auto',
+                }}
+              >
+                <News />
+              </div>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col>
+              <div style={{ marginTop: '40px' }}>
+                <TopHorizontalLine lineLabel='SOLUTIONS' />
+              </div>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col>
+              <Solution />
+            </Col>
+            <Col md={3}></Col>
+          </Row>
+
+          <SignupModalComponent />
+          <LoginModalComponent />
+        </Container>
+      </div>
+    </Fragment>
+  );
 };
 
 export default Home;
