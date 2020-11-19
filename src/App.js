@@ -8,7 +8,7 @@ import Webisodes from './pages/Webisodes';
 import Contact from './pages/Contact';
 import Header from './components/Header/Header';
 import SearchBar from './components/Filters/SearchBar';
-import SearchFilter from './components/Filters/SearchFilter';
+import DemoSearchFilter from './components/Filters/DemoSearchFilter';
 import Footer from './components/Misc/Footer';
 
 import MockArticles from './components/Misc/MockArticles';
@@ -32,8 +32,8 @@ function App() {
 
           <Route exact path='/news' component={News} />
 
-          {/* Test Components by Judy */}
-          <Route exact path='/searchfilter' component={SearchFilter} />
+          {/* Test Filter Components by Judy */}
+          <Route exact path='/demosearchfilter' component={DemoSearchFilter} />
 
           <Route exact path='/mockarticles' component={MockArticles} />
         </Switch>
