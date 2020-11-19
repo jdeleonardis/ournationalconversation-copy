@@ -16,15 +16,6 @@ import '../../styles/filter-bar.css';
 
 // Icon Toggle
 function handleChevron() {
-  document.querySelector(".chev").classList.toggle("fa-chevron-down");
-  document.querySelector(".chev").classList.toggle("fa-chevron-up");
-
-import React from 'react';
-import { Form } from 'react-bootstrap';
-import '../../styles/filter-bar.css';
-
-// Icon Toggle
-function handleChevron() {
   document.querySelector('.chev').classList.toggle('fa-chevron-down');
   document.querySelector('.chev').classList.toggle('fa-chevron-up');
 
