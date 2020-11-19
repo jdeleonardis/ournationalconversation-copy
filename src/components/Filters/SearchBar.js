@@ -13,7 +13,7 @@ import '../../styles/searchBar.css';
 
 const SearchBar =(props) => {
   return (
-
+    <>
       <Navbar className='search-bar' variant=''>
         <Col className='mb-2' xs lg='9'>
           <Nav className='group-68 mr-auto '>
@@ -38,7 +38,10 @@ const SearchBar =(props) => {
           <input className='search' type='text' placeholder='SEARCH' />
           <i className='fa fa-search search-i' />
         </Col>
+        
       </Navbar>
+      <hr/>
+    </>
   )
 }
 
