@@ -71,6 +71,9 @@ const Home = () => {
           <Row>
             <Col>
               <Solution />
+              {/* <div style={{ textAlign: 'center' }}>
+                <GlobalButton label='SEE MORE SOLUTIONS' />
+              </div> */}
             </Col>
             <Col md={3}></Col>
           </Row>

@@ -7,12 +7,13 @@ import * as type from '../components/Content/ContentCards/constants/cardConstant
 import ContentCard from '../components/Content/ContentCards/ContentCard';
 import RailButtons from '../components/Misc/RailButtons';
 import GlobalButton from '../components/Misc/GlobalButton';
+import SearchBox from '../components/Filters/SearchBox';
 
 export class Opinions extends Component {
   render() {
     const style = {
       textAlign: 'center',
-      width: '104.5%',
+      width: '99.4%',
     };
 
     return (
@@ -25,7 +26,10 @@ export class Opinions extends Component {
           <Container className='container' fluid>
             <br />
             <Row>
-              <Col>
+              <Col md={3}>
+                <SearchBox />
+              </Col>
+              <Col md={6}>
                 <SortBy
                   pageName='Opinions'
                   pageTitle='OPINIONS'
@@ -33,6 +37,7 @@ export class Opinions extends Component {
                 />
                 <br />
               </Col>
+              <Col md={3}></Col>
             </Row>
             <Row>
               <Col md={3}>
@@ -42,7 +47,7 @@ export class Opinions extends Component {
                 <div
                   style={{
                     width: '110%',
-                    marginLeft: '-15px',
+                    marginLeft: '-30px',
                     // fontSize: '14px',
                   }}
                 >

@@ -208,13 +208,14 @@
 /* SearchBox */
 /* Group 87    */
 
+/* Make search input full length: 100% */
 .search-box {
   /* position: absolute; */
-  width: 65%;
+  width: 100%;
   /* height: 65px;
   left: 100px;
   top: 294px;  */
-  margin-left: 6em;
+  /* margin-left: 6em; */
 }
 
 /* Search Opinions: */
