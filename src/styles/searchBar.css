@@ -1,15 +1,27 @@
 /* New variants and sizes */
 .btn-purple {
   background-color: #2c1c59;
-  color: white;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
 }
+
+.btn-purple-outline {
+  color: #2c1c59;
+  background-color: #ffffff;
+}
+
 .btn-l {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
+
+/* Subhead 3 */
 .btn-xl {
-  padding: 1rem 1.5rem;
-  font-size: 1.5rem;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.0025em;
 }
 .btn-xxl {
   padding: 1rem 1.5rem;
