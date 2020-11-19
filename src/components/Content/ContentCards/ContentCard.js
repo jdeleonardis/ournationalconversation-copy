@@ -9,6 +9,7 @@ import DotSvg from './styles/dotSvg';
 import SaveSvg from './styles/saveSvg';
 import ShareSvg from './styles/shareSvg';
 import bodymap from '../ContentCards/CardBodyDictionary';
+import './styles/verticalcard.css';
 
 function BodyType(props) {
 	return (
@@ -21,7 +22,7 @@ function BodyType(props) {
 							className="boxImage"
 						/>
 						<div className="sectionSubHeader">Source: ONC</div>
-						<div>
+						<div className="cardText">
 							Now here you go again You say you want your freedom Well, who am I
 							to keep you down It's only right that you should Play the way you
 							feel it But listen carefully To the sound of your loneliness Like

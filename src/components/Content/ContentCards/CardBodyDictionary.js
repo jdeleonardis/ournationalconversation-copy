@@ -25,11 +25,13 @@ let bodymap = new Map([
 			<br />
 			<Row>
 				<Col>
-					Now here you go again You say you want your freedom Well, who am I to
-					keep you down It's only right that you should Play the way you feel it
-					But listen carefully To the sound of your loneliness Like a heartbeat
-					drives you mad In the stillness of remembering what you had And what
-					you lost And what you had And what you lost
+					<div className="cardText">
+						Now here you go again You say you want your freedom Well, who am I
+						to keep you down It's only right that you should Play the way you
+						feel it But listen carefully To the sound of your loneliness Like a
+						heartbeat drives you mad In the stillness of remembering what you
+						had And what you lost And what you had And what you lost
+					</div>
 				</Col>
 			</Row>
 		</div>,
@@ -56,11 +58,13 @@ let bodymap = new Map([
 			<br />
 			<Row>
 				<Col>
-					Now here you go again You say you want your freedom Well, who am I to
-					keep you down It's only right that you should Play the way you feel it
-					But listen carefully To the sound of your loneliness Like a heartbeat
-					drives you mad In the stillness of remembering what you had And what
-					you lost And what you had And what you lost
+					<div className="cardText">
+						Now here you go again You say you want your freedom Well, who am I
+						to keep you down It's only right that you should Play the way you
+						feel it But listen carefully To the sound of your loneliness Like a
+						heartbeat drives you mad In the stillness of remembering what you
+						had And what you lost And what you had And what you lost
+					</div>
 				</Col>
 			</Row>
 		</div>,
