@@ -66,7 +66,7 @@ export class Opinions extends Component {
                 </div>
               </Col>
               <Col md={3}>
-                <div id='rail-group' style={{ marginTop: '-88px' }}>
+                <div style={{ marginTop: '-88px' }}>
                   <RailButtons />
                 </div>
               </Col>

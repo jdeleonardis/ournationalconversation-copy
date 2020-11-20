@@ -7,12 +7,13 @@ import * as type from '../components/Content/ContentCards/constants/cardConstant
 import ContentCard from '../components/Content/ContentCards/ContentCard';
 import RailButtons from '../components/Misc/RailButtons';
 import GlobalButton from '../components/Misc/GlobalButton';
+import SearchBox from '../components/Filters/SearchBox';
 
 export class Podcasts extends Component {
   render() {
     const style = {
       textAlign: 'center',
-      width: '104.5%',
+      width: '104%',
     };
 
     return (
@@ -25,7 +26,10 @@ export class Podcasts extends Component {
           <Container className='container' fluid>
             <br />
             <Row>
-              <Col>
+              <Col md={3}>
+                <SearchBox pageName='Podcasts' />
+              </Col>
+              <Col md={6}>
                 <SortBy
                   pageName='Podcasts'
                   pageTitle='PODCASTS'
@@ -33,6 +37,7 @@ export class Podcasts extends Component {
                 />
                 <br />
               </Col>
+              <Col md={3}></Col>
             </Row>
             <Row>
               <Col md={3}>
@@ -41,9 +46,8 @@ export class Podcasts extends Component {
               <Col md={6}>
                 <div
                   style={{
-                    width: '110%',
-                    marginLeft: '-15px',
-                    // fontSize: '14px',
+                    width: '111%',
+                    marginLeft: '-20px',
                   }}
                 >
                   <ContentCard type={type.PODCAST} />
@@ -62,7 +66,9 @@ export class Podcasts extends Component {
                 </div>
               </Col>
               <Col md={3}>
-                <RailButtons />
+                <div style={{ marginTop: '-88px' }}>
+                  <RailButtons />
+                </div>
               </Col>
             </Row>
           </Container>

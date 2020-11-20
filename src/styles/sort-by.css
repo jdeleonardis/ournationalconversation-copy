@@ -59,6 +59,10 @@
   margin-top: 2px;
 }
 
+.dropdown {
+  margin-right: -9px !important;
+}
+
 /* ========================
 MEDIA QUERIES
 ======================== */
