@@ -6,7 +6,7 @@ const SearchBox = (props) => {
   return (
     <div className='search-box'>
       <div id='search-div'>
-        <p style={{ marginBottom: '0' }} id='small-search-text'>
+        <p style={{ marginBottom: '5px' }} id='small-search-text'>
           Search {props.pageName}:
         </p>
         <input

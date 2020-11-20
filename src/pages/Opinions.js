@@ -13,7 +13,7 @@ export class Opinions extends Component {
   render() {
     const style = {
       textAlign: 'center',
-      width: '99.5%',
+      width: '104%',
     };
 
     return (
@@ -47,7 +47,7 @@ export class Opinions extends Component {
                 <div
                   style={{
                     width: '111%',
-                    marginLeft: '-30px',
+                    marginLeft: '-20px',
                   }}
                 >
                   <ContentCard type={type.OPINION} />
@@ -66,7 +66,7 @@ export class Opinions extends Component {
                 </div>
               </Col>
               <Col md={3}>
-                <div style={{ marginTop: '-92px' }}>
+                <div id='rail-group' style={{ marginTop: '-88px' }}>
                   <RailButtons />
                 </div>
               </Col>

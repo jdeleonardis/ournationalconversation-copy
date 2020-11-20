@@ -8,8 +8,9 @@ const SortByStore = (props) => {
     <div>
       <Row>
         <h2 className='page-title'>
-          <strong>{props.pageTitle}</strong>
+          <strong>ONC STORE{props.pageTitle}</strong>
         </h2>
+        <i class='fas fa-shopping-cart'></i>
         <div
           className='textdiv'
           style={{ width: '105%', marginBottom: '-25px' }}

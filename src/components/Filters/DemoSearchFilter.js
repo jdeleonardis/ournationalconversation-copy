@@ -12,28 +12,29 @@ import SearchBox from './SearchBox';
 class SearchFilter extends Component {
   render() {
     return (
-        <Container>
-          <Row>
-            <Col md={3}>
-              <SearchBox />
-              <Col>
-                <FilterBar />
-                <SourceFilterBar />
-              </Col>
+      <Container>
+        <Row>
+          <Col md={3}>
+            <SearchBox />
+            <Col>
+              <br />
+              <FilterBar />
+              <SourceFilterBar />
             </Col>
-            <Col md={6}>
-              <SortBy />
-                <br/>
-              <SortByLocal />
-              {/* <AddLocation/> */}
-              <br/>
-              <SortByStore />
-            </Col>
-            <Col md={3}>
-              <RailButtons />
-            </Col>
-          </Row>
-        </Container>
+          </Col>
+          <Col md={6}>
+            <SortBy />
+            <hr />
+            <SortByLocal />
+            {/* <AddLocation/> */}
+            <hr />
+            <SortByStore />
+          </Col>
+          <Col md={3}>
+            <RailButtons />
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }
