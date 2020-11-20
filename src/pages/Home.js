@@ -55,7 +55,9 @@ const Home = () => {
                   padding: 'auto',
                 }}
               >
-                <News />
+                <div style={{ marginLeft: '-30px' }}>
+                  <News />
+                </div>
               </div>
             </Col>
           </Row>
@@ -70,7 +72,9 @@ const Home = () => {
 
           <Row>
             <Col>
-              <Solution />
+              <div style={{ marginLeft: '-30px', width: '107.5%' }}>
+                <Solution />
+              </div>
               <div style={{ textAlign: 'center' }}>
                 <GlobalButton
                   className='global-btn'
