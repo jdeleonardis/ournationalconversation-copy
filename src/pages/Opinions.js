@@ -13,7 +13,7 @@ export class Opinions extends Component {
   render() {
     const style = {
       textAlign: 'center',
-      width: '99.4%',
+      width: '99.5%',
     };
 
     return (
@@ -27,7 +27,7 @@ export class Opinions extends Component {
             <br />
             <Row>
               <Col md={3}>
-                <SearchBox />
+                <SearchBox pageName='Opinions' />
               </Col>
               <Col md={6}>
                 <SortBy
@@ -48,7 +48,6 @@ export class Opinions extends Component {
                   style={{
                     width: '110%',
                     marginLeft: '-30px',
-                    // fontSize: '14px',
                   }}
                 >
                   <ContentCard type={type.OPINION} />
@@ -67,7 +66,9 @@ export class Opinions extends Component {
                 </div>
               </Col>
               <Col md={3}>
-                <RailButtons />
+                <div style={{ marginTop: '-92px' }}>
+                  <RailButtons />
+                </div>
               </Col>
             </Row>
           </Container>

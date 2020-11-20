@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Dropdown } from 'react-bootstrap';
+import { Row, Dropdown } from 'react-bootstrap';
 import '../../styles/sort-by.css';
 import '../../styles/searchBar.css';
 
@@ -10,11 +10,14 @@ const SortBy = (props) => {
         <h2 className='page-title'>
           <strong>{props.pageTitle}</strong>
         </h2>
-        <div className='textdiv' style={{ width: '105%' }}>
+        <div
+          className='textdiv'
+          style={{ width: '105%', marginBottom: '-25px' }}
+        >
           <div className='texttitle'>
             {props.horizLineTextLeft} &nbsp;&nbsp;&nbsp;
           </div>
-          <div className='divider'></div> &nbsp;&nbsp;&nbsp;
+          <div className='divider'></div>&nbsp;
           {/* <span id='sort-by'>Sort by: DEFAULT</span>&nbsp;&nbsp;
             <i class='fas fa-caret-down'></i> */}
           <Dropdown>
