@@ -5,7 +5,7 @@ import '../../styles/searchBar.css';
 
 const SortBy = (props) => {
   return (
-    <div>
+    <div className='main'>
       <Row>
         <h2 className='page-title'>
           <strong>{props.pageTitle}</strong>

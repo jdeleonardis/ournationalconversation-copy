@@ -1,17 +1,7 @@
-import React, { Component } from 'react';
-import {
-  Button,
-  DropdownButton,
-  ButtonGroup,
-  InputGroup,
-  Container,
-  Col,
-  Row,
-  Form
-} from 'react-bootstrap';
+import React from 'react';
+import { Form } from 'react-bootstrap';
 import '../../styles/searchBar.css';
 import '../../styles/filter-bar.css';
-
 
 // Icon Toggle
 function handleChevron() {
@@ -162,7 +152,7 @@ function handleFactCheck() {
 
 const FilterBar = () => {
   return (
-    <div>
+    <div className='main-filter-div'>
       <h2 id='filter-by'>Filter by:</h2>
       <div id='filter-div'>
         <a
