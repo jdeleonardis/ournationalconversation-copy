@@ -4,8 +4,6 @@ import FilterBar from '../components/Filters/FilterBar';
 import NewsCard from '../components/Content/ContentCards/NewsCard';
 import { Container, Row, Col } from 'react-bootstrap';
 import SortBy from '../components/Filters/SortBy';
-import * as type from '../components/Content/ContentCards/constants/cardConstants';
-import ContentCard from '../components/Content/ContentCards/ContentCard';
 import RailButtons from '../components/Misc/RailButtons';
 import GlobalButton from '../components/Misc/GlobalButton';
 import SearchBox from '../components/Filters/SearchBox';
