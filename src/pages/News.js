@@ -20,7 +20,7 @@ class News extends React.Component {
             <title>Our National Conversation | News</title>
           </Helmet>
 
-          <Container className='Newscontainer' fluid>
+          <Container className='container' fluid>
             <br />
             <Row>
               <Col md={3}>
