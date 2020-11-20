@@ -39,6 +39,7 @@ export class Webisodes extends Component {
               </Col>
               <Col md={3}></Col>
             </Row>
+
             <Row>
               <Col md={3}>
                 <FilterBar />
