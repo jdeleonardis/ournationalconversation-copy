@@ -114,7 +114,7 @@
 /* Group 68 */
 
 .group-68 {
-  /* position: absolute; */
+  position: flex;
   /* width: 580px; */
   height: 1.2em;
   /* left: 380px; */
@@ -124,7 +124,7 @@
 
 /* HOT TOPICS */
 .hot-topics {
-  /* position: absolute; */
+  position: flex;
   /* left: 36.39%;
   right: 66.25%;
   top: 35.71%;
