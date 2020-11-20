@@ -62,7 +62,7 @@ const Home = () => {
 
           <Row>
             <Col>
-              <div style={{ marginTop: '40px' }}>
+              <div style={{ marginTop: '40px', marginBottom: '-30px' }}>
                 <TopHorizontalLine lineLabel='SOLUTIONS' />
               </div>
             </Col>
@@ -72,7 +72,12 @@ const Home = () => {
             <Col>
               <Solution />
               <div style={{ textAlign: 'center' }}>
-                <GlobalButton label='SEE MORE SOLUTIONS' />
+                <GlobalButton
+                  className='global-btn'
+                  padding='7px 55px'
+                  fontWeight='700'
+                  label='SEE MORE SOLUTIONS'
+                />
               </div>
             </Col>
             <Col md={3}></Col>

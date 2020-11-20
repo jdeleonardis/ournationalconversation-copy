@@ -23,10 +23,16 @@ function News() {
             <BreakingNews />
           </Col>
         </Row>
+        <br />
         <Row>
           <Col></Col>
           <br />
-          <GlobalButton label={'See More News'} />
+          <GlobalButton
+            className='global-btn'
+            padding='7px 55px'
+            fontWeight='700'
+            label='SEE MORE NEWS'
+          />
           <Col></Col>
         </Row>
       </Container>
