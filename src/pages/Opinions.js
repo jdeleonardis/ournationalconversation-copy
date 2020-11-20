@@ -46,7 +46,7 @@ export class Opinions extends Component {
               <Col md={6}>
                 <div
                   style={{
-                    width: '110%',
+                    width: '111%',
                     marginLeft: '-30px',
                   }}
                 >
