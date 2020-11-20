@@ -9,7 +9,7 @@ import {
   Row,
   Form
 } from 'react-bootstrap';
-import '../../styles/filter.css';
+import '../../styles/searchBar.css';
 import '../../styles/filter-bar.css';
 
 
