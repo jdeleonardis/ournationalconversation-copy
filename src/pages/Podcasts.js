@@ -60,6 +60,7 @@ export class Podcasts extends Component {
                 <br />
                 <div style={style}>
                   <GlobalButton
+                    className='global-btn'
                     padding='7px 55px'
                     fontWeight='700'
                     label='SEE MORE PODCASTS'
@@ -67,7 +68,7 @@ export class Podcasts extends Component {
                 </div>
               </Col>
               <Col md={3}>
-                <div style={{ marginTop: '-88px' }}>
+                <div className='rail-group' style={{ marginTop: '-88px' }}>
                   <RailButtons />
                 </div>
               </Col>

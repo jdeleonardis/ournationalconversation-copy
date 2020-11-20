@@ -8,6 +8,7 @@ import ContentCard from '../components/Content/ContentCards/ContentCard';
 import RailButtons from '../components/Misc/RailButtons';
 import GlobalButton from '../components/Misc/GlobalButton';
 import SearchBox from '../components/Filters/SearchBox';
+import '../styles/Pages.css';
 
 export class Opinions extends Component {
   render() {
@@ -60,6 +61,7 @@ export class Opinions extends Component {
                 <br />
                 <div style={style}>
                   <GlobalButton
+                    className='global-btn'
                     padding='7px 55px'
                     fontWeight='700'
                     label='SEE MORE OPINIONS'
@@ -67,7 +69,7 @@ export class Opinions extends Component {
                 </div>
               </Col>
               <Col md={3}>
-                <div style={{ marginTop: '-88px' }}>
+                <div className='rail-group' style={{ marginTop: '-88px' }}>
                   <RailButtons />
                 </div>
               </Col>
