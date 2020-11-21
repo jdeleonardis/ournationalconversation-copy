@@ -5,7 +5,8 @@ import { ButtonGroup, Button, Container } from 'react-bootstrap';
 class RailButtons extends Component {
   render() {
     return (
-      <div vertical className='gb-5'>
+      // <div vertical className='gb-5'>
+      <div vertical>
         <div
           class=' mb-2'
           role='toolbar'
