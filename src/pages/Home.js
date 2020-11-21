@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Row, Col, Container, Button } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import Solution from '../components/Content/ContentBoards/SolutionBoard';
 import SignupModalComponent from '../components/Authentication/SignupModalButtonAndComponent';
@@ -7,7 +7,6 @@ import LoginModalComponent from '../components/Authentication/LoginModalButtonAn
 import GlobalButton from '../components/Misc/GlobalButton';
 import News from '../components/Content/ContentBoards/NewsBoard';
 import NewsCard from '../components/Content/ContentCards/NewsCard';
-import TagLine from '../components/Content/ContentCards/TagLines';
 import TopHorizontalLine from '../components/Misc/TopHorizontalLine';
 import RailButtons from '../components/Misc/RailButtons';
 
