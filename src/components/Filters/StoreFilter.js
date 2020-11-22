@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
 import '../../styles/searchBar.css';
-import '../../styles/filter-bar.css';
+import '../../styles/store-filter.css';
 
 // Icon Toggle
 function handleChevron() {
