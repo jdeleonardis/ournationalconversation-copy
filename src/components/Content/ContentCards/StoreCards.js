@@ -17,10 +17,10 @@ function StoreCards() {
                 src='https://redshelf-images.s3-external-1.amazonaws.com/item_image/default_item_image.jpg'
               />
               <Card.Body>
-                <Card.Subtitle className='mb-2 text-muted'>
+                <Card.Subtitle className='mb-2 text-muted item-category'>
                   BOOK <span className='book-price'>$13.95</span>
                 </Card.Subtitle>
-                <Card.Title>
+                <Card.Title className='book-title-text'>
                   Rethinking America: Rethinking the World
                 </Card.Title>
                 <Card.Subtitle className='mb-2 text-muted'>
@@ -48,7 +48,7 @@ function StoreCards() {
                     <span className='rating'>5.00</span>
                   </div>
                 </Card.Subtitle>
-                <Card.Text>
+                <Card.Text className='book-caption'>
                   Our book, filled with 41 nonpartisan policy proposals + 8
                   moonshot teasers.
                 </Card.Text>
@@ -64,15 +64,16 @@ function StoreCards() {
                 src='https://redshelf-images.s3-external-1.amazonaws.com/item_image/default_item_image.jpg'
               />
               <Card.Body>
-                <Card.Subtitle className='mb-2 text-muted'>
+                <Card.Subtitle className='mb-2 text-muted item-category'>
                   BOOK <span className='book-price'>$13.95</span>
                 </Card.Subtitle>
-                <Card.Title>
+                <Card.Title className='book-title-text'>
                   Rethinking America: Rethinking the World
                 </Card.Title>
                 <Card.Subtitle className='mb-2 text-muted'>
                   <div className='rating-stars'>
-                    <i class='fas fa-star'></i>&nbsp;&nbsp;
+                    <i style={{ color: '#ffb400' }} class='fas fa-star'></i>
+                    &nbsp;&nbsp;
                     <i class='fas fa-star'></i>&nbsp;&nbsp;
                     <i class='fas fa-star'></i>&nbsp;&nbsp;
                     <i class='fas fa-star'></i>&nbsp;&nbsp;
@@ -80,7 +81,7 @@ function StoreCards() {
                     &nbsp;&nbsp;&nbsp;&nbsp;<span className='rating'>5.00</span>
                   </div>
                 </Card.Subtitle>
-                <Card.Text>
+                <Card.Text className='book-caption'>
                   Our book, filled with 41 nonpartisan policy proposals + 8
                   moonshot teasers.
                 </Card.Text>
