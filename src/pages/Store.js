@@ -8,6 +8,7 @@ import ContentCard from '../components/Content/ContentCards/ContentCard';
 import RailButtons from '../components/Misc/RailButtons';
 import GlobalButton from '../components/Misc/GlobalButton';
 import SearchBox from '../components/Filters/SearchBox';
+import StoreCards from '../components/Content/ContentCards/StoreCards';
 import '../styles/Pages.css';
 
 export class Store extends Component {
@@ -52,7 +53,7 @@ export class Store extends Component {
                     marginLeft: '-20px',
                   }}
                 >
-                  <ContentCard type={type.OPINION} />
+                  <StoreCards />
                 </div>
                 <br />
                 <div style={style}>
