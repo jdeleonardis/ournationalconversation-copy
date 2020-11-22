@@ -12,6 +12,7 @@ const GlobalButton = (props) => {
           width: `${props.width}`,
           fontSize: `${props.fontSize}`,
           padding: `${props.padding}`,
+          float: `${props.float}`,
         }}
         variant='outline-primary'
       >

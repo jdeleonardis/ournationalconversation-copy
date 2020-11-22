@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import GlobalButton from '../../Misc/GlobalButton';
 import '../../../styles/StoreCards.css';
 import StarRatingComponent from 'react-star-rating-component';
@@ -45,14 +45,14 @@ function StoreCards() {
                       starCount={5}
                       value={4}
                     />
-                    {/* <span className='rating'>5.00</span> */}
+                    <span className='rating'>5.00</span>
                   </div>
                 </Card.Subtitle>
                 <Card.Text>
                   Our book, filled with 41 nonpartisan policy proposals + 8
                   moonshot teasers.
                 </Card.Text>
-                <GlobalButton label='ADD TO CART' />
+                <GlobalButton float='right' label='ADD TO CART' />
               </Card.Body>
             </Card>
           </Col>
@@ -70,11 +70,21 @@ function StoreCards() {
                 <Card.Title>
                   Rethinking America: Rethinking the World
                 </Card.Title>
+                <Card.Subtitle className='mb-2 text-muted'>
+                  <div className='rating-stars'>
+                    <i class='fas fa-star'></i>&nbsp;&nbsp;
+                    <i class='fas fa-star'></i>&nbsp;&nbsp;
+                    <i class='fas fa-star'></i>&nbsp;&nbsp;
+                    <i class='fas fa-star'></i>&nbsp;&nbsp;
+                    <i class='fas fa-star'></i>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span className='rating'>5.00</span>
+                  </div>
+                </Card.Subtitle>
                 <Card.Text>
                   Our book, filled with 41 nonpartisan policy proposals + 8
                   moonshot teasers.
                 </Card.Text>
-                <GlobalButton label='ADD TO CART' />
+                <GlobalButton float='right' label='ADD TO CART' />
               </Card.Body>
             </Card>
           </Col>

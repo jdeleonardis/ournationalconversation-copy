@@ -3,8 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import SortBy from '../components/Filters/SortBy';
 import FilterBar from '../components/Filters/StoreFilter';
-import * as type from '../components/Content/ContentCards/constants/cardConstants';
-import ContentCard from '../components/Content/ContentCards/ContentCard';
 import RailButtons from '../components/Misc/RailButtons';
 import GlobalButton from '../components/Misc/GlobalButton';
 import SearchBox from '../components/Filters/SearchBox';
