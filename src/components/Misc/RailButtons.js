@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { ButtonGroup, Button, Container } from 'react-bootstrap';
-// import '../../styles/railButtons.css';
+// import { ButtonGroup, Button, Container } from 'react-bootstrap';
+import '../../styles/railButtons.css';
 
 class RailButtons extends Component {
   render() {
@@ -9,8 +9,8 @@ class RailButtons extends Component {
       <div vertical>
         <div
           class=' mb-2'
-          role='toolbar'
-          aria-label='Toolbar with button groups'
+          // role='toolbar'
+          // aria-label='Toolbar with button groups'
         >
           <button className='gb-text btn-block ' type='button' size='lg'>
             ONC STORE
@@ -18,8 +18,8 @@ class RailButtons extends Component {
         </div>
         <div
           class='btn-toolbar  mb-2'
-          role='toolbar'
-          aria-label='Toolbar with button groups'
+          // role='toolbar'
+          // aria-label='Toolbar with button groups'
         >
           <button className='gb-text btn-block' size='lg'>
             ONC NEWSLETTERS
@@ -27,8 +27,8 @@ class RailButtons extends Component {
         </div>
         <div
           class='btn-toolbar  mb-2'
-          role='toolbar'
-          aria-label='Toolbar with button groups'
+          // role='toolbar'
+          // aria-label='Toolbar with button groups'
         >
           <button className='gb-text btn-block' size='lg'>
             WEBISODES
@@ -36,8 +36,8 @@ class RailButtons extends Component {
         </div>
         <div
           class='btn-toolbar  mb-2'
-          role='toolbar'
-          aria-label='Toolbar with button groups'
+          // role='toolbar'
+          // aria-label='Toolbar with button groups'
         >
           <button className='gb-text btn-block' size='lg'>
             PODCASTS
@@ -45,8 +45,8 @@ class RailButtons extends Component {
         </div>
         <div
           class='btn-toolbar  mb-2'
-          role='toolbar'
-          aria-label='Toolbar with button groups'
+          // role='toolbar'
+          // aria-label='Toolbar with button groups'
         >
           <button className='gb-text btn-block' size='lg'>
             RESOURCES
