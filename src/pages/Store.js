@@ -20,7 +20,7 @@ export class Store extends Component {
       <Fragment>
         <div>
           <Helmet>
-            <title>Our National Conversation | Store</title>
+            <title>Our National Conversation | ONC Store</title>
           </Helmet>
 
           <Container className='container' fluid>
