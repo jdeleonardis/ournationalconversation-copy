@@ -3,6 +3,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import GlobalButton from '../../Misc/GlobalButton';
 import '../../../styles/StoreCards.css';
 import StarRatingComponent from 'react-star-rating-component';
+import bookCover from '../../../img/book-cover.jpg';
 
 function StoreCards() {
   return (
@@ -11,11 +12,7 @@ function StoreCards() {
         <Row>
           <Col md={6}>
             <Card className='book-card'>
-              <Card.Img
-                className='book-image'
-                variant='top'
-                src='https://redshelf-images.s3-external-1.amazonaws.com/item_image/default_item_image.jpg'
-              />
+              <Card.Img className='book-image' variant='top' src={bookCover} />
               <Card.Body>
                 <Card.Subtitle className='mb-2 text-muted item-category'>
                   BOOK <span className='book-price'>$13.95</span>
@@ -58,11 +55,7 @@ function StoreCards() {
           </Col>
           <Col md={6}>
             <Card className='book-card'>
-              <Card.Img
-                className='book-image'
-                variant='top'
-                src='https://redshelf-images.s3-external-1.amazonaws.com/item_image/default_item_image.jpg'
-              />
+              <Card.Img className='book-image' variant='top' src={bookCover} />
               <Card.Body>
                 <Card.Subtitle className='mb-2 text-muted item-category'>
                   BOOK <span className='book-price'>$13.95</span>
