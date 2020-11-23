@@ -18,7 +18,7 @@ function StoreCards() {
                   BOOK <span className='book-price'>$13.95</span>
                 </Card.Subtitle>
                 <Card.Title className='book-title-text'>
-                  Rethinking America: Rethinking the World
+                  Let's Fix America
                 </Card.Title>
                 <Card.Subtitle className='mb-2 text-muted'>
                   {/* <div className='rating-stars'>
@@ -61,7 +61,7 @@ function StoreCards() {
                   BOOK <span className='book-price'>$13.95</span>
                 </Card.Subtitle>
                 <Card.Title className='book-title-text'>
-                  Rethinking America: Rethinking the World
+                  Let's Fix America
                 </Card.Title>
                 <Card.Subtitle className='mb-2 text-muted'>
                   <div className='rating-stars'>
