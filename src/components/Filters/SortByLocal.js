@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row} from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown';
 import '../../styles/sort-by.css';
 import '../../styles/searchBar.css';

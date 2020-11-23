@@ -1,3 +1,118 @@
+/* FilterBar */
+.filter-by {
+  /* Filter by: */
+
+  /* position: absolute; */
+  width: 109px;
+  height: 30px;
+  left: 0px;
+  top: 0px;
+
+  /* Headline 5 */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.001em;
+
+  color: #000000;
+}
+
+/* CLEAR ALL FILTERS disabled */
+
+.clear {
+  /* position: absolute; */
+  left: 48.11%;
+  right: 0%;
+  top: 6.61%;
+  bottom: 78.51%;
+
+  /* Subhead 3 */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.0025em;
+
+  color: rgba(44, 28, 89, 0.25);
+}
+
+/* Topic filter */
+.topic-filter {
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 291px;
+  height: 21px;
+  left: 0px;
+  top: 55px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 25px;
+}
+
+/* Source filter */
+
+.source-filter {
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 291px;
+  height: 20px;
+  left: 0px;
+  top: 101px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 2;
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 25px;
+}
+
+/* Topics & Sources */
+.custom-radio {
+  position: static;
+  width: 269px;
+  height: 0px;
+  right: 15px;
+  top: 0px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  align-self: flex-start;
+  flex-grow: 0;
+  margin: 0px 15px;
+}
+
+.fa-shopping-cart {
+  position: absolute;
+  margin-left: 33.5em;
+  margin-top: 1em;
+}
+
 .main-filter-div {
   margin-top: 15px;
 }

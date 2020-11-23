@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/sort-by.css';
-import '../../styles/searchBar.css';
+import '../../styles/searchbox.css';
 
 const SearchBox = (props) => {
   return (
