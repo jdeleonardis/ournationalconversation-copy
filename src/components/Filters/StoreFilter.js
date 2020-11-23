@@ -89,7 +89,7 @@ const StoreFilter = () => {
           href='#demo'
           data-toggle='collapse'
         >
-          <i class='chev fas fa-chevron-down'></i>&nbsp;&nbsp;TOPIC
+          <i class='chev fas fa-chevron-down'></i>&nbsp;&nbsp;CATEGORY
         </a>
 
         <div
