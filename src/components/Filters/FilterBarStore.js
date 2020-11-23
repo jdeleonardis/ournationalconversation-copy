@@ -1,48 +1,48 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
-import '../../styles/searchBar.css';
 import '../../styles/store-filter.css';
+import '../../styles/filter-bar.css';
 
 // Icon Toggle
-function handleChevron() {
-  document.querySelector('.chev').classList.toggle('fa-chevron-down');
-  document.querySelector('.chev').classList.toggle('fa-chevron-up');
+function handleStoreChevron() {
+  document.querySelector('.store-chev').classList.toggle('fa-chevron-down');
+  document.querySelector('.store-chev').classList.toggle('fa-chevron-up');
 }
 
 // Filter Effect
 function handleBooks() {
-  let a, b, i;
+  let a, books, i;
   a = document.querySelectorAll('.category');
   for (i = 0; i < a.length; i++) {
     a[i].style.display = 'none';
   }
-  b = document.querySelectorAll('.books');
-  for (i = 0; i < b.length; i++) {
-    b[i].style.display = 'block';
+  books = document.querySelectorAll('.books');
+  for (i = 0; i < books.length; i++) {
+    books[i].style.display = 'block';
   }
 }
 
 function handleTops() {
-  let a, t, i;
+  let a, tops, i;
   a = document.querySelectorAll('.category');
   for (i = 0; i < a.length; i++) {
     a[i].style.display = 'none';
   }
-  t = document.querySelectorAll('.tops');
-  for (i = 0; i < t.length; i++) {
-    t[i].style.display = 'block';
+  tops = document.querySelectorAll('.tops');
+  for (i = 0; i < tops.length; i++) {
+    tops[i].style.display = 'block';
   }
 }
 
 function handleBottoms() {
-  let a, b, i;
+  let a, bottoms, i;
   a = document.querySelectorAll('.category');
   for (i = 0; i < a.length; i++) {
     a[i].style.display = 'none';
   }
-  b = document.querySelectorAll('.bottoms');
-  for (i = 0; i < b.length; i++) {
-    b[i].style.display = 'block';
+  bottoms = document.querySelectorAll('.bottoms');
+  for (i = 0; i < bottoms.length; i++) {
+    bottoms[i].style.display = 'block';
   }
 }
 
@@ -59,14 +59,14 @@ function handleAccessories() {
 }
 
 function handleGiveaways() {
-  let a, g, i;
+  let a, give, i;
   a = document.querySelectorAll('.category');
   for (i = 0; i < a.length; i++) {
     a[i].style.display = 'none';
   }
-  g = document.querySelectorAll('.giveaways');
-  for (i = 0; i < g.length; i++) {
-    g[i].style.display = 'block';
+  give = document.querySelectorAll('.giveaways');
+  for (i = 0; i < give.length; i++) {
+    give[i].style.display = 'block';
   }
 }
 
@@ -78,23 +78,24 @@ function handleGiveaways() {
 //   }
 // }
 
-const StoreFilter = () => {
+const FilterBarStore = () => {
   return (
     <div className='main-filter-div'>
       <h2 id='filter-by'>Filter by:</h2>
-      <div id='filter-div'>
+      <div id='store-div'>
         <a
-          onClick={handleChevron}
-          id='topic'
-          href='#demo'
+          onClick={handleStoreChevron}
+          id='store-topic'
+          href='#demo2'
           data-toggle='collapse'
         >
-          <i class='chev fas fa-chevron-down'></i>&nbsp;&nbsp;CATEGORY
+          <i class='store-chev fas fa-chevron-down'></i>&nbsp;&nbsp;CATRGORY
+          <span className='clear'>CLEAR</span>
         </a>
 
         <div
           style={{ marginTop: '10px', marginLeft: '20px' }}
-          id='demo'
+          id='demo2'
           className='collapse'
         >
           <Form>
@@ -106,7 +107,7 @@ const StoreFilter = () => {
                   type='radio'
                   label='Books'
                   name='formHorizontalRadios'
-                  id='formHorizontalRadios1'
+                  id='formHorizontalRadios13'
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
                 />
@@ -116,7 +117,7 @@ const StoreFilter = () => {
                   type='radio'
                   label='Tops'
                   name='formHorizontalRadios'
-                  id='formHorizontalRadios2'
+                  id='formHorizontalRadios14'
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
                 />
@@ -126,7 +127,7 @@ const StoreFilter = () => {
                   type='radio'
                   label='Bottoms'
                   name='formHorizontalRadios'
-                  id='formHorizontalRadios3'
+                  id='formHorizontalRadios15'
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
                 />
@@ -136,7 +137,7 @@ const StoreFilter = () => {
                   type='radio'
                   label='Accessories'
                   name='formHorizontalRadios'
-                  id='formHorizontalRadios4'
+                  id='formHorizontalRadios16'
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
                 />
@@ -146,7 +147,7 @@ const StoreFilter = () => {
                   type='radio'
                   label='Giveaways'
                   name='formHorizontalRadios'
-                  id='formHorizontalRadios5'
+                  id='formHorizontalRadios17'
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
                 />
@@ -157,8 +158,9 @@ const StoreFilter = () => {
                   type='radio'
                   label='Select All'
                   name='formHorizontalRadios'
-                  id='formHorizontalRadios12'
+                  id='formHorizontalRadios23'
                   className='filter-dropdown-text'
+                  // className={`custom-${type}`}
                 /> */}
               </div>
             ))}
@@ -168,6 +170,7 @@ const StoreFilter = () => {
     </div>
   );
 };
+
 // }
 
-export default StoreFilter;
+export default FilterBarStore;

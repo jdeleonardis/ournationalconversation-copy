@@ -1,16 +1,8 @@
-.main-filter-div {
-  margin-top: 15px;
-}
-
-#filter-div {
-  margin-bottom: 15px;
-}
-
-.chev {
+.store-chev {
   display: initial;
 }
 
-#topic {
+#store-topic {
   color: #2c1c59;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
@@ -21,43 +13,48 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-#filter-by {
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 15px;
-}
-
 /* ========================
-  MEDIA QUERIES
-  ======================== */
+MEDIA QUERIES
+======================== */
 
 @media screen and (min-width: 981px) and (max-width: 1200px) {
   /* .container {
-        background-color: red;
-      } */
+      background-color: red;
+    } */
 }
 
 @media screen and (min-width: 769px) and (max-width: 980px) {
   /* .container {
-        background-color: yellow;
-      } */
+      background-color: yellow;
+    } */
 }
 
 @media screen and (min-width: 641px) and (max-width: 768px) {
   /* .container {
-        background-color: orange;
-      } */
+      background-color: orange;
+    } */
+  #store-div {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 551px) and (max-width: 640px) {
   /* .container {
-        background-color: brown;
-      } */
+    background-color: brown;
+  } */
+
+  #store-div {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 471px) and (max-width: 550px) {
   /* .container {
-        background-color: salmon;
-      } */
+      background-color: salmon;
+    } */
+  #store-div {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 431px) and (max-width: 470px) {
@@ -65,21 +62,25 @@
       background-color: blue;
       font-size: 10px;
     } */
-
-  #filter-by {
-    margin-top: 0;
-    font-size: 28px;
+  #store-div {
+    margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 401px) and (max-width: 430px) {
   /* .container {
-        background-color: burlywood;
-      } */
+      background-color: burlywood;
+    } */
+  #store-div {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
   /* .container {
-        background-color: pink;
-      } */
+      background-color: pink;
+    } */
+  #store-div {
+    margin-bottom: 20px;
+  }
 }

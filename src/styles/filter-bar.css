@@ -24,10 +24,10 @@
 
 .clear {
   /* position: absolute; */
-  left: 48.11%;
-  right: 0%;
-  top: 6.61%;
-  bottom: 78.51%;
+  margin: 0em;
+  padding: 0em;
+  text-align: right;
+  float: right;
 
   /* Subhead 3 */
 

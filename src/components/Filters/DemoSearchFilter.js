@@ -7,19 +7,22 @@ import FilterBar from './FilterBar';
 import SourceFilterBar from './SourceFilterBar';
 import RailButtons from '../Misc/RailButtons';
 import SearchBox from './SearchBox';
+import FilterBarStore from './FilterBarStore';
+import '../../styles/demo.css';
 // import AddLocation from "./AddLocation";
 
 class SearchFilter extends Component {
   render() {
     return (
       <Container>
-        <Row>
-          <Col md={3}>
+        <Row className="demo">
+          <Col md={3} >
             <SearchBox />
             <Col>
               <br />
               <FilterBar />
               <SourceFilterBar />
+              <FilterBarStore/>
             </Col>
           </Col>
           <Col md={6}>
@@ -40,3 +43,5 @@ class SearchFilter extends Component {
 }
 
 export default SearchFilter;
+
+
