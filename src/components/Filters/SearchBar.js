@@ -45,7 +45,7 @@ const SearchBar = (props) => {
                 // data-target='#collapseExample'
                 // aria-controls='collapseExample'
                 // href='#'
-                variant=''
+                variant='primary'
               >
                 <NewFiltersExpanded />
                 {/* <Dropdown.Toggle

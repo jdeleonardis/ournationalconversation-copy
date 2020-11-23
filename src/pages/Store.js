@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import SortBy from '../components/Filters/SortBy';
-import FilterBar from '../components/Filters/StoreFilter';
+import FilterBarStore from '../components/Filters/FilterBarStore';
 import RailButtons from '../components/Misc/RailButtons';
 import GlobalButton from '../components/Misc/GlobalButton';
 import SearchBox from '../components/Filters/SearchBox';
@@ -43,7 +43,7 @@ export class Store extends Component {
 
             <Row>
               <Col md={3}>
-                <FilterBar />
+                <FilterBarStore />
               </Col>
               <Col md={6}>
                 <div

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
 import '../../styles/source-filter-bar.css';
+import '../../styles/filter-bar.css';
 
 // Icon Toggle
 function handleSourceChevron() {
@@ -129,13 +130,13 @@ function handleMySources() {
   }
 }
 
-function handleSelectAll() {
-  let all, i;
-  all = document.querySelectorAll('.article');
-  for (i = 0; i < all.length; i++) {
-    all[i].style.display = 'block';
-  }
-}
+// function handleSelectAll() {
+//   let all, i;
+//   all = document.querySelectorAll('.article');
+//   for (i = 0; i < all.length; i++) {
+//     all[i].style.display = 'block';
+//   }
+// }
 
 const SearchFilterBar = () => {
   return (
@@ -148,6 +149,7 @@ const SearchFilterBar = () => {
           data-toggle='collapse'
         >
           <i class='source-chev fas fa-chevron-down'></i>&nbsp;&nbsp;SOURCE
+          <span className='clear'>CLEAR</span>
         </a>
 
         <div
@@ -259,7 +261,7 @@ const SearchFilterBar = () => {
                   // className={`custom-${type}`}
                 />
 
-                <Form.Check
+                {/* <Form.Check
                   onClick={handleSelectAll}
                   custom
                   type='radio'
@@ -268,7 +270,7 @@ const SearchFilterBar = () => {
                   id='formHorizontalRadios23'
                   className='filter-dropdown-text'
                   // className={`custom-${type}`}
-                />
+                /> */}
               </div>
             ))}
           </Form>

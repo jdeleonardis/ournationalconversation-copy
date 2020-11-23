@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
-import '../../styles/searchBar.css';
+
 import '../../styles/filter-bar.css';
 
 // Icon Toggle
@@ -162,6 +162,7 @@ const FilterBar = () => {
           data-toggle='collapse'
         >
           <i class='chev fas fa-chevron-down'></i>&nbsp;&nbsp;TOPIC
+          <span className='clear'>CLEAR</span>
         </a>
 
         <div

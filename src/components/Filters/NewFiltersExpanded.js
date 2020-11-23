@@ -1,12 +1,14 @@
 import React from 'react';
 import {
-  Dropdown,
+
   Row,
   Col,
   DropdownButton,
   ButtonGroup
 } from 'react-bootstrap';
-import '../../styles/searchBar.css';
+
+import '../../styles/newfiltersexpanded.css';
+
 
 const NewFiltersExpanded = () => {
   return (
