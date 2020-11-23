@@ -30,6 +30,7 @@ export class Store extends Component {
                 <SearchBox pageName='Store' />
               </Col>
               <Col md={6}>
+                <i id='shopping' class='fas fa-shopping-cart'></i>
                 <SortBy
                   pageName='Store'
                   pageTitle='ONC STORE'
