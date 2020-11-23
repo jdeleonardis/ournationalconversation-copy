@@ -25,7 +25,16 @@ const SortBy = (props) => {
               Sort by: DEFAULT
             </Dropdown.Toggle>
 
-            <Dropdown.Menu>
+            <Dropdown.Menu
+              variant='purple'
+              menuAlign='xl: "left"|"right"'
+              alignRight
+              menuAlign='right'
+              title='Dropdown right'
+              className='dropdown-menu-align-right'
+              align='right'
+              className='mx-8 my-8 w-auto'
+            >
               <Dropdown.Item variant='purple' href='#/action-1'>
                 DEFAULT
               </Dropdown.Item>

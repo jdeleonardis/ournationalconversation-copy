@@ -1,5 +1,10 @@
 .book-card {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 30px;
+}
+
+.bottom-card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .book-image {
@@ -34,12 +39,13 @@
 }
 
 .rating-stars {
-  font-size: 10px;
-  padding-bottom: 10px;
+  margin-left: -2px;
+  margin-bottom: 15px;
 }
 
 .rating {
   font-size: 16px;
   margin-bottom: 10px;
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }

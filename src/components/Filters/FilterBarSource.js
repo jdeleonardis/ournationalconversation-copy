@@ -138,7 +138,7 @@ function handleMySources() {
 //   }
 // }
 
-const SearchFilterBar = () => {
+const FilterBarSource = () => {
   return (
     <div>
       <div id='source-div'>
@@ -280,4 +280,4 @@ const SearchFilterBar = () => {
   );
 };
 
-export default SearchFilterBar;
+export default FilterBarSource;

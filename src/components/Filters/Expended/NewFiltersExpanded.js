@@ -7,7 +7,7 @@ import {
   ButtonGroup
 } from 'react-bootstrap';
 
-import '../../styles/newfiltersexpanded.css';
+import '../../../styles/newfiltersexpanded.css';
 
 
 const NewFiltersExpanded = () => {
