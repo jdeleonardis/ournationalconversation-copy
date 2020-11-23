@@ -21,13 +21,8 @@ function BodyType(props) {
 							src="https://avatars3.githubusercontent.com/u/27324719?s=460&u=407b4f55702b082ae1e79b662ed96e0749a02a84&v=4"
 							className="boxImage"
 						/>
-						<div className="sectionSubHeader">Source: ONC</div>
-						<div className="cardText">
-							Now here you go again You say you want your freedom Well, who am I
-							to keep you down It's only right that you should Play the way you
-							feel it But listen carefully To the sound of your loneliness Like
-							a heartbeat drives you mad In the stillness of remembering what
-						</div>
+						<div className="sectionSubHeader">Source: {props.source}</div>
+						<div className="cardText">{props.text}</div>
 					</Col>
 				</Row>
 				<br />
@@ -51,20 +46,25 @@ function ContentCard(props) {
 								</span>
 								<span className="sectionSubHeader">
 									{' '}
-									| Science {'&'} Technology
+									| {props.data.section}
 								</span>
 							</Col>
 						</Row>
 						<Row>
-							<Col className="text-left header">ONC Releases a New Website</Col>
+							<Col className="text-left header">{props.data.title}</Col>
 						</Row>
-						<BodyType type={props.type ? props.type : 'kanye eazssy'} />
+						<BodyType
+							type={props.data.type ? props.data.type : 'kanye eazssy'}
+							source={props.data.source}
+							text={props.data.text}
+						/>
 						<Row>
 							<Col md={8}>
-								<span className="dateTitle">Nov 3, 2020</span>{' '}
+								<span className="dateTitle">{props.data.date}</span>{' '}
 								<span style={{ marginLeft: '2rem' }}>
 									<CommentSvg />
-									133 <DotSvg /> <HeartSvg /> 422
+									{props.data.comments} <DotSvg /> <HeartSvg />{' '}
+									{props.data.likes}
 								</span>
 							</Col>
 							<Col md={4} className="text-right">

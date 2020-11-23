@@ -1,0 +1,38 @@
+[
+	{
+		"title": "MineCraft > Fortnite",
+		"type": "solution",
+		"section": "Science & Technology",
+		"source": "Pew News",
+		"location": "Palo Alto, Ca",
+		"text": "Minin' away I don't know what to mine I'll mine this anyway In this Minecraft day",
+		"Additional Sources": ["CNN", "BloomBerg", "Java", "Washington Post", ""],
+		"date": "Nov 3 2020",
+		"likes": 132,
+		"comments": 455
+	},
+	{
+		"title": "Zuckerberg launches AI drone",
+		"source": "The Onion",
+		"section": "Science & Technology",
+		"type": "solution",
+		"location": "Palo Alto, Ca",
+		"text": "Mark Elliot Zuckerberg is an American media magnate, internet entrepreneur, and philanthropist. He is known for co-founding Facebook, Inc. and serves as its chairman, chief executive officer, and controlling shareholder",
+		"Additional Sources": ["CNN", "BloomBerg", "Java", "Washington Post", ""],
+		"date": "Dec 3 2020",
+		"likes": 17,
+		"comments": 38
+	},
+	{
+		"title": "Travis Scott Burger is Epic",
+		"source": "eEntertainment",
+		"section": "Foods & Services",
+		"type": "solution",
+		"location": "Palo Alto, Ca",
+		"text": "Sun is down, freezin' cold That's how we already know winter's here My dawg would prolly do it for a Louis belt",
+		"Additional Sources": ["CNN", "BloomBerg", "Java", "Washington Post", ""],
+		"date": "Nov 6 2020",
+		"likes": 132,
+		"comments": 455
+	}
+]
