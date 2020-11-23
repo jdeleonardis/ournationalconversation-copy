@@ -4,9 +4,10 @@ import {
   Nav,
   Dropdown,
   Col,
-  ButtonGroup,DropdownButton
+  ButtonGroup,
+  DropdownButton
 } from 'react-bootstrap';
-import NewFiltersExpanded from './NewFiltersExpanded'
+import NewFiltersExpanded from './NewFiltersExpanded';
 import '../../styles/searchBar.css';
 
 const SearchBar = (props) => {
@@ -31,7 +32,21 @@ const SearchBar = (props) => {
                 NEWS FILTERS <i class='fas fa-chevron-down news-filters-btn' />
               </button> */}
               {/* <div class='collapse' id='collapseExample'> */}
-              <DropdownButton id='dropdown-item-button' title='NEWS FILTERS'>
+              <DropdownButton
+                // id='dropdown-item-button'
+                title='NEWS FILTERS'
+                className='news-filters-btn '
+                type='button'
+                id='dropdownMenu2'
+                // data-toggle='dropdown'
+                // aria-haspopup='true'
+                // aria-expanded='false'
+                // data-toggle='collapse'
+                // data-target='#collapseExample'
+                // aria-controls='collapseExample'
+                // href='#'
+                variant=''
+              >
                 <NewFiltersExpanded />
                 {/* <Dropdown.Toggle
                   id='dropdown-custom-1'
@@ -45,39 +60,6 @@ const SearchBar = (props) => {
                   variant='purple'
                 > */}
 
-                {/* <Nav defaultActiveKey='/home' className='flex-column'>
-                    <Nav.Link href='/home'>Active</Nav.Link>
-                    <Nav.Link eventKey='link-1'>Link</Nav.Link>
-                    <Nav.Link eventKey='link-2'>Link</Nav.Link>
-                    <Nav.Link eventKey='disabled' disabled>
-                      Disabled
-                    </Nav.Link>
-                  </Nav> */}
-                {/* */}
-                {/* <div className='mb-2'>
-                    {['up', 'down', 'left', 'right'].map((direction) => (
-                      <DropdownButton
-                        as={ButtonGroup}
-                        key={direction}
-                        id={`dropdown-button-drop-${direction}`}
-                        drop={direction}
-                        variant='secondary'
-                        title={` Drop ${direction} `}
-                      >
-                        <Dropdown.Item eventKey='1'>Action</Dropdown.Item>
-                        <Dropdown.Item eventKey='2'>
-                          Another action
-                        </Dropdown.Item>
-                        <Dropdown.Item eventKey='3'>
-                          Something else here
-                        </Dropdown.Item>
-                        <Dropdown.Divider />
-                        <Dropdown.Item eventKey='4'>
-                          Separated link
-                        </Dropdown.Item>
-                      </DropdownButton>
-                    ))}
-                  </div> */}
                 {/* </Dropdown.Menu> */}
               </DropdownButton>
               <Dropdown as={ButtonGroup}></Dropdown>
