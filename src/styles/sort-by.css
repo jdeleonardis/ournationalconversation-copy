@@ -120,6 +120,50 @@
   margin-right: -9px !important;
 }
 
+/* Location dropdown */
+.location-dropdown {
+  min-width: fit-content;
+  width: ;
+}
+
+.dropdown-menu-align-right{
+
+/* position: absolute;
+width: 380px;
+height: 275px;
+left: 643px;
+top: 334px; */
+width: 7em;
+/* Extra Light Gray */
+
+background: #F2F2F2;
+
+/* Card Shadow */
+
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+border-radius: 2px;
+}
+
+.remove {
+  position: relative;
+  margin-top: .25em;
+  text-align: right;
+  float: right;
+  width: 3em;
+
+  /* Subhead 3 */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.0025em;
+
+  color: white;
+  
+}
+
 /* ========================
 MEDIA QUERIES
 ======================== */

@@ -7,7 +7,7 @@ import {
   ButtonGroup,
   DropdownButton
 } from 'react-bootstrap';
-import NewFiltersExpanded from './NewFiltersExpanded';
+import NewFiltersExpanded from './Expended/NewFiltersExpanded';
 import '../../styles/searchBar.css';
 
 const SearchBar = (props) => {

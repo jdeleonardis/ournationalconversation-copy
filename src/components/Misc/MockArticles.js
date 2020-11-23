@@ -3,7 +3,7 @@ import { Card, Col, Row, Container } from 'react-bootstrap';
 
 import FilterBar from '../Filters/FilterBar';
 
-import SourceFilterBar from '../Filters/SourceFilterBar';
+import FilterBarSource from '../Filters/FilterBarSource';
 
 export class MockArticles extends Component {
   // const mockarticles = (props) => {
@@ -18,7 +18,7 @@ export class MockArticles extends Component {
               <Col md={3}>
                 <FilterBar />
 
-                <SourceFilterBar />
+                <FilterBarSource />
               </Col>
 
               <Col md={9}>

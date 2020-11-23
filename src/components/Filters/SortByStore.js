@@ -1,7 +1,7 @@
 import React from 'react';
 import { Dropdown, Row, Col, NavDropdown, Navbar, Nav } from 'react-bootstrap';
 import '../../styles/sort-by.css';
-import '../../styles/searchBar.css';
+
 
 const SortByStore = (props) => {
   return (
@@ -19,12 +19,36 @@ const SortByStore = (props) => {
             All items{props.horizLineTextLeft} &nbsp;&nbsp;&nbsp;
           </div>
           <div className='divider'></div>&nbsp;
-          <Dropdown>
-            <Dropdown.Toggle variant='purple' id='dropdown-basic'>
+          <Dropdown
+            menuAlign='right'
+            title='Dropdown right'
+            id='dropdown-menu-align-right'
+          >
+            <Dropdown.Toggle
+              variant='purple'
+              id='dropdown-basic'
+              menuAlign='right'
+              title='Dropdown right'
+              id='dropdown-menu-align-right'
+              align='right'
+            >
               Sort by: DEFAULT
             </Dropdown.Toggle>
 
-            <Dropdown.Menu>
+            <Dropdown.Menu
+              menuAlign='right'
+              title='Dropdown right'
+              id='dropdown-menu-align-right'
+              align='right'
+              variant='purple'
+              menuAlign='xl: "left"|"right"'
+              alignRight
+              menuAlign='right'
+              title='Dropdown right'
+              className='dropdown-menu-align-right'
+              align='right'
+              className='mx-8 my-8 w-auto'
+            >
               <Dropdown.Item variant='purple' href='#/action-1'>
                 DEFAULT
               </Dropdown.Item>

@@ -4,33 +4,39 @@ import SortBy from './SortBy';
 import SortByLocal from './SortByLocal';
 import SortByStore from './SortByStore';
 import FilterBar from './FilterBar';
-import SourceFilterBar from './SourceFilterBar';
+import FilterBarSource from './FilterBarSource';
 import RailButtons from '../Misc/RailButtons';
 import SearchBox from './SearchBox';
 import FilterBarStore from './FilterBarStore';
 import '../../styles/demo.css';
-// import AddLocation from "./AddLocation";
 
-class SearchFilter extends Component {
+class DemoSearchFilter extends Component {
   render() {
     return (
       <Container>
-        <Row className="demo">
-          <Col md={3} >
+        <Row className='demo'>
+          <Col md={3}>
             <SearchBox />
             <Col>
               <br />
+              {/* FilterBar for different pages */}
               <FilterBar />
-              <SourceFilterBar />
-              <FilterBarStore/>
+              <FilterBarSource />
+              <br />
+              <FilterBarStore />
+              <br />
             </Col>
           </Col>
           <Col md={6}>
+            {/* SortBy for different pages */}
             <SortBy />
-            <hr />
+            <br />
+            <br />
+            <br />
             <SortByLocal />
-            {/* <AddLocation/> */}
-            <hr />
+            <br />
+            <br />
+            <br />
             <SortByStore />
           </Col>
           <Col md={3}>
@@ -42,6 +48,4 @@ class SearchFilter extends Component {
   }
 }
 
-export default SearchFilter;
-
-
+export default DemoSearchFilter;
