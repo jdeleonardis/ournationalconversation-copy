@@ -50,8 +50,6 @@ const Home = () => {
               <div
                 style={{
                   width: '104%',
-                  //   width: '106.5%',
-                  //   marginLeft: '-15px',
                   padding: 'auto',
                 }}
               >
@@ -64,7 +62,7 @@ const Home = () => {
 
           <Row>
             <Col>
-              <div style={{ marginTop: '40px', marginBottom: '-30px' }}>
+              <div style={{ marginTop: '40px', marginBottom: '-10px' }}>
                 <TopHorizontalLine lineLabel='SOLUTIONS' />
               </div>
             </Col>
