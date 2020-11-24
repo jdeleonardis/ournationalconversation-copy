@@ -122,8 +122,9 @@
 
 /* Location dropdown */
 .location-dropdown {
-  min-width: fit-content;
-  width: ;
+
+  grid-auto-rows: max-content;
+
 }
 
 .dropdown-menu-align-right{

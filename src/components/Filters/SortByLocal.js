@@ -3,7 +3,6 @@ import { Row } from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown';
 import '../../styles/sort-by.css';
 
-
 const SortByLocal = (props) => {
   return (
     <Row>
@@ -13,7 +12,7 @@ const SortByLocal = (props) => {
           {props.horizLineTextLeft} &nbsp;&nbsp;&nbsp;
         </div>
         <div className='divider'></div>&nbsp;
-        <Dropdown >
+        <Dropdown>
           <Dropdown.Toggle variant='purple' id='dropdown-basic'>
             SAN JOSE, CA
           </Dropdown.Toggle>
@@ -21,10 +20,8 @@ const SortByLocal = (props) => {
             variant='purple'
             menuAlign='right'
             alignRight
-            menuAlign='right'
-            className='dropdown-menu-align-right location-dropdown'
+            className='dropdown-menu-align-right location-dropdown mx-8 my-6 w-auto'
             align='right'
-            className='mx-8 my-8 w-auto'
           >
             <Dropdown.Item
               variant='purple'
@@ -33,7 +30,6 @@ const SortByLocal = (props) => {
               eventKey='1'
               active
             >
-    
               SAN JOSE, CA <span className='remove'> Remove</span>
             </Dropdown.Item>
             <Dropdown.Item href='#/action-2' eventKey='2'>
@@ -50,7 +46,7 @@ const SortByLocal = (props) => {
             </Dropdown.Item>
             <Dropdown.Divider />
             <Dropdown.Item eventKey='6' className='justify-content-md-center'>
-               ADD NEW LOCATION +{' '}
+              ADD NEW LOCATION +{' '}
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
