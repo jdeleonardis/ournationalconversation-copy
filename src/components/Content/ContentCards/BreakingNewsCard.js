@@ -11,7 +11,6 @@ function BreakingNews() {
 						<div className="title">BREAKING NEWS</div>
 						<CardBody />
 						<CardBody />
-						<CardBody />
 					</Container>
 				</Card>
 			</Container>
