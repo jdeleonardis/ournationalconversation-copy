@@ -38,45 +38,33 @@ function NewsCard(props) {
 							<Col xs={12} sm={12} md={props.vertical ? 12 : 6}>
 								<Card.Body>
 									<Row>
-										<p className="cardText">
+										<p className="newsCardText">
 											Once upon a time there was a lovely princess. But she had
 											an enchantment upon her of a fearful sort which could only
 											be broken by love's first kiss. She was locked away{' '}
 											{'   '}
 										</p>
 									</Row>
-									<br />
-
-									<Row>
-										<Col>
-											<div>
-												<span>
-													<ClockSvg />
-												</span>
-												<span className="actionBtnTexts"> 4 min ago</span>
-											</div>
-										</Col>
-
-										<Col>
-											<Row>
-												<Col>
-													<Row>
-														<Col className="text-right">
-															<span style={{ marginRight: '5%' }}>
-																<ShareSvg />
-															</span>
-															<span style={{ marginRight: '2%' }}>
-																<SaveSvg />
-															</span>
-															<br />
-															<span className="actionBtnTexts">share save</span>
-														</Col>
-													</Row>
-												</Col>
-											</Row>
-										</Col>
-									</Row>
 								</Card.Body>
+							</Col>
+						</Row>
+						<br />
+						<Row>
+							<Col>
+								<span>
+									<ClockSvg />
+								</span>
+								<span className="actionBtnTexts"> 4 min ago</span>
+							</Col>
+							<Col className="text-right">
+								<span style={{ marginRight: '5%' }}>
+									<ShareSvg />
+								</span>
+								<span style={{ marginRight: '2%' }}>
+									<SaveSvg />
+								</span>
+								<br />
+								<span className="actionBtnTexts">share save</span>
 							</Col>
 						</Row>
 						<br />
