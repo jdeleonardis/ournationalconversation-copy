@@ -22,7 +22,11 @@ function BodyType(props) {
 							className="boxImage"
 						/>
 						<div className="sectionSubHeader">Source: {props.source}</div>
-						<div className="cardText">{props.text}</div>
+						<div className="cardText">
+							{props.text
+								? props.text
+								: 'I got the horses in the back Horse tack is attached Hat is matte black Got the boots thats black to match Ridin on a horse, ha You can whip your Porsche'}
+						</div>
 					</Col>
 				</Row>
 				<br />
@@ -30,6 +34,8 @@ function BodyType(props) {
 		)
 	);
 }
+
+debugger;
 
 function ContentCard(props) {
 	return (
@@ -46,25 +52,25 @@ function ContentCard(props) {
 								</span>
 								<span className="sectionSubHeader">
 									{' '}
-									| {props.data.section}
+									| "{props.data ? props.data.section : 'I Like ONC'}"
 								</span>
 							</Col>
 						</Row>
 						<Row>
-							<Col className="text-left header">{props.data.title}</Col>
+							<Col className="text-left header">
+								{props.data ? props.data.title : 'Header Tingz'}
+							</Col>
 						</Row>
-						<BodyType
-							type={props.data.type ? props.data.type : 'kanye eazssy'}
-							source={props.data.source}
-							text={props.data.text}
-						/>
+						<BodyType type={props.type ? props.type : 'kanye eazssy'} />
 						<Row>
 							<Col md={8}>
-								<span className="dateTitle">{props.data.date}</span>{' '}
+								<span className="dateTitle">
+									{props.data ? props.data.date : 'Nov 03, 2020'}
+								</span>{' '}
 								<span style={{ marginLeft: '2rem' }}>
 									<CommentSvg />
-									{props.data.comments} <DotSvg /> <HeartSvg />{' '}
-									{props.data.likes}
+									{props.data ? props.data.comments : '17'} <DotSvg />{' '}
+									<HeartSvg /> {props.data ? props.data.likes : '38'}
 								</span>
 							</Col>
 							<Col md={4} className="text-right">
