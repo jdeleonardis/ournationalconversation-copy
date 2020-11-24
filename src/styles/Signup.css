@@ -41,6 +41,7 @@ COUNTRY DROPDOWN STYLES
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
+  padding-left: 6px !important;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -65,7 +66,7 @@ select {
 }
 
 .caret-con {
-  margin-right: 28px !important;
+  margin-right: 27px !important;
 }
 
 /* ========================
@@ -272,26 +273,42 @@ MEDIA QUERIES
 
 @media screen and (min-width: 981px) and (max-width: 1200px) {
   /* .container {
-      background-color: red;
-    } */
+    background-color: red;
+  } */
+
+  #dropdown {
+    padding-left: 6px !important;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 980px) {
   /* .container {
-      background-color: yellow;
-    } */
+    background-color: yellow;
+  } */
+
+  #dropdown {
+    padding-left: 6px !important;
+  }
 }
 
 @media screen and (min-width: 641px) and (max-width: 768px) {
   /* .container {
-      background-color: orange;
-    } */
+    background-color: orange;
+  } */
+
+  #dropdown {
+    padding-left: 6px !important;
+  }
 }
 
 @media screen and (min-width: 551px) and (max-width: 640px) {
   /* .container {
-      background-color: brown;
-    } */
+    background-color: brown;
+  } */
+
+  #dropdown {
+    padding-left: 6px !important;
+  }
 }
 
 @media screen and (min-width: 471px) and (max-width: 550px) {
@@ -321,7 +338,8 @@ MEDIA QUERIES
   }
 
   #dropdown {
-    font-size: 14px;
+    font-size: 14px !important;
+    padding-left: 6px !important;
   }
 
   .caret-con {
@@ -367,7 +385,8 @@ MEDIA QUERIES
 
   #dropdown {
     height: calc(1.5em + 1rem + 2px);
-    font-size: 12px;
+    font-size: 12px !important;
+    padding-left: 6px !important;
   }
 
   .caret-con {
@@ -400,7 +419,8 @@ MEDIA QUERIES
 
   #dropdown {
     height: calc(1.5em + 1rem + 2px);
-    font-size: 12px;
+    font-size: 12px !important;
+    padding-left: 6px !important;
   }
 
   .caret-con {
@@ -428,7 +448,8 @@ MEDIA QUERIES
 
   #dropdown {
     height: calc(1.5em + 1rem + 2px);
-    font-size: 12px;
+    font-size: 12px !important;
+    padding-left: 6px !important;
   }
 
   .caret-con {

@@ -11,6 +11,7 @@ const GlobalButton = (props) => {
         style={{
           width: `${props.width}`,
           fontSize: `${props.fontSize}`,
+          margin: `${props.margin}`,
           padding: `${props.padding}`,
           float: `${props.float}`,
         }}
