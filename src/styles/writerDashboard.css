@@ -1,0 +1,70 @@
+#writers-dashboard-card{
+  background-color: #f3f2f2;
+  margin-bottom: 40px;
+}
+
+.rightAlign {  
+  text-align: right;
+}
+
+.ck-editor__editable {
+  min-height: 350px;
+}
+
+.newsRadio {
+  vertical-align: baseline;
+}
+
+.newsLabel { 
+  vertical-align: baseline;  
+  font-size: small;
+  font-weight: bold;
+  width: 275px;
+}
+
+#addTag-btn,
+#submitArticle-btn,
+#saveDraft-btn {
+  font-family: 'Montserrat', sans-serif;
+  clear: both;  
+  margin-top: 0px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+#addTag-btn,
+#submitArticle-btn{
+  background-color: #2c1c59 !important;
+}
+
+#saveDraft-btn {
+  color: #2c1c59 !important;
+  background-color: #f3f2f2;
+  border-color: #2c1c59 !important;
+  margin-right: 20px;
+}
+
+#saveDraft-btn:hover {
+  background-color: #2c1c59 !important;
+  color: #ffffff !important;
+}
+
+.buttonRight {  
+  float: right;
+}
+
+.individualTag {
+  width: 30% !important;
+  margin-right: 10px;
+  border-radius: 4px;
+  color: #2c1c59 !important;
+  border-color: #2c1c59 !important;
+}
+
+#fa-draft {
+  position: relative;
+  left: -2px;
+  color: #808182;
+  cursor: pointer;
+  width: 40;
+}

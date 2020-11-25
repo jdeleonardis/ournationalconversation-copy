@@ -5,6 +5,7 @@ import News from './pages/News';
 import Opinions from './pages/Opinions';
 import Podcasts from './pages/Podcasts';
 import Webisodes from './pages/Webisodes';
+import WriterDashboard from './pages/WriterDashboard';
 import Store from './pages/Store';
 import Contact from './pages/Contact';
 import Header from './components/Header/Header';
@@ -30,6 +31,7 @@ function App() {
           <Route exact path='/webisodes' component={Webisodes} />
           <Route exact path='/store' component={Store} />
           <Route exact path='/contact' component={Contact} />
+          <Route exact path='/writerdashboard' component={WriterDashboard} />
 
           <Route exact path='/news' component={News} />
 
