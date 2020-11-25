@@ -12,22 +12,36 @@ function CardBody(props) {
 	return props.withText ? (
 		<Card.Body>
 			<Row>
-				<div className="passive"> POLITICS</div>
+				<div
+					className="passive"
+					style={{ color: '#2c1d59	', fontWeight: 'bold', fontSize: '20px' }}
+				>
+					Source: BBC
+				</div>
+			</Row>
+			<Row>
+				<div className="passive">
+					{' '}
+					<h1 style={{ fontSize: '15px' }}> NEWS | POLITICS </h1>
+				</div>
 			</Row>
 			<Row className="text-left">
-				<h1 className="title">
+				<h1 className="titleName">
 					A New Clash Over Mail Voting: The Cost of Postage
 				</h1>
 			</Row>
 
 			<Row>
-				<div className="passive">Source: Reuters</div>
-			</Row>
-			<Row>
 				<p className="cardText">
-					Once upon a time there was a lovely princess. But she had an
-					enchantment upon her of a fearful sort which could only be broken by
-					love's first kiss. She was locked away {'   '}
+					Lorem Ipsum is simply dummy text of the printing and typesetting
+					industry. Lorem Ipsum has been the industry's standard dummy text ever
+					since the 1500s, when an unknown printer took a galley of type and
+					scrambled it to make a type specimen book. It has survived not only
+					five centuries, but also the leap into electronic typesetting,
+					remaining essentially unchanged. It was popularised in the 1960s with
+					the release of Letraset sheets containing Lorem Ipsum passages, and
+					more recently with desktop publishing software like Aldus PageMaker
+					including versions of Lorem Ipsum.{'   '}
 				</p>
 			</Row>
 			<br />
@@ -54,7 +68,6 @@ function CardBody(props) {
 										<SaveSvg />
 									</span>
 									<br />
-									<span className="actionBtnTexts">share save</span>
 								</Col>
 							</Row>
 						</Col>
@@ -65,22 +78,31 @@ function CardBody(props) {
 	) : (
 		<Card.Body>
 			<Row>
-				<div className="passive"> POLITICS</div>
+				<div
+					className="passive"
+					style={{ color: '#2c1d59	', fontWeight: 'bold', fontSize: '20px' }}
+				>
+					Source: BBC
+				</div>
+			</Row>
+			<Row>
+				<div className="passive">
+					{' '}
+					<h1 style={{ fontSize: '15px' }}> NEWS | POLITICS </h1>
+				</div>
 			</Row>
 			<Row className="text-left">
-				<h1 className="title">
+				<h1 className="titleName">
 					A New Clash Over Mail Voting: The Cost of Postage
 				</h1>
 			</Row>
-			<Row>
-				<div className="passive">Source: BBC</div>
-			</Row>
+
 			<Row>
 				<span>
 					<ClockSvg />
 				</span>
-				<span style={{ marginLeft: '1rem' }} className="actionBtnTexts">
-					4 min ago
+				<span style={{ marginLeft: '0.5rem' }} className="actionBtnTexts">
+					<p style={{ fontSize: '15px' }}>4 mins ago</p>
 				</span>
 				<span style={{ marginLeft: '3rem' }} className="actionBtnTexts">
 					read source <OpenPage />
