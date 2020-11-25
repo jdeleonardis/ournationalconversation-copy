@@ -1,13 +1,5 @@
 import React, { useState, Component } from 'react';
-import {
-  Form,
-  Button,
-
-  Row,
-  Col,
-  Image,
-  Card
-} from 'react-bootstrap';
+import { Form, Button, Row, Col, Image, Card } from 'react-bootstrap';
 
 import '../../../styles/shopping-cart.css';
 import bookCover from '../../../img/book-cover.jpg';
@@ -52,7 +44,7 @@ const ShoppingCartCard = () => {
             </Col>
             <Col className='your-items-qty' xs={4} md={2}>
               <i class='fas fa-times'></i>
-              <span > 1 </span>
+              <span> 1 </span>
             </Col>
             <Col xs={4} md={3}>
               <span className='your-items-price'>$13.95</span>
@@ -91,24 +83,6 @@ const ShoppingCartCard = () => {
               </h6>
             </Col>
           </Row>
-          {/* <Row>
-              <Col className='your-items-shipping' xs={4} md={10}>
-                SHIPPING
-              </Col>
-
-              <Col className='your-items-caption' xs={6} md={2}>
-                <i class='fas fa-minus'></i>
-              </Col>
-            </Row>
-            <Row>
-              <Col className='your-items-shipping' xs={4} md={10}>
-                TAXES
-              </Col>
-
-              <Col className='your-items-caption' xs={6} md={2}>
-                <i class='fas fa-minus'></i>
-              </Col>
-            </Row> */}
           <hr />
           <Row>
             <Col xs={12} md={6}></Col>

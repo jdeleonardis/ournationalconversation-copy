@@ -1,4 +1,3 @@
-
 .news-filter-dropdown {
   margin: 0em;
   padding: 0em;
@@ -17,7 +16,6 @@
 
 /* Subhead 3 */
 #dropdown-button-drop-right {
-  
   margin-left: -2em;
   margin-right: 4rem;
   font-family: Montserrat;
@@ -35,7 +33,6 @@
 }
 
 .news-topics {
-  
   overflow-x: hidden;
 
   box-sizing: border-box; /* or not */

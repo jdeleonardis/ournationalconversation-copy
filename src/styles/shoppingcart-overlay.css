@@ -1,18 +1,8 @@
-
-
-
-
-
 /* Shopping cart overlay */
 
 .shopping-cart {
   margin: 0em;
   padding: 0em;
-  /* position: absolute;
-  width: 618px;
-  height: 677px;
-  left: 411px;
-  top: 120px; */
 
   /* Card Shadow */
 
@@ -20,12 +10,6 @@
   border-radius: 2px;
 
   /* Rectangle 82 */
-
-  /* position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%; */
 
   /* Extra Light Gray */
 
@@ -36,11 +20,6 @@
 #shopping-cart-title {
   /* Shopping Cart (1) */
 
-  /* position: absolute;
-  left: 24.43%;
-  right: 24.6%;
-  top: 7.39%;
-  bottom: 86.26%; */
   text-align: center;
 
   /* Headline 3 */
