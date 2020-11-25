@@ -9,7 +9,7 @@ const Solutions = props => {
 		<div>
 			<Container>
 				{props.data.map(data => (
-					<ContentCard type="solution" data={data} />
+					<ContentCard type={props.type} data={data} />
 				))}
 			</Container>
 		</div>

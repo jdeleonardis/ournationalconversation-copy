@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
-import Solution from '../components/Content/ContentBoards/SolutionBoard';
+import Solution from '../components/Content/ContentBoards/ContentBoard';
 import SignupModalComponent from '../components/Authentication/SignupModalButtonAndComponent';
 import LoginModalComponent from '../components/Authentication/LoginModalButtonAndComponent';
 import GlobalButton from '../components/Misc/GlobalButton';
@@ -71,7 +71,7 @@ const Home = () => {
 					<Row>
 						<Col>
 							<div style={{ marginLeft: '-30px', width: '107.5%' }}>
-								<Solution data={data} />
+								<Solution data={data} type={'SOLUTION'} />
 							</div>
 							<div style={{ textAlign: 'center' }}>
 								<GlobalButton
