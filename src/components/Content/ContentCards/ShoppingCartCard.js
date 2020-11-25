@@ -3,12 +3,13 @@ import { Form, Button, Row, Col, Image, Card } from 'react-bootstrap';
 
 import '../../../styles/shopping-cart.css';
 import bookCover from '../../../img/book-cover.jpg';
+import TopHorizontalLine from '../../Misc/TopHorizontalLine'
 
 const ShoppingCartCard = () => {
   return (
     <div className='your-items'>
       <Card className='rectangle124' fuild>
-        <Card.Body className='your-items-contents'>
+        <Card.Header className='your-items-contents'>
           <Row>
             <h3
               id='example-custom-Card-styling-title'
@@ -22,14 +23,16 @@ const ShoppingCartCard = () => {
             <Col xs={12} md={6}>
               ITEM
             </Col>
-            <Col xs={6} md={3}>
+            <Col className='right-col' xs={6} md={3}>
               QUANTITY
             </Col>
-            <Col xs={6} md={3}>
+            <Col className='right-col' xs={6} md={3}>
               PRICE
             </Col>
           </Row>
-          <hr />
+          <hr className='Rectangle-37' />
+
+          {/* <TopHorizontalLine /> */}
           <Row>
             <Col xs={4} md={2}>
               <Image
@@ -42,19 +45,25 @@ const ShoppingCartCard = () => {
             <Col className='your-items-des' xs={6} md={5}>
               Rethinking America: Rethinking the World
             </Col>
-            <Col className='your-items-qty' xs={4} md={2}>
-              <i class='fas fa-times'></i>
-              <span> 1 </span>
+            <Col className='your-items-qty ' xs={4} md={2}>
+              <i class='fas fa-times'>
+                <span> 1 </span>
+              </i>
             </Col>
-            <Col xs={4} md={3}>
-              <span className='your-items-price'>$13.95</span>
+            <Col className='right-col your-items-price' xs={4} md={3}>
+              <span className=' item-price '>$13.95</span>
             </Col>
           </Row>
           <br />
           <Row>
-            <Col className='your-items-promo' xs={8} md={9}>
-              <Form.Control type='text' placeholder='PROMO CODE' />
+            <Col className='your-items-promo' xs={8} md={8}>
+              <Form.Control
+                type='text'
+                placeholder='PROMO CODE'
+                className='rectangle-2'
+              />
             </Col>
+
             <Col xs={4} md={3}>
               <Button
                 className='your-items-apply'
@@ -65,7 +74,7 @@ const ShoppingCartCard = () => {
               </Button>
             </Col>
           </Row>
-          <hr />
+          <hr className='line-84' />
           <Row>
             <Col className='your-items-sub' xs={4} md={9}>
               <h6>SUBTOTAL</h6>
@@ -73,8 +82,8 @@ const ShoppingCartCard = () => {
               <h6>TAXES</h6>
             </Col>
 
-            <Col xs={6} md={3}>
-              <h6 className='your-items-price'>$13.95</h6>
+            <Col className='right-col items-price' xs={6} md={3}>
+              <h6 className='item-price'>$13.95</h6>
               <h6>
                 <i class='fas fa-minus'></i>
               </h6>
@@ -83,17 +92,17 @@ const ShoppingCartCard = () => {
               </h6>
             </Col>
           </Row>
-          <hr />
+          <hr className='line-84' />
           <Row>
             <Col xs={12} md={6}></Col>
             <Col xs={6} md={3} className='your-items-total'>
               TOTAL
             </Col>
-            <Col xs={6} md={3}>
-              <span className='your-items-total-price'>$21.14</span>
+            <Col className='your-items-total-price' xs={6} md={3}>
+              <span>$21.14</span>
             </Col>
           </Row>
-        </Card.Body>
+        </Card.Header>
       </Card>
     </div>
   );
