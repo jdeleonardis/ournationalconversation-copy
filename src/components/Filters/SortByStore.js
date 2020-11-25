@@ -3,7 +3,6 @@ import { Dropdown, Row, Col, NavDropdown, Navbar, Nav } from 'react-bootstrap';
 import ShoppingCartOverlay from './Overlay/ShoppingCartOverlay';
 import '../../styles/sort-by.css';
 
-
 const SortByStore = (props) => {
   return (
     <div>
@@ -11,7 +10,8 @@ const SortByStore = (props) => {
         <h2 className='page-title'>
           <strong>ONC STORE{props.pageTitle}</strong>
         </h2>
-        {/* <i class='fas fa-shopping-cart'></i> */}<ShoppingCartOverlay/>
+        {/* <i class='fas fa-shopping-cart'></i> */}
+        <ShoppingCartOverlay />
         <div
           className='textdiv'
           style={{ width: '105%', marginBottom: '-25px' }}
