@@ -1,33 +1,39 @@
 import React, { useState, Component } from 'react';
-import { Modal, Button, Container, Row, Col, Image, Card } from 'react-bootstrap';
+import {
+  Form,
+  Button,
 
-import '../../../styles/StoreCards.css';
+  Row,
+  Col,
+  Image,
+  Card
+} from 'react-bootstrap';
+
+import '../../../styles/shopping-cart.css';
 import bookCover from '../../../img/book-cover.jpg';
-
 
 const ShoppingCartCard = () => {
   return (
-    <div className='shopping-cart'>
-      <Card>
-      <Modal.Header className='shopping-cart' closeButton>
-        <Modal.Title
-          id='example-custom-modal-styling-title'
-          className='shopping-cart-title'
-        >
-          Shopping Cart (1{})
-        </Modal.Title>
-      </Modal.Header>
+    <div className='your-items'>
+      <Card className='rectangle124' fuild>
+        <Card.Body className='your-items-contents'>
+          <Row>
+            <h3
+              id='example-custom-Card-styling-title'
+              className='your-items-title'
+            >
+              YOUR ITEMS (1{})
+            </h3>
+          </Row>
 
-      <Modal.Body className='shopping-cart-contents'>
-        <Container className='rectangle124'>
-          <Row className='shopping-cart-table'>
-            <Col xs={12} md={7}>
+          <Row className='your-items-table'>
+            <Col xs={12} md={6}>
               ITEM
             </Col>
             <Col xs={6} md={3}>
               QUANTITY
             </Col>
-            <Col xs={6} md={2}>
+            <Col xs={6} md={3}>
               PRICE
             </Col>
           </Row>
@@ -35,52 +41,85 @@ const ShoppingCartCard = () => {
           <Row>
             <Col xs={4} md={2}>
               <Image
-                className='shopping-cart-img'
+                className='your-items-img'
                 variant='top'
                 src={bookCover}
                 fluid
               ></Image>
             </Col>
-            <Col className='shopping-cart-des' xs={6} md={5}>
+            <Col className='your-items-des' xs={6} md={5}>
               Rethinking America: Rethinking the World
             </Col>
-            <Col className='shopping-cart-qty' xs={4} md={3}>
-              <i class='fas fa-minus' />
-              <span>1</span>
-              <i class='fas fa-plus' />
+            <Col className='your-items-qty' xs={4} md={2}>
+              <i class='fas fa-times'></i>
+              <span > 1 </span>
             </Col>
-            <Col xs={4} md={2}>
-              <span className='shopping-cart-price'>$13.95</span>
+            <Col xs={4} md={3}>
+              <span className='your-items-price'>$13.95</span>
+            </Col>
+          </Row>
+          <br />
+          <Row>
+            <Col className='your-items-promo' xs={8} md={9}>
+              <Form.Control type='text' placeholder='PROMO CODE' />
+            </Col>
+            <Col xs={4} md={3}>
+              <Button
+                className='your-items-apply'
+                variant='purple'
+                type='submit'
+              >
+                APPLY
+              </Button>
             </Col>
           </Row>
           <hr />
           <Row>
-            <Col className='shopping-cart-sub' xs={4} md={10}>
-              SUBTOTAL
+            <Col className='your-items-sub' xs={4} md={9}>
+              <h6>SUBTOTAL</h6>
+              <h6>SHIPPING</h6>
+              <h6>TAXES</h6>
             </Col>
 
-            <Col xs={6} md={2}>
-              <span className='shopping-cart-price'>$13.95</span>
+            <Col xs={6} md={3}>
+              <h6 className='your-items-price'>$13.95</h6>
+              <h6>
+                <i class='fas fa-minus'></i>
+              </h6>
+              <h6>
+                <i class='fas fa-minus'></i>
+              </h6>
             </Col>
           </Row>
+          {/* <Row>
+              <Col className='your-items-shipping' xs={4} md={10}>
+                SHIPPING
+              </Col>
+
+              <Col className='your-items-caption' xs={6} md={2}>
+                <i class='fas fa-minus'></i>
+              </Col>
+            </Row>
+            <Row>
+              <Col className='your-items-shipping' xs={4} md={10}>
+                TAXES
+              </Col>
+
+              <Col className='your-items-caption' xs={6} md={2}>
+                <i class='fas fa-minus'></i>
+              </Col>
+            </Row> */}
+          <hr />
           <Row>
-            <Col className='shopping-cart-shipping' xs={4} md={7}>
-              SHIPPING
+            <Col xs={12} md={6}></Col>
+            <Col xs={6} md={3} className='your-items-total'>
+              TOTAL
             </Col>
-
-            <Col className='shopping-cart-caption' xs={6} md={5}>
-              <p>Shipping calculated at checkout</p>
+            <Col xs={6} md={3}>
+              <span className='your-items-total-price'>$21.14</span>
             </Col>
           </Row>
-        </Container>
-      </Modal.Body>
-      <Button className='shopping-cart-checkout' variant='purple'>
-        CHECKOUT
-      </Button>
-      <p className='shopping-cart-or'>OR</p>
-      <Modal.Footer>
-        <a className='shopping-cart-cont'>CONITUE SHOPPING</a>
-      </Modal.Footer>
+        </Card.Body>
       </Card>
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useState, Component } from 'react';
 import { Modal, Button, Container, Row, Col, Image } from 'react-bootstrap';
 
-import '../../../styles/StoreCards.css';
+// import '../../../styles/shoppingcart-overlay.css';
 import bookCover from '../../../img/book-cover.jpg';
 
 const ShoppingCartOverlay = () => {
