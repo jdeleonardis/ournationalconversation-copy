@@ -39,7 +39,8 @@ class DemoSearchFilter extends Component {
             <br />
             <br />
             <SortByStore />
-            <ShoppingCartOverlay/>
+            <br />
+            <ShoppingCartOverlay />
           </Col>
           <Col md={3}>
             <RailButtons />
