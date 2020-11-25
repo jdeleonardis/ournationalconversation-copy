@@ -30,7 +30,7 @@ class DemoSearchFilter extends Component {
           </Col>
           <Col md={6}>
             {/* SortBy for different pages */}
-            <SortBy />
+            <SortByStore />
             <br />
             <br />
             <br />
@@ -38,8 +38,11 @@ class DemoSearchFilter extends Component {
             <br />
             <br />
             <br />
-            <SortByStore />
+            <SortBy />
             <br />
+            <br />
+            <br />
+
             <ShoppingCartCard />
           </Col>
           <Col md={3}>

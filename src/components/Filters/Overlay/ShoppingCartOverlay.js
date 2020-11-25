@@ -12,7 +12,7 @@ const ShoppingCartOverlay = () => {
 
   return (
     <>
-      <a variant='primary' onClick={() => setShow(true)}>
+      <a variant='purple' onClick={() => setShow(true)}>
         <i class='fas fa-shopping-cart'></i>
       </a>
 

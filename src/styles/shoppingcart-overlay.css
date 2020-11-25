@@ -1,6 +1,13 @@
+
+
+
+
+
 /* Shopping cart overlay */
 
 .shopping-cart {
+  margin: 0em;
+  padding: 0em;
   /* position: absolute;
   width: 618px;
   height: 677px;
