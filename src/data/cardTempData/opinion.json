@@ -2,6 +2,7 @@
 	{
 		"title": "Luffy will become the 5th Yonko",
 		"type": "OPINION",
+		"section": "ANIME",
 		"location": "Grand Line, New World",
 		"text": "Arittakedo yume wo kaki atsume Sagashi mono wo sagashi ni yuku no sa One Piece Rashinban nate fyuutai no moto Netsu ni ukasare kaji wo torono sa Hokori kahutteta takarano chizo mo Tashikameta no nara densetsu jyanai",
 		"date": "Nov 3 2020",
@@ -11,6 +12,7 @@
 	{
 		"title": "ONC gives all their interns free PS5s",
 		"type": "OPINION",
+		"section": "TECH",
 		"location": "LA, New York",
 		"text": "[Intro] Glee Southside Ayy, lil' Metro on that beat [Chorus] Lil' Kodak, they don't like to see you winnin' They wanna see you in the penitentiary I need me a lil' baby who gon' listen Girl, I don't wanna be the one you iggin'",
 		"date": "Nov 3 2020",
@@ -20,6 +22,7 @@
 	{
 		"title": "9 + 10 = 21",
 		"type": "OPINION",
+		"section": "QUICK MAFS",
 		"location": "MIT",
 		"text": "9+10a=21b which can be calculated in base 10 as 9+(1a1+0a0)9+ab=2b1+1b0=2b+1=4+a2 and since we want the base b to be a whole number we let base a be an even number. Therefore we have that 9+1029+1049+1069+1089+10109+1012=215=21... etc. There is never equality if all the bases were to be consistent",
 		"date": "Nov 12 2020",

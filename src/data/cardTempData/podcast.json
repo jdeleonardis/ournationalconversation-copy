@@ -1,0 +1,32 @@
+[
+	{
+		"title": "DONALD GLOVER IS CHILDISH GAMBINO",
+		"type": "PODCAST",
+		"section": "MUSIC",
+		"source": "Buffalo, NY",
+		"text": "Okay, hold up, wait a minute, all good just a week ago Crew at my house and we party every weekend so On the radio, that's my favorite song Made me bounce around, like I don't know, like I won't be here long Now the thrill is gone",
+		"date": "Jan 13 2020",
+		"likes": 22,
+		"comments": 12
+	},
+	{
+		"title": "JOE ROGAN TALKS WITH MUSK ELON",
+		"type": "PODCAST",
+		"section": "FIGHTOOO",
+		"source": "Lex Fridman, Mars",
+		"text": "Everybody around here has slides in their lobbies. I'm actually wondering about putting in a roller coaster -- like a functional roller coaster at the factory in Fremont.",
+		"date": "Oct 13 2020",
+		"likes": 130,
+		"comments": 455
+	},
+	{
+		"title": "RJV talks about being top 500 on LeetCode",
+		"type": "PODCAST",
+		"section": "MUSIC",
+		"source": "Buffalo, NY",
+		"text": " var q = new Queue<(int, int)>(); //mark visitedgrid[a][b] = -1; q.Enqueue((a,b));  //time O(l) where l is len of island * 4 = 4 L || L  while(q.Count > 0){   int size = q.Count;     for(int c = 0; c < size; c++){  (int,int) tpl = q.Dequeue();  int row = tpl.Item1; int col = tpl.Item2;",
+		"date": "Nov 13 2020",
+		"likes": 132,
+		"comments": 455
+	}
+]

@@ -8,34 +8,8 @@ import HeartSvg from './styles/heartSvg';
 import DotSvg from './styles/dotSvg';
 import SaveSvg from './styles/saveSvg';
 import ShareSvg from './styles/shareSvg';
-import bodymap from '../ContentCards/CardBodyDictionary';
+import BodyType from '../ContentCards/CardBodyDictionary';
 import './styles/cardbody.css';
-
-function BodyType(props) {
-	return (
-		bodymap.get(props.type) || (
-			<div style={{ marginTop: '1rem' }}>
-				<Row>
-					<Col>
-						<Image
-							src="https://avatars3.githubusercontent.com/u/27324719?s=460&u=407b4f55702b082ae1e79b662ed96e0749a02a84&v=4"
-							className="boxImage"
-						/>
-						<div className="sectionSubHeader">Source: {props.source}</div>
-						<div className="cardText">
-							{props.text
-								? props.text
-								: 'I got the horses in the back Horse tack is attached Hat is matte black Got the boots thats black to match Ridin on a horse, ha You can whip your Porsche'}
-						</div>
-					</Col>
-				</Row>
-				<br />
-			</div>
-		)
-	);
-}
-
-debugger;
 
 function ContentCard(props) {
 	return (
@@ -61,7 +35,11 @@ function ContentCard(props) {
 								{props.data ? props.data.title : 'Header Tingz'}
 							</Col>
 						</Row>
-						<BodyType type={props.type ? props.type : 'kanye eazssy'} />
+						<BodyType
+							type={props.type ? props.type : 'kanye eazssy'}
+							text={props.data.text}
+							data={props.data}
+						/>
 						<Row>
 							<Col md={8}>
 								<span className="dateTitle">
