@@ -5,23 +5,28 @@ import Comment from '../ContentCards/ContentCard';
 import NewsCard from '../ContentCards/NewsCard';
 import BreakingNews from '../ContentCards/BreakingNewsCard';
 import GlobalButton from '../../Misc/GlobalButton';
+import '../../../styles/NewsBoard.css';
 
 function News() {
   return (
     <div>
       <Container>
         <Row>
-          <Col>
-            <NewsCard vertical={true} />
-          </Col>
-
-          <Col>
-            <NewsCard vertical={true} />
-          </Col>
-
-          <Col>
-            <BreakingNews />
-          </Col>
+          <div className='news-card'>
+            <Col>
+              <NewsCard vertical={true} />
+            </Col>
+          </div>
+          <div className='news-card'>
+            <Col>
+              <NewsCard vertical={true} />
+            </Col>
+          </div>
+          <div className='news-card'>
+            <Col>
+              <BreakingNews />
+            </Col>
+          </div>
         </Row>
         <br />
         <Row>
@@ -29,7 +34,7 @@ function News() {
           <br />
           <GlobalButton
             className='global-btn'
-            padding='7px 55px'
+            padding='7px 57.5px'
             fontWeight='700'
             label='SEE MORE NEWS'
           />
