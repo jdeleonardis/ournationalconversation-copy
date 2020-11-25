@@ -89,7 +89,7 @@ const FilterBarStore = () => {
           href='#demo2'
           data-toggle='collapse'
         >
-          <i class='store-chev fas fa-chevron-down'></i>&nbsp;&nbsp;CATRGORY
+          <i class='store-chev fas fa-chevron-down'></i>&nbsp;&nbsp;CATEGORY
           <span className='clear'>CLEAR</span>
         </a>
 
