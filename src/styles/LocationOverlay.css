@@ -1,0 +1,28 @@
+.add-new-location {
+/* ADD NEW LOCATION */
+
+
+/* position: absolute;
+left: 23.16%;
+right: 30%;
+top: 87.27%;
+bottom: 5.45%; */
+
+/* Button */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.0125em;
+text-transform: uppercase;
+
+/* Purple */
+
+color: #2C1C59;
+}
+

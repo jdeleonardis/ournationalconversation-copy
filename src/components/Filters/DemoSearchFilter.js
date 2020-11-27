@@ -10,6 +10,7 @@ import SearchBox from './SearchBox';
 import FilterBarStore from './FilterBarStore';
 import ShoppingCartCard from '../Content/ContentCards/ShoppingCartCard';
 import '../../styles/demo.css';
+import LocationOverlay from './Overlay/LocationOverlay';
 
 class DemoSearchFilter extends Component {
   render() {
@@ -35,6 +36,7 @@ class DemoSearchFilter extends Component {
             <br />
             <br />
             <SortByLocal />
+            <LocationOverlay/>
             <br />
             <br />
             <br />

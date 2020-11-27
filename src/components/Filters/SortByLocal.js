@@ -2,6 +2,7 @@ import React from 'react';
 import { Row } from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown';
 import '../../styles/sort-by.css';
+import LocationOverlay from './Overlay/LocationOverlay';
 
 const SortByLocal = (props) => {
   return (
@@ -46,7 +47,7 @@ const SortByLocal = (props) => {
             </Dropdown.Item>
             <Dropdown.Divider />
             <Dropdown.Item eventKey='6' className='justify-content-md-center'>
-              ADD NEW LOCATION +{' '}
+              <LocationOverlay/>
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
