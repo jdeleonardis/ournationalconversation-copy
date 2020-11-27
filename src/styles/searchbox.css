@@ -48,7 +48,33 @@
 }
 
 .save-search {
-  text-decoration: none;
-  text-decoration: underline;
-  display: inline-block;
+  
+  /* position: static;
+  width: 178px;
+  height: 16px;
+  left: 17px;
+  top: 0px; */
+  text-align: right;
+
+  /* Link */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  /* text-align: center; */
+  text-decoration-line: underline;
+
+  /* Dark Gray */
+
+  color: #676767;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 5px 0px;
+  
 }
