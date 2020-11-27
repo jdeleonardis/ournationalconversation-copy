@@ -3,7 +3,6 @@ import { Form, Button, Row, Col, Image, Card } from 'react-bootstrap';
 
 import '../../../styles/shopping-cart.css';
 import bookCover from '../../../img/book-cover.jpg';
-import TopHorizontalLine from '../../Misc/TopHorizontalLine'
 
 const ShoppingCartCard = () => {
   return (

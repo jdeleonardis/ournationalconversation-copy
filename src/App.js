@@ -7,6 +7,7 @@ import Podcasts from './pages/Podcasts';
 import Webisodes from './pages/Webisodes';
 import WriterDashboard from './pages/WriterDashboard';
 import Store from './pages/Store';
+import StoreCheckout from './pages/StoreCheckout';
 import Contact from './pages/Contact';
 import Header from './components/Header/Header';
 import SearchBar from './components/Filters/SearchBar';
@@ -30,6 +31,7 @@ function App() {
           <Route exact path='/podcasts' component={Podcasts} />
           <Route exact path='/webisodes' component={Webisodes} />
           <Route exact path='/store' component={Store} />
+          <Route exact path='/storecheckout' component={StoreCheckout} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/writerdashboard' component={WriterDashboard} />
 

@@ -13,14 +13,17 @@
 
   /* Extra Light Gray */
 
-  background: #f2f2f2;
+  color: #f2f2f2;
   border-radius: 2px;
 }
 
-#shopping-cart-title {
+.shopping-cart-title {
   /* Shopping Cart (1) */
-
-  text-align: center;
+  position: relative;
+  left: 25.99%;
+  right: 33.99%;
+  margin: 0em;
+  padding: 0em;
 
   /* Headline 3 */
 
@@ -38,21 +41,21 @@
 /* Shopping cart contents */
 
 .shopping-cart-contents {
-  position: absolute;
-  width: 518px;
-  height: 317px;
-  left: 50px;
-  top: 143px;
+  /* White */
+
+  background: #f2f2f2;
+  border-radius: 2px;
+  /* Card Shadow */
+
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 }
 
-.rectangle124 {
+.shopping-cart-table {
+  /* Item */
   /* Rectangle 124 */
 
-  position: absolute;
-  left: 8.09%;
-  right: 8.09%;
-  top: 21.12%;
-  bottom: 32.05%;
+  margin: 1em 1em;
+  padding: 1em 1em;
 
   /* White */
 
@@ -62,14 +65,14 @@
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 }
 
-.shopping-cart-table {
+.col-center {
+  text-align: right;
+}
+
+.shopping-cart-items {
   /* Item */
 
-  position: absolute;
-  width: 37px;
-  height: 17px;
-  left: calc(50% - 37px / 2 - 215.5px);
-  top: calc(50% - 17px / 2 - 147px);
+  margin-top: 1em;
 
   /* Overline */
 
@@ -88,44 +91,53 @@
   color: #2c1c59;
 }
 
+.rectangle-37 {
+  /* Rectangle 37 */
+  margin-top: 0.5em;
+
+  height: 0.2em;
+
+  /* Purple */
+
+  background: #2c1c59;
+}
+
+.shopping-cart-details {
+  margin: 1em 1em;
+}
 /* image 7 */
 
 .shopping-cart-img {
-  position: absolute;
-  left: 12.14%;
-  right: 77.35%;
-  top: 35.3%;
-  bottom: 49.93%;
-
   /* background: url(image.png); */
 
-  height: 50% !important;
+  /* height: 50% !important;
   width: 50% !important;
   height: 55% !important;
-  width: 55% !important;
+  width: 55% !important; */
   /* height: 215px !important;
   width: 140px !important; */
-  margin: auto !important;
+  /* margin: auto !important;
   margin-bottom: 20px !important;
-  padding-top: 25px !important;
+  padding-top: 25px !important; */
 }
 
 .shopping-cart-des {
   /* Title */
-
-  position: absolute;
-  left: 160px;
+  text-align: left;
+  /* position: relative; */
+  margin-top: 1em;
+  /* left: 160px;
   right: 289px;
   top: 271px;
-  bottom: 370px;
+  bottom: 370px; */
 
   /* Subhead 3 */
 
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 0.58em;
+  line-height: 1.5em;
   letter-spacing: 0.0025em;
 
   /* Gray / 100 */
@@ -135,12 +147,14 @@
 
 .shopping-cart-qty {
   /* Price */
-
-  position: absolute;
+  text-align: center;
+  /* position: relative; */
+  margin-top: 1em;
+  /* position: relative;
   left: 58.41%;
   right: 33.98%;
   top: 40.83%;
-  bottom: 55.62%;
+  bottom: 55.62%; */
 
   /* Overline */
 
@@ -160,12 +174,14 @@
 
 .shopping-cart-price {
   /* Price */
-
-  position: absolute;
+  text-align: right;
+  /* position: relative; */
+  margin-top: 1em;
+  /* position: absolute;
   left: 80.58%;
   right: 12.14%;
   top: 40.62%;
-  bottom: 56.72%;
+  bottom: 56.72%; */
 
   /* Overline */
 
@@ -182,32 +198,78 @@
   color: #1e1e1e;
 }
 
-.shopping-cart-sub .shopping-cart-shipping {
-  /* Rectangle 124 */
+.line-86 {
+  /* Line 86 */
 
-  position: absolute;
-  left: 8.09%;
-  right: 8.09%;
-  top: 21.12%;
-  bottom: 32.05%;
+  /* position: absolute;
+  left: 12.14%;
+  right: 12.14%;
+  top: 53.77%;
+  bottom: 46.23%; */
 
-  /* White */
+  border: 1px solid #000000;
+}
 
-  background: #ffffff;
-  /* Card Shadow */
+.subtotal {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
 
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+.shopping-cart-sub {
+  /* SUBTOTAL */
+
+  /* Subhead 3 */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: left;
+  letter-spacing: 0.0025em;
+
+  /* Purple */
+
+  color: #2c1c59;
+}
+
+.price {
+  margin: 0em;
+}
+
+.shopping-cart-shipping {
+  /* SHIPPING */
+
+  /* position: absolute;
+  width: 77px;
+  height: 18px;
+  left: calc(50% - 77px / 2 - 195.5px);
+  top: calc(50% - 18px / 2 + 87.5px); */
+
+  /* Subhead 3 */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: left;
+  letter-spacing: 0.0025em;
+
+  /* Purple */
+
+  color: #2c1c59;
 }
 
 .shopping-cart-caption {
   /* Shipping calculated at checkout */
 
-  position: absolute;
+  /* position: absolute;
   width: 151px;
   height: 12px;
   left: calc(50% - 151px / 2 + 158.5px);
-  top: calc(50% - 12px / 2 + 87.5px);
-
+  top: calc(50% - 12px / 2 + 87.5px); */
+  margin-top: 0.5em;
   /* Caption */
 
   font-family: Roboto;
@@ -217,7 +279,7 @@
   line-height: 12px;
   /* identical to box height */
 
-  text-align: right;
+  text-align: end;
   letter-spacing: 0.03em;
 
   /* Dark Gray */
@@ -228,11 +290,12 @@
 .shopping-cart-checkout {
   /* Log in */
 
-  position: absolute;
+  /* position: absolute;
   width: 400px;
   height: 41px;
   left: calc(50% - 400px / 2);
-  top: calc(50% - 41px / 2 + 192px);
+  top: calc(50% - 41px / 2 + 192px); */
+  margin: 2em 1em;
 
   /* Purple */
 
@@ -240,12 +303,9 @@
   border-radius: 5px;
 
   /* Checkout */
-
-  position: absolute;
-  width: 95px;
-  height: 20px;
-  left: calc(50% - 95px / 2 - 0.5px);
-  top: calc(50% - 20px / 2 - 0.5px);
+  /* position: relative; */
+  text-align: center;
+  
 
   /* Button */
 
@@ -264,14 +324,25 @@
   color: #ffffff;
 }
 
+.line-or{
+  line-height: 20px;
+  flex-grow: 1;
+  height: 0.2em ;
+  background-color: #2c1c59 ;
+  margin-top: -1em;
+  width: 100%;
+  margin-bottom: 4em;
+  text-align: center;
+}
+
 .shopping-cart-or {
   /* OR */
 
-  position: absolute;
+  /* position: absolute;
   width: 26px;
   height: 20px;
   left: calc(50% - 26px / 2);
-  top: calc(50% - 20px / 2 + 242.5px);
+  top: calc(50% - 20px / 2 + 242.5px); */
 
   /* Subhead */
 
@@ -293,11 +364,11 @@
 .shopping-cart-cont {
   /* CONTINUE SHOPPING */
 
-  position: absolute;
-  width: 141px;
+  position: relative;
+  /* width: 141px;
   height: 16px;
   left: calc(50% - 141px / 2 + 0.5px);
-  top: calc(50% - 16px / 2 + 280.5px);
+  top: calc(50% - 16px / 2 + 280.5px); */
 
   /* Link */
 

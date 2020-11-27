@@ -1,7 +1,7 @@
 import React, { useState, Component } from 'react';
 import { Modal, Button, Container, Row, Col, Image } from 'react-bootstrap';
 
-// import '../../../styles/shoppingcart-overlay.css';
+import '../../../styles/shoppingcart-overlay.css';
 import bookCover from '../../../img/book-cover.jpg';
 
 const ShoppingCartOverlay = () => {
@@ -23,72 +23,93 @@ const ShoppingCartOverlay = () => {
         aria-labelledby='example-custom-modal-styling-title'
         className='shopping-cart'
       >
-        <Modal.Header closeButton>
-          <Modal.Title id='example-custom-modal-styling-title'>
-            Shopping Cart (1{})
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body className='shopping-cart-contents'>
-          <Container className='rectangle124'>
-            <Row className='shopping-cart-table'>
-              <Col xs={12} md={7}>
-                ITEM
-              </Col>
-              <Col xs={6} md={3}>
-                QUANTITY
-              </Col>
-              <Col xs={6} md={2}>
-                PRICE
-              </Col>
+        {/* <Modal.Header closeButton></Modal.Header> */}
+        <Modal.Body className='shopping-cart-contents '>
+          <Container fluid>
+            <Row className='shopping-cart-title'>
+              <h3>Shopping Cart (1{})</h3>
             </Row>
-            <hr />
-            <Row>
-              <Col xs={4} md={2}>
-                <Image
-                  className='shopping-cart-img'
-                  variant='top'
-                  src={bookCover}
-                  fluid
-                ></Image>
-              </Col>
-              <Col className='shopping-cart-des' xs={6} md={5}>
-                Rethinking America: Rethinking the World
-              </Col>
-              <Col className='shopping-cart-qty' xs={4} md={3}>
-                <i class='fas fa-minus' />
-                <span>1</span>
-                <i class='fas fa-plus' />
-              </Col>
-              <Col xs={4} md={2}>
-                <span className='shopping-cart-price'>$13.95</span>
-              </Col>
-            </Row>
-            <hr />
-            <Row>
-              <Col className='shopping-cart-sub' xs={4} md={10}>
-                SUBTOTAL
-              </Col>
+            <div className='shopping-cart-table'>
+              <Row className='shopping-cart-items'>
+                <Col xs={12} md={6}>
+                  ITEM
+                </Col>
+                <Col xs={6} md={3}>
+                  QUANTITY
+                </Col>
+                <Col className='col-center' xs={6} md={3}>
+                  PRICE
+                </Col>
+              </Row>
+              <hr className='rectangle-37' />
+              <Row className='shopping-cart-details'>
+                <Col xs={4} md={2}>
+                  <Image
+                    className='shopping-cart-img'
+                    variant='top'
+                    src={bookCover}
+                    fluid
+                  ></Image>
+                </Col>
+                <Col className='shopping-cart-des' xs={6} md={4}>
+                  <span>Rethinking America: Rethinking the World</span>
+                </Col>
+                <Col className='shopping-cart-qty' xs={4} md={3}>
+                  <i class='fas fa-minus' />
+                  <span> 1 </span>
+                  <i class='fas fa-plus' />
+                </Col>
+                <Col className='shopping-cart-price' xs={4} md={3}>
+                  <span className='col-center'>$13.95</span>
+                </Col>
+              </Row>
+              <hr className='line-86' />
+              <Row className='subtotal'>
+                <Col className='shopping-cart-sub' xs={4} md={9}>
+                  SUBTOTAL
+                </Col>
 
-              <Col xs={6} md={2}>
-                <span className='shopping-cart-price'>$13.95</span>
-              </Col>
-            </Row>
-            <Row>
-              <Col className='shopping-cart-shipping' xs={4} md={7}>
-                {' '}
-                SHIPPING{' '}
-              </Col>
+                <Col className='shopping-cart-price price' xs={6} md={3}>
+                  <span>$13.95</span>
+                </Col>
+              </Row>
+              <Row>
+                <Col className='shopping-cart-shipping' xs={4} md={6}>
+                  {' '}
+                  SHIPPING{' '}
+                </Col>
 
-              <Col className='shopping-cart-caption' xs={6} md={5}>
-                <p>Shipping calculated at checkout</p>
-              </Col>
-            </Row>
+                <Col className='shopping-cart-caption' xs={4} md={6}>
+                  <p>Shipping calculated at checkout</p>
+                </Col>
+              </Row>
+            </div>
           </Container>
-          <Button className='shopping-cart-checkout' variant='purple'>
-            CHECKOUT
-          </Button>
-          <p className='shopping-cart-or'>OR</p>
-          <a className='shopping-cart-cont'>CONITUE SHOPPING</a>
+          <Container className='' fluid>
+            <Button className='shopping-cart-checkout' variant=''>
+              CHECKOUT
+            </Button>
+            <div>
+              <Row>
+                <Col md={5}>
+                  <div className='' style={{ width: '100%' }}>
+                    <div id=''>&nbsp;&nbsp;</div>
+                    <div className='line-or'></div> &nbsp;&nbsp;&nbsp;
+                  </div>
+                </Col>
+                <Col md={2}>
+                  <p className='shopping-cart-or'>OR</p>
+                </Col>
+                <Col md={5}>
+                  <div className='' style={{ width: '100%' }}>
+                    <div id=''>&nbsp;&nbsp;</div>
+                    <div className='line-or'></div> &nbsp;&nbsp;&nbsp;
+                  </div>
+                </Col>
+              </Row>
+            </div>
+            <Button className='shopping-cart-cont'>CONITUE SHOPPING</Button>
+          </Container>
         </Modal.Body>
       </Modal>
     </>
