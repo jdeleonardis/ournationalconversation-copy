@@ -31,7 +31,6 @@ const ShoppingCartCard = () => {
           </Row>
           <hr className='Rectangle-37' />
 
-          {/* <TopHorizontalLine /> */}
           <Row>
             <Col xs={4} md={2}>
               <Image
