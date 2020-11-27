@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 import FilterBar from '../components/Filters/FilterBar';
 import NewsCard from '../components/Content/ContentCards/NewsCard';
@@ -7,7 +7,6 @@ import SortBy from '../components/Filters/SortBy';
 import RailButtons from '../components/Misc/RailButtons';
 import GlobalButton from '../components/Misc/GlobalButton';
 import SearchBox from '../components/Filters/SearchBox';
-
 
 class News extends React.Component {
   render() {
@@ -42,15 +41,13 @@ class News extends React.Component {
                 <div
                   style={{
                     width: '111%',
-                    marginLeft: '-30px',
+                    marginLeft: '-30px'
                   }}
                 >
                   <NewsCard />
                   <NewsCard />
                   <NewsCard />
                   <NewsCard />
-                  
-                  
                 </div>
                 <br />
                 <div>
@@ -70,8 +67,8 @@ class News extends React.Component {
           </Container>
         </div>
       </Fragment>
-      );
-    }
+    );
   }
+}
 
 export default News;

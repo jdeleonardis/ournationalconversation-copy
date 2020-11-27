@@ -85,7 +85,7 @@ const ShoppingCartOverlay = () => {
               </Row>
             </div>
           </Container>
-          <Container className='shopping-cart-btn' >
+          <Container className='shopping-cart-btn'>
             <Button className='shopping-cart-checkout' variant=''>
               CHECKOUT
             </Button>

@@ -7,7 +7,7 @@ import {
   Dropdown,
   Form,
   Button,
-  Card,
+  Card
 } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import '../styles/contact.css';

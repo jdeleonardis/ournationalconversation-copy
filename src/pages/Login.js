@@ -10,7 +10,7 @@ const initialState = {
   password: '',
   userNameError: '',
   emailError: '',
-  passwordError: '',
+  passwordError: ''
 };
 
 export class Login extends Component {
@@ -22,7 +22,7 @@ export class Login extends Component {
     this.setState({
       [event.target.name]: isCheckbox
         ? event.target.checked
-        : event.target.value,
+        : event.target.value
     });
   };
 

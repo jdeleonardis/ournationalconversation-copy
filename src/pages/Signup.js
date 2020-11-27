@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import {
   Container,
   Row,
-  Col,
+  Col
   // Form,
   // Button,
   // Card,
@@ -23,7 +23,7 @@ const initialState = {
   password2: '',
   password2Error: '',
   country: '',
-  countryError: '',
+  countryError: ''
 };
 
 export class Signup extends Component {
@@ -35,7 +35,7 @@ export class Signup extends Component {
     this.setState({
       [event.target.name]: isCheckbox
         ? event.target.checked
-        : event.target.value,
+        : event.target.value
     });
   };
 

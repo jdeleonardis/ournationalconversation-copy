@@ -1,14 +1,7 @@
 import React from 'react';
-import {
-
-  Row,
-  Col,
-  DropdownButton,
-  ButtonGroup
-} from 'react-bootstrap';
+import { Row, Col, DropdownButton, ButtonGroup } from 'react-bootstrap';
 
 import '../../../styles/newfiltersexpanded.css';
-
 
 const NewFiltersExpanded = () => {
   return (
