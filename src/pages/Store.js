@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
-import SortBy from '../components/Filters/SortBy';
+import SortByStore from '../components/Filters/SortByStore';
 import FilterBarStore from '../components/Filters/FilterBarStore';
 import RailButtons from '../components/Misc/RailButtons';
 import GlobalButton from '../components/Misc/GlobalButton';
@@ -13,7 +13,7 @@ export class Store extends Component {
   render() {
     const style = {
       textAlign: 'center',
-      width: '104%',
+      width: '104%'
     };
 
     return (
@@ -30,12 +30,8 @@ export class Store extends Component {
                 <SearchBox pageName='Store' />
               </Col>
               <Col md={6}>
-                <i id='shopping' class='fas fa-shopping-cart'></i>
-                <SortBy
-                  pageName='Store'
-                  pageTitle='ONC STORE'
-                  horizLineTextLeft='All Items'
-                />
+                {/* <i id='shopping' class='fas fa-shopping-cart'></i> */}
+                <SortByStore pageName='Store' />
                 <br />
               </Col>
               <Col md={3}></Col>
@@ -49,7 +45,7 @@ export class Store extends Component {
                 <div
                   style={{
                     width: '111%',
-                    marginLeft: '-20px',
+                    marginLeft: '-20px'
                   }}
                 >
                   <StoreCards />
