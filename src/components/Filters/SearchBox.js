@@ -16,6 +16,11 @@ const SearchBox = (props) => {
         />
         <i id='searchsubmit' className='fa fa-search'></i>
       </div>
+      <div>
+        <button className='save-search' >
+          <i class='fas fa-plus'> Save "Covid" to My Searches</i>
+        </button>
+      </div>
     </div>
   );
 };
