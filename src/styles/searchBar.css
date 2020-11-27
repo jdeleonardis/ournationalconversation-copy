@@ -22,9 +22,9 @@
 </> */
 
 /* Variants */
-.dropdown- .btn-purple {
-  background-color: #2c1c59;
-  color: white;
+.btn-purple {
+  background-color: #2c1c59;border-color: #2c1c59;
+  color: fff;
   /* font-family: Montserrat;
   font-style: normal;
   font-weight: 500; */

@@ -1,6 +1,6 @@
 import React, { useState, Component } from 'react';
 import { Modal, Button, Container, Row, Col, Image } from 'react-bootstrap';
-
+import Overlay from 'react-bootstrap/Overlay';
 import '../../../styles/shoppingcart-overlay.css';
 import bookCover from '../../../img/book-cover.jpg';
 
@@ -85,7 +85,7 @@ const ShoppingCartOverlay = () => {
               </Row>
             </div>
           </Container>
-          <Container className='' fluid>
+          <Container className='shopping-cart-btn' >
             <Button className='shopping-cart-checkout' variant=''>
               CHECKOUT
             </Button>
@@ -108,7 +108,9 @@ const ShoppingCartOverlay = () => {
                 </Col>
               </Row>
             </div>
-            <Button className='shopping-cart-cont'>CONITUE SHOPPING</Button>
+            <Button className='shopping-cart-cont' variant=''>
+              CONITUE SHOPPING
+            </Button>
           </Container>
         </Modal.Body>
       </Modal>
