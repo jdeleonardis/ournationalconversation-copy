@@ -23,11 +23,14 @@ const ShoppingCartOverlay = () => {
         aria-labelledby='example-custom-modal-styling-title'
         className='shopping-cart'
       >
-        {/* <Modal.Header closeButton></Modal.Header> */}
+        <Modal.Header
+          className='shopping-cart-close '
+          closeButton
+        ></Modal.Header>
         <Modal.Body className='shopping-cart-contents '>
           <Container fluid>
-            <Row className='shopping-cart-title'>
-              <h3>Shopping Cart (1{})</h3>
+            <Row>
+              <p className='shopping-cart-title'>Shopping Cart (1{})</p>
             </Row>
             <div className='shopping-cart-table'>
               <Row className='shopping-cart-items'>
@@ -84,33 +87,33 @@ const ShoppingCartOverlay = () => {
                 </Col>
               </Row>
             </div>
-          </Container>
-          <Container className='shopping-cart-btn'>
-            <Button className='shopping-cart-checkout' variant=''>
-              CHECKOUT
-            </Button>
-            <div>
+
+            <div className='shopping-cart-bottom'>
+              <Row className='shopping-cart-checkout'>
+                <Button className='shopping-cart-btn' variant=''>
+                  <span id='checkout'>CHECKOUT</span>{' '}
+                </Button>
+              </Row>
+
               <Row>
                 <Col md={5}>
-                  <div className='' style={{ width: '100%' }}>
-                    <div id=''>&nbsp;&nbsp;</div>
-                    <div className='line-or'></div> &nbsp;&nbsp;&nbsp;
-                  </div>
+                  <div id=''></div>
+                  <div className='line-or-left'></div>
                 </Col>
-                <Col md={2}>
+                <Col md={1}>
                   <p className='shopping-cart-or'>OR</p>
                 </Col>
                 <Col md={5}>
-                  <div className='' style={{ width: '100%' }}>
-                    <div id=''>&nbsp;&nbsp;</div>
-                    <div className='line-or'></div> &nbsp;&nbsp;&nbsp;
-                  </div>
+                  <div id=''>;</div>
+                  <div className='line-or-right'></div>
                 </Col>
               </Row>
+              <Row>
+                <Button className='shopping-cart-cont' variant=''>
+                  <span id="continue-shopping">CONITUE SHOPPING</span>
+                </Button>
+              </Row>
             </div>
-            <Button className='shopping-cart-cont' variant=''>
-              CONITUE SHOPPING
-            </Button>
           </Container>
         </Modal.Body>
       </Modal>
