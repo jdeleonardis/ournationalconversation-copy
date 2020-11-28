@@ -8,9 +8,12 @@ import FilterBarSource from './FilterBarSource';
 import RailButtons from '../Misc/RailButtons';
 import SearchBox from './SearchBox';
 import FilterBarStore from './FilterBarStore';
-import ShoppingCartCard from '../Content/ContentCards/ShoppingCartCard';
-import '../../styles/demo.css';
+
+
 import LocationOverlay from './Overlay/LocationOverlay';
+import ShoppingCartOverlay from './Overlay/ShoppingCartOverlay';
+
+import '../../styles/demo.css';
 
 class DemoSearchFilter extends Component {
   render() {
@@ -36,7 +39,7 @@ class DemoSearchFilter extends Component {
             <br />
             <br />
             <SortByLocal />
-            <LocationOverlay/>
+
             <br />
             <br />
             <br />
@@ -44,8 +47,9 @@ class DemoSearchFilter extends Component {
             <br />
             <br />
             <br />
-
-            <ShoppingCartCard />
+            <ShoppingCartOverlay/>
+            <LocationOverlay />
+            
           </Col>
           <Col md={3}>
             <RailButtons />

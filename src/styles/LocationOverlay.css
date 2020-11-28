@@ -26,3 +26,179 @@ text-transform: uppercase;
 color: #2C1C59;
 }
 
+.add-location{
+  /* Add Location */
+margin-left: 3.25em;
+margin-top: -2em;
+/* position: absolute; */
+/* left: 29.93%;
+right: 29.77%;
+top: 8.98%;
+bottom: 83.3%; */
+
+/* Headline 3 */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 43px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.add-location-search{
+  /* Search */
+
+
+position: relative;
+width: 28.5em;
+line-height: 3em;
+margin: 1em ;
+/* margin-left: 0.5em; */
+
+/* left: 8.22%;
+right: 8.22%;
+top: 23.88%;
+bottom: 67.15%; */
+
+}
+
+#city-or-zipcode{
+  /* City or zipcode */
+
+
+/* position: relative; */
+width: 22em;
+height: 2em;
+margin-top: -1em;
+margin-left: 0.7em;
+padding-left: .7em;
+/* left: 15px;
+top: 13px; */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.0125em;
+text-transform: uppercase;
+
+/* Grey */
+
+color: #929292;
+}
+
+
+.vector {
+  /* Vector */
+
+
+position: absolute;
+left: 91.54%;
+right: 2.95%;
+top: 26%;
+bottom: 22.89%;
+
+/* True Black */
+
+/* background: #000000; */
+}
+
+.add-location-card{
+  /* margin-top: -1em; */
+}
+
+
+/* Location Card */
+.location-card {
+ 
+/* position: absolute; */
+width: 8em;
+height: 6em;
+margin:  .75em 0em;
+/* left: 50px; */
+/* top: 223px; */
+
+/* Rectangle 107 */
+
+/* 
+position: absolute;
+left: 8.22%;
+right: 66.12%;
+top: 40.04%;
+bottom: 36.27%; */
+
+background: #FFFFFF;
+/* Card Shadow */
+
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+
+.local-pic{
+/* local pic */
+
+
+position: relative;
+/* left: 8.22%;
+right: 66.12%;
+top: 40.04%;
+bottom: 43.45%; */
+}
+
+.local-name {
+  
+
+
+position: absolute;
+/* left: 13.32%;
+right: 71.05%;
+top: 46.5%;
+bottom: 49.91%; */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+letter-spacing: 0.0125em;
+text-transform: uppercase;
+
+/* Background img invaild */
+/* color: #FFFFFF; */
+}
+
+
+.local-add{
+  /* ADD NEW LOCATION */
+
+
+position: absolute;
+/* left: 15.95%;
+right: 77.63%;
+top: 58.35%;
+bottom: 38.06%; */
+
+/* Button */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.0125em;
+text-transform: uppercase;
+
+/* Purple */
+
+color: #2C1C59;
+}
