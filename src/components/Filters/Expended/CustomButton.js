@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Col, Container, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 export class CustomButton extends Component {
   render() {
     return (
@@ -12,14 +12,12 @@ export class CustomButton extends Component {
             }
 
             .btn-xxl {
-              padding: 0.35rem 1.35rem;
+              padding: 0.5rem 2rem;
               font-family: Montserrat;
               font-style: normal;
               font-weight: 500;
-              font-size: 1rem;
-              line-height: 2.2em;
               letter-spacing: 0.0025em;
-              text-align: center;
+
             }
             `}
         </style>
@@ -28,6 +26,7 @@ export class CustomButton extends Component {
           purple button
         </Button>
       </>
+      
     );
   }
 }

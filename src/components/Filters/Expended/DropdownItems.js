@@ -35,7 +35,7 @@ class DropdownItems extends Component {
        
         <Button
           variant='purple'
-          size='xxl'
+          size=''
           className='nf-btn'
           onClick={this.showMenu}
         >
