@@ -4,6 +4,7 @@ import {
   Nav,
   Dropdown,
   Col,
+  Button,
   ButtonGroup,
   DropdownButton
 } from 'react-bootstrap';
@@ -15,56 +16,23 @@ const SearchBar = (props) => {
     <>
       <Navbar className='search-bar' variant=''>
         <Col className='mb-2' xs lg='9'>
-          <Nav className='group-68 mr-auto '>
-            <div class='dropdown'>
-              {/* <button
-                className='news-filters-btn '
-                type='button'
-                id='dropdownMenu2'
-                // data-toggle='dropdown'
-                // aria-haspopup='true'
-                aria-expanded='false'
-                data-toggle='collapse'
-                data-target='#collapseExample'
-                aria-controls='collapseExample'
-                href='#'
-              >
-                NEWS FILTERS <i class='fas fa-chevron-down news-filters-btn' />
-              </button> */}
-              {/* <div class='collapse' id='collapseExample'> */}
-              <DropdownButton
-                // id='dropdown-item-button'
-                title='NEWS FILTERS'
-                className='news-filters-btn '
-                type='button'
-                id='dropdownMenu2'
-                // data-toggle='dropdown'
-                // aria-haspopup='true'
-                // aria-expanded='false'
-                // data-toggle='collapse'
-                // data-target='#collapseExample'
-                // aria-controls='collapseExample'
-                // href='#'
-                variant='primary'
-              >
-                <NewFiltersExpanded />
-                {/* <Dropdown.Toggle
-                  id='dropdown-custom-1'
-                  variant='purple'
-                  href='/'
-                >
-                  NEWS FILTERS
-                </Dropdown.Toggle> */}
-                {/* <Dropdown.Menu
-                  // className='super-colors'
-                  variant='purple'
-                > */}
+          <Nav className='group-68  '>
+            <DropdownButton
+              title='____________________'
+              // className='news-filters-dp '
+              data-toggle='dropdown'
+              variant=''
+            >
+              <NewFiltersExpanded />
+            </DropdownButton>
 
-                {/* </Dropdown.Menu> */}
-              </DropdownButton>
-              <Dropdown as={ButtonGroup}></Dropdown>
-              {/* </div> */}
-            </div>
+            <span id='news-filters'>
+              NEWS FILTERS 
+              <span className='news-filters-i'>
+                <i class='fas fa-chevron-down'></i>
+              </span>
+            </span>
+           
             <Nav.Link href='#'>
               <span className='hot-topics'>HOT TOPICS: </span>
             </Nav.Link>
