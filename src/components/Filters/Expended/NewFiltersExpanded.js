@@ -12,9 +12,8 @@ const NewFiltersExpanded = () => {
           key={'right'}
           id={`dropdown-button-drop-right`}
           drop={'right'}
-          variant='purple'
+          variant=''
           title={` TOP STORIES `}
-          
           active
         >
           <div className='news-filter-dropdown '>
@@ -59,7 +58,6 @@ const NewFiltersExpanded = () => {
           drop={'right'}
           variant=''
           title={` LOCAL STORIES `}
-          
         ></DropdownButton>
       </div>
       <div className='mb-2'>
@@ -70,7 +68,6 @@ const NewFiltersExpanded = () => {
           drop={'right'}
           variant=''
           title={` MY SAVED SEARCHES `}
-          
         ></DropdownButton>
       </div>
       <div className='mb-2'>
@@ -81,7 +78,6 @@ const NewFiltersExpanded = () => {
           drop={'right'}
           variant=''
           title={`MY SAVED NEWS`}
-          
         ></DropdownButton>
       </div>
     </div>

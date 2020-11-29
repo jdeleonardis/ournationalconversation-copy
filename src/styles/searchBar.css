@@ -3,25 +3,30 @@
 .search-bar {
   height: 4em;
   left: 5%;
+  text-align: center;
 }
 
 /* Frame 12 */
 
 /* Auto Layout */
 .news-filters-dp {
-  height: 2.6em;
+  margin: 0em;
+  padding: 0em;
+  text-decoration:none ;
+  height: 2.4em;
   width: 11em;
-  text-align: center;
+  /* text-align: center; */
 
   /* Purple */
   color: #ffffff;
-  background: #2c1c59;
+  /* background: #2c1c59; */
   border-radius: 5px;
+  border-color: #ffffff;
 }
 
 .news-filters-btn {
   margin-top: 0em;
-  margin-left: -12em;
+  margin-left: -11em;
 
   height: 2.6em;
   width: 12em;

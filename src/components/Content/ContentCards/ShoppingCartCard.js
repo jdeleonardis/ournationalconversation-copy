@@ -65,7 +65,7 @@ const ShoppingCartCard = () => {
             <Col xs={4} md={3}>
               <Button
                 className='your-items-apply'
-                variant='purple'
+                variant=''
                 type='submit'
               >
                 APPLY

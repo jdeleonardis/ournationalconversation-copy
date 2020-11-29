@@ -14,7 +14,7 @@ const LocationOverlay = () => {
   return (
     <>
       <Button
-        variant='purple'
+        variant=''
         className='add-new-location'
         onClick={() => setShow(true)}
       >

@@ -21,12 +21,12 @@ const SortBy = (props) => {
           {/* <span id='sort-by'>Sort by: DEFAULT</span>&nbsp;&nbsp;
             <i class='fas fa-caret-down'></i> */}
           <Dropdown>
-            <Dropdown.Toggle variant='purple' id='dropdown-basic'>
+            <Dropdown.Toggle variant='' id='dropdown-basic'>
               Sort by: DEFAULT
             </Dropdown.Toggle>
 
             <Dropdown.Menu
-              variant='purple'
+              variant=''
               menuAlign='xl: "left"|"right"'
               alignRight
               menuAlign='right'
@@ -35,7 +35,7 @@ const SortBy = (props) => {
               align='right'
               className='mx-8 my-8 w-auto'
             >
-              <Dropdown.Item variant='purple' href='#/action-1'>
+              <Dropdown.Item variant='' href='#/action-1'>
                 DEFAULT
               </Dropdown.Item>
               <Dropdown.Item href='#/action-2'>NEWEST</Dropdown.Item>

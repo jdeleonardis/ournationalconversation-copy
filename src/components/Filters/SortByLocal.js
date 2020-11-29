@@ -14,18 +14,18 @@ const SortByLocal = (props) => {
         </div>
         <div className='divider'></div>&nbsp;
         <Dropdown>
-          <Dropdown.Toggle variant='purple' id='dropdown-basic'>
+          <Dropdown.Toggle variant='' id='dropdown-basic'>
             SAN JOSE, CA
           </Dropdown.Toggle>
           <Dropdown.Menu
-            variant='purple'
+            variant=''
             menuAlign='right'
             alignRight
             className='dropdown-menu-align-right location-dropdown mx-8 my-6 w-auto'
             align='right'
           >
             <Dropdown.Item
-              variant='purple'
+              variant=''
               bg='grey'
               href='#/action-1'
               eventKey='1'

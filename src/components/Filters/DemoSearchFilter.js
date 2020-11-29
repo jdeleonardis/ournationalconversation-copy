@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, Row, Col, Container } from 'react-bootstrap';
+import {Row, Col, Container,Button } from 'react-bootstrap';
 import SortBy from './SortBy';
 import SortByLocal from './SortByLocal';
 import SortByStore from './SortByStore';
@@ -8,12 +8,13 @@ import FilterBarSource from './FilterBarSource';
 import RailButtons from '../Misc/RailButtons';
 import SearchBox from './SearchBox';
 import FilterBarStore from './FilterBarStore';
-
-
 import LocationOverlay from './Overlay/LocationOverlay';
 import ShoppingCartOverlay from './Overlay/ShoppingCartOverlay';
+import DropdownItems from './Expended/DropdownItems';
+import CustomButton from './Expended/CustomButton';
 
 import '../../styles/demo.css';
+
 
 class DemoSearchFilter extends Component {
   render() {
@@ -47,10 +48,15 @@ class DemoSearchFilter extends Component {
             <br />
             <br />
             <br />
-            <ShoppingCartOverlay/>
+            {/* Expanded Components & Overlay */}
+            <ShoppingCartOverlay />
             <LocationOverlay />
-            
+            <br/>
+            <DropdownItems />
+            <br/>
+            <CustomButton/>
           </Col>
+          {/* Right Rail Buttons */}
           <Col md={3}>
             <RailButtons />
           </Col>

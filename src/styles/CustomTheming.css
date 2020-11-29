@@ -56,3 +56,14 @@
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
+
+
+  {/* Hint: inspect the markup to see how the classes differ */}
+/* <>
+  <ThemeProvider prefixes={{ btn: 'my-btn' }}>
+    <Button variant="primary">My Button</Button>
+  </ThemeProvider>{' '}
+  <Button bsPrefix="super-btn" variant="primary">
+    Super button
+  </Button>
+</>  */

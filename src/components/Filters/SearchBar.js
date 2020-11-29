@@ -18,9 +18,12 @@ const SearchBar = (props) => {
         <Col className='mb-2' xs lg='9'>
           <Nav className='group-68'>
             <DropdownButton
+          
               title='____________________'
-              // className='news-filters-dp '
+              menuAlign={{ lg: 'left' }}
+              className='news-filters-dp '
               data-toggle='dropdown'
+              id='dropdown-menu-align-responsive-1'
               variant=''
             >
               <NewFiltersExpanded />

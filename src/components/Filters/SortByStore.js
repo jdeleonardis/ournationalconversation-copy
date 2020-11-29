@@ -26,7 +26,7 @@ const SortByStore = (props) => {
             id='dropdown-menu-align-right'
           >
             <Dropdown.Toggle
-              variant='purple'
+              variant=''
               id='dropdown-basic'
               menuAlign='right'
               title='Dropdown right'
@@ -41,7 +41,7 @@ const SortByStore = (props) => {
               title='Dropdown right'
               id='dropdown-menu-align-right'
               align='right'
-              variant='purple'
+              variant=''
               menuAlign='xl: "left"|"right"'
               alignRight
               menuAlign='right'
@@ -50,7 +50,7 @@ const SortByStore = (props) => {
               align='right'
               className='mx-8 my-8 w-auto'
             >
-              <Dropdown.Item variant='purple' href='#/action-1'>
+              <Dropdown.Item variant='' href='#/action-1'>
                 DEFAULT
               </Dropdown.Item>
               <Dropdown.Item href='#/action-2'>NEWEST ADDTIONS</Dropdown.Item>
