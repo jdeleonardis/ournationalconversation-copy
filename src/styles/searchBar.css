@@ -1,69 +1,6 @@
-/* New variants and sizes */
-/* Custom variants and sizes should follow the pattern of the default bootstrap variants, and define css classes matching: component-*
-
-<>
-  <style type="text/css">
-    {`
-    .btn-flat {
-      background-color: purple;
-      color: white;
-    }
-
-    .btn-xxl {
-      padding: 1rem 1.5rem;
-      font-size: 1.5rem;
-    }
-    `}
-  </style>
-
-  <Button variant="flat" size="xxl">
-    flat button
-  </Button>
-</> */
-
-/* Variants */
-.btn-purple {
-  background-color: #2c1c59;
-  border-color: #2c1c59;
-  color: fff;
-  /* font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500; */
-}
-
-.btn-purple-outline {
-  color: #2c1c59;
-  background-color: #ffffff;
-  /* font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500; */
-}
-
-/* Sizes */
-
-.btn-l {
-  padding: 1rem 1.5rem;
-  font-size: 1.5rem;
-}
-
-/* Subhead 3 */
-.btn-xl {
-  font-size: 15px;
-  line-height: 18px;
-  /* letter-spacing: 0.0025em; */
-}
-.btn-xxl {
-  padding: 1rem 1.5rem;
-  font-size: 1.5rem;
-}
-
-/* ************************************** */
-
 /* Subhead - SearchBar */
 
 .search-bar {
-  /* position: absolute; */
-  /* width: 1440px; */
   height: 4em;
   left: 5%;
 }
@@ -72,15 +9,6 @@
 
 /* Auto Layout */
 .news-filters-dp {
-  /* display: flex; */
-  /* flex-direction: column;
-  align-items: flex-start;
-  padding: 0px 0px 0px 15px; */
-  /* margin-top: -1.6em; */
-  /* margin-left: -0.5em; */
-  /* padding: 0em 0.5em 0.1em 0.4em; */
-
-  /* position: absolute; */
   height: 2.6em;
   width: 11em;
   text-align: center;
@@ -89,20 +17,12 @@
   color: #ffffff;
   background: #2c1c59;
   border-radius: 5px;
-  
 }
 
 .news-filters-btn {
-  /* display: flex; */
-  /* flex-direction: column;
-  align-items: flex-start;
-  padding: 0px 0px 0px 15px; */
   margin-top: 0em;
   margin-left: -12em;
-  /* margin-left: -0.5em; */
-  /* padding: 0em 0.5em 0.1em 0.4em; */
 
-  /* position: absolute; */
   height: 2.6em;
   width: 12em;
   text-align: center;
@@ -125,20 +45,16 @@
   text-transform: uppercase;
 
   /* White */
-text-decoration: none;
+  text-decoration: none;
   color: #2c1c59;
   background: #2c1c59;
-  
 }
 
-#news-filters{
-   /* padding: .5em; */
-   width: 18%;
-   height: 2.6em;
-   margin-top: -0.2em;
-   /* margin-top: -6em; */
-   margin-left: -10.8em;
- 
+#news-filters {
+  width: 18%;
+  height: 2.6em;
+  margin-top: -0.2em;
+  margin-left: -10.8em;
   text-align: center;
 
   /* Button */
@@ -159,53 +75,34 @@ text-decoration: none;
   border-radius: 5px;
 }
 
-
-.news-filters-i{
+.news-filters-i {
   /* Vector */
 
- 
-
-  /* Inside Auto Layout */
-
-
-
- 
-
-   padding: .5em;
-  
- 
-  
-
- 
+  padding: 0.5em;
 
   /* White */
 
   color: #ffffff;
-  
 }
-
 
 /* Frame 67 */
 
 .news-filters {
   /* Auto Layout */
 
-  /* White */
-
-  color: #ffffff;
-  
+  position: static;
+  height: 1.2em;
+  text-align: center;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
   font-family: Montserrat;
   margin-top: -1.6em;
-  top: -2em;
 
-  position: static;
-  /* width: 154px; */
-  height: 1.2em;
-  text-align: center;
+  /* White */
+
+  color: #ffffff;
 
   /* Inside Auto Layout */
 
@@ -213,11 +110,7 @@ text-decoration: none;
   order: 0;
   align-self: center;
   flex-grow: 0;
-  /* color: #ffffff; */
-  /* margin: 0px 10px; */
 }
-
-
 
 .news-filter-dropdown {
   overflow-x: hidden;
@@ -231,15 +124,12 @@ text-decoration: none;
   text-align: left;
 }
 
-
-
 /* Subhead Menu Text */
 
 /* Group 68 */
 
 .group-68 {
   position: flex;
-  /* width: 580px; */
   height: 1.2em;
   font-weight: bold;
 }
@@ -262,7 +152,7 @@ text-decoration: none;
   line-height: 1.6em;
 
   /* identical to box height */
-  /* padding: 0em 2em 0em 5em; */
+
   letter-spacing: 0.001em;
 
   /* Black - Text Color */
@@ -273,8 +163,6 @@ text-decoration: none;
 /* Search */
 
 .search {
-  /* position: absolute; */
-  /* left: -3em; */
   right: 7em;
   top: 0.4em;
   height: 2.8em;
@@ -300,9 +188,9 @@ text-decoration: none;
   z-index: 1;
   top: -0.2em;
   left: -9em;
-  /* top: 1px; */
+
   color: #7b7b7b;
-  /* color: #000000; */
+
   cursor: pointer;
   width: 0;
 }

@@ -1,0 +1,58 @@
+/* New variants and sizes */
+/* Custom variants and sizes should follow the pattern of the default bootstrap variants, and define css classes matching: component-*
+
+<>
+  <style type="text/css">
+    {`
+    .btn-flat {
+      background-color: purple;
+      color: white;
+    }
+
+    .btn-xxl {
+      padding: 1rem 1.5rem;
+      font-size: 1.5rem;
+    }
+    `}
+  </style>
+
+  <Button variant="flat" size="xxl">
+    flat button
+  </Button>
+</> */
+
+/* Variants */
+.btn-purple {
+  background-color: #2c1c59;
+  border-color: #2c1c59;
+  color: fff;
+  /* font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500; */
+}
+
+.btn-purple-outline {
+  color: #2c1c59;
+  background-color: #ffffff;
+  /* font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500; */
+}
+
+/* Sizes */
+
+.btn-l {
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Subhead 3 */
+.btn-xl {
+  font-size: 15px;
+  line-height: 18px;
+  /* letter-spacing: 0.0025em; */
+}
+.btn-xxl {
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}

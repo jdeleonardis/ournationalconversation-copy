@@ -16,7 +16,7 @@ const SearchBar = (props) => {
     <>
       <Navbar className='search-bar' variant=''>
         <Col className='mb-2' xs lg='9'>
-          <Nav className='group-68  '>
+          <Nav className='group-68'>
             <DropdownButton
               title='____________________'
               // className='news-filters-dp '
@@ -27,12 +27,12 @@ const SearchBar = (props) => {
             </DropdownButton>
 
             <span id='news-filters'>
-              NEWS FILTERS 
+              NEWS FILTERS
               <span className='news-filters-i'>
                 <i class='fas fa-chevron-down'></i>
               </span>
             </span>
-           
+
             <Nav.Link href='#'>
               <span className='hot-topics'>HOT TOPICS: </span>
             </Nav.Link>
