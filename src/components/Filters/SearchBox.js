@@ -10,7 +10,11 @@ const SearchBox = (props) => {
         <p style={{ marginBottom: '5px' }} id='small-search-text'>
           Search {props.pageName}:
         </p>
-        <input id='small-search-field' type='text' placeholder='Covid'></input>
+        <input
+          id='small-search-field'
+          type='text'
+          placeholder='ENTER KEYWORDS{props.searchInput}'
+        ></input>
         <i id='searchsubmit' className='fa fa-search'></i>
       </div>
       <div>
@@ -18,7 +22,7 @@ const SearchBox = (props) => {
           <i class='fas fa-plus'></i>
           <span className='save-search'>
             {' '}
-            Save "Covid{props.searchInput}" to My Searches
+            Save "{props.searchInput}" to My Searches
           </span>
         </Button>
       </div>
