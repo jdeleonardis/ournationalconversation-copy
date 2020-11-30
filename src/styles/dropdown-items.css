@@ -1,0 +1,41 @@
+.nf-btn{
+  margin: 0em;
+  padding: 0em;
+  overflow-x: hidden;
+  background: #2c1c59;
+  box-sizing: border-box; /* or not */
+  margin: 0 auto;
+  width: 60em;
+  height: 30em;
+  background: #f2f2f2;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+
+.full-width-tinted {
+  display: inline;
+  position: relative; /* child absolute */
+  /* margin: 0 -9600rem; */
+
+  /* add back section padding value */
+  padding: 0.25rem 9600rem;
+  background: #2c1c59;
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 1.125rem;
+  z-index: 0;
+}
+
+.full-width-tinted:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+
+  /* subtract h2 padding */
+  /* left: 9598.5rem;
+  right: 9598.5rem; */
+  background: #2c1c59;
+}

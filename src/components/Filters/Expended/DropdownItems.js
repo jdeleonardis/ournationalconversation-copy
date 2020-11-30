@@ -32,7 +32,6 @@ class DropdownItems extends Component {
   render() {
     return (
       <div>
-       
         <Button
           variant='purple'
           size=''
@@ -45,67 +44,18 @@ class DropdownItems extends Component {
 
         {this.state.showMenu ? (
           <div
-            className='menu'
+            className='menu '
             ref={(element) => {
               this.dropdownMenu = element;
             }}
           >
             <button className='nf-dd-btn1'> Menu item 1 </button>
-            {this.state.showMenu ? (
-              <div
-                className='menu'
-                ref={(element) => {
-                  this.dropdownMenu = element;
-                }}
-              >
-                <button className='nf-dd-btn1'> Menu item 1 </button>
-                <button className='nf-dd-btn2'> Menu item 2 </button>
-                <button className='nf-dd-btn3'> Menu item 3 </button>
-                <button className='nf-dd-btn4'> Menu item 4 </button>
-              </div>
-            ) : null}
+
             <button className='nf-dd-btn2'> Menu item 2 </button>
-            {this.state.showMenu ? (
-              <div
-                className='menu'
-                ref={(element) => {
-                  this.dropdownMenu = element;
-                }}
-              >
-                <button className='nf-dd-btn1'> Menu item 1 </button>
-                <button className='nf-dd-btn2'> Menu item 2 </button>
-                <button className='nf-dd-btn3'> Menu item 3 </button>
-                <button className='nf-dd-btn4'> Menu item 4 </button>
-              </div>
-            ) : null}
+
             <button className='nf-dd-btn3'> Menu item 3 </button>
-            {this.state.showMenu ? (
-              <div
-                className='menu'
-                ref={(element) => {
-                  this.dropdownMenu = element;
-                }}
-              >
-                <button className='nf-dd-btn1'> Menu item 1 </button>
-                <button className='nf-dd-btn2'> Menu item 2 </button>
-                <button className='nf-dd-btn3'> Menu item 3 </button>
-                <button className='nf-dd-btn4'> Menu item 4 </button>
-              </div>
-            ) : null}
+
             <button className='nf-dd-btn4'> Menu item 4 </button>
-            {this.state.showMenu ? (
-              <div
-                className='menu'
-                ref={(element) => {
-                  this.dropdownMenu = element;
-                }}
-              >
-                <button className='nf-dd-btn1'> Menu item 1 </button>
-                <button className='nf-dd-btn2'> Menu item 2 </button>
-                <button className='nf-dd-btn3'> Menu item 3 </button>
-                <button className='nf-dd-btn4'> Menu item 4 </button>
-              </div>
-            ) : null}
           </div>
         ) : null}
       </div>

@@ -6,13 +6,14 @@ import '../../../styles/newfiltersexpanded.css';
 const NewFiltersExpanded = () => {
   return (
     <div className='news-filter-dropdown '>
-      <div className='mb-2 '>
+      <div className=' '>
         <DropdownButton
           as={ButtonGroup}
-          key={'right'}
+          // className='dropdown-button'
+          // key={'right'}
           id={`dropdown-button-drop-right`}
           drop={'right'}
-          variant=''
+          variant='purple'
           title={` TOP STORIES `}
           active
         >
@@ -32,7 +33,6 @@ const NewFiltersExpanded = () => {
                 <ul>FAITH / SPIRITUALITY</ul>
                 <ul>FACT CHECK</ul>
                 <ul>MEDIA</ul>
-                <ul>US</ul>
               </Col>
               <Col className='policy-topics'>
                 <h5 className='news-topics-headline'>POLICY TOPICS</h5>
@@ -50,7 +50,7 @@ const NewFiltersExpanded = () => {
           </div>
         </DropdownButton>
       </div>
-      <div className='mb-2'>
+      <div className=''>
         <DropdownButton
           as={ButtonGroup}
           key={'right'}
@@ -60,7 +60,7 @@ const NewFiltersExpanded = () => {
           title={` LOCAL STORIES `}
         ></DropdownButton>
       </div>
-      <div className='mb-2'>
+      <div className=''>
         <DropdownButton
           as={ButtonGroup}
           key={'right'}
@@ -70,7 +70,7 @@ const NewFiltersExpanded = () => {
           title={` MY SAVED SEARCHES `}
         ></DropdownButton>
       </div>
-      <div className='mb-2'>
+      <div className=''>
         <DropdownButton
           as={ButtonGroup}
           key={'right'}
