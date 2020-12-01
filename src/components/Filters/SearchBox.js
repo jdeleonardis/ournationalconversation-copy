@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Button, Row, Col, Image, Card } from 'react-bootstrap';
+import { Button, Row } from 'react-bootstrap';
 import '../../styles/sort-by.css';
 import '../../styles/searchbox.css';
 
@@ -10,19 +10,14 @@ const SearchBox = (props) => {
         <p style={{ marginBottom: '5px' }} id='small-search-text'>
           Search {props.pageName}:
         </p>
-        <input
-          id='small-search-field'
-          type='text'
-          placeholder='ENTER KEYWORDS{props.searchInput}'
-        ></input>
+        <input id='small-search-field' type='text' placeholder='ENTER KEYWORDS'></input>
         <i id='searchsubmit' className='fa fa-search'></i>
       </div>
       <div>
         <Button className='save-search' variant=''>
           <i class='fas fa-plus'></i>
           <span className='save-search'>
-            {' '}
-            Save "{props.searchInput}" to My Searches
+            Save "Covid{props.searchInput}" to My Searches
           </span>
         </Button>
       </div>

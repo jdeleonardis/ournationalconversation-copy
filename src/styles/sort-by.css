@@ -141,7 +141,7 @@ top: 334px; */
   border-radius: 2px;
 }
 
-.remove {
+.remove-active {
   position: relative;
   margin-top: 0.25em;
   text-align: right;
@@ -158,6 +158,26 @@ top: 334px; */
   letter-spacing: 0.0025em;
 
   color: white;
+}
+.remove {position: relative;
+  margin-top: 0.25em;
+  text-align: right;
+   float: right;
+  width: 3em;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+letter-spacing: 0.0125em;
+text-transform: capitalize;
+
+/* Purple */
+
+color: #2C1C59;
 }
 
 .fa-shopping-cart {
