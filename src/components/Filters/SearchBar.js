@@ -9,31 +9,20 @@ import {
   DropdownButton
 } from 'react-bootstrap';
 import NewFiltersExpanded from './Expended/NewFiltersExpanded';
+import CustomButton from './Expended/CustomButton';
 import '../../styles/searchBar.css';
 
 const SearchBar = (props) => {
   return (
     <>
-      <style type='text/css'>
-        {`
-            .btn-purple {
-              background-color: #2c1c59 ;
-              color: white;
-            }
-
-            .btn-xxl {
-              padding: 0.5rem 2rem;
-              font-family: Montserrat;
-              font-style: normal;
-              font-weight: 500;
-              letter-spacing: 0.0025em;
-
-            }
-            `}
-      </style>
-      <Navbar className='search-bar' variant=''>
+      <Navbar
+        className='search-bar'
+        variant='
+      '
+      >
         <Col className='mb-2'>
           <Nav className='group-68'>
+            <CustomButton />
             <DropdownButton
               className='news-filters-dp '
               as={ButtonGroup}

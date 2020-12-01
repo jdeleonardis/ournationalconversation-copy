@@ -1,28 +1,11 @@
 import React from 'react';
 import { Row, Col, DropdownButton, ButtonGroup } from 'react-bootstrap';
-
+import CustomButton from './CustomButton';
 import '../../../styles/newfiltersexpanded.css';
 
 const NewFiltersExpanded = () => {
   return (
     <div className='news-filter-dropdown '>
-      <style type='text/css'>
-        {`
-            .btn-purple {
-              background-color: #2c1c59 ;
-              color: white;
-            }
-
-            .btn-xxl {
-              padding: 0.5rem 2rem;
-              font-family: Montserrat;
-              font-style: normal;
-              font-weight: 500;
-              letter-spacing: 0.0025em;
-
-            }
-            `}
-      </style>
       <div className=' '>
         <DropdownButton
           as={ButtonGroup}
@@ -96,6 +79,7 @@ const NewFiltersExpanded = () => {
           variant=''
           title={`MY SAVED NEWS`}
         ></DropdownButton>
+      
       </div>
     </div>
   );

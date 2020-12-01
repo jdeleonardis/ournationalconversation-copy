@@ -22,8 +22,8 @@ export class CustomButton extends Component {
             `}
         </style>
 
-        <Button variant='purple' size='xxl'>
-          purple button
+        <Button variant='' size=''>
+          
         </Button>
       </>
       
