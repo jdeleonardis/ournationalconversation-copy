@@ -1,20 +1,9 @@
-// todo:
-// - rt editor? currently, using ckeditor. Stick with it?
-// - Login to another account at top
 import React, { Component, Fragment } from 'react';
-
-import {
-    Container,
-    Row,
-    Col,
-    Form,
-    Button,
-    Card,
-  } from 'react-bootstrap';
+import { Container, Row, Col, Form, Card } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import '../styles/writerDashboard.css';
-import { CKEditor } from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import SunEditor, {buttonList} from 'suneditor-react';
+import 'suneditor/dist/css/suneditor.min.css';
 import ArticleCategoryRadioButtons from '../components/WriterDashboard/ArticleCategoryRadioButtons'
 import NewsTopicRadioButtons from '../components/WriterDashboard/NewsTopicRadioButtons'
 import PolicyTopicRadioButtons from '../components/WriterDashboard/PolicyTopicRadioButtons'
@@ -36,7 +25,8 @@ export class WriterDashboard extends Component {
       newTag: '',
       tagList: [],
       validationError: false,
-      validationIssue: []
+      validationIssue: [],
+      wordCount: 0
     };
   }
   changeHandler = (event) => {    
@@ -49,6 +39,19 @@ export class WriterDashboard extends Component {
     else {
       this.setState({[event.target.name]: event.target.value});
     }    
+  }
+
+  sunEditorChangeHandler = (event) => {
+    let words = this.editorWordCount(event)
+    this.setState({editorText: event, wordCount: words});
+  }
+
+  editorWordCount = (data) => {
+    data = data.replace(/<[^>]*>/g," ");
+    data = data.replace(/\s+/g, ' ');
+    data = data.trim();
+    let wordCount = data.split(" ").length
+    return wordCount
   }
 
   validation = () => {
@@ -192,33 +195,34 @@ export class WriterDashboard extends Component {
                         </Form.Group>
                         <Form.Group controlId='ckeditor'>
                           <Form.Label style={{fontSize: 'small', color: '#808182'}}>ARTICLE</Form.Label>
-                          <CKEditor
-                            editor={ClassicEditor}
-                            // data=""  
-                            data={this.state.editorText}
-                            onChange={ ( event, editor ) => {
-                              const data = editor.getData();                            
-                              // console.log(data)
-                              // console.log(data.replace( /(<([^>]+)>)/ig, '')); 
-
-                              //new RegExp( '[\\p{L}\\p{N}\\p{M}\\p{Pd}\\p{Pc}]+', 'gu' )
-                              // const detectedWords = data.match( new RegExp( '[\\p{L}\\p{N}\\p{M}\\p{Pd}\\p{Pc}]+', 'gu' ) ) || [];
-
-                              // console.log(detectedWords)
-                              // console.log(detectedWords.length)
-                              //return detectedWords.length;
-
-                              this.setState({editorText: data})                    
-                            }}                
+                          <SunEditor 
+                            setOptions={{
+                              height: 300,
+                              buttonList: [
+                                ['undo', 'redo'],
+                                ['font', 'fontSize', 'formatBlock'],
+                                ['paragraphStyle', 'blockquote'],
+                                ['fontColor', 'hiliteColor', 'textStyle'],
+                                ['removeFormat'],
+                                '/', // Line break
+                                ['bold', 'underline', 'italic', 'strike', 'subscript', 'superscript'],
+                                ['outdent', 'indent'],
+                                ['align', 'horizontalRule', 'list', 'lineHeight'],
+                                ['table', 'link', 'image', 'video'],                                
+                                ['fullScreen', 'showBlocks', 'codeView'],
+                                ['preview', 'print']
+                            ]
+                            }}
+                            onChange={this.sunEditorChangeHandler} 
                           />
                           <div className={this.state.validationError && this.state.validationIssue.indexOf('article') >= 0 ? '' : 'height0 invisible'}>
                             <Form.Label style={{fontSize: 'small', color: 'red'}}>Please enter an article.</Form.Label>
                           </div>                            
                           <div className="rightAlign" style={{fontSize: 'small'}}>
-                            0/1000 words
+                            {this.state.wordCount}/1000 words
                           </div>
                           <div className="rightAlign" style={{fontSize: 'small'}}>
-                            <i id='fa-draft' className='fa fa-edit'></i><a href="Preview Draft"><u>Preview Draft</u></a>
+                            MAY NOT NEED!! PREVIEW IN RTE<i id='fa-draft' className='fa fa-edit'></i><a href="Preview Draft"><u>Preview Draft</u></a>
                           </div>
                         </Form.Group>
                         <Form.Group controlId='articleCategories'>

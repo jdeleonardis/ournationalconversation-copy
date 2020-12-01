@@ -3,7 +3,6 @@ import ButtonGroup from "react-bootstrap/ButtonGroup";
 import { Form, Row, Col } from "react-bootstrap";
 
 function PolicyTopicRadioButtons(props) {  
-    console.log(props)
     return (  
         <>
         {/* this should be verified. if solution, enable/show the policy topics? */}
