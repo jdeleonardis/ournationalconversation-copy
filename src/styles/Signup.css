@@ -68,6 +68,7 @@ select {
 
 .caret-con {
   margin-right: 27px !important;
+  margin-bottom: 15px;
 }
 
 /* ========================
@@ -285,7 +286,7 @@ MEDIA QUERIES
 
   .caret-con {
     margin-right: 27px !important;
-    margin-top: 17px !important;
+    margin-bottom: 15px;
   }
 }
 
@@ -302,7 +303,7 @@ MEDIA QUERIES
 
   .caret-con {
     margin-right: 27px !important;
-    margin-top: 16px !important;
+    margin-bottom: 15px;
   }
 }
 
@@ -319,7 +320,7 @@ MEDIA QUERIES
 
   .caret-con {
     margin-right: 27px !important;
-    margin-top: 16px !important;
+    margin-bottom: 15px;
   }
 }
 
@@ -336,7 +337,7 @@ MEDIA QUERIES
 
   .caret-con {
     margin-right: 27px !important;
-    margin-top: 16px !important;
+    margin-bottom: 15px;
   }
 }
 
@@ -375,7 +376,7 @@ MEDIA QUERIES
 
   .caret-con {
     margin-right: 29px !important;
-    margin-top: 15px !important;
+    margin-bottom: 15px;
   }
 
   label {
@@ -424,7 +425,7 @@ MEDIA QUERIES
 
   .caret-con {
     margin-right: 17px !important;
-    margin-top: 12px !important;
+    margin-bottom: 15px;
   }
 
   label {
@@ -461,7 +462,7 @@ MEDIA QUERIES
 
   .caret-con {
     margin-right: 14px !important;
-    margin-top: 12px !important;
+    margin-bottom: 15px;
   }
 }
 
@@ -493,6 +494,6 @@ MEDIA QUERIES
 
   .caret-con {
     margin-right: 14px !important;
-    margin-top: 12px !important;
+    margin-bottom: 15px;
   }
 }

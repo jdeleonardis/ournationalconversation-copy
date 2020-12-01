@@ -11,14 +11,14 @@ export class StoreCheckout extends Component {
   render() {
     const style = {
       textAlign: 'center',
-      width: '104%'
+      width: '104%',
     };
 
     return (
       <Fragment>
         <div>
           <Helmet>
-            <title>Our National Conversation | ONC StoreCheckout</title>
+            <title>Our National Conversation | ONC Store Checkout</title>
           </Helmet>
 
           <Container className='container' fluid>

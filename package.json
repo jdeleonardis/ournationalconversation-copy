@@ -24,7 +24,8 @@
     "react-responsive-modal": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "suneditor-react": "^2.14.6"
   },
   "scripts": {
     "start": "react-scripts start",

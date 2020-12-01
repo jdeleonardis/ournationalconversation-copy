@@ -13,8 +13,11 @@ function ArticleCategoryRadioButtons(props) {
                 </Col>
                 <Col md={3}>
                     <label className="newsLabel"><input className="newsRadio" type="radio" id="solution" name="articleCategory" value="Solution" onClick={props.changeHandler} active={props.active === 'Solution'}/> Solution (Policy Proposal)</label>      
-                </Col>
+                </Col>                
             </Row>
+            <div className={props.validationError && props.validationIssue.indexOf('articlecategory') >= 0 ? '' : 'height0 invisible'}>
+                <Form.Label style={{fontSize: 'small', color: 'red'}}>Please select an article category.</Form.Label>
+            </div>
         </>
     )
   
