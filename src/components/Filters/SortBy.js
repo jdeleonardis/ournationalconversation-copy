@@ -13,7 +13,7 @@ const SortBy = (props) => {
         </h2>
         <div
           className='textdiv'
-          style={{ width: '97.5%', marginBottom: '-25px' }}
+          style={{ width: '94.8%', marginBottom: '-25px' }}
         >
           <div className='texttitle'>
             {props.horizLineTextLeft} &nbsp;&nbsp;&nbsp;
