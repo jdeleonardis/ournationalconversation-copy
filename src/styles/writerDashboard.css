@@ -68,3 +68,7 @@
   cursor: pointer;
   width: 40;
 }
+
+.height0 {
+  height: 0px;
+}
