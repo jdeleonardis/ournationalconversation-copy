@@ -3,12 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import TopHorizontalLine from '../components/Misc/TopHorizontalLine';
 import ShoppingCartCard from '../components/Content/ContentCards/ShoppingCartCard';
-import SortBy from '../components/Filters/SortBy';
-import FilterBarStoreCheckout from '../components/Filters/FilterBarStore';
-import RailButtons from '../components/Misc/RailButtons';
-import GlobalButton from '../components/Misc/GlobalButton';
-import SearchBox from '../components/Filters/SearchBox';
-import StoreCards from '../components/Content/ContentCards/StoreCards';
+import PaymentCard from '../components/Content/ContentCards/PaymentCard';
+
 import '../styles/Pages.css';
 
 export class StoreCheckout extends Component {
@@ -35,7 +31,9 @@ export class StoreCheckout extends Component {
             </Row>
             <br />
             <Row>
-              <Col md={6}></Col>
+              <Col md={6}>
+                <PaymentCard/>
+              </Col>
               <Col md={6}>
                 <ShoppingCartCard />
               </Col>

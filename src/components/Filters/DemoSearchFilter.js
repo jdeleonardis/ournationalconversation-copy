@@ -10,7 +10,7 @@ import SearchBox from './SearchBox';
 import FilterBarStore from './FilterBarStore';
 import LocationOverlay from './Overlay/LocationOverlay';
 import ShoppingCartOverlay from './Overlay/ShoppingCartOverlay';
-import DropdownItems from './Expended/DropdownItems';
+
 import CustomButton from './Expended/CustomButton';
 import PrefixingComponents from './Expended/PrefixingComponents'
 
@@ -55,7 +55,7 @@ class DemoSearchFilter extends Component {
             <ShoppingCartOverlay />
             <LocationOverlay />
             <br/>
-            <DropdownItems />
+            
             <br/>
             <CustomButton/>
             <br/>
