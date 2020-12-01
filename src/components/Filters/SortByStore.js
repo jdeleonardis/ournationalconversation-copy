@@ -1,6 +1,7 @@
 import React from 'react';
 import { Dropdown, Row, Col, NavDropdown, Navbar, Nav } from 'react-bootstrap';
 import ShoppingCartOverlay from './Overlay/ShoppingCartOverlay';
+import CustomButton from './Expended/CustomButton';
 import '../../styles/sort-by.css';
 
 const SortByStore = (props) => {
@@ -37,13 +38,11 @@ const SortByStore = (props) => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu
-            
-
               menuAlign='right'
               title='Dropdown right'
               id='dropdown-menu-align-right'
               align='right'
-              variant=''
+              variant='purple'
               menuAlign='xl: "left"|"right"'
               alignRight
               menuAlign='right'
@@ -52,20 +51,22 @@ const SortByStore = (props) => {
               align='right'
               className='mx-8 my-8 w-auto'
             >
-              <Dropdown.Item variant='' href='#/action-1'>
+              <Dropdown.Item variant='purple' href='#/action-1' active>
                 DEFAULT
               </Dropdown.Item>
-              <Dropdown.Item href='#/action-2'>NEWEST ADDTIONS</Dropdown.Item>
-              <Dropdown.Item href='#/action-3'>
+              <Dropdown.Item variant='purple' href='#/action-2'>
+                NEWEST ADDTIONS
+              </Dropdown.Item>
+              <Dropdown.Item variant='purple' href='#/action-3'>
                 RATING: HIGH TO LOW
               </Dropdown.Item>
-              <Dropdown.Item href='#/action-4'>
+              <Dropdown.Item variant='purple' href='#/action-4'>
                 RATING: LOW TO HIGH
               </Dropdown.Item>
-              <Dropdown.Item href='#/action-5'>
+              <Dropdown.Item variant='purple' href='#/action-5'>
                 PRICE: HIGH TO LOW
               </Dropdown.Item>
-              <Dropdown.Item href='#/action-6'>
+              <Dropdown.Item variant='purple' href='#/action-6'>
                 PRICE: LOW TO HIGH
               </Dropdown.Item>
             </Dropdown.Menu>

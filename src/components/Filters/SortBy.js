@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Dropdown } from 'react-bootstrap';
+import CustomButton from './Expended/CustomButton';
 import '../../styles/sort-by.css';
 import '../../styles/searchBar.css';
 
@@ -26,7 +27,7 @@ const SortBy = (props) => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu
-              variant=''
+              variant='purple'
               menuAlign='xl: "left"|"right"'
               alignRight
               menuAlign='right'
@@ -35,7 +36,7 @@ const SortBy = (props) => {
               align='right'
               className='mx-8 my-8 w-auto'
             >
-              <Dropdown.Item variant='' href='#/action-1'>
+              <Dropdown.Item variant='purple' href='#/action-1'active>
                 DEFAULT
               </Dropdown.Item>
               <Dropdown.Item href='#/action-2'>NEWEST</Dropdown.Item>

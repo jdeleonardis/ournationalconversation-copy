@@ -1,9 +1,20 @@
 import React, { useState, Component } from 'react';
-import { Modal, Button, Container, Row, Col, Image ,} from 'react-bootstrap';
+import { Modal, Button, Container, Row, Col, Image} from 'react-bootstrap';
 import Overlay from 'react-bootstrap/Overlay';
-import '../../../styles/shoppingcart-overlay.css';
-import bookCover from '../../../img/book-cover.jpg';
+
+
 import AddLocationCard from '../../Content/ContentCards/AddLocationCard';
+import Chicago from '../../../img/Chicago.jpg';
+import Denver from '../../../img/Denver.jpg';
+import Detroit from '../../../img/Detroit.jpg';
+import Houston from '../../../img/Houston.jpg';
+import Nashville from '../../../img/Nashville.jpg';
+import Portland from '../../../img/Portland.jpg';
+
+
+import '../../../styles/shoppingcart-overlay.css';
+
+
 
 const LocationOverlay = () => {
   const [show, setShow] = useState(false);
@@ -44,7 +55,9 @@ const LocationOverlay = () => {
               </Row>
               <Row className='add-location-card'>
                 <Col xs={6} md={4}>
-                  <AddLocationCard />
+                  <AddLocationCard 
+                  // local='Chicago' 
+                  />
                 </Col>
                 <Col xs={6} md={4}>
                   <AddLocationCard />

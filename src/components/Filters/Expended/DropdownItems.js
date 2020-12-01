@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, InputGroup, FormControl, Row, Col } from 'react-bootstrap';
 
 class DropdownItems extends Component {
   constructor() {
@@ -32,14 +32,9 @@ class DropdownItems extends Component {
   render() {
     return (
       <div>
-        <Button
-          variant='purple'
-          size=''
-          className='nf-btn'
-          onClick={this.showMenu}
-        >
-          NEWS FILTERS{}
-          <i class='fas fa-chevron-down'></i>
+        <Button variant='' size='' className='nf-btn' onClick={this.showMenu}>
+          <span> 3.PAYMENT</span>
+          <hr className='Rectangle-37' />
         </Button>
 
         {this.state.showMenu ? (
@@ -49,13 +44,87 @@ class DropdownItems extends Component {
               this.dropdownMenu = element;
             }}
           >
-            <button className='nf-dd-btn1'> Menu item 1 </button>
+            <h5>PAYMENT METHOD</h5>
+            <InputGroup>
+              <InputGroup.Prepend>
+                <InputGroup.Radio aria-label='Radio button for following text input' />
+              </InputGroup.Prepend>
 
-            <button className='nf-dd-btn2'> Menu item 2 </button>
+              <FormControl
+                placeholder='Credit Card'
+                aria-label='Text input with radio button'
+                active
+              />
+              <div>
+                <i class='fab fa-cc-visa'></i>
+                <i class='fab fa-cc-mastercard'></i>
+                <i class='fab fa-cc-discover'></i>
+                <i class='fab fa-cc-amex'></i>
+              </div>
 
-            <button className='nf-dd-btn3'> Menu item 3 </button>
+              <FormControl
+                placeholder='NAME ON CARD'
+                aria-label='NAME ON CARD'
+                aria-describedby='basic-addon2'
+              />
 
-            <button className='nf-dd-btn4'> Menu item 4 </button>
+              <FormControl
+                placeholder='CARD NUMBER'
+                aria-label='CARD NUMBER'
+                aria-describedby='basic-addon2'
+              />
+              <i class='fas fa-lock'></i>
+
+              <FormControl
+                placeholder='EXPRIATION DATE(MM/YY)'
+                aria-label='EXPRIATION DATE(MM/YY)'
+                aria-describedby='basic-addon2'
+              />
+
+              <FormControl
+                placeholder='SECURITY CODE'
+                aria-label='SECURITY CODE'
+                aria-describedby='basic-addon2'
+              />
+            </InputGroup>
+            <InputGroup>
+              <InputGroup.Prepend>
+                <InputGroup.Radio aria-label='Radio button for following text input' />
+                <i class='fab fa-paypal'></i>
+                <i class='fab fa-cc-paypal'></i>
+              </InputGroup.Prepend>
+              <FormControl aria-label='Text input with radio button' />
+            </InputGroup>
+            <InputGroup>
+              <InputGroup.Prepend>
+                <InputGroup.Radio aria-label='Radio button for following text input' />
+                <i class='fab fa-amazon'></i>
+                <i class='fab fa-amazon-pay'></i>
+              </InputGroup.Prepend>
+              <FormControl aria-label='Text input with radio button' />
+            </InputGroup>
+            <h5>BILLING ADDRESS</h5>
+            <InputGroup>
+              <InputGroup.Prepend>
+                <InputGroup.Radio aria-label='Radio button for following text input' />
+              </InputGroup.Prepend>
+              <FormControl aria-label='Text input with radio button' />
+            </InputGroup>
+            <InputGroup>
+              <InputGroup.Prepend>
+                <InputGroup.Radio
+                  placeholder='Same as shipping address'
+                  aria-label='Radio button for following text input'
+                />
+              </InputGroup.Prepend>
+              <FormControl
+                placeholder='Use a different address'
+                aria-label='Text input with radio button'
+              />
+            </InputGroup>
+            <Button variant='purple'>
+              PAY NOW
+            </Button>
           </div>
         ) : null}
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row } from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown';
-
+import CustomButton from './Expended/CustomButton'
 import LocationOverlay from './Overlay/LocationOverlay';
 import '../../styles/sort-by.css';
 
@@ -41,18 +41,33 @@ const SortByLocal = (props) => {
             </Dropdown.Item>
             <Dropdown.Item variant='' size='xxl' href='#/action-2' eventKey='2'>
               LOS ANGELES, CA{' '}
-              <span className='remove' variant=''>
+              <span className='remove' variant='purple'>
                 {' '}
                 Remove
               </span>
             </Dropdown.Item>
-            <Dropdown.Item variant='' size='xxl' href='#/action-3' eventKey='3'>
+            <Dropdown.Item
+              variant='purple'
+              size='xxl'
+              href='#/action-3'
+              eventKey='3'
+            >
               NEW YORK, NY <span className='remove'> Remove</span>
             </Dropdown.Item>
-            <Dropdown.Item variant='' size='xxl' href='#/action-4' eventKey='4'>
+            <Dropdown.Item
+              variant='purple'
+              size='xxl'
+              href='#/action-4'
+              eventKey='4'
+            >
               PORTLAND, OR <span className='remove'> Remove</span>
             </Dropdown.Item>
-            <Dropdown.Item variant='' size='xxl' href='#/action-5' eventKey='5'>
+            <Dropdown.Item
+              variant='purple'
+              size='xxl'
+              href='#/action-5'
+              eventKey='5'
+            >
               SAN FRANCISCO, CA <span className='remove'> Remove</span>
             </Dropdown.Item>
             <Dropdown.Divider />
