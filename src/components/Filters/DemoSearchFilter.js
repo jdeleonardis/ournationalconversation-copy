@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Row, Col, Container} from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import SortBy from './SortBy';
 import SortByLocal from './SortByLocal';
 import SortByStore from './SortByStore';
@@ -10,14 +10,11 @@ import SearchBox from './SearchBox';
 import FilterBarStore from './FilterBarStore';
 import LocationOverlay from './Overlay/LocationOverlay';
 import ShoppingCartOverlay from './Overlay/ShoppingCartOverlay';
-import DropdownItems from './Expended/DropdownItems';
+
 import CustomButton from './Expended/CustomButton';
-import PrefixingComponents from './Expended/PrefixingComponents'
-
-
+import PrefixingComponents from './Expended/PrefixingComponents';
 
 import '../../styles/demo.css';
-
 
 class DemoSearchFilter extends Component {
   render() {
@@ -54,12 +51,12 @@ class DemoSearchFilter extends Component {
             {/* Expanded Components & Overlay */}
             <ShoppingCartOverlay />
             <LocationOverlay />
-            <br/>
-            <DropdownItems />
-            <br/>
-            <CustomButton/>
-            <br/>
-            <PrefixingComponents/>
+            <br />
+
+            <br />
+            <CustomButton />
+            <br />
+            <PrefixingComponents />
           </Col>
           {/* Right Rail Buttons */}
           <Col md={3}>

@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { Button, InputGroup, FormControl, Row, Col } from 'react-bootstrap';
+import '../../../styles/paymentcard.css';
 
-class DropdownItems extends Component {
+
+
+class PaymentCard extends Component {
   constructor() {
     super();
 
@@ -31,37 +34,43 @@ class DropdownItems extends Component {
 
   render() {
     return (
-      <div>
+      <div className='payment'>
         <Button variant='' size='' className='nf-btn' onClick={this.showMenu}>
-          <span> 3.PAYMENT</span>
-          <hr className='Rectangle-37' />
+          <span className='payment-title'> 3.PAYMENT </span>
+          <hr className='Rectangle-125' />
         </Button>
 
         {this.state.showMenu ? (
           <div
-            className='menu '
+            className='payment-menu '
             ref={(element) => {
               this.dropdownMenu = element;
             }}
           >
-            <h5>PAYMENT METHOD</h5>
-            <InputGroup>
-              <InputGroup.Prepend>
-                <InputGroup.Radio aria-label='Radio button for following text input' />
-              </InputGroup.Prepend>
+            <h5 className='payment-method '>PAYMENT METHOD</h5>
+            <InputGroup variant=''>
+              <InputGroup.Radio aria-label='Radio button for following text input' />
 
               <FormControl
+                className='credit-card'
                 placeholder='Credit Card'
                 aria-label='Text input with radio button'
                 active
               />
-              <div>
-                <i class='fab fa-cc-visa'></i>
-                <i class='fab fa-cc-mastercard'></i>
-                <i class='fab fa-cc-discover'></i>
-                <i class='fab fa-cc-amex'></i>
-              </div>
 
+              <InputGroup.Append>
+                <InputGroup.Text id='basic-addon2'>
+                  <i class='fab fa-cc-visa'></i>
+                  <i class='fab fa-cc-mastercard'></i>
+                  <i class='fab fa-cc-discover'></i>
+                  <i class='fab fa-cc-amex'></i>
+                </InputGroup.Text>
+              </InputGroup.Append>
+            </InputGroup>
+            <InputGroup variant=''>
+              <InputGroup.Prepend>
+                <InputGroup.Text id='basic-addon1'> </InputGroup.Text>
+              </InputGroup.Prepend>
               <FormControl
                 placeholder='NAME ON CARD'
                 aria-label='NAME ON CARD'
@@ -122,9 +131,7 @@ class DropdownItems extends Component {
                 aria-label='Text input with radio button'
               />
             </InputGroup>
-            <Button variant='purple'>
-              PAY NOW
-            </Button>
+            <Button variant='purple'>PAY NOW</Button>
           </div>
         ) : null}
       </div>
@@ -132,4 +139,4 @@ class DropdownItems extends Component {
   }
 }
 
-export default DropdownItems;
+export default PaymentCard;
