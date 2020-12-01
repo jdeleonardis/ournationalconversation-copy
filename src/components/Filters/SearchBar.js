@@ -14,12 +14,28 @@ import '../../styles/searchBar.css';
 const SearchBar = (props) => {
   return (
     <>
+      <style type='text/css'>
+        {`
+            .btn-purple {
+              background-color: #2c1c59 ;
+              color: white;
+            }
+
+            .btn-xxl {
+              padding: 0.5rem 2rem;
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: 500;
+              letter-spacing: 0.0025em;
+
+            }
+            `}
+      </style>
       <Navbar className='search-bar' variant=''>
-        <Col className='mb-2' >
+        <Col className='mb-2'>
           <Nav className='group-68'>
             <DropdownButton
-            className='news-filters-dp '
-            
+              className='news-filters-dp '
               as={ButtonGroup}
               title='NEWS FILTERS'
               menuAlign={{ lg: 'left' }}
@@ -27,13 +43,6 @@ const SearchBar = (props) => {
             >
               <NewFiltersExpanded />
             </DropdownButton>
-
-            {/* <span id='news-filters'>
-              NEWS FILTERS
-              <span className='news-filters-i'>
-                <i class='fas fa-chevron-down'></i>
-              </span>
-            </span> */}
 
             <Nav.Link href='#'>
               <span className='hot-topics'>HOT TOPICS: </span>
