@@ -115,7 +115,7 @@ bottom: 22.89%; */
 
 /* Location Card */
 .location-card {
-  /* background: url(image.png); */
+ 
 /* position: absolute; */
 width: 8.05em;
 height: 6.8em;
@@ -139,22 +139,40 @@ box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 }
 
+.frontground {
+  position: relative;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+  background: rgba(0, 0, 0, 0.5);
+border-radius: 4px;
+}
+
 .local-pic{
+   /* background: url(img/Nashville.jpg); */
 /* local pic */
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
 
+/* background: rgba(0, 0, 0, 0.5);
+border-radius: 4px; */
 
-position: relative;
-/* left: 8.22%;
-right: 66.12%;
-top: 40.04%;
-bottom: 43.45%; */
+/* Rectangle 107 */
+
+/* Background img invaild */
+color: #FFFFFF;
+
 }
 
 .local-name {
   
 
 
-position: center;
+/* position: center; */
 
 /* left: 13.32%;
 right: 71.05%;
@@ -171,21 +189,28 @@ line-height: 18px;
 letter-spacing: 0.0125em;
 text-transform: uppercase;
 
-/* Background img invaild */
-/* color: #FFFFFF; */
+
 }
 
 .local-title{
-  margin-left: -.85em;
-  margin-right: -.75em;
+  position: absolute;
+  top:25%;
+  left: -20%;
+  right: -20%;
+  /* right */
   text-align: center;
+/*   left:50%;
+  transform: translate(-50%, -50%); */
+  /* text-align: center; */
+  /* Background img invaild */
+color: #FFFFFF;
 }
 
 .local-add{
   /* ADD NEW LOCATION */
-
-
-position: absolute;
+margin-top: 3.25em;
+/* margin-top: 3em; */
+/* position: absolute; */
 /* left: 15.95%;
 right: 77.63%;
 top: 58.35%;
