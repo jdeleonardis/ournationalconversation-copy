@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Button, InputGroup, FormControl, Row, Col } from 'react-bootstrap';
+
 import '../../../styles/paymentcard.css';
-
-
 
 class PaymentCard extends Component {
   constructor() {
@@ -36,7 +35,7 @@ class PaymentCard extends Component {
     return (
       <div className='payment'>
         <Button variant='' size='' className='nf-btn' onClick={this.showMenu}>
-          <span className='payment-title'> 3.PAYMENT </span>
+          <span className='payment-title'> 3. PAYMENT </span>
           <hr className='Rectangle-125' />
         </Button>
 
@@ -47,91 +46,110 @@ class PaymentCard extends Component {
               this.dropdownMenu = element;
             }}
           >
-            <h5 className='payment-method '>PAYMENT METHOD</h5>
-            <InputGroup variant=''>
+            <h5 className='payment-method mb-3 '>PAYMENT METHOD</h5>
+            <InputGroup className='mb-2' variant=''>
               <InputGroup.Radio aria-label='Radio button for following text input' />
 
               <FormControl
-                className='credit-card'
+                className='credit-card-placeholder'
                 placeholder='Credit Card'
                 aria-label='Text input with radio button'
                 active
               />
 
-              <InputGroup.Append>
-                <InputGroup.Text id='basic-addon2'>
-                  <i class='fab fa-cc-visa'></i>
-                  <i class='fab fa-cc-mastercard'></i>
-                  <i class='fab fa-cc-discover'></i>
-                  <i class='fab fa-cc-amex'></i>
-                </InputGroup.Text>
-              </InputGroup.Append>
+              {/* <InputGroup.Append> */}
+              <InputGroup.Text id='basic-addon1' size='lg'>
+                <i className='credit-card-i' class='fab fa-cc-visa'></i>
+                <i className='credit-card-i' class='fab fa-cc-mastercard'></i>
+                <i className='credit-card-i' class='fab fa-cc-discover'></i>
+                <i className='credit-card-i' class='fab fa-cc-amex'></i>
+              </InputGroup.Text>
+              {/* </InputGroup.Append> */}
             </InputGroup>
-            <InputGroup variant=''>
-              <InputGroup.Prepend>
-                <InputGroup.Text id='basic-addon1'> </InputGroup.Text>
-              </InputGroup.Prepend>
+            <InputGroup className='mb-2 credit-card-info' variant=''>
               <FormControl
+                className='name-placeholder'
                 placeholder='NAME ON CARD'
                 aria-label='NAME ON CARD'
                 aria-describedby='basic-addon2'
               />
-
+            </InputGroup>
+            <InputGroup className='mb-2 credit-card-info'>
               <FormControl
+                className='payment-placeholder'
                 placeholder='CARD NUMBER'
                 aria-label='CARD NUMBER'
                 aria-describedby='basic-addon2'
               />
-              <i class='fas fa-lock'></i>
-
+              <InputGroup.Text id='basic-addon1'>
+                <i class='fas fa-lock'></i>
+              </InputGroup.Text>
+            </InputGroup>
+            <InputGroup className='mb-2'>
               <FormControl
+                className='payment-placeholder credit-card-info'
                 placeholder='EXPRIATION DATE(MM/YY)'
                 aria-label='EXPRIATION DATE(MM/YY)'
                 aria-describedby='basic-addon2'
               />
 
               <FormControl
+                className='payment-placeholder credit-card-info'
                 placeholder='SECURITY CODE'
                 aria-label='SECURITY CODE'
                 aria-describedby='basic-addon2'
               />
             </InputGroup>
-            <InputGroup>
+            <InputGroup className='mb-2'>
               <InputGroup.Prepend>
                 <InputGroup.Radio aria-label='Radio button for following text input' />
-                <i class='fab fa-paypal'></i>
-                <i class='fab fa-cc-paypal'></i>
-              </InputGroup.Prepend>
-              <FormControl aria-label='Text input with radio button' />
-            </InputGroup>
-            <InputGroup>
-              <InputGroup.Prepend>
-                <InputGroup.Radio aria-label='Radio button for following text input' />
-                <i class='fab fa-amazon'></i>
-                <i class='fab fa-amazon-pay'></i>
-              </InputGroup.Prepend>
-              <FormControl aria-label='Text input with radio button' />
-            </InputGroup>
-            <h5>BILLING ADDRESS</h5>
-            <InputGroup>
-              <InputGroup.Prepend>
-                <InputGroup.Radio aria-label='Radio button for following text input' />
-              </InputGroup.Prepend>
-              <FormControl aria-label='Text input with radio button' />
-            </InputGroup>
-            <InputGroup>
-              <InputGroup.Prepend>
-                <InputGroup.Radio
-                  placeholder='Same as shipping address'
-                  aria-label='Radio button for following text input'
-                />
+                <InputGroup.Text id='basic-addon2' size='lg'>
+                  <i class='fab fa-paypal'></i>
+                  <i class='fab fa-cc-paypal'></i>
+                </InputGroup.Text>
               </InputGroup.Prepend>
               <FormControl
+                className='payment-placeholder'
+                aria-label='Text input with radio button'
+              />
+            </InputGroup>
+            <InputGroup className='mb-3'>
+              <InputGroup.Prepend>
+                <InputGroup.Radio aria-label='Radio button for following text input' />
+                <InputGroup.Text id='basic-addon2' size='lg'>
+                  <i class='fab fa-amazon'></i>
+                  <i class='fab fa-amazon-pay'></i>
+                </InputGroup.Text>
+              </InputGroup.Prepend>
+              <FormControl
+                className='payment-placeholder'
+                aria-label='Text input with radio button'
+              />
+            </InputGroup>
+            <h5 className='billing-address'>BILLING ADDRESS</h5>
+            <InputGroup className='mb-2 billing-placeholder'>
+              
+                <InputGroup.Radio aria-label='Radio button for following text input' />
+              
+              <FormControl
+                className='payment-placeholder'
+                placeholder='Same as shipping address'
+                aria-label='Text input with radio button'
+              />
+            </InputGroup>
+            <InputGroup className='mb-3 billing-placeholder'>
+              <InputGroup.Radio
+                placeholder='Same as shipping address'
+                aria-label='Radio button for following text input'
+              />
+
+              <FormControl
+                className=''
                 placeholder='Use a different address'
                 aria-label='Text input with radio button'
               />
             </InputGroup>
-            <Button variant='purple'>PAY NOW</Button>
+            <Button className='pay-now' variant='purple'>PAY NOW</Button>
           </div>
         ) : null}
       </div>

@@ -3,7 +3,7 @@
 
 .payment{
   /* Rectangle 118 */
-
+margin: auto;
 
 position: absolute;
 left: 0%;
@@ -25,7 +25,7 @@ box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 position: absolute;
 height: 30px;
 left: 25px;
-right: 428px;
+/* right: 428px; */
 top: 25px;
 
   /* Card Shadow */
@@ -51,24 +51,29 @@ color: #2C1C59;
 
 position: absolute;
 height: 4px;
-left: 25px;
-right: 25px;
-top: 65px;
+left: 1.5em;
+right: 1.5em;
+top: 3em;
 
 /* Purple */
 
 background: #2C1C59;
 }
 
+.payment-menu{
+  margin-top: 2.5em;
+  padding: 1.6em;
+}
+
 .payment-method {
   /* PAYMENT METHOD */
 
 
-position: absolute;
+/* position: absolute;
 height: 17px;
 left: 25px;
 right: 436px;
-top: 94px;
+top: 94px; */
 
 /* Overline */
 
@@ -87,291 +92,168 @@ text-transform: uppercase;
 color: #2C1C59;
 }
 
-/* Shopping cart contents */
+/* Payment content */
 
-.your-items-contents {
-  /* Shopping cart contents */
+.credit-card-placeholder {
+ /* Credit Card */
 
-  position: relative;
-  color: #2c1c59;
-  display: grid;
-  grid-gap: 1rem;
-  /* grid-template-columns: repeat(5, 150px);
-  grid-template-rows: repeat(5, 100px); */
-  align-items: center;
+
+/* position: absolute;
+width: 97px;
+height: 20px;
+left: 46px;
+top: 10px; */
+
+/* Sub Filter */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 21px;
+
+/* Black - Text Color */
+
+color: #1E1E1E;
 }
 
-.credit-card {
-  /* Rectangle 2 */
+#basic-addon1 {
+  /* toppng 1 */
+
+/* size: 2em; */
+/* position: absolute; */
+height: 2.4em;
+left: 25em;
+right: 0em;
+top: 0em;
+
+/* background: url(toppng.png); */
+}
+.credit-card-i {
+  margin: 2em;
+  padding: 2em;
+  justify-content: 1em;
+  font-size: larger;
+  /* text-align: center; */
+  
+}
+
+.credit-card-info {
+  /* NAME ON CARD */
+/* margin-left: 1.6em; */
+
+/* position: absolute;
+width: 135px;
+height: 20px;
+left: 15px;
+top: 10px; */
+
+/* Search bar */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+letter-spacing: 0.0125em;
+text-transform: uppercase;
+
+/* Grey */
+
+color: #929292;
+}
+
+#basic-addon2{
+  /* image 10 */
+
+
+position: relative;
+/* text-align: center; */
+width: 4em;
+/* height: 24px;
+left: 46px;
+top: 8px; */
+
+/* background: url(image.png); */
+}
+
+
+
+.billing-address {
+  /* BILLING ADDRESS */
+
+
+/* position: absolute; */
+height: 17px;
+left: 25px;
+right: 443px;
+top: 436px;
+
+/* Overline */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+letter-spacing: 0.015em;
+text-transform: uppercase;
+
+/* Purple */
+
+color: #2C1C59;
+}
+
+.billing-placeholder {
+  /* Same as shipping address */
 
 
 position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
+/* width: 223px;
+height: 20px;
+left: 46px;
+top: 10px; */
 
-background: #FFFFFF;
-/* True Black */
+/* Sub Filter */
 
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 4px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 21px;
+
+/* Black - Text Color */
+
+color: #1E1E1E;
 }
+.pay-now {
+ /* PAY NOW */
 
-.your-items-table {
-  /* Group 182 */
+float: right;
+/* position: absolute; */
+/* width: 82px;
+height: 20px;
+left: calc(50% - 82px/2);
+top: calc(50% - 20px/2); */
 
-  margin-top: 1em;
+/* Button */
 
-  /* Item */
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
 
-  /* Overline */
+text-align: center;
+letter-spacing: 0.0125em;
+text-transform: uppercase;
 
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  /* line-height: 17px; */
-  /* identical to box height */
+/* White */
 
-  letter-spacing: 0.015em;
-  text-transform: uppercase;
-
-  /* Purple */
-
-  color: #2c1c59;
-}
-.middle-col {
-  text-align: center;
-}
-
-.right-col {
-  text-align: right;
-}
-
-.Rectangle-37 {
-  /* Rectangle 37 */
-
-  /* position: absolute; */
-  /* width: 556px; */
-  height: 4px;
-
-  /* Purple */
-
-  background: #2c1c59;
-}
-
-/* image 7 */
-
-.your-items-img {
-  margin: auto;
-}
-
-.your-items-des {
-  /* margin-top: 1em; */
-  /* Title */
-
-  /* Subhead 3 */
-  margin: auto;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
-  letter-spacing: 0.0025em;
-
-  /* Gray / 100 */
-
-  color: #19191d;
-}
-.your-items-qty {
-  /* Price */
-
-  /* text-decoration: none; */
-  /* text-align: colum;
-  text-align */
-  /* align-items:center; */
-  /* display: inline-grid;
-  grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 100px 100px 100px;
-  grid-gap: 3px;
-  justify-items: center;
-  align-items: center; */
-
-  /* Overline */
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  letter-spacing: 0.015em;
-  text-transform: uppercase;
-  margin-top: 2em;
-  /* Black - Text Color */
-
-  color: #1e1e1e;
-}
-.your-items-price {
-  /* Price */
-  /* margin: auto; */
-  margin-top: 1.5em;
-
-  /* text-decoration: none; */
-  /* text-align: colum;
-  text-align */
-  /* align-items:center; */
-  /* display: inline-grid;
-  grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 100px 100px 100px;
-  grid-gap: 3px;
-  justify-items: center;
-  align-items: center; */
-}
-
-.item-price {
-  /* Overline */
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: right;
-  letter-spacing: 0.015em;
-  text-transform: uppercase;
-
-  /* Black - Text Color */
-
-  color: #1e1e1e;
-}
-
-.your-items-promo {
-  /* PROMO CODE */
-  margin: auto;
-  margin-left: 1em;
-  padding: 0em;
-
-  /* Search bar */
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  /* identical to box height */
-
-  letter-spacing: 0.0125em;
-  text-transform: uppercase;
-
-  /* Grey */
-
-  color: #929292;
-  background: white;
-
-  /* True Black */
-
-  border: 1px solid #000000;
-  box-sizing: i;
-
-  border-radius: 4px;
-}
-
-.rectangle-2 {
-  /* Rectangle 2 */
-
-  position: relative;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-
-  background: #ffffff;
-}
-
-.your-items-apply {
-  /* promo button */
-  align-items: flex-end;
-  text-align: right;
-  /* position: absolute; */
-  width: 84px;
-  height: 40px;
-
-  /* Purple */
-  color: white;
-
-  background: #2c1c59;
-  border-radius: 5px;
-}
-
-.line-84 {
-  /* Line 84 */
-
-  /* position: absolute;
-left: 4.13%;
-right: 4.13%;
-top: 60.44%;
-bottom: 39.56%; */
-
-  border: 1px solid #000000;
-}
-
-.your-items-sub {
-  /* SUBTOTAL */
-
-  /* position: absolute;
-  width: 82px;
-  height: 18px;
-  left: calc(50% - 82px / 2 - 237px);
-  top: calc(50% - 18px / 2 + 110.5px); */
-
-  /* Subhead 3 */
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
-  letter-spacing: 0.0025em;
-
-  /* Purple */
-
-  color: #2c1c59;
-}
-
-.your-items-total {
-  /* TOTAL */
-
-  /* Headline 7 */
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: right;
-
-  /* Purple */
-
-  color: #2c1c59;
-}
-
-.your-items-total-price {
-  /* Price */
-
-  /* Headline 7 */
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
-  /* identical to box height */
-
-  text-align: right;
-
-  /* Black - Text Color */
-
-  color: #1e1e1e;
+color: #FFFFFF;
 }

@@ -1,16 +1,21 @@
 /* Shopping cart summary */
 
 .your-items {
-  margin: 0em;
-  padding: 0em;
+ 
 
   /* Card Shadow */
 
-  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.15));
-  border-radius: 2px;
+ /* Extra Light Gray */
+
+background: #F2F2F2;
+/* Card Shadow */
+
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 }
 
 .your-items-title {
+   margin: 0em;
+  padding: 0em;
   /* YOUR ITEMS (1) */
 
   position: relative;
