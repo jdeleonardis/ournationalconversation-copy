@@ -54,7 +54,7 @@ color: #000000;
 
 
 position: relative;
-width: 28.5em;
+width: 30em;
 line-height: 3em;
 margin: 1em ;
 /* margin-left: 0.5em; */
@@ -98,10 +98,10 @@ color: #929292;
 
 
 position: absolute;
-left: 91.54%;
+/* left: 91.54%;
 right: 2.95%;
 top: 26%;
-bottom: 22.89%;
+bottom: 22.89%; */
 
 /* True Black */
 
@@ -117,9 +117,9 @@ bottom: 22.89%;
 .location-card {
   /* background: url(image.png); */
 /* position: absolute; */
-width: 8em;
-height: 6em;
-margin:  .75em 0em;
+width: 8.05em;
+height: 6.8em;
+margin:  .5em 0em;
 /* left: 50px; */
 /* top: 223px; */
 
@@ -154,7 +154,8 @@ bottom: 43.45%; */
   
 
 
-position: absolute;
+position: center;
+
 /* left: 13.32%;
 right: 71.05%;
 top: 46.5%;
@@ -163,8 +164,8 @@ bottom: 49.91%; */
 font-family: Montserrat;
 font-style: normal;
 font-weight: 500;
-font-size: 16px;
-line-height: 20px;
+font-size: 14px;
+line-height: 18px;
 /* identical to box height */
 
 letter-spacing: 0.0125em;
@@ -174,6 +175,11 @@ text-transform: uppercase;
 /* color: #FFFFFF; */
 }
 
+.local-title{
+  margin-left: -.85em;
+  margin-right: -.75em;
+  text-align: center;
+}
 
 .local-add{
   /* ADD NEW LOCATION */
