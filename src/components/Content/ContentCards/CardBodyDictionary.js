@@ -1,17 +1,14 @@
 import React from 'react';
 import * as library from './constants/cardConstants';
 import { Card, Image, Col, Row, Container } from 'react-bootstrap';
-
+debugger;
 function BodyType(props) {
-	return props.type === 'PODCAST' ? (
+	return props.type === 'PODCAST' || props.type === 'WEBISODE' ? (
 		<div style={{ marginTop: '1rem' }}>
 			<Row>
 				<Col>
-					<Image
-						src="https://avatars3.githubusercontent.com/u/27324719?s=460&u=407b4f55702b082ae1e79b662ed96e0749a02a84&v=4"
-						className="boxImage"
-					/>
-					<div className="sectionSubHeader">Source: {props.source}</div>
+					<Image src={props.data.imgsrc} className="boxImage" />
+					<div className="sectionSubHeader">Source: {props.data.source}</div>
 					<div className="cardText">
 						{props.data
 							? props.data.text
@@ -26,7 +23,7 @@ function BodyType(props) {
 			<Row>
 				<Col>
 					<Image
-						src="https://avatars3.githubusercontent.com/u/27324719?s=460&u=407b4f55702b082ae1e79b662ed96e0749a02a84&v=4"
+						src={props.data.imgsrc}
 						roundedCircle
 						style={{ height: '50px', marginRight: '1rem', float: 'left' }}
 					/>
@@ -49,7 +46,7 @@ function BodyType(props) {
 			<Row>
 				<Col>
 					<Image
-						src="https://avatars3.githubusercontent.com/u/27324719?s=460&u=407b4f55702b082ae1e79b662ed96e0749a02a84&v=4"
+						src={props.data.imgsrc}
 						roundedCircle
 						style={{ height: '50px', marginRight: '1rem', float: 'left' }}
 					/>
