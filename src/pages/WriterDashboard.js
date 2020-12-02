@@ -42,8 +42,8 @@ export class WriterDashboard extends Component {
   }
 
   sunEditorChangeHandler = (event) => {
-    let words = this.editorWordCount(event)
-    this.setState({editorText: event, wordCount: words});
+    let wordCount = this.editorWordCount(event)
+    this.setState({editorText: event, wordCount: wordCount});
   }
 
   editorWordCount = (data) => {
