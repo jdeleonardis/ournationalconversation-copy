@@ -23,7 +23,7 @@ export class CustomButton extends Component {
         </style>
 
         <Button variant='' size=''>
-          
+
         </Button>
       </>
       

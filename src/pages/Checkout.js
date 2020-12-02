@@ -11,7 +11,7 @@ export class StoreCheckout extends Component {
   render() {
     const style = {
       textAlign: 'center',
-      width: '104%',
+      width: '104%'
     };
 
     return (
@@ -32,7 +32,7 @@ export class StoreCheckout extends Component {
             <br />
             <Row>
               <Col md={6}>
-                <PaymentCard/>
+                <PaymentCard />
               </Col>
               <Col md={6}>
                 <ShoppingCartCard />

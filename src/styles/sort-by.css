@@ -1,4 +1,7 @@
 /* SortBy */
+.dropdown-item.active {
+background-color: #2c1c59;
+}
 
 .headline-3 {
   /* PODCASTS */

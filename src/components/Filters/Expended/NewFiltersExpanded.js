@@ -79,7 +79,6 @@ const NewFiltersExpanded = () => {
           variant=''
           title={`MY SAVED NEWS`}
         ></DropdownButton>
-      
       </div>
     </div>
   );

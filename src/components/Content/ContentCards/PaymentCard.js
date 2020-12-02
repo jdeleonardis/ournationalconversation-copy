@@ -35,8 +35,15 @@ class PaymentCard extends Component {
     return (
       <div className='payment'>
         <Button variant='' size='' className='nf-btn' onClick={this.showMenu}>
-          <span className='payment-title'> 3. PAYMENT </span>
-          <hr className='Rectangle-125' />
+          <span className='payment-title'>
+            {' '}
+            3.&nbsp;PAYMENT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <hr className='Rectangle-125' />
+          </span>
         </Button>
 
         {this.state.showMenu ? (
@@ -57,14 +64,12 @@ class PaymentCard extends Component {
                 active
               />
 
-              {/* <InputGroup.Append> */}
               <InputGroup.Text id='basic-addon1' size='lg'>
                 <i className='credit-card-i' class='fab fa-cc-visa'></i>
                 <i className='credit-card-i' class='fab fa-cc-mastercard'></i>
                 <i className='credit-card-i' class='fab fa-cc-discover'></i>
                 <i className='credit-card-i' class='fab fa-cc-amex'></i>
               </InputGroup.Text>
-              {/* </InputGroup.Append> */}
             </InputGroup>
             <InputGroup className='mb-2 credit-card-info' variant=''>
               <FormControl
@@ -128,9 +133,8 @@ class PaymentCard extends Component {
             </InputGroup>
             <h5 className='billing-address'>BILLING ADDRESS</h5>
             <InputGroup className='mb-2 billing-placeholder'>
-              
-                <InputGroup.Radio aria-label='Radio button for following text input' />
-              
+              <InputGroup.Radio aria-label='Radio button for following text input' />
+
               <FormControl
                 className='payment-placeholder'
                 placeholder='Same as shipping address'
@@ -149,7 +153,11 @@ class PaymentCard extends Component {
                 aria-label='Text input with radio button'
               />
             </InputGroup>
-            <Button className='pay-now' variant='purple'>PAY NOW</Button>
+            <InputGroup className=' '>
+              <Button className='pay-now' variant='purple'>
+                PAY NOW
+              </Button>
+            </InputGroup>
           </div>
         ) : null}
       </div>

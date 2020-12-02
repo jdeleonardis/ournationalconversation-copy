@@ -12,6 +12,7 @@ import LocationOverlay from './Overlay/LocationOverlay';
 import ShoppingCartOverlay from './Overlay/ShoppingCartOverlay';
 
 import CustomButton from './Expended/CustomButton';
+import CustomDropdown from './Expended/CustomDropdown';
 import PrefixingComponents from './Expended/PrefixingComponents'
 
 
@@ -54,12 +55,13 @@ class DemoSearchFilter extends Component {
             {/* Expanded Components & Overlay */}
             <ShoppingCartOverlay />
             <LocationOverlay />
-            <br/>
-            
-            <br/>
-            <CustomButton/>
-            <br/>
-            <PrefixingComponents/>
+            <br />
+
+            <br />
+            <CustomButton />
+            <CustomDropdown />
+            <br />
+            <PrefixingComponents />
           </Col>
           {/* Right Rail Buttons */}
           <Col md={3}>

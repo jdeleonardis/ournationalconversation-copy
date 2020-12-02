@@ -1,133 +1,131 @@
-
 /* 3. PAYMENT */
 
-.payment{
+.payment {
   /* Rectangle 118 */
-margin: auto;
+  /* margin: auto; */
 
-position: absolute;
+  /* position: absolute;
 left: 0%;
 right: 0%;
 top: 0%;
-bottom: 0%;
+bottom: 0%; */
 
-/* Extra Light Gray */
+  /* Extra Light Gray */
 
-background: #F2F2F2;
-/* Card Shadow */
+  background: #f2f2f2;
+  /* Card Shadow */
 
-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 }
 
-.payment-title{
+.payment-title {
   margin: 0em;
   padding: 0em;
-position: absolute;
-height: 30px;
-left: 25px;
-/* right: 428px; */
-top: 25px;
+  /* position: absolute; */
+  height: 2.5em;
+  width: 100%;
+  /* left: 25px; */
+  /* right: 428px; */
+  /* top: 25px; */
 
   /* Card Shadow */
 
   /* Headline 5 */
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
-line-height: 30px;
-letter-spacing: 0.001em;
-text-transform: capitalize;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.001em;
+  text-transform: capitalize;
 
-/* Purple */
+  /* Purple */
 
-color: #2C1C59;
+  color: #2c1c59;
 }
 
 .Rectangle-125 {
-/* Rectangle 125 */
+  /* Rectangle 125 */
 
+  /* position: absolute; */
+  height: 4px;
+  width: 100%;
+  /* left: 1.5em; */
+  /* right: 1.5em; */
+  /* top: 2em; */
 
-position: absolute;
-height: 4px;
-left: 1.5em;
-right: 1.5em;
-top: 3em;
+  /* Purple */
 
-/* Purple */
-
-background: #2C1C59;
+  background: #2c1c59;
 }
 
-.payment-menu{
-  margin-top: 2.5em;
-  padding: 1.6em;
+.payment-menu {
+  margin-bottom: 2.5em;
+  padding: 0em 1.2em;
 }
 
 .payment-method {
   /* PAYMENT METHOD */
 
-
-/* position: absolute;
+  /* position: absolute;
 height: 17px;
 left: 25px;
 right: 436px;
 top: 94px; */
 
-/* Overline */
+  /* Overline */
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 17px;
-/* identical to box height */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
 
-letter-spacing: 0.015em;
-text-transform: uppercase;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
 
-/* Purple */
+  /* Purple */
 
-color: #2C1C59;
+  color: #2c1c59;
 }
 
 /* Payment content */
 
 .credit-card-placeholder {
- /* Credit Card */
+  /* Credit Card */
 
-
-/* position: absolute;
+  /* position: absolute;
 width: 97px;
 height: 20px;
 left: 46px;
 top: 10px; */
 
-/* Sub Filter */
+  /* Sub Filter */
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 17px;
-line-height: 21px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
 
-/* Black - Text Color */
+  /* Black - Text Color */
 
-color: #1E1E1E;
+  color: #1e1e1e;
 }
 
 #basic-addon1 {
   /* toppng 1 */
 
-/* size: 2em; */
-/* position: absolute; */
-height: 2.4em;
-left: 25em;
-right: 0em;
-top: 0em;
+  /* size: 2em; */
+  /* position: absolute; */
+  height: 2.4em;
+  left: 25em;
+  right: 0em;
+  top: 0em;
 
-/* background: url(toppng.png); */
+  /* background: url(toppng.png); */
 }
 .credit-card-i {
   margin: 2em;
@@ -135,125 +133,120 @@ top: 0em;
   justify-content: 1em;
   font-size: larger;
   /* text-align: center; */
-  
 }
 
 .credit-card-info {
   /* NAME ON CARD */
-/* margin-left: 1.6em; */
+  /* margin-left: 1.6em; */
 
-/* position: absolute;
+  /* position: absolute;
 width: 135px;
 height: 20px;
 left: 15px;
 top: 10px; */
 
-/* Search bar */
+  /* Search bar */
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
 
-letter-spacing: 0.0125em;
-text-transform: uppercase;
+  letter-spacing: 0.0125em;
+  text-transform: uppercase;
 
-/* Grey */
+  /* Grey */
 
-color: #929292;
+  color: #929292;
 }
 
-#basic-addon2{
+#basic-addon2 {
   /* image 10 */
 
-
-position: relative;
-/* text-align: center; */
-width: 4em;
-/* height: 24px;
+  position: relative;
+  /* text-align: center; */
+  width: 4em;
+  /* height: 24px;
 left: 46px;
 top: 8px; */
 
-/* background: url(image.png); */
+  /* background: url(image.png); */
 }
-
-
 
 .billing-address {
   /* BILLING ADDRESS */
 
+  /* position: absolute; */
+  height: 17px;
+  left: 25px;
+  right: 443px;
+  top: 436px;
 
-/* position: absolute; */
-height: 17px;
-left: 25px;
-right: 443px;
-top: 436px;
+  /* Overline */
 
-/* Overline */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 17px;
-/* identical to box height */
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
 
-letter-spacing: 0.015em;
-text-transform: uppercase;
+  /* Purple */
 
-/* Purple */
-
-color: #2C1C59;
+  color: #2c1c59;
 }
 
 .billing-placeholder {
   /* Same as shipping address */
 
-
-position: absolute;
-/* width: 223px;
+  position: absolute;
+  /* width: 223px;
 height: 20px;
 left: 46px;
 top: 10px; */
 
-/* Sub Filter */
+  /* Sub Filter */
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 17px;
-line-height: 21px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
 
-/* Black - Text Color */
+  /* Black - Text Color */
 
-color: #1E1E1E;
+  color: #1e1e1e;
 }
 .pay-now {
- /* PAY NOW */
-
-float: right;
-/* position: absolute; */
-/* width: 82px;
+  /* PAY NOW */
+  margin-left: 24.5em;
+  margin-bottom: 1em;
+  float: right;
+  /* position: absolute; */
+  /* width: 82px;
 height: 20px;
 left: calc(50% - 82px/2);
 top: calc(50% - 20px/2); */
 
-/* Button */
+  /* Button */
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
 
-text-align: center;
-letter-spacing: 0.0125em;
-text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.0125em;
+  text-transform: uppercase;
 
-/* White */
+  /* White */
 
-color: #FFFFFF;
+  color: #ffffff;
 }
