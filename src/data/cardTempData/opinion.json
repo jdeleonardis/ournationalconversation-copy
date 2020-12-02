@@ -3,6 +3,8 @@
 		"title": "Luffy will become the 5th Yonko",
 		"type": "OPINION",
 		"section": "ANIME",
+		"imgsrc": "https://avatars3.githubusercontent.com/u/27324719?s=460&u=407b4f55702b082ae1e79b662ed96e0749a02a84&v=4",
+
 		"location": "Grand Line, New World",
 		"text": "Arittakedo yume wo kaki atsume Sagashi mono wo sagashi ni yuku no sa One Piece Rashinban nate fyuutai no moto Netsu ni ukasare kaji wo torono sa Hokori kahutteta takarano chizo mo Tashikameta no nara densetsu jyanai",
 		"date": "Nov 3 2020",
@@ -12,6 +14,8 @@
 	{
 		"title": "ONC gives all their interns free PS5s",
 		"type": "OPINION",
+		"imgsrc": "https://pbs.twimg.com/profile_images/3361382248/0e41d5dd81f26febe22239965491b181_400x400.png",
+
 		"section": "TECH",
 		"location": "LA, New York",
 		"text": "[Intro] Glee Southside Ayy, lil' Metro on that beat [Chorus] Lil' Kodak, they don't like to see you winnin' They wanna see you in the penitentiary I need me a lil' baby who gon' listen Girl, I don't wanna be the one you iggin'",
@@ -22,6 +26,8 @@
 	{
 		"title": "9 + 10 = 21",
 		"type": "OPINION",
+		"imgsrc": "https://res.cloudinary.com/practicaldev/image/fetch/s--eqbscaiZ--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/214880/3e011b7c-78f1-4a31-a338-3623169b3609.jpeg",
+
 		"section": "QUICK MAFS",
 		"location": "MIT",
 		"text": "9+10a=21b which can be calculated in base 10 as 9+(1a1+0a0)9+ab=2b1+1b0=2b+1=4+a2 and since we want the base b to be a whole number we let base a be an even number. Therefore we have that 9+1029+1049+1069+1089+10109+1012=215=21... etc. There is never equality if all the bases were to be consistent",

@@ -33,7 +33,7 @@ MEDIA QUERIES
   } */
 
   .global-btn {
-    margin-left: 0;
+    margin-left: -50px;
   }
 
   .rail-group {
@@ -48,8 +48,11 @@ MEDIA QUERIES
   } */
 
   .global-btn {
-    width: 97%;
-    margin-left: 0;
+    /* width: 97%;
+    margin-left: 0; */
+
+    /* width: 95%; */
+    margin-left: -20px !important;
   }
 
   .rail-group {
@@ -63,8 +66,8 @@ MEDIA QUERIES
   } */
 
   .global-btn {
-    width: 100%;
-    margin-left: -10px;
+    /* width: 95%; */
+    margin-left: -20px !important;
   }
 
   .rail-group {
@@ -78,8 +81,8 @@ MEDIA QUERIES
   } */
 
   .global-btn {
-    width: 100%;
-    margin-left: -10px;
+    /* width: 93%; */
+    margin-left: -28px !important;
   }
 
   .rail-group {

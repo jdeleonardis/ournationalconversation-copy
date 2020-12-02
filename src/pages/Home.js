@@ -32,7 +32,7 @@ const Home = () => {
                 style={{
                   width: '104%',
                   //   width: '106.5%',
-                  marginLeft: '-15px'
+                  marginLeft: '-15px',
                 }}
               >
                 <NewsCard />
@@ -50,7 +50,7 @@ const Home = () => {
               <div
                 style={{
                   width: '104%',
-                  padding: 'auto'
+                  padding: 'auto',
                 }}
               >
                 <div style={{ marginLeft: '-30px' }}>

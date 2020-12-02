@@ -16,7 +16,7 @@ export class Opinions extends Component {
   render() {
     const style = {
       textAlign: 'center',
-      width: '104%'
+      width: '104%',
     };
 
     return (
@@ -51,7 +51,8 @@ export class Opinions extends Component {
                 <div
                   style={{
                     width: '111%',
-                    marginLeft: '-20px'
+                    marginLeft: '-35px',
+                    marginTop: '-35px',
                   }}
                 >
                   <OpinionBoard type={type.OPINION} data={data} />

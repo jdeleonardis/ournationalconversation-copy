@@ -15,7 +15,7 @@ const SortByStore = (props) => {
         <ShoppingCartOverlay />
         <div
           className='textdiv'
-          style={{ width: '105%', marginBottom: '-25px' }}
+          style={{ width: '97.5%', marginBottom: '-25px' }}
         >
           <div className='texttitle'>
             All items{props.horizLineTextLeft} &nbsp;&nbsp;&nbsp;

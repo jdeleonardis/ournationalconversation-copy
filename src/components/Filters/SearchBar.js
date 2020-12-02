@@ -9,17 +9,22 @@ import {
   DropdownButton
 } from 'react-bootstrap';
 import NewFiltersExpanded from './Expended/NewFiltersExpanded';
+import CustomButton from './Expended/CustomButton';
 import '../../styles/searchBar.css';
 
 const SearchBar = (props) => {
   return (
     <>
-      <Navbar className='search-bar' variant=''>
-        <Col className='mb-2' >
+      <Navbar
+        className='search-bar'
+        variant='
+      '
+      >
+        <Col className='mb-2'>
           <Nav className='group-68'>
+            <CustomButton />
             <DropdownButton
-            className='news-filters-dp '
-            
+              className='news-filters-dp '
               as={ButtonGroup}
               title='NEWS FILTERS'
               menuAlign={{ lg: 'left' }}
@@ -27,13 +32,6 @@ const SearchBar = (props) => {
             >
               <NewFiltersExpanded />
             </DropdownButton>
-
-            {/* <span id='news-filters'>
-              NEWS FILTERS
-              <span className='news-filters-i'>
-                <i class='fas fa-chevron-down'></i>
-              </span>
-            </span> */}
 
             <Nav.Link href='#'>
               <span className='hot-topics'>HOT TOPICS: </span>

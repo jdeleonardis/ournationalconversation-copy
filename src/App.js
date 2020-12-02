@@ -11,10 +11,11 @@ import Checkout from './pages/Checkout';
 import Contact from './pages/Contact';
 import Header from './components/Header/Header';
 import SearchBar from './components/Filters/SearchBar';
-import DemoSearchFilter from './components/Filters/DemoSearchFilter';
+import LocalNews from './pages/LocalNews';
 import Footer from './components/Misc/Footer';
 
 import MockArticles from './components/Misc/MockArticles';
+import DemoSearchFilter from './components/Filters/DemoSearchFilter';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -36,6 +37,7 @@ function App() {
           <Route exact path='/writerdashboard' component={WriterDashboard} />
 
           <Route exact path='/news' component={News} />
+          <Route exact path='/localnews' component={LocalNews} />
 
           {/* Test Filter Components by Judy */}
           <Route exact path='/demosearchfilter' component={DemoSearchFilter} />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, DropdownButton, ButtonGroup } from 'react-bootstrap';
-
+import CustomButton from './CustomButton';
 import '../../../styles/newfiltersexpanded.css';
 
 const NewFiltersExpanded = () => {

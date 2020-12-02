@@ -1,21 +1,16 @@
 import React, { useState, Component } from 'react';
 import { Form, Button, Row, Col, Image, Card } from 'react-bootstrap';
 
-import '../../../styles/shopping-cart.css';
 import bookCover from '../../../img/book-cover.jpg';
+import '../../../styles/shopping-cart.css';
 
 const ShoppingCartCard = () => {
   return (
     <div className='your-items'>
-      <Card className='rectangle124' fuild>
+      <Card border='light' className='rectangle124' fuild>
         <Card.Header className='your-items-contents'>
           <Row>
-            <h3
-              id='example-custom-Card-styling-title'
-              className='your-items-title'
-            >
-              YOUR ITEMS (1{})
-            </h3>
+            <h3 className='your-items-title'>YOUR ITEMS (1{})</h3>
           </Row>
 
           <Row className='your-items-table'>
@@ -64,8 +59,9 @@ const ShoppingCartCard = () => {
 
             <Col xs={4} md={3}>
               <Button
+                size='xl'
                 className='your-items-apply'
-                variant=''
+                variant='purple'
                 type='submit'
               >
                 APPLY

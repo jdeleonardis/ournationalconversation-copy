@@ -9,9 +9,12 @@ const SortByLocal = (props) => {
   return (
     <Row>
       <div className='textdiv' style={{ width: '105%', marginBottom: '-25px' }}>
-        <div className='texttitle'>
-          <strong className='page-title'>LOCAL NEWS{props.pageTitle}</strong>
-          {props.horizLineTextLeft} &nbsp;&nbsp;&nbsp;
+        <div className='texttitle '>
+          <span className='page-title local-news'>
+            LOCAL NEWS{props.pageTitle}
+          </span>{' '}
+          <span id='local-news-line'>{props.horizLineTextLeft}</span>{' '}
+          &nbsp;&nbsp;&nbsp;
         </div>
         <div className='divider'></div>&nbsp;
         <Dropdown>

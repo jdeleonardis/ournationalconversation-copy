@@ -1,10 +1,10 @@
 [
 	{
 		"title": "DONALD GLOVER IS CHILDISH GAMBINO",
-		"type": "PODCAST",
-		"imgsrc": "https://i.ytimg.com/vi/DBk4B6YVnqQ/maxresdefault.jpg",
+		"type": "WEBISODE",
 		"section": "MUSIC",
-		"source": "Buffalo, NY",
+		"imgsrc": "https://i.ytimg.com/vi/piMA_SS6ZWU/maxresdefault.jpg",
+		"source": "YEET",
 		"text": "Okay, hold up, wait a minute, all good just a week ago Crew at my house and we party every weekend so On the radio, that's my favorite song Made me bounce around, like I don't know, like I won't be here long Now the thrill is gone",
 		"date": "Jan 13 2020",
 		"likes": 22,
@@ -12,9 +12,9 @@
 	},
 	{
 		"title": "JOE ROGAN TALKS WITH MUSK ELON",
-		"type": "PODCAST",
-		"imgsrc": "https://static1.thethingsimages.com/wordpress/wp-content/uploads/2020/06/mr-bean-funny-face.png",
+		"type": "WEBISODE",
 		"section": "FIGHTOOO",
+		"imgsrc": "https://cdn.cnn.com/cnnnext/dam/assets/180907100732-elon-musk-smokes-marijuana-podcast-1-large-169.jpg",
 		"source": "Lex Fridman, Mars",
 		"text": "Everybody around here has slides in their lobbies. I'm actually wondering about putting in a roller coaster -- like a functional roller coaster at the factory in Fremont.",
 		"date": "Oct 13 2020",
@@ -23,9 +23,9 @@
 	},
 	{
 		"title": "RJV talks about being top 500 on LeetCode",
-		"type": "PODCAST",
-		"imgsrc": "https://www.nme.com/wp-content/uploads/2016/09/SnoopDogg_getty18262675_290710-1.jpg",
+		"type": "WEBISODE",
 
+		"imgsrc": "https://www.spacesworks.com/wp-content/uploads/2016/06/coding-in-the-classroom.png",
 		"section": "MUSIC",
 		"source": "Buffalo, NY",
 		"text": " var q = new Queue<(int, int)>(); //mark visitedgrid[a][b] = -1; q.Enqueue((a,b));  //time O(l) where l is len of island * 4 = 4 L || L  while(q.Count > 0){   int size = q.Count;     for(int c = 0; c < size; c++){  (int,int) tpl = q.Dequeue();  int row = tpl.Item1; int col = tpl.Item2;",

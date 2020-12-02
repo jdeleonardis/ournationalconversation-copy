@@ -3,6 +3,7 @@
 		"title": "MineCraft > Fortnite",
 		"type": "SOLUTION",
 		"section": "Science & Technology",
+		"imgsrc": "https://i.pinimg.com/originals/21/af/cc/21afccae45a10a69d774c64fbc54244b.jpg",
 		"source": "Pew News",
 		"location": "Palo Alto, Ca",
 		"text": "Minin' away I don't know what to mine I'll mine this anyway In this Minecraft day",
@@ -16,6 +17,7 @@
 		"source": "The Onion",
 		"section": "Science & Technology",
 		"type": "SOLUTION",
+		"imgsrc": "https://img.srgcdn.com/e//QnBrV3pIUW9yQ0VweHZxdDNrWWgucG5n.jpg",
 		"location": "Palo Alto, Ca",
 		"text": "Mark Elliot Zuckerberg is an American media magnate, internet entrepreneur, and philanthropist. He is known for co-founding Facebook, Inc. and serves as its chairman, chief executive officer, and controlling shareholder",
 		"Additional Sources": ["CNN", "BloomBerg", "Java", "Washington Post", ""],
@@ -26,6 +28,7 @@
 	{
 		"title": "Travis Scott Burger is Epic",
 		"type": "SOLUTION",
+		"imgsrc": "https://i.pinimg.com/736x/e4/5f/40/e45f401e2d083048c3d6e725704d0619.jpg",
 		"section": "Foods & Services",
 		"location": "Palo Alto, Ca",
 		"text": "Sun is down, freezin' cold That's how we already know winter's here My dawg would prolly do it for a Louis belt",

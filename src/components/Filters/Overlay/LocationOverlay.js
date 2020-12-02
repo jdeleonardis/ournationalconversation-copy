@@ -54,29 +54,10 @@ const LocationOverlay = () => {
                 <i id='searchsubmit' className='fa fa-search vector'></i>
               </Row>
               <Row className='add-location-card'>
-                <Col xs={6} md={4}>
-                  <AddLocationCard 
-                  // local='Chicago' 
-                  />
-                </Col>
-                <Col xs={6} md={4}>
+               
                   <AddLocationCard />
-                </Col>
-                <Col xs={6} md={4}>
-                  <AddLocationCard />
-                </Col>
-              </Row>
-              <Row>
-                <Col xs={6} md={4}>
-                  <AddLocationCard />
-                </Col>
-                <Col xs={6} md={4}>
-                  <AddLocationCard />
-                </Col>
-                <Col xs={6} md={4}>
-                  <AddLocationCard />
-                </Col>
-              </Row>
+                  </Row>
+                
             </div>
           </Container>
         </Modal.Body>

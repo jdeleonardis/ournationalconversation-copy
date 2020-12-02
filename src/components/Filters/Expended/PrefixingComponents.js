@@ -4,7 +4,7 @@ export class PrefixingComponents extends Component {
   render() {
     return (
       <>
-        <style type='text/css'>
+        {/* <style type='text/css'>
           {`
             .btn-purple-outline {
               background-color: white ;
@@ -20,7 +20,7 @@ export class PrefixingComponents extends Component {
 
             }
             `}
-        </style>
+        </style> */}
         {/* Hint: inspect the markup to see how the classes differ */}
         <ThemeProvider prefixes={{ btn: 'my-btn' }}>
           <Button variant='primary'>My Button</Button>
