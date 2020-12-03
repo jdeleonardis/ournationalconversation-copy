@@ -1,16 +1,30 @@
 import React, { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 import { Container, Row, Col } from 'react-bootstrap';
-
+import * as type from '../components/Content/ContentCards/constants/cardConstants';
 import NewsCard from '../components/Content/ContentCards/NewsCard';
 import BreakingNewsCard from '../components/Content/ContentCards/BreakingNewsCard';
-import SortByLocal from '../components/Filters/SortByLocal';
+import CustomBarButtonNoSort from '../components/Filters/CustomBarButtonNoSort';
 import RailButtons from '../components/Misc/RailButtons';
 import GlobalButton from '../components/Misc/GlobalButton';
-import OpinionBoard from '../components/Content/ContentBoards/ContentBoard';
 import TopHorizontalLine from '../components/Misc/TopHorizontalLine';
+import TopHorizontalLineSmall from '../components/Misc/TopHorizontalLineSmall';
+import OpinionBoard from '../components/Content/ContentBoards/ContentBoard';
+import FeaturedArticleCard from '../components/Content/ContentCards/FeaturedArticleCard';
+import data from '../data/cardTempData/opinion.json';
+import featuredArticleData from '../data/cardTempData/featuredarticle.json';
 
 const Newsletter = () => {
+
+  const style = {
+      textAlign: 'center',
+      width: '104%',
+  };
+
+  const featuredArticleClicked = () => {
+      alert("process featured clicked")
+  }
+
   return (
     <Fragment>
       <div>
@@ -22,77 +36,65 @@ const Newsletter = () => {
 
           <Row>
             <Col md={9}>
-              <SortByLocal />
+              <CustomBarButtonNoSort 
+                pageName="Today's Newsletter"
+                pageTitle="TODAY'S NEWSLETTER"
+                horizLineTextLeft='Daily Top 10 Stories'
+                buttonLabel='SIGN UP FOR OUR NEWSLETTER'
+              />
               <br />
               <NewsCard />
+              <NewsCard />
+              <NewsCard />
               <br />
-              <Row>
-                <Col>
-                  <BreakingNewsCard />
-                </Col>
-                <Col>
-                  <BreakingNewsCard />
-                </Col>
-                <Col>
-                  <BreakingNewsCard />
-                </Col>
-              </Row>
+              <div
+                style={style}
+              >
+                <GlobalButton
+                    className='global-btn'
+                    padding='7px 55px'
+                    fontWeight='700'
+                    label='SEE MORE TOP STORIES'
+                />
+              </div>
+              <div style={{ marginTop: '40px', marginLeft: '10px', marginBottom: '-10px' }}>
+                <TopHorizontalLineSmall horizLineTextLeft='Daily Top Opinions' />
+              </div>             
+
+              <div
+                  style={{
+                    width: '100%',
+                    marginLeft: '-15px',
+                    marginTop: '20px',
+                  }}
+                >
+                  <OpinionBoard type={type.OPINION} data={data} />
+              </div>
+              <br />
+              <div
+                style={style}
+              >
+                <GlobalButton
+                    className='global-btn'
+                    padding='7px 55px'
+                    fontWeight='700'
+                    label='SEE MORE OPINIONS'
+                />
+              </div>  
+              <br />            
+
             </Col>
             <Col md={3}>
               <RailButtons />
-
-              <div
-                style={{
-                  marginLeft: '0em',
-                  marginTop: '40px',
-                  marginBottom: '-10px',
-                }}
-              >
-                <TopHorizontalLine lineLabel='OPINIONS' />
-              </div>
               <br />
-              <BreakingNewsCard />
+              <FeaturedArticleCard 
+                data={featuredArticleData}
+                featuredArticleClicked = {featuredArticleClicked}
+              />
               <br />
-              <Row>
-                <GlobalButton
-                  className='global-btn'
-                  padding='0.5em 1em'
-                  margin='2em'
-                  fontWeight='700'
-                  label='SEE MORE OPINIONS'
-                />
-              </Row>
             </Col>
           </Row>
           <br />
-          <Row>
-            <br />
-            <Col></Col>
-            <Col>
-              <GlobalButton
-                className='global-btn'
-                padding='7px 57.5px'
-                fontWeight='700'
-                label='SEE MORE NEWS'
-              />
-            </Col>
-            <Col></Col>
-          </Row>
-
-          <Row>
-            <Col>
-              <div style={{ marginTop: '40px', marginBottom: '-10px' }}>
-                <TopHorizontalLine lineLabel='SOLUTIONS' />
-              </div>
-            </Col>
-          </Row>
-
-          <Row>
-            <Col md={9}>
-              {/* <OpinionBoard type={type.SOLUTION} data={data} /> */}
-            </Col>
-            <Col md={3}></Col>
-          </Row>
         </Container>
       </div>
     </Fragment>
