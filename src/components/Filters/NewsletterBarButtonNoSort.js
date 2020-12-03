@@ -1,9 +1,9 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import GlobalButton from '../Misc/GlobalButton'
 import TopHorizontalLineSmall from '../Misc/TopHorizontalLineSmall'
+import NewsletterOverlay from './Overlay/NewsletterOverlay'
 
-const CustomBarButtonNoSort = (props) => {
+const NewsletterBarButtonNoSort = (props) => {
   return (
     <div className='main'>
       <Row>
@@ -18,12 +18,7 @@ const CustomBarButtonNoSort = (props) => {
               width: '100%',
               marginLeft: '-15px'}}
           >
-            <GlobalButton
-              padding='7px 12px'
-              fontWeight='700'
-              float='right'
-              label={props.buttonLabel}
-              />
+          <NewsletterOverlay />
           </div>
         </Col>
       </Row>
@@ -34,4 +29,4 @@ const CustomBarButtonNoSort = (props) => {
   );
 };
 
-export default CustomBarButtonNoSort;
+export default NewsletterBarButtonNoSort;

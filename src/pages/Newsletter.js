@@ -3,11 +3,9 @@ import { Helmet } from 'react-helmet';
 import { Container, Row, Col } from 'react-bootstrap';
 import * as type from '../components/Content/ContentCards/constants/cardConstants';
 import NewsCard from '../components/Content/ContentCards/NewsCard';
-import BreakingNewsCard from '../components/Content/ContentCards/BreakingNewsCard';
-import CustomBarButtonNoSort from '../components/Filters/CustomBarButtonNoSort';
+import NewsletterBarButtonNoSort from '../components/Filters/NewsletterBarButtonNoSort';
 import RailButtons from '../components/Misc/RailButtons';
 import GlobalButton from '../components/Misc/GlobalButton';
-import TopHorizontalLine from '../components/Misc/TopHorizontalLine';
 import TopHorizontalLineSmall from '../components/Misc/TopHorizontalLineSmall';
 import OpinionBoard from '../components/Content/ContentBoards/ContentBoard';
 import FeaturedArticleCard from '../components/Content/ContentCards/FeaturedArticleCard';
@@ -36,11 +34,10 @@ const Newsletter = () => {
 
           <Row>
             <Col md={9}>
-              <CustomBarButtonNoSort 
+              <NewsletterBarButtonNoSort 
                 pageName="Today's Newsletter"
                 pageTitle="TODAY'S NEWSLETTER"
                 horizLineTextLeft='Daily Top 10 Stories'
-                buttonLabel='SIGN UP FOR OUR NEWSLETTER'
               />
               <br />
               <NewsCard />
