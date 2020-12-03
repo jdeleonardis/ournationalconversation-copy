@@ -6,6 +6,7 @@ import Opinions from './pages/Opinions';
 import Podcasts from './pages/Podcasts';
 import Webisodes from './pages/Webisodes';
 import WriterDashboard from './pages/WriterDashboard';
+import Newsletter from './pages/Newsletter';
 import Store from './pages/Store';
 import Checkout from './pages/Checkout';
 import Contact from './pages/Contact';
@@ -35,6 +36,7 @@ function App() {
           <Route exact path='/checkout' component={Checkout} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/writerdashboard' component={WriterDashboard} />
+          <Route exact path='/newsletter' component={Newsletter} />
 
           <Route exact path='/news' component={News} />
           <Route exact path='/localnews' component={LocalNews} />
