@@ -15,7 +15,7 @@ const Home = () => {
     <Fragment>
       <div>
         <Helmet>
-          <title>Our National Conversation</title>
+          <title>Our National Conversation | Local News</title>
         </Helmet>
         <Container className='container' fluid>
           <br />
@@ -45,7 +45,7 @@ const Home = () => {
                 style={{
                   marginLeft: '0em',
                   marginTop: '40px',
-                  marginBottom: '-10px'
+                  marginBottom: '-10px',
                 }}
               >
                 <TopHorizontalLine lineLabel='OPINIONS' />
