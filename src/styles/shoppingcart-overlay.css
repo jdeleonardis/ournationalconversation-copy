@@ -1,5 +1,13 @@
 /* Shopping cart overlay */
 
+#shopping-cart-overlay{
+/* background:purple; */
+color:purple;
+
+padding: 0em;
+}
+
+
 .shopping-cart {
   margin: 0em;
   padding: 0em;

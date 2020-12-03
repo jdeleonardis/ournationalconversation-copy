@@ -40,7 +40,7 @@ function App() {
           <Route exact path='/localnews' component={LocalNews} />
 
           {/* Test Filter Components by Judy */}
-          <Route exact path='/demosearchfilter' component={DemoSearchFilter} />
+          <Route exact path='/demo' component={DemoSearchFilter} />
 
           <Route exact path='/mockarticles' component={MockArticles} />
         </Switch>
