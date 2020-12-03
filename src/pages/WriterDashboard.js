@@ -9,6 +9,7 @@ import NewsTopicRadioButtons from '../components/WriterDashboard/NewsTopicRadioB
 import PolicyTopicRadioButtons from '../components/WriterDashboard/PolicyTopicRadioButtons'
 import KeywordTags from '../components/WriterDashboard/KeywordTags'
 import WriterDashboardSubmitButtons from '../components/WriterDashboard/WriterDashboardSubmitButtons'
+import WriterDashboardHeader from '../components/WriterDashboard/WriterDashboardHeader'
 
 export class WriterDashboard extends Component {
   constructor(props) {
@@ -151,19 +152,7 @@ export class WriterDashboard extends Component {
                 <div>
                   <Card id='writers-dashboard-card'>                      
                     <Card.Body>
-                      <Row>
-                        <Col>
-                          <h2 className='page-title'>
-                            <strong>Writer Dashboard</strong>
-                          </h2>
-                        </Col>
-                        <Col>
-                          <div style={{fontSize: 'smaller', textAlign: 'right'}}>
-                            You are writing as <a href='Jane Doe'> Jane Doe</a>
-                            <a href="Log in to another account"><u>Log in to another account</u></a>
-                          </div>
-                        </Col>
-                      </Row>
+                      <WriterDashboardHeader />
                       <br />
                       <Form onSubmit={this.submitArticle}>  
                         <Form.Group controlId='formBasicHeadline'>
