@@ -12,6 +12,7 @@ class CustomerInfo extends React.Component {
     </Helmet>
     <NewsCard />
     <h1>CHECKOUT!</h1>
+    <p>Testing out this page!</p>
     </div>
 
 
