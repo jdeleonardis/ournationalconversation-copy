@@ -10,7 +10,6 @@ import TopHorizontalLineSmall from '../components/Misc/TopHorizontalLineSmall';
 import OpinionBoard from '../components/Content/ContentBoards/ContentBoard';
 import FeaturedArticleCard from '../components/Content/ContentCards/FeaturedArticleCard';
 import data from '../data/cardTempData/opinion.json';
-import featuredArticleData from '../data/cardTempData/featuredarticle.json';
 
 const Newsletter = () => {
 
@@ -18,10 +17,6 @@ const Newsletter = () => {
       textAlign: 'center',
       width: '104%',
   };
-
-  const featuredArticleClicked = () => {
-      alert("process featured clicked")
-  }
 
   return (
     <Fragment>
@@ -84,10 +79,7 @@ const Newsletter = () => {
             <Col md={3}>
               <RailButtons />
               <br />
-              <FeaturedArticleCard 
-                data={featuredArticleData}
-                featuredArticleClicked = {featuredArticleClicked}
-              />
+              <FeaturedArticleCard />
               <br />
             </Col>
           </Row>
