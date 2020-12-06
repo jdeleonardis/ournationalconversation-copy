@@ -1,0 +1,29 @@
+// Your variable overrides
+// $body-bg: #000;
+// $body-color: #111;
+
+// Bootstrap and its default variables
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #ff4136,
+  "purple": #2C1C59
+);
+
+.custom-element {
+  color: gray("100");
+  background-color: theme-color("dark");
+}
+
+element.style {
+    margin: 0px;
+    padding: 0;
+    border: none;
+}

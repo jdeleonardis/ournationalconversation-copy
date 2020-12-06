@@ -1,9 +1,15 @@
 #dropdown-button-drop-right{
+  margin: 0px;
+    padding: 0;
+    border: none;
   margin: 0em;
   padding: 0em;
 }
 
 .news-filter-dropdown {
+  margin: 0px;
+    padding: 0;
+    border: none;
   margin: 0em;
   padding: 0em;
   overflow-x: hidden;
@@ -21,6 +27,9 @@
 
 /* Subhead 3 */
 #dropdown-button-drop-right {
+  margin: 0px;
+    padding: 0;
+    border: none;
   padding: 0em 3em;
   margin: 0em;
 
@@ -42,6 +51,9 @@
 }
 
 .news-topics {
+  margin: 0px;
+    padding: 0;
+    border: none;
   margin: 0em;
   padding: 0em;
   overflow-x: hidden;
@@ -58,6 +70,7 @@
 }
 
 .news-topics-headline {
+  
   
   /* Headline 7 */
 
