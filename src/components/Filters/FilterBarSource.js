@@ -130,6 +130,14 @@ function handleMySources() {
   }
 }
 
+// Clear all radio buttons to deselected state
+function handleDeselectAll() {
+  var el = document.getElementsByName('formHorizontalRadios');
+  for (var i = 0; i < el.length; i++) {
+    el[i].checked = false;
+  }
+}
+
 // function handleSelectAll() {
 //   let all, i;
 //   all = document.querySelectorAll('.article');
@@ -142,6 +150,9 @@ const FilterBarSource = () => {
   return (
     <div>
       <div id='source-div'>
+        <span className='clear' onClick={handleDeselectAll}>
+          CLEAR
+        </span>
         <a
           onClick={handleSourceChevron}
           id='source-topic'
@@ -149,7 +160,6 @@ const FilterBarSource = () => {
           data-toggle='collapse'
         >
           <i class='source-chev fas fa-chevron-down'></i>&nbsp;&nbsp;SOURCE
-          <span className='clear'>CLEAR</span>
         </a>
 
         <div
