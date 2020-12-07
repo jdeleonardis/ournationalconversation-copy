@@ -1,11 +1,16 @@
 /* Subhead - SearchBar */
+element.style {
+    margin: 0px;
+    padding: 0;
+    border: none;
+}
 
 .search-bar {
+  
   height: 4em;
   left: 1.5em;
   right: 3.5em;
   text-align: center;
-  
   margin: 0em;
   padding: 0em;
 }
@@ -14,6 +19,9 @@
 
 /* Auto Layout */
 .news-filters-dp {
+  margin: 0px;
+    padding: 0;
+    border: none;
   margin: 0em;
   padding: 0em;
   text-decoration: none;
@@ -37,9 +45,15 @@
 
 .news-filters-btn {
   margin-top: 0em;
+  margin: 0px;
+    padding: 0;
+    border: none;
 }
 
 #news-filters {
+  margin: 0px;
+    padding: 0;
+    border: none;
   width: 18%;
   height: 2.6em;
   margin-top: -0.2em;
@@ -78,7 +92,9 @@
 
 .news-filters {
   /* Auto Layout */
-
+margin: 0px;
+    padding: 0;
+    border: none;
   position: static;
   height: 1.2em;
   text-align: center;
@@ -102,6 +118,9 @@
 }
 
 .news-filter-dropdown {
+  margin: 0px;
+    padding: 0;
+    border: none;
   overflow-x: hidden;
   background: #2c1c59;
   box-sizing: border-box; /* or not */
