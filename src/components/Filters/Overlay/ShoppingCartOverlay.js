@@ -1,8 +1,9 @@
 import React, { useState, Component } from 'react';
 import { Modal, Button, Container, Row, Col, Image } from 'react-bootstrap';
-import Overlay from 'react-bootstrap/Overlay';
-import '../../../styles/shoppingcart-overlay.css';
+import GlobalButton from '../../Misc/GlobalButton';
 import bookCover from '../../../img/book-cover.jpg';
+
+import '../../../styles/shoppingcart-overlay.css';
 
 const ShoppingCartOverlay = () => {
   const [show, setShow] = useState(false);
@@ -12,9 +13,15 @@ const ShoppingCartOverlay = () => {
 
   return (
     <>
-      <a variant='' onClick={() => setShow(true)}>
-        <i class='fas fa-shopping-cart'></i>
-      </a>
+      <Button
+        id=''
+        className='shopping-cart-btn '
+        variant='outline-primary'
+        onClick={() => setShow(true)}
+      >
+        <i class='fas fa-shopping-cart' />
+        VIEW CART
+      </Button>
 
       <Modal
         show={show}
@@ -110,7 +117,7 @@ const ShoppingCartOverlay = () => {
               </Row>
               <Row>
                 <Button className='shopping-cart-cont' variant=''>
-                  <span id="continue-shopping">CONITUE SHOPPING</span>
+                  <span id='continue-shopping'>CONITUE SHOPPING</span>
                 </Button>
               </Row>
             </div>
