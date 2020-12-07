@@ -12,10 +12,9 @@ import BodyType from '../ContentCards/CardBodyDictionary';
 import './styles/cardbody.css';
 
 function ContentCard(props) {
-	
-	const voteHandler = (voteType) => {
-		alert(voteType)		
-	}
+	const voteHandler = voteType => {
+		alert(voteType);
+	};
 
 	return (
 		<div>
@@ -23,22 +22,32 @@ function ContentCard(props) {
 				<Card>
 					<Card.Body>
 						<Row>
-							{
-								props.type === 'OPINION' || props.type === 'SOLUTION' ?
-									<Col sm={1} style={{backgroundColor: '#F2F2F2', textAlign: 'center', padding: '5px 0px 0px 0px'}}>
-										<a style={{cursor: 'pointer'}} onClick={() => voteHandler('upvote')}>
-											<i className="fas fa-caret-up fa-2x"></i>
-										</a>
-										<p style={{marginBottom: '0px'}}>
-											122K								
-										</p>								
-										<a style={{cursor: 'pointer'}} onClick={() => voteHandler('downvote')}>
-											<i className="fas fa-caret-down fa-2x"></i>
-										</a>
-									</Col>								
-								:
+							{props.type === 'OPINION' || props.type === 'SOLUTION' ? (
+								<Col
+									sm={1}
+									style={{
+										backgroundColor: '#F2F2F2',
+										textAlign: 'center',
+										padding: '5px 0px 0px 0px',
+									}}
+								>
+									<a
+										style={{ cursor: 'pointer' }}
+										onClick={() => voteHandler('upvote')}
+									>
+										<i className="fas fa-caret-up fa-2x"></i>
+									</a>
+									<p style={{ marginBottom: '0px' }}>122K</p>
+									<a
+										style={{ cursor: 'pointer' }}
+										onClick={() => voteHandler('downvote')}
+									>
+										<i className="fas fa-caret-down fa-2x"></i>
+									</a>
+								</Col>
+							) : (
 								''
-							}
+							)}
 							<Col>
 								<Row>
 									<Col className="text-left">
@@ -79,16 +88,12 @@ function ContentCard(props) {
 											<ShareSvg />
 										</span>
 										<span style={{ marginLeft: '1rem' }}>
-											<HeartSvg hw={'20 '} />
-										</span>
-										<span style={{ marginLeft: '1rem' }}>
 											<SaveSvg />
 										</span>
 									</Col>
 								</Row>
-						</Col>
-						
-						</Row>						
+							</Col>
+						</Row>
 					</Card.Body>
 				</Card>
 			</Container>
