@@ -70,6 +70,14 @@ function handleGiveaways() {
   }
 }
 
+// Clear all radio buttons to deselected state
+function handleDeselectAll() {
+  var el = document.getElementsByName('formHorizontalRadios');
+  for (var i = 0; i < el.length; i++) {
+    el[i].checked = false;
+  }
+}
+
 // function handleSelectAll() {
 //   let all, i;
 //   all = document.querySelectorAll('.article');
@@ -83,6 +91,9 @@ const FilterBarStore = () => {
     <div className='main-filter-div'>
       <h2 id='filter-by'>Filter by:</h2>
       <div id='store-div'>
+        <span className='clear' onClick={handleDeselectAll}>
+          CLEAR
+        </span>
         <a
           onClick={handleStoreChevron}
           id='store-topic'
@@ -90,7 +101,6 @@ const FilterBarStore = () => {
           data-toggle='collapse'
         >
           <i class='store-chev fas fa-chevron-down'></i>&nbsp;&nbsp;CATEGORY
-          <span className='clear'>CLEAR</span>
         </a>
 
         <div
