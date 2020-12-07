@@ -45,7 +45,6 @@ const Newsletter = () => {
                 <GlobalButton
                     className='global-btn'
                     padding='7px 55px'
-                    fontWeight='700'
                     label='SEE MORE TOP STORIES'
                 />
               </div>
@@ -69,7 +68,6 @@ const Newsletter = () => {
                 <GlobalButton
                     className='global-btn'
                     padding='7px 55px'
-                    fontWeight='700'
                     label='SEE MORE OPINIONS'
                 />
               </div>  
