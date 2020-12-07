@@ -25,8 +25,13 @@
 #addTag-btn,
 #submitArticle-btn,
 #saveDraft-btn {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat;
+  font-style: normal;
   clear: both;  
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.0125em;  
   margin-top: 0px;
   margin-bottom: 12px;
   border-radius: 4px;
@@ -35,6 +40,11 @@
 #addTag-btn,
 #submitArticle-btn{
   background-color: #2c1c59 !important;
+}
+
+#addTag-btn:hover,
+#submitArticle-btn:hover {
+  color: black
 }
 
 #saveDraft-btn {

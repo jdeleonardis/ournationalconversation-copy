@@ -1,3 +1,15 @@
+#signUpForNewsletter {
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.0125em;        
+    background-color: #2C1C59;
+    color: #f2f2f2;
+    margin-top: 4px;
+}
+
 #add-newsletter-sub {
     font-family: Montserrat;
     font-style: normal;
@@ -23,7 +35,7 @@
     border-radius: 2px;
     color: #f2f2f2;
     border-radius: 2px;
-  }
+}
 
 .newsletter-overlay-close{    
     margin: 0em;
@@ -34,9 +46,7 @@
 
 .newsletter-overlay-contents {
     background: #f2f2f2;
-    /* border-radius: 2px; 
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15); */
-  }
+}
 
 .newsletter-overlay-title {        
     margin: auto;
@@ -49,9 +59,9 @@
     width: 290px;  
     color: #000000;
     text-align: center;
-  }
+}
 
-  .newsletter-overlay-paragraph {        
+.newsletter-overlay-paragraph {        
     margin: auto;
     margin-top: 1.5em !important;
     margin-bottom: 1.0em !important;
@@ -59,31 +69,49 @@
     font-style: normal;
     font-size: smaller;
     color: #000000;    
-  }
+}
 
-  .subCheckboxes {        
-    font-family: Montserrat;
-    font-style: normal;
-    font-size: smaller;
-    font-weight: bold;
-    color: #000000;    
-    padding-top: 4px;
-  }
+.subCheckboxes {        
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: smaller;
+  font-weight: bold;
+  color: #000000;    
+  padding-top: 4px;
+}
 
-  #subPhoneNumber {            
-    margin-left: 20px !important;
-    margin-top: 4px;
-    width: 55%;    
-  }
+#subPhoneNumber {            
+  margin-left: 20px !important;
+  margin-top: 4px;
+  width: 55%;    
+}
 
-  #subscribedToNewsletter {
-    font-family: Montserrat;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 20px;
-    float: right;
-    text-align: center;
-    letter-spacing: 0.0125em;            
-    color:  #2C1C59;
-    padding-top: 10px;
+#subscribedToNewsletter {
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.0125em;            
+  color:  #2C1C59;  
+  padding-top: 10px;
+}
+
+#newsletterOverlayColumn {    
+    width: 100%;
+    text-align: right;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 801px) {
+    #newsletterOverlayColumn {        
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #subscribedToNewsletter {        
+        width: 100%;
+        text-align: center;
+        margin-bottom: 8px;
+    }    
   }

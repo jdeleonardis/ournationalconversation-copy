@@ -12,14 +12,8 @@ const NewsletterBarButtonNoSort = (props) => {
             <strong>{props.pageTitle}</strong>
           </h2>
         </Col>
-        <Col md={6}>
-          <div
-            style={{
-              width: '100%',
-              marginLeft: '-15px'}}
-          >
+        <Col  id="newsletterOverlayColumn" md={6}>
           <NewsletterOverlay />
-          </div>
         </Col>
       </Row>
       <TopHorizontalLineSmall 
