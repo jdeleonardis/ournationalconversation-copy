@@ -30,7 +30,7 @@ const SearchBar = (props) => {
               menuAlign={{ lg: 'left' }}
               variant='purple'
             >
-              <NewFiltersExpanded />
+              <NewFiltersExpanded style={{ padding: '100', margin: '100', border:'none' }} />
             </DropdownButton>
 
             <Nav.Link href='#'>
