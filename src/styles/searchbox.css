@@ -47,13 +47,13 @@
   width: 0;
 }
 
+.save-search-btn {
+  margin-left: 1.95em;
+}
+
 .save-search {
-  /* position: static;
-  width: 178px;
-  height: 16px;
-  left: 17px;
-  top: 0px; */
-  text-align: right;
+  justify-content: space-around;
+  padding: 0.5em;
 
   /* Link */
 
@@ -62,7 +62,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  /* text-align: center; */
+
   text-decoration-line: underline;
 
   /* Dark Gray */

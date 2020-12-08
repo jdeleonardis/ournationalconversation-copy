@@ -14,7 +14,7 @@ const SearchBox = (props) => {
         <i id='searchsubmit' className='fa fa-search'></i>
       </div>
       <div>
-        <Button className='save-search' variant=''>
+        <Button className='save-search-btn' variant=''>
           <i class='fas fa-plus'></i>
           <span className='save-search'>
             Save "Covid{props.searchInput}" to My Searches
