@@ -26,7 +26,7 @@ export class StoreCheckout extends Component {
               <div className='textdiv' style={{}}>
                 <h2>CHECKOUT</h2>
                 <div id='main-label'>&nbsp;&nbsp;</div>
-                <div className='divider-line'></div> &nbsp;&nbsp;&nbsp;
+                <div className='divider-line'></div> 
               </div>
             </Row>
             <br />
