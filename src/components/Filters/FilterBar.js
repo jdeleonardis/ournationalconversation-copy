@@ -158,7 +158,7 @@ function handleDeselectAll() {
 //   }
 // }
 
-const FilterBar = () => {
+const FilterBarTopic = () => {
   return (
     <div className='main-filter-div'>
       <h2 id='filter-by'>Filter by:</h2>
@@ -191,7 +191,6 @@ const FilterBar = () => {
                   name='formHorizontalRadios'
                   id='formHorizontalRadios1'
                   className='filter-dropdown-text'
-                  // className={`custom-${type}`}
                 />
                 <Form.Check
                   onClick={handleWorld}
@@ -201,7 +200,6 @@ const FilterBar = () => {
                   name='formHorizontalRadios'
                   id='formHorizontalRadios2'
                   className='filter-dropdown-text'
-                  // className={`custom-${type}`}
                 />
                 <Form.Check
                   onClick={handlePolitics}
@@ -211,7 +209,6 @@ const FilterBar = () => {
                   name='formHorizontalRadios'
                   id='formHorizontalRadios3'
                   className='filter-dropdown-text'
-                  // className={`custom-${type}`}
                 />
                 <Form.Check
                   onClick={handleBusiness}
@@ -221,7 +218,6 @@ const FilterBar = () => {
                   name='formHorizontalRadios'
                   id='formHorizontalRadios4'
                   className='filter-dropdown-text'
-                  // className={`custom-${type}`}
                 />
                 <Form.Check
                   onClick={handleTech}
@@ -231,7 +227,6 @@ const FilterBar = () => {
                   name='formHorizontalRadios'
                   id='formHorizontalRadios5'
                   className='filter-dropdown-text'
-                  // className={`custom-${type}`}
                 />
                 <Form.Check
                   onClick={handleHealth}
@@ -241,7 +236,6 @@ const FilterBar = () => {
                   name='formHorizontalRadios'
                   id='formHorizontalRadios6'
                   className='filter-dropdown-text'
-                  // className={`custom-${type}`}
                 />
                 <Form.Check
                   onClick={handleSciEnv}
@@ -251,7 +245,6 @@ const FilterBar = () => {
                   name='formHorizontalRadios'
                   id='formHorizontalRadios7'
                   className='filter-dropdown-text'
-                  // className={`custom-${type}`}
                 />
                 <Form.Check
                   onClick={handleMedia}
@@ -261,7 +254,6 @@ const FilterBar = () => {
                   name='formHorizontalRadios'
                   id='formHorizontalRadios8'
                   className='filter-dropdown-text'
-                  // className={`custom-${type}`}
                 />
                 <Form.Check
                   onClick={handlePolls}
@@ -271,7 +263,6 @@ const FilterBar = () => {
                   name='formHorizontalRadios'
                   id='formHorizontalRadios9'
                   className='filter-dropdown-text'
-                  // className={`custom-${type}`}
                 />
                 <Form.Check
                   onClick={handleFaith}
@@ -281,7 +272,6 @@ const FilterBar = () => {
                   name='formHorizontalRadios'
                   id='formHorizontalRadios10'
                   className='filter-dropdown-text'
-                  // className={`custom-${type}`}
                 />
                 <Form.Check
                   onClick={handleFactCheck}
@@ -291,7 +281,6 @@ const FilterBar = () => {
                   name='formHorizontalRadios'
                   id='formHorizontalRadios11'
                   className='filter-dropdown-text'
-                  // className={`custom-${type}`}
                 />
                 {/* <Form.Check
                   onClick={handleSelectAll}
@@ -312,4 +301,4 @@ const FilterBar = () => {
 };
 // }
 
-export default FilterBar;
+export default FilterBarTopic;

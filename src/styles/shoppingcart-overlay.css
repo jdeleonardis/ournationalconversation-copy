@@ -2,10 +2,57 @@
 
 #shopping-cart-overlay{
 /* background:purple; */
-color:purple;
-
+margin: 0em;
 padding: 0em;
 }
+
+ /* Button */
+.shopping-cart-btn{
+  margin-left: 12em;
+  
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+width: 30%;
+  height: 2.4em;
+/* identical to box height */
+
+letter-spacing: 0.0125em;
+text-transform: uppercase;
+
+/* Purple */
+
+color: #2C1C59;
+  
+color: #2c1c59 !important;
+  border-color: #2c1c59 !important;
+
+
+  /* Purple */
+
+border: 1px solid #2C1C59;
+box-sizing: border-box;
+border-radius: 5px;
+
+}
+
+.shopping-cart-btn:hover {
+background-color: #2c1c59 !important;
+  color: #ffffff !important;
+}
+
+
+
+
+
+.fa-shopping-cart {
+ 
+  padding-right: .75em;
+}
+
+
 
 
 .shopping-cart {
