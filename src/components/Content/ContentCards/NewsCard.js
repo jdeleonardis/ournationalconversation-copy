@@ -14,21 +14,23 @@ function NewsCard(props) {
 				<Card>
 					<Container>
 						<Row>
-							<Col md={props.vertical ? 12 : 2} sm={12}>
+							<Col
+								md={props.vertical ? 12 : 12}
+								sm={12}
+								style={{ display: 'flex' }}
+							>
 								<span
 									style={{
 										fontWeight: 'bold',
 										color: 'rgb(48 31 97)',
-										fontSize: '25px',
+										fontSize: '20px',
 									}}
 								>
-									{' '}
-									Sources{' '}
+									SOURCES:
 								</span>
-							</Col>
-
-							<Col md={props.vertical ? 12 : 10} sm={12}>
-								<TagLine />
+								<span style={{ width: '100%' }}>
+									<TagLine />
+								</span>
 							</Col>
 						</Row>
 						<Row>
