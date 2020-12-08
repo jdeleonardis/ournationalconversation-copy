@@ -7,32 +7,52 @@ import ShareSvg from './styles/shareSvg';
 import SaveSvg from './styles/saveSvg';
 import ClockSvg from './styles/clockSvg';
 
+function FromVertical(props) {
+	return props.vertical ? (
+		<Row>
+			<Col md={12} sm={12} style={{ display: 'flex' }}>
+				<span
+					style={{
+						fontWeight: 'bold',
+						color: 'rgb(48 31 97)',
+						fontSize: '20px',
+					}}
+				>
+					SOURCES:
+				</span>
+			</Col>
+			<Col md={12}>
+				<span>
+					<TagLine />
+				</span>
+			</Col>
+		</Row>
+	) : (
+		<Col md={props.vertical ? 12 : 12} sm={12} style={{ display: 'flex' }}>
+			<span
+				style={{
+					fontWeight: 'bold',
+					color: 'rgb(48 31 97)',
+					fontSize: '20px',
+				}}
+			>
+				SOURCES:
+			</span>
+			<span style={{ width: '100%' }}>
+				<TagLine />
+			</span>
+		</Col>
+	);
+}
+
 function NewsCard(props) {
 	return (
 		<div>
 			<Container>
 				<Card>
 					<Container>
-						<Row>
-							<Col
-								md={props.vertical ? 12 : 12}
-								sm={12}
-								style={{ display: 'flex' }}
-							>
-								<span
-									style={{
-										fontWeight: 'bold',
-										color: 'rgb(48 31 97)',
-										fontSize: '20px',
-									}}
-								>
-									SOURCES:
-								</span>
-								<span style={{ width: '100%' }}>
-									<TagLine />
-								</span>
-							</Col>
-						</Row>
+						<FromVertical vertical={props.vertical} />
+
 						<Row>
 							<Col md={12}>
 								<div className="passive"> NEWS | POLITICS</div>
