@@ -20,7 +20,7 @@ import '../../styles/HeaderCombine.css';
 const HeaderCombine = (props) => {
   return (
     <>
-      <Navbar className='search-bar'>
+      <Navbar className=' search-bar'>
         <Col xs={3} md={2}>
           <Nav.Item>
             <Nav.Link
@@ -35,33 +35,43 @@ const HeaderCombine = (props) => {
           <Nav className='justify-content-end' activeKey=''>
             <Col xs={6} md={8}>
               <Nav.Item>
-                <Nav.Link eventKey='disabled' disabled>
+                <Nav.Link className='header-title' eventKey='disabled' disabled>
                   OUR NATIONAL CONVERSATION
                 </Nav.Link>
               </Nav.Item>
             </Col>
-            <Col xs={3} md={3}>
+            <Col xs={3} md={4}>
               <Nav.Item>
-                <Button variant=''>LOG IN</Button>
-                <Button variant=''>SIGN UP</Button>
+                <Button variant='' className='log-in'>
+                  LOG IN
+                </Button>
+                <Button variant='' className='sign-up' active>
+                  SIGN UP
+                </Button>
                 {/* <Nav.Link eventKey='link-1'>Link</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey='link-2'>Link</Nav.Link> */}
+        <Nav.Link eventKey='link-2'>Link</Nav.Link> */}
               </Nav.Item>
             </Col>
           </Nav>
-          <hr />
+          <hr className='rectangle-92' />
 
-          <Nav className='justify-content-center' activeKey=''>
+          <Nav className=' group-66' activeKey=''>
             <Nav.Item>
-              <Nav.Link href='/news'>News</Nav.Link>
+              <Nav.Link className='header-news' href='/news'>
+                News
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey='/opinions'>Opinions</Nav.Link>
+              <Nav.Link className='header-opinions' eventKey='/opinions'>
+                Opinions
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey='/solutions'>Solutions</Nav.Link>
+              <Nav.Link className='header-solutions' eventKey='/solutions'>
+                Solutions
+              </Nav.Link>
             </Nav.Item>
           </Nav>
         </Col>
@@ -78,12 +88,12 @@ const HeaderCombine = (props) => {
           <Nav.Link eventKey='/solutions'>Solutions</Nav.Link>
         </Nav.Item>
       </Nav> */}
-      <Navbar
+      {/* <Navbar
         className='search-bar'
         variant='
       '
       >
-        {/* <Col className='mb-2'> */}
+        <Col className='mb-2'>
         <Nav className='group-68'>
           <CustomButton />
           <DropdownButton
@@ -111,11 +121,11 @@ const HeaderCombine = (props) => {
             School Reopenings{props.hotTopics}
           </Nav.Link>
         </Nav>
-        {/* </Col> */}
-        {/* <Col lg='3' md='auto'>
+        </Col>
+        <Col lg='3' md='auto'>
           <input className='search' type='text' placeholder='SEARCH' />
           <i className='fa fa-search search-i' />
-        </Col> */}
+        </Col>
         <Form inline>
           <FormControl
             type='text'
@@ -131,7 +141,7 @@ const HeaderCombine = (props) => {
           <i className='fa fa-search search-i' />
         </Form>
       </Navbar>
-      <hr />
+      <hr /> */}
     </>
   );
 };

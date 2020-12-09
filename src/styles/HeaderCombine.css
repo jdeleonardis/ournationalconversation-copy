@@ -1,0 +1,119 @@
+.header {
+  /* margin-top: 1em; */
+}
+.header-title{
+  /* OUR NATIONAL CONVERSATION */
+
+
+/* position: absolute; */
+/* left: 23.61%;
+right: 23.54%;
+top: 16.67%;
+bottom: 51.72%; */
+margin-left: .5em;
+ margin-top: 1em;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 2.5em;
+line-height: 1em;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+
+.log-in {
+  /* log in */
+
+
+/* position: absolute;
+left: 80.9%;
+right: 15%;
+top: 22.41%;
+bottom: 66.09%; */
+margin-top: 3em;
+/* Button */
+ 
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+letter-spacing: 0.0125em;
+text-transform: uppercase;
+
+/* White */
+
+color: #FFFFFF;
+}
+
+.sign-up{
+  /* Frame 15 */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px;
+
+/* position: absolute;
+left: 86.74%;
+right: 7.01%;
+top: 16.95%;
+bottom: 60.06%; */
+ margin-top: 3em;
+/* White */
+
+background: #FFFFFF;
+border-radius: 5px;
+}
+
+.rectangle-92 {
+  /* Rectangle 92 */
+
+width: 92%;
+/* position: absolute;
+left: 19.1%;
+right: 7.01%;
+top: 64.37%;
+bottom: 34.48%; */
+
+background: #F6F6F6;
+}
+
+.group-66{
+  width: 90%;
+margin: 0em 4em;
+
+/* display: flex; */
+/* flex-direction: column; */
+/* align-items: center; */
+/* position: absolute;
+left: 29.03%;
+right: 66.04%;
+top: 74.14%;
+bottom: 8.62%; */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 1.8em;
+line-height: 1em;
+text-align: center;
+letter-spacing: 0.001em;
+
+color: #FFFFFF;
+}
+
+.header-news, 
+.header-opinions ,
+.header-solutions {
+margin: 0em 1em;
+
+}
