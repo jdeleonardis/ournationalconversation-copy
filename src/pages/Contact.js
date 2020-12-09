@@ -29,7 +29,7 @@ export class Contact extends Component {
               {/* <Col md={3}></Col> */}
               <Col md={9}>
                 <div>
-                  <Card id='login-card'>
+                  <Card id='contact-card'>
                     <Card.Body>
                       <Card.Title id='contact-card-title'>CONTACT</Card.Title>
                       <Card.Subtitle id='login-card-subtitle' className='mb-2'>
