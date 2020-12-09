@@ -7,9 +7,10 @@ import {
   Dropdown,
   Form,
   Button,
-  Card
+  Card,
 } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
+import RailButtons from '../components/Misc/RailButtons';
 import '../styles/contact.css';
 
 export class Contact extends Component {
@@ -25,77 +26,79 @@ export class Contact extends Component {
             <br />
 
             <Row>
-              <Col md={3}></Col>
-              <Col md={6}>
+              {/* <Col md={3}></Col> */}
+              <Col md={9}>
                 <div>
                   <Card id='login-card'>
                     <Card.Body>
-                      <Card.Title id='contact-card-title'>
-                        Contact Us
-                      </Card.Title>
+                      <Card.Title id='contact-card-title'>CONTACT</Card.Title>
                       <Card.Subtitle id='login-card-subtitle' className='mb-2'>
                         <div id='contact-subtitle'>
-                          Interested in contacting us? We're happy to hear from
-                          you!
+                          We’d love to hear from you! Send us a question or
+                          comment and we’ll be in touch as soon as possible.
                         </div>
                       </Card.Subtitle>
                       <Form>
                         <Form.Group controlId='formBasicEmail'>
-                          <Form.Label>Who do you want to reach?</Form.Label>
+                          <Form.Label className='label'>SUBJECT</Form.Label>
                           <DropdownButton
                             id='dropdown-basic-button'
-                            title='Menu'
+                            title='SELECT SUBJECT'
                           >
                             <Dropdown.Item href='#/action-1'>
-                              Editorial matters
+                              EDITORIAL MATTERS
                             </Dropdown.Item>
                             <Dropdown.Item href='#/action-2'>
-                              Business propositions
+                              BUSINESS PROPOSITIONS
                             </Dropdown.Item>
                             <Dropdown.Item href='#/action-3'>
-                              Advertising inquiries
+                              ADVERTISING INQUIRIES
                             </Dropdown.Item>
                             <Dropdown.Item href='#/action-4'>
-                              Legal issues
+                              LEGAL ISSUES
                             </Dropdown.Item>
                             <Dropdown.Item href='#/action-5'>
-                              Employment inquiries
+                              EMPLOYMENT INQUIRIES
                             </Dropdown.Item>
                             <Dropdown.Item href='#/action-6'>
-                              Emergencies
+                              EMERGENCIES
                             </Dropdown.Item>
                             <Dropdown.Item href='#/action-7'>
-                              For questions or comments about our webisodes or
-                              videos
+                              FOR QUESTIONS OR COMMENTS ABOUT OUR WEBISODES OR
+                              VIDEOS
                             </Dropdown.Item>
                             <Dropdown.Item href='#/action-8'>
-                              For general queries or comments
+                              FOR GENERAL INQUIRIES OR COMMENTS
                             </Dropdown.Item>
                           </DropdownButton>
                         </Form.Group>
                         <Form.Group controlId='formBasicName'>
-                          <Form.Label>Name</Form.Label>
-                          <Form.Control type='name' required />
-                        </Form.Group>
-                        <Form.Group controlId='formBasicEmail'>
-                          <Form.Label>Email</Form.Label>
-                          <Form.Control type='email' required />
-                        </Form.Group>
-                        <Form.Group controlId='exampleForm.ControlTextarea1'>
-                          <Form.Label>Message</Form.Label>
+                          <Form.Label className='label'>YOUR NAME</Form.Label>
                           <Form.Control
-                            as='textarea'
-                            rows='4'
-                            placeholder='Write your message'
+                            id='name-input'
+                            placeholder='FIRST AND LAST NAME'
+                            type='name'
                             required
                           />
                         </Form.Group>
-                        <Button
-                          id='login-btn'
-                          variant='primary'
-                          type='submit'
-                          block
-                        >
+                        <Form.Group controlId='formBasicEmail'>
+                          <Form.Label className='label'>
+                            YOUR EMAIL ADDRESS
+                          </Form.Label>
+                          <Form.Control
+                            id='email-input'
+                            placeholder='EMAIL'
+                            type='email'
+                            required
+                          />
+                        </Form.Group>
+                        <Form.Group controlId='exampleForm.ControlTextarea1'>
+                          <Form.Label className='label'>
+                            YOUR MESSAGE
+                          </Form.Label>
+                          <Form.Control as='textarea' rows='6' required />
+                        </Form.Group>
+                        <Button id='send-btn' variant='primary' type='submit'>
                           SEND MESSAGE
                         </Button>
                       </Form>
@@ -103,7 +106,11 @@ export class Contact extends Component {
                   </Card>
                 </div>
               </Col>
-              <Col md={3}></Col>
+              <Col md={3}>
+                <div className='rail-group' style={{ marginTop: '-4px' }}>
+                  <RailButtons />
+                </div>
+              </Col>
             </Row>
           </Container>
         </div>
