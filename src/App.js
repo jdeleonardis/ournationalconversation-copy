@@ -10,7 +10,7 @@ import Newsletter from './pages/Newsletter';
 import Store from './pages/Store';
 import Checkout from './pages/Checkout';
 import Contact from './pages/Contact';
-import Header from './components/Header/Header';
+import HeaderReact from './components/Filters/HeaderReact';
 import SearchBar from './components/Filters/SearchBar';
 import LocalNews from './pages/LocalNews';
 import Footer from './components/Misc/Footer';
@@ -25,7 +25,7 @@ function App() {
   return (
     <Router>
       <div className='App'>
-        <Header />
+        <HeaderReact />
         <SearchBar />
         <Switch>
           <Route exact path='/' component={Home} />

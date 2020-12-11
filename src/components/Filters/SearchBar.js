@@ -20,8 +20,10 @@ const SearchBar = (props) => {
         variant='
       '
       >
-        <Col className='mb-2'>
-          <Nav className='group-68'>
+        <Col  xs={3} md={3}>
+          <Nav
+          // className='group-68'
+          >
             <CustomButton />
             <DropdownButton
               className='news-filters-dp '
@@ -30,11 +32,21 @@ const SearchBar = (props) => {
               menuAlign={{ lg: 'left' }}
               variant='purple'
             >
-              <NewFiltersExpanded style={{ padding: '100', margin: '100', border:'none' }} />
+              <NewFiltersExpanded
+                style={{ padding: '100', margin: '100', border: 'none' }}
+              />
             </DropdownButton>
-
-            <Nav.Link href='#'>
-              <span className='hot-topics'>HOT TOPICS: </span>
+          </Nav>
+        </Col>
+        <Col xs={6} md={7}>
+          <Nav className="hot-topics">
+            <Nav.Link className='search-bar-text' href='#'>
+              {/* <span className=' search-bar-text hot-topics'> */}
+                
+          
+                HOT TOPICS: 
+                
+                {/* </span> */}
             </Nav.Link>
             <Nav.Link className='search-bar-text' href='#'>
               COVID-19 Alert{props.hotTopics}
@@ -47,9 +59,9 @@ const SearchBar = (props) => {
             </Nav.Link>
           </Nav>
         </Col>
-        <Col lg='3' md='auto'>
-          <input className='search' type='text' placeholder='SEARCH' />
+        <Col xs={2} md={2} className='search-box'>
           <i className='fa fa-search search-i' />
+          <input className='search' type='text' placeholder='SEARCH' />
         </Col>
       </Navbar>
       <hr />

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
-import HeaderCombine from './HeaderCombine';
+
 import SortBy from './SortBy';
 import SortByLocal from './SortByLocal';
 import SortByStore from './SortByStore';
@@ -17,12 +17,13 @@ import CustomDropdown from './Expended/CustomDropdown';
 import PrefixingComponents from './Expended/PrefixingComponents';
 
 import '../../styles/demo.css';
+import HeaderReact from './HeaderReact';
 
 class DemoSearchFilter extends Component {
   render() {
     return (
       <>
-        <HeaderCombine />
+        
         <br/>
         <br/>
         <Container>

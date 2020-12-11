@@ -15,9 +15,9 @@ import NewFiltersExpanded from './Expended/NewFiltersExpanded';
 import CustomButton from './Expended/CustomButton';
 import logo from '../../img/Logo_Shorthand.png';
 
-import '../../styles/HeaderCombine.css';
+import '../../styles/HeaderReact.css';
 
-const HeaderCombine = (props) => {
+const HeaderReact = (props) => {
   return (
     <div className='onc-header '>
       <Navbar className=''>
@@ -152,4 +152,4 @@ const HeaderCombine = (props) => {
   );
 };
 
-export default HeaderCombine;
+export default HeaderReact;
