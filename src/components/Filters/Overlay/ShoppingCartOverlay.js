@@ -97,9 +97,7 @@ const ShoppingCartOverlay = () => {
             <div className='shopping-cart-bottom'>
               <Row className='shopping-cart-checkout'>
                 <Button className='checkout-btn' variant=''>
-                  <span 
-                  id='checkout'
-                  >CHECKOUT</span>{' '}
+                  <span id='checkout'>CHECKOUT</span>{' '}
                 </Button>
               </Row>
 

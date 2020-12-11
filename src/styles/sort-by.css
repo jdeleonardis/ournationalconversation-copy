@@ -1,11 +1,10 @@
 /* SortBy */
 .dropdown-item.active {
-background-color: #2c1c59;
+  background-color: #2c1c59;
 }
 
+/* PODCASTS */
 .headline-3 {
-  /* PODCASTS */
-  /* position: absolute; */
   width: 202px;
   height: 43px;
   left: 416px;
@@ -33,7 +32,6 @@ background-color: #2c1c59;
   align-items: flex-start;
   padding: 0px;
 
-  /* position: absolute; */
   width: 607px;
   height: 21px;
   left: 416px;
@@ -128,11 +126,6 @@ background-color: #2c1c59;
 }
 
 .dropdown-menu-align-right {
-  /* position: absolute;
-width: 380px;
-height: 275px;
-left: 643px;
-top: 334px; */
   width: 7em;
   /* Extra Light Gray */
 
@@ -162,62 +155,50 @@ top: 334px; */
 
   color: white;
 }
-.remove {position: relative;
+.remove {
+  position: relative;
   margin-top: 0.25em;
   text-align: right;
-   float: right;
+  float: right;
   width: 3em;
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 17px;
-/* identical to box height */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
 
+  letter-spacing: 0.0125em;
+  text-transform: capitalize;
 
-letter-spacing: 0.0125em;
-text-transform: capitalize;
+  /* Purple */
 
-/* Purple */
-
-color: #2C1C59;
+  color: #2c1c59;
 }
-
 
 .local-news {
   /* LOCAL NEWS */
 
+  /* Headline 2 */
 
-/* position: absolute;
-width: 243px;
-height: 43px;
-left: 100px;
-top: 294px; */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 43px;
+  /* identical to box height */
 
-/* Headline 2 */
-
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 35px;
-line-height: 43px;
-/* identical to box height */
-
-
-color: #000000;
+  color: #000000;
 }
 
-#local-news-line{
-  /* Rectangle 34 */
-/* position: relative; */
-width: 100%;
-height: 2em;
-/* left: 358px;
-top: 310px; */
+/* Rectangle 34 */
+#local-news-line {
+  width: 100%;
+  height: 2em;
 
-/* Purple */
+  /* Purple */
 
-/* background: #2C1C59; */
+  /* background: #2C1C59; */
 }
 
 /* ========================

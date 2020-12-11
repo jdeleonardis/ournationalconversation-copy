@@ -1,20 +1,7 @@
 import React from 'react';
-import {
-  Navbar,
-  Nav,
-  Image,
-  Col,
-  Row,
-  Button,
-  FormControl,
-  Form,
-  ButtonGroup,
-  DropdownButton
-} from 'react-bootstrap';
+import { Navbar, Nav, Image, Col, Row, Button } from 'react-bootstrap';
 import HeaderLogin from '../Authentication/HeaderLogin';
 import HeaderSignup from '../Authentication/HeaderSignup';
-import SignupModalComponent from '../../components/Authentication/SignupModalButtonAndComponent';
-import LoginModalComponent from '../../components/Authentication/LoginModalButtonAndComponent';
 import logo from '../../img/Logo_Shorthand.png';
 
 import '../../styles/HeaderReact.css';
@@ -59,12 +46,12 @@ const HeaderReact = (props) => {
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link className='header-opinions' eventKey='/opinions'>
+                  <Nav.Link className='header-opinions' href='/opinions'>
                     Opinions
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link className='header-solutions' eventKey='/solutions'>
+                  <Nav.Link className='header-solutions' href='/solutions'>
                     Solutions
                   </Nav.Link>
                 </Nav.Item>

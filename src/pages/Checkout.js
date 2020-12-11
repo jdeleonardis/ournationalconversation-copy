@@ -20,13 +20,12 @@ export class StoreCheckout extends Component {
           <Helmet>
             <title>Our National Conversation | ONC Store Checkout</title>
           </Helmet>
-
           <Container className='container' fluid>
             <Row className='checkout-topline'>
               <div className='textdiv' style={{}}>
                 <h2>CHECKOUT</h2>
                 <div id='main-label'>&nbsp;&nbsp;</div>
-                <div className='divider-line'></div> 
+                <div className='divider-line'></div>
               </div>
             </Row>
             <br />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row } from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown';
-import CustomButton from './Expended/CustomButton'
+import CustomButton from './Expended/CustomButton';
 import LocationOverlay from './Overlay/LocationOverlay';
 import '../../styles/sort-by.css';
 
@@ -38,14 +38,12 @@ const SortByLocal = (props) => {
             >
               SAN JOSE, CA{' '}
               <span className='remove-active' variant='purple'>
-                {' '}
                 Remove
               </span>
             </Dropdown.Item>
             <Dropdown.Item variant='' size='xxl' href='#/action-2' eventKey='2'>
               LOS ANGELES, CA{' '}
               <span className='remove' variant='purple'>
-                {' '}
                 Remove
               </span>
             </Dropdown.Item>

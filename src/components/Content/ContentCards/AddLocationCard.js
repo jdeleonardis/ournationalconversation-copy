@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button,Col,Row,Image} from 'react-bootstrap';
+import { Card, Button, Col, Row, Image } from 'react-bootstrap';
 
 import Nashville from '../../../img/Nashville.jpg';
 import Houston from '../../../img/Houston.jpg';
@@ -8,43 +8,15 @@ import Chicago from '../../../img/Chicago.jpg';
 import Denver from '../../../img/Denver.jpg';
 import Portland from '../../../img/Portland.jpg';
 
-
 import '../../../styles/LocationOverlay.css';
-
 
 function AddLocationCard(props) {
   return (
     <>
-      {/*       
-        <Col xs={6} md={4}>
-          <Image src='holder.js/171x180' rounded />
-        </Col>
-        <Col xs={6} md={4}>
-          <Image src='holder.js/171x180' roundedCircle />
-        </Col>
-        <Col xs={6} md={4}>
-          <Image src='holder.js/171x180' thumbnail />
-        </Col>
-   */}
-
       <Col xs={6} md={4}>
         <Card className='location-card'>
-          <div className="frontground"></div>
-          <Card.Img
-            className='local-pic'
-            variant=''
-            src={Nashville}
-            // width='100'
-            // height='75'
-            // alt='Nashville [100%x75]
-            // '
-          >
-            {/* <Card.Img
-            className='local-pic'
-            variant=''
-            src='/img/Nashville.jpg'
-           alt='Nashville[100%x75]'
-          > */}
+          <div className='frontground'></div>
+          <Card.Img className='local-pic' variant='' src={Nashville}>
             {props.local}
           </Card.Img>
           <Card.Body className='local-name' variant=''>

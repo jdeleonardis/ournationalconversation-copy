@@ -146,7 +146,6 @@ class PaymentCard extends Component {
                 placeholder='Same as shipping address'
                 aria-label='Radio button for following text input'
               />
-
               <FormControl
                 className=''
                 placeholder='Use a different address'

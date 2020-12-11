@@ -20,7 +20,7 @@ const SearchBar = (props) => {
         variant='
       '
       >
-        <Col  xs={3} md={3}>
+        <Col xs={3} md={3}>
           <Nav
           // className='group-68'
           >
@@ -39,14 +39,11 @@ const SearchBar = (props) => {
           </Nav>
         </Col>
         <Col xs={6} md={7}>
-          <Nav className="hot-topics">
+          <Nav className='hot-topics'>
             <Nav.Link className='search-bar-text' href='#'>
               {/* <span className=' search-bar-text hot-topics'> */}
-                
-          
-                HOT TOPICS: 
-                
-                {/* </span> */}
+              HOT TOPICS:
+              {/* </span> */}
             </Nav.Link>
             <Nav.Link className='search-bar-text' href='#'>
               COVID-19 Alert{props.hotTopics}

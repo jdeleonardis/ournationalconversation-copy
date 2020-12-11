@@ -19,8 +19,6 @@ const SortBy = (props) => {
             {props.horizLineTextLeft} &nbsp;&nbsp;&nbsp;
           </div>
           <div className='divider'></div>&nbsp;
-          {/* <span id='sort-by'>Sort by: DEFAULT</span>&nbsp;&nbsp;
-            <i class='fas fa-caret-down'></i> */}
           <Dropdown>
             <Dropdown.Toggle variant='' id='dropdown-basic'>
               Sort by: DEFAULT

@@ -1,235 +1,165 @@
-.add-new-location {
 /* ADD NEW LOCATION */
+.add-new-location {
+  /* Button */
 
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
 
-/* position: absolute;
-left: 23.16%;
-right: 30%;
-top: 87.27%;
-bottom: 5.45%; */
+  text-align: center;
+  letter-spacing: 0.0125em;
+  text-transform: uppercase;
 
-/* Button */
+  /* Purple */
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height */
-
-text-align: center;
-letter-spacing: 0.0125em;
-text-transform: uppercase;
-
-/* Purple */
-
-color: #2C1C59;
+  color: #2c1c59;
 }
 
-.add-location{
-  /* Add Location */
-margin-left: 3.25em;
-margin-top: -2em;
-/* position: absolute; */
-/* left: 29.93%;
-right: 29.77%;
-top: 8.98%;
-bottom: 83.3%; */
+/* Add Location */
+.add-location {
+  margin-left: 3.25em;
+  margin-top: -2em;
 
-/* Headline 3 */
+  /* Headline 3 */
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 35px;
-line-height: 43px;
-/* identical to box height */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 43px;
+  /* identical to box height */
 
-
-color: #000000;
+  color: #000000;
 }
 
-.add-location-search{
-  /* Search */
-
-
-position: relative;
-width: 30em;
-line-height: 3em;
-margin: 1em ;
-/* margin-left: 0.5em; */
-
-/* left: 8.22%;
-right: 8.22%;
-top: 23.88%;
-bottom: 67.15%; */
-
+/* Search */
+.add-location-search {
+  position: relative;
+  width: 30em;
+  line-height: 3em;
+  margin: 1em;
 }
 
-#city-or-zipcode{
-  /* City or zipcode */
+/* City or zipcode */
+#city-or-zipcode {
+  width: 22em;
+  height: 2em;
+  margin-top: -1em;
+  margin-left: 0.7em;
+  padding-left: 0.7em;
 
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.0125em;
+  text-transform: uppercase;
 
-/* position: relative; */
-width: 22em;
-height: 2em;
-margin-top: -1em;
-margin-left: 0.7em;
-padding-left: .7em;
-/* left: 15px;
-top: 13px; */
+  /* Grey */
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: 0.0125em;
-text-transform: uppercase;
-
-/* Grey */
-
-color: #929292;
+  color: #929292;
 }
 
-
+/* Vector */
 .vector {
-  /* Vector */
+  position: absolute;
 
+  /* True Black */
 
-position: absolute;
-/* left: 91.54%;
-right: 2.95%;
-top: 26%;
-bottom: 22.89%; */
-
-/* True Black */
-
-/* background: #000000; */
+  /* background: #000000; */
 }
 
-.add-location-card{
+.add-location-card {
   /* margin-top: -1em; */
 }
 
-
 /* Location Card */
 .location-card {
- 
-/* position: absolute; */
-width: 8.05em;
-height: 6.8em;
-margin:  .5em 0em;
-/* left: 50px; */
-/* top: 223px; */
+  width: 8.05em;
+  height: 6.8em;
+  margin: 0.5em 0em;
 
-/* Rectangle 107 */
+  /* Rectangle 107 */
 
-/* 
-position: absolute;
-left: 8.22%;
-right: 66.12%;
-top: 40.04%;
-bottom: 36.27%; */
+  background: #ffffff;
+  /* Card Shadow */
 
-background: #FFFFFF;
-/* Card Shadow */
-
-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .frontground {
   position: relative;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
   background: rgba(0, 0, 0, 0.5);
-border-radius: 4px;
+  border-radius: 4px;
 }
 
-.local-pic{
-   /* background: url(img/Nashville.jpg); */
 /* local pic */
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
+.local-pic {
+  /* background: url(img/Nashville.jpg); */
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
 
-/* background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5);
 border-radius: 4px; */
 
-/* Rectangle 107 */
+  /* Rectangle 107 */
 
-/* Background img invaild */
-color: #FFFFFF;
-
+  color: #ffffff;
 }
 
 .local-name {
-  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
 
-
-/* position: center; */
-
-/* left: 13.32%;
-right: 71.05%;
-top: 46.5%;
-bottom: 49.91%; */
-
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 18px;
-/* identical to box height */
-
-letter-spacing: 0.0125em;
-text-transform: uppercase;
-
-
+  letter-spacing: 0.0125em;
+  text-transform: uppercase;
 }
 
-.local-title{
+.local-title {
   position: absolute;
-  top:25%;
+  top: 25%;
   left: -20%;
   right: -20%;
   /* right */
   text-align: center;
-/*   left:50%;
-  transform: translate(-50%, -50%); */
-  /* text-align: center; */
-  /* Background img invaild */
-color: #FFFFFF;
+
+  color: #ffffff;
 }
 
-.local-add{
-  /* ADD NEW LOCATION */
-margin-top: 3.25em;
-/* margin-top: 3em; */
-/* position: absolute; */
-/* left: 15.95%;
-right: 77.63%;
-top: 58.35%;
-bottom: 38.06%; */
+/* ADD NEW LOCATION */
+.local-add {
+  margin-top: 3.25em;
 
-/* Button */
+  /* Button */
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
 
-text-align: center;
-letter-spacing: 0.0125em;
-text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.0125em;
+  text-transform: uppercase;
 
-/* Purple */
+  /* Purple */
 
-color: #2C1C59;
+  color: #2c1c59;
 }

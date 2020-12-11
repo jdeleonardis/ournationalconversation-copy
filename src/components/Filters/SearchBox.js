@@ -10,7 +10,11 @@ const SearchBox = (props) => {
         <p style={{ marginBottom: '5px' }} id='small-search-text'>
           Search {props.pageName}:
         </p>
-        <input id='small-search-field' type='text' placeholder='ENTER KEYWORDS'></input>
+        <input
+          id='small-search-field'
+          type='text'
+          placeholder='ENTER KEYWORDS'
+        ></input>
         <i id='searchsubmit' className='fa fa-search'></i>
       </div>
       <div>

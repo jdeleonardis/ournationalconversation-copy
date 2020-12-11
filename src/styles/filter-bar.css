@@ -2,7 +2,6 @@
 .filter-by {
   /* Filter by: */
 
-  /* position: absolute; */
   width: 109px;
   height: 30px;
   left: 0px;
@@ -23,7 +22,6 @@
 /* CLEAR ALL FILTERS disabled */
 
 .clear {
-  /* position: absolute; */
   margin: 0em;
   padding: 0em;
   text-align: right;

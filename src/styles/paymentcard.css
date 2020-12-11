@@ -1,15 +1,7 @@
 /* 3. PAYMENT */
 
+/* Rectangle 118 */
 .payment {
-  /* Rectangle 118 */
-  /* margin: auto; */
-
-  /* position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%; */
-
   /* Extra Light Gray */
 
   background: #f2f2f2;
@@ -18,17 +10,13 @@ bottom: 0%; */
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 }
 
+.title-dp {
+  width: 100%;
+}
 .payment-title {
   margin: 0em;
   padding: 0em;
-  /* position: absolute; */
   height: 2.5em;
-  width: 100%;
-  /* left: 25px; */
-  /* right: 428px; */
-  /* top: 25px; */
-
-  /* Card Shadow */
 
   /* Headline 5 */
 
@@ -45,15 +33,9 @@ bottom: 0%; */
   color: #2c1c59;
 }
 
+/* Rectangle 125 */
 .Rectangle-125 {
-  /* Rectangle 125 */
-
-  /* position: absolute; */
   height: 4px;
-  width: 100%;
-  /* left: 1.5em; */
-  /* right: 1.5em; */
-  /* top: 2em; */
 
   /* Purple */
 
@@ -65,15 +47,8 @@ bottom: 0%; */
   padding: 0em 1.2em;
 }
 
+/* PAYMENT METHOD */
 .payment-method {
-  /* PAYMENT METHOD */
-
-  /* position: absolute;
-height: 17px;
-left: 25px;
-right: 436px;
-top: 94px; */
-
   /* Overline */
 
   font-family: Montserrat;
@@ -93,15 +68,8 @@ top: 94px; */
 
 /* Payment content */
 
+/* Credit Card */
 .credit-card-placeholder {
-  /* Credit Card */
-
-  /* position: absolute;
-width: 97px;
-height: 20px;
-left: 46px;
-top: 10px; */
-
   /* Sub Filter */
 
   font-family: Montserrat;
@@ -115,11 +83,8 @@ top: 10px; */
   color: #1e1e1e;
 }
 
+/* toppng 1 */
 #basic-addon1 {
-  /* toppng 1 */
-
-  /* size: 2em; */
-  /* position: absolute; */
   height: 2.4em;
   left: 25em;
   right: 0em;
@@ -127,24 +92,16 @@ top: 10px; */
 
   /* background: url(toppng.png); */
 }
+
 .credit-card-i {
   margin: 2em;
   padding: 2em;
   justify-content: 1em;
   font-size: larger;
-  /* text-align: center; */
 }
 
+/* NAME ON CARD */
 .credit-card-info {
-  /* NAME ON CARD */
-  /* margin-left: 1.6em; */
-
-  /* position: absolute;
-width: 135px;
-height: 20px;
-left: 15px;
-top: 10px; */
-
   /* Search bar */
 
   font-family: Montserrat;
@@ -162,23 +119,17 @@ top: 10px; */
   color: #929292;
 }
 
+/* image 10 */
 #basic-addon2 {
-  /* image 10 */
-
   position: relative;
-  /* text-align: center; */
+
   width: 4em;
-  /* height: 24px;
-left: 46px;
-top: 8px; */
 
   /* background: url(image.png); */
 }
 
+/* BILLING ADDRESS */
 .billing-address {
-  /* BILLING ADDRESS */
-
-  /* position: absolute; */
   height: 17px;
   left: 25px;
   right: 443px;
@@ -201,14 +152,9 @@ top: 8px; */
   color: #2c1c59;
 }
 
+/* Same as shipping address */
 .billing-placeholder {
-  /* Same as shipping address */
-
   position: absolute;
-  /* width: 223px;
-height: 20px;
-left: 46px;
-top: 10px; */
 
   /* Sub Filter */
 
@@ -222,16 +168,12 @@ top: 10px; */
 
   color: #1e1e1e;
 }
+
+/* PAY NOW */
 .pay-now {
-  /* PAY NOW */
   margin-left: 24.5em;
   margin-bottom: 1em;
   float: right;
-  /* position: absolute; */
-  /* width: 82px;
-height: 20px;
-left: calc(50% - 82px/2);
-top: calc(50% - 20px/2); */
 
   /* Button */
 

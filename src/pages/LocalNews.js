@@ -19,7 +19,6 @@ const Home = () => {
         </Helmet>
         <Container className='container' fluid>
           <br />
-
           <Row>
             <Col md={9}>
               <SortByLocal />
@@ -40,12 +39,11 @@ const Home = () => {
             </Col>
             <Col md={3}>
               <RailButtons />
-
               <div
                 style={{
                   marginLeft: '0em',
                   marginTop: '40px',
-                  marginBottom: '-10px',
+                  marginBottom: '-10px'
                 }}
               >
                 <TopHorizontalLine lineLabel='OPINIONS' />
@@ -78,7 +76,6 @@ const Home = () => {
             </Col>
             <Col></Col>
           </Row>
-
           <Row>
             <Col>
               <div style={{ marginTop: '40px', marginBottom: '-10px' }}>
@@ -86,7 +83,6 @@ const Home = () => {
               </div>
             </Col>
           </Row>
-
           <Row>
             <Col md={9}>
               {/* <OpinionBoard type={type.SOLUTION} data={data} /> */}

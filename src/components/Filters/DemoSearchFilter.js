@@ -18,14 +18,12 @@ import PrefixingComponents from './Expended/PrefixingComponents';
 
 import '../../styles/demo.css';
 
-
 class DemoSearchFilter extends Component {
   render() {
     return (
       <>
-        
-        <br/>
-        <br/>
+        <br />
+        <br />
         <Container>
           <Row className='demo'>
             <Col md={3}>

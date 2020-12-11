@@ -1,5 +1,14 @@
 import React from 'react';
-import { Button,Dropdown, Row, Accordion, Col, NavDropdown, Navbar, Nav } from 'react-bootstrap';
+import {
+  Button,
+  Dropdown,
+  Row,
+  Accordion,
+  Col,
+  NavDropdown,
+  Navbar,
+  Nav
+} from 'react-bootstrap';
 import ShoppingCartOverlay from './Overlay/ShoppingCartOverlay';
 import CustomButton from './Expended/CustomButton';
 import '../../styles/sort-by.css';
@@ -11,11 +20,7 @@ const SortByStore = (props) => {
         <h2 className='page-title'>
           <strong>ONC STORE{props.pageTitle}</strong>
         </h2>
-        
-          <ShoppingCartOverlay
-            
-          />
-        
+        <ShoppingCartOverlay />
         <div
           className='textdiv'
           style={{ width: '97.5%', marginBottom: '-25px' }}
@@ -39,19 +44,10 @@ const SortByStore = (props) => {
             >
               Sort by: DEFAULT
             </Dropdown.Toggle>
-
             <Dropdown.Menu
-              menuAlign='right'
-              title='Dropdown right'
               id='dropdown-menu-align-right'
-              align='right'
               variant='purple'
-              menuAlign='xl: "left"|"right"'
               alignRight
-              menuAlign='right'
-              title='Dropdown right'
-              className='dropdown-menu-align-right'
-              align='right'
               className='mx-8 my-8 w-auto'
             >
               <Dropdown.Item variant='purple' href='#/action-1' active>

@@ -10,7 +10,7 @@ import Newsletter from './pages/Newsletter';
 import Store from './pages/Store';
 import Checkout from './pages/Checkout';
 import Contact from './pages/Contact';
-import HeaderReact from './components/Filters/HeaderReact';
+import HeaderReact from './components/Misc/HeaderReact';
 import SearchBar from './components/Filters/SearchBar';
 import LocalNews from './pages/LocalNews';
 import Footer from './components/Misc/Footer';

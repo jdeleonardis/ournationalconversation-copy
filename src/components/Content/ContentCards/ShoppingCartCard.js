@@ -12,7 +12,6 @@ const ShoppingCartCard = () => {
           <Row>
             <h3 className='your-items-title'>YOUR ITEMS (1{})</h3>
           </Row>
-
           <Row className='your-items-table'>
             <Col xs={12} md={6}>
               ITEM
@@ -25,7 +24,6 @@ const ShoppingCartCard = () => {
             </Col>
           </Row>
           <hr className='Rectangle-37' />
-
           <Row>
             <Col xs={4} md={2}>
               <Image
@@ -56,7 +54,6 @@ const ShoppingCartCard = () => {
                 className='rectangle-2'
               />
             </Col>
-
             <Col xs={4} md={3}>
               <Button
                 size='xl'

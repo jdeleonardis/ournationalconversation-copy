@@ -3,18 +3,13 @@
 
 /* Make search input full length: 100% */
 .search-box {
-  /* position: absolute; */
   width: 100%;
-
-  /* margin-left: 6em; */
 }
 
 /* Search Opinions: */
 
+/* Subhead */
 .search-title {
-  /* Subhead */
-
-  /* margin-left: 7em; */
   /* identical to box height */
 
   letter-spacing: 0.004em;
@@ -25,7 +20,7 @@
 /* Search */
 .search-input {
   height: 2.8em;
-  /* left: 7em; */
+
   width: 70%;
 
   /* True Black */
@@ -37,11 +32,10 @@
 
 .search-box-i {
   position: relative;
-  /* z-index: 1; */
+
   top: -0.5em;
   left: 4.5em;
-  /* top: 1px; */
-  /* color: #7b7b7b; */
+
   color: #000000;
   cursor: pointer;
   width: 0;

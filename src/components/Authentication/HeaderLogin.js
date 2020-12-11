@@ -20,7 +20,7 @@ const HeaderLogin = () => {
         onHide={() => setShow(false)}
         // dialogClassName='modal-90w'
         // aria-labelledby='example-custom-modal-styling-title'
-        center
+        // center
       >
         <LoginComponent />
       </Modal>

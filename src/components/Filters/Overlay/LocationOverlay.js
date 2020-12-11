@@ -1,7 +1,6 @@
 import React, { useState, Component } from 'react';
-import { Modal, Button, Container, Row, Col, Image} from 'react-bootstrap';
+import { Modal, Button, Container, Row, Col, Image } from 'react-bootstrap';
 import Overlay from 'react-bootstrap/Overlay';
-
 
 import AddLocationCard from '../../Content/ContentCards/AddLocationCard';
 import Chicago from '../../../img/Chicago.jpg';
@@ -11,10 +10,7 @@ import Houston from '../../../img/Houston.jpg';
 import Nashville from '../../../img/Nashville.jpg';
 import Portland from '../../../img/Portland.jpg';
 
-
 import '../../../styles/shoppingcart-overlay.css';
-
-
 
 const LocationOverlay = () => {
   const [show, setShow] = useState(false);
@@ -54,10 +50,8 @@ const LocationOverlay = () => {
                 <i id='searchsubmit' className='fa fa-search vector'></i>
               </Row>
               <Row className='add-location-card'>
-               
-                  <AddLocationCard />
-                  </Row>
-                
+                <AddLocationCard />
+              </Row>
             </div>
           </Container>
         </Modal.Body>
