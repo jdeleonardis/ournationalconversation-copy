@@ -1,119 +1,154 @@
-.header {
-  /* margin-top: 1em; */
+.onc-header {
+  /* margin:-1em!important; */
+  /* padding: 0em!important; */
+  background: linear-gradient(90deg, #1f27c9 0%, #bd0819 100%);
+  height: 11rem;
+  display: grid;
+  /* Use a grid layout to minimize difficulties with vertical spacing */
+  /* font-size: 1.2rem; */
 }
-.header-title{
+
+.onc-logo {
+  margin-left: 2em;
+  color: #fff;
+  /* justify-self: start;  */
+  /* margin-top: 2em; */
+  /* position: absolute; */
+
+  cursor: pointer;
+}
+
+.header-title {
   /* OUR NATIONAL CONVERSATION */
 
-
-/* position: absolute; */
-/* left: 23.61%;
+  /* position: absolute; */
+  /* left: 23.61%;
 right: 23.54%;
 top: 16.67%;
 bottom: 51.72%; */
-margin-left: .5em;
- margin-top: 1em;
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 2.5em;
-line-height: 1em;
-/* identical to box height */
+text-align: center;
 
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.6em;
+  line-height: 1em;
+  /* identical to box height */
 
-color: #FFFFFF;
-
+  color: #fff !important;
 }
-
+.btn-group {
+  margin: 0.5em;
+  padding: 0em;
+  justify-content: space-around;
+  
+  
+}
 .log-in {
   /* log in */
 
-
-/* position: absolute;
+  /* position: absolute;
 left: 80.9%;
 right: 15%;
 top: 22.41%;
 bottom: 66.09%; */
-margin-top: 3em;
-/* Button */
- 
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height */
+  /* margin-top: 3em; */
+  /* Button */
 
-letter-spacing: 0.0125em;
-text-transform: uppercase;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 
-/* White */
+  /* identical to box height */
 
-color: #FFFFFF;
+  letter-spacing: 0.0125em;
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #fff !important;
 }
 
-.sign-up{
-  /* Frame 15 */
+.sign-up {
+  /* Sign up */
+/* width: 60%; */
+  /* 
+position: static;
+width: 70px;
+height: 20px;
+left: 10px;
+top: 10px; */
+  margin-left: 1em;
 
+  /* Button */
 
-/* Auto Layout */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
 
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 10px;
+  letter-spacing: 0.0125em;
+  text-transform: uppercase;
 
-/* position: absolute;
-left: 86.74%;
-right: 7.01%;
-top: 16.95%;
-bottom: 60.06%; */
- margin-top: 3em;
-/* White */
+  color: #c60717 !important;
+  background-color: #fff !important;
+  /* background-attachment: fixed; */
 
-background: #FFFFFF;
-border-radius: 5px;
+  /* Inside Auto Layout */
+
+  /* flex: none;
+  order: 0; */
+  /* flex-grow: 0; */
+  /* margin: 0px ; */
 }
 
 .rectangle-92 {
   /* Rectangle 92 */
 
-width: 92%;
-/* position: absolute;
+  width: 105%;
+  /* position: absolute;
 left: 19.1%;
 right: 7.01%;
 top: 64.37%;
 bottom: 34.48%; */
 
-background: #F6F6F6;
+  background: #f6f6f6;
 }
 
-.group-66{
+.group-66 {
+ justify-content: space-around;
   width: 90%;
-margin: 0em 4em;
+  /* margin: 0em 4em; */
+  text-align: center !important;
 
-/* display: flex; */
-/* flex-direction: column; */
-/* align-items: center; */
-/* position: absolute;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* position: absolute;
 left: 29.03%;
 right: 66.04%;
 top: 74.14%;
 bottom: 8.62%; */
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 1.8em;
-line-height: 1em;
-text-align: center;
-letter-spacing: 0.001em;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.35em;
+  line-height: 1em;
+  text-align: center;
+  letter-spacing: 0.001em;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 
-.header-news, 
-.header-opinions ,
+.header-news,
+.header-opinions,
 .header-solutions {
-margin: 0em 1em;
-
+  /* justify-content: space-between; */
+  /* margin-right: 2em; */
+   color: #fff !important;
 }

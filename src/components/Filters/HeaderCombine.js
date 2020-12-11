@@ -19,33 +19,33 @@ import '../../styles/HeaderCombine.css';
 
 const HeaderCombine = (props) => {
   return (
-    <>
-      <Navbar className=' search-bar'>
+    <div className='onc-header '>
+      <Navbar className=''>
         <Col xs={3} md={2}>
           <Nav.Item>
             <Nav.Link
               href='/'
               // className='header-logo'
             >
-              <Image src={logo} roundedCircle />
+              <Image className='onc-logo' src={logo} roundedCircle />
             </Nav.Link>
           </Nav.Item>
         </Col>
-        <Col>
+        <Col xs={9} md={10}>
           <Nav className='justify-content-end' activeKey=''>
-            <Col xs={6} md={8}>
+            <Col xs={6} md={9}>
               <Nav.Item>
                 <Nav.Link className='header-title' eventKey='disabled' disabled>
                   OUR NATIONAL CONVERSATION
                 </Nav.Link>
               </Nav.Item>
             </Col>
-            <Col xs={3} md={4}>
+            <Col xs={3} md={3} className='btn-group'>
               <Nav.Item>
                 <Button variant='' className='log-in'>
                   LOG IN
                 </Button>
-                <Button variant='' className='sign-up' active>
+                <Button variant='light' className='log-in sign-up' active>
                   SIGN UP
                 </Button>
                 {/* <Nav.Link eventKey='link-1'>Link</Nav.Link>
@@ -55,24 +55,30 @@ const HeaderCombine = (props) => {
               </Nav.Item>
             </Col>
           </Nav>
-          <hr className='rectangle-92' />
-
-          <Nav className=' group-66' activeKey=''>
-            <Nav.Item>
-              <Nav.Link className='header-news' href='/news'>
-                News
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link className='header-opinions' eventKey='/opinions'>
-                Opinions
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link className='header-solutions' eventKey='/solutions'>
-                Solutions
-              </Nav.Link>
-            </Nav.Item>
+          <Col xs={11} md={11}>
+            <hr className='rectangle-92' />
+          </Col>
+          <Nav>
+            <Col xs={1} md={1}></Col>
+            <Col xs={6} md={7}>
+              <Nav className=' group-66' activeKey=''>
+                <Nav.Item>
+                  <Nav.Link className='header-news' href='/news'>
+                    News
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link className='header-opinions' eventKey='/opinions'>
+                    Opinions
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link className='header-solutions' eventKey='/solutions'>
+                    Solutions
+                  </Nav.Link>
+                </Nav.Item>
+              </Nav>
+            </Col>
           </Nav>
         </Col>
       </Navbar>
@@ -142,7 +148,7 @@ const HeaderCombine = (props) => {
         </Form>
       </Navbar>
       <hr /> */}
-    </>
+    </div>
   );
 };
 
