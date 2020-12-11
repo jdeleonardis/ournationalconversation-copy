@@ -1,12 +1,11 @@
 /* Subhead - SearchBar */
 element.style {
-    margin: 0px;
-    padding: 0;
-    border: none;
+  margin: 0px;
+  padding: 0;
+  border: none;
 }
 
 .search-bar {
-  
   height: 4em;
   left: 1em;
   /* right: 3.5em; */
@@ -19,11 +18,10 @@ element.style {
 
 /* Auto Layout */
 .news-filters-dp {
- 
   margin: 0em;
   padding: 0em;
   text-decoration: none;
-  height: 2.4em;
+  height: 2.8em;
   width: 11em;
   /* Button */
 
@@ -43,11 +41,9 @@ element.style {
 
 .news-filters-btn {
   margin-top: 0em;
- 
 }
 
 #news-filters {
-
   width: 18%;
   height: 2.6em;
   margin-top: -0.2em;
@@ -86,9 +82,7 @@ element.style {
 
 .news-filters {
   /* Auto Layout */
-margin: 0px;
-    padding: 0;
-    border: none;
+
   position: static;
   height: 1.2em;
   text-align: center;
@@ -112,9 +106,6 @@ margin: 0px;
 }
 
 .news-filter-dropdown {
-  margin: 0px;
-    padding: 0;
-    border: none;
   overflow-x: hidden;
   background: #2c1c59;
   box-sizing: border-box; /* or not */
@@ -142,8 +133,6 @@ margin: 0px;
 
 /* HOT TOPICS */
 .hot-topics {
-  /* position: flex; */
-  /* padding: 0em 2em 0em 5em; */
   font-family: Montserrat;
   color: #2c1c59;
   /* justify-content: space-around; */
@@ -170,17 +159,15 @@ margin: 0px;
 /* Search */
 
 .search {
- 
   justify-content: space-around;
   right: 35%;
   top: -0.75em;
   height: 2.6em;
   border-radius: 0.25rem;
   width: 100%;
-  padding:  1em;
-  
+  padding: 1em;
+
   background-color: #ffffff;
-  
 
   /* Search input */
   font-family: Montserrat;
@@ -200,15 +187,10 @@ margin: 0px;
   position: relative;
   z-index: 1;
   top: 1.25em;
-  /* left: -118em; */
-
-  color: #000000;
 
   cursor: pointer;
-  /* width: 0; */
+
   /* True Black */
 
-  /* background: #000000; */
+  color: #000000;
 }
-
-

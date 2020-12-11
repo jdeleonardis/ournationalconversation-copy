@@ -17,7 +17,7 @@ import CustomDropdown from './Expended/CustomDropdown';
 import PrefixingComponents from './Expended/PrefixingComponents';
 
 import '../../styles/demo.css';
-import HeaderReact from './HeaderReact';
+
 
 class DemoSearchFilter extends Component {
   render() {

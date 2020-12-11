@@ -20,12 +20,12 @@ export default class App extends React.Component {
       <div>
         <Button
           style={{
-            margin: '10px',
+            margin: '10px'
           }}
           variant='success'
           onClick={this.onOpenModal}
         >
-          Signup Modal
+          SIGN UP
         </Button>
         <Modal open={open} onClose={this.onCloseModal} center>
           <SignupComponent />

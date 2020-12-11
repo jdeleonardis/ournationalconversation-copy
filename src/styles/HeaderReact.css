@@ -5,54 +5,37 @@
   height: 11rem;
   display: grid;
   /* Use a grid layout to minimize difficulties with vertical spacing */
-  /* font-size: 1.2rem; */
 }
 
 .onc-logo {
   margin-left: 2em;
   color: #fff;
-  /* justify-self: start;  */
-  /* margin-top: 2em; */
-  /* position: absolute; */
 
   cursor: pointer;
 }
 
+/* OUR NATIONAL CONVERSATION */
 .header-title {
-  /* OUR NATIONAL CONVERSATION */
-
-  /* position: absolute; */
-  /* left: 23.61%;
-right: 23.54%;
-top: 16.67%;
-bottom: 51.72%; */
-text-align: center;
+  text-align: center;
 
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 2.6em;
+  font-size: 2.5em;
   line-height: 1em;
   /* identical to box height */
 
   color: #fff !important;
 }
+
 .btn-group {
   margin: 0em 1em;
   padding: 0em;
   justify-content: space-around;
-  
-  
 }
-.log-in {
-  /* log in */
 
-  /* position: absolute;
-left: 80.9%;
-right: 15%;
-top: 22.41%;
-bottom: 66.09%; */
-  /* margin-top: 3em; */
+/* log in */
+.log-in {
   /* Button */
 
   font-family: Montserrat;
@@ -71,15 +54,8 @@ bottom: 66.09%; */
   color: #fff !important;
 }
 
+/* Sign up */
 .sign-up {
-  /* Sign up */
-/* width: 60%; */
-  /* 
-position: static;
-width: 70px;
-height: 20px;
-left: 10px;
-top: 10px; */
   margin-left: 1em;
 
   /* Button */
@@ -108,31 +84,17 @@ top: 10px; */
 
 .rectangle-92 {
   /* Rectangle 92 */
-
-  width: 105%;
-  /* position: absolute;
-left: 19.1%;
-right: 7.01%;
-top: 64.37%;
-bottom: 34.48%; */
+  margin-right: 2.8em;
+  width: 96%;
 
   background: #f6f6f6;
 }
 
 .group-66 {
- justify-content: space-around;
+  justify-content: space-around;
   width: 100%;
-  /* margin: 0em 4em; */
-  text-align: center !important;
 
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* position: absolute;
-left: 29.03%;
-right: 66.04%;
-top: 74.14%;
-bottom: 8.62%; */
+  text-align: center !important;
 
   font-family: Montserrat;
   font-style: normal;
@@ -150,5 +112,5 @@ bottom: 8.62%; */
 .header-solutions {
   /* justify-content: space-between; */
   /* margin-right: 2em; */
-   color: #fff !important;
+  color: #fff !important;
 }

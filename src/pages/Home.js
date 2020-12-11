@@ -2,8 +2,7 @@ import React, { Fragment } from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import Solution from '../components/Content/ContentBoards/ContentBoard';
-import SignupModalComponent from '../components/Authentication/SignupModalButtonAndComponent';
-import LoginModalComponent from '../components/Authentication/LoginModalButtonAndComponent';
+
 import GlobalButton from '../components/Misc/GlobalButton';
 import News from '../components/Content/ContentBoards/NewsBoard';
 import NewsCard from '../components/Content/ContentCards/NewsCard';
@@ -86,8 +85,7 @@ const Home = () => {
             <Col md={3}></Col>
           </Row>
 
-          <SignupModalComponent />
-          <LoginModalComponent />
+          
         </Container>
       </div>
     </Fragment>
