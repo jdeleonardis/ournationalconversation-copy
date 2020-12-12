@@ -261,8 +261,9 @@ input::-moz-placeholder {
 }
 
 input {
-  padding-right: 2.4em;
-  height: 2em;
+  /* This global styling will affect radio input styling in other components, class/id highly recommended  comment by Judy */
+  /* padding-right: 2.4em; */
+  /* height: 2em; */
 }
 
 input::-ms-reveal {

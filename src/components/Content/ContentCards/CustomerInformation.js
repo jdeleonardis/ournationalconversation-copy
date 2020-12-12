@@ -68,11 +68,12 @@ class CustomerInformation extends Component {
 
               <Form.Group id='formGridCheckbox'>
                 <Form.Check type='checkbox' className='subscribe' id=''>
-                  <Form.Check.Input type='checkbox' />
+                  <Form.Check.Input
+                    className='subscribe-radio'
+                    type='checkbox'
+                  />
                   <Form.Check.Label>
-                    <span className='shipping-method-title'>
-                      Subscribe to our newsletter
-                    </span>
+                    <span className=''>Subscribe to our newsletter</span>
                   </Form.Check.Label>
                 </Form.Check>
               </Form.Group>

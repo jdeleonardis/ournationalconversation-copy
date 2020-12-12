@@ -51,33 +51,39 @@ class ShippingMethod extends Component {
               this.dropdownMenu = element;
             }}
           >
-           
-              <Form className='shipping-method-form'>
-                <Form.Check className='shipping-method-box' type='radio' id=''>
-                  <Form.Check.Input type='radio' isValid />
-                  <Form.Check.Label>
-                    <span className='shipping-method-title'>
-                      Standard US Shipping
-                    </span>{' '}
-                    <span className='shipping-method-price'>$5.99</span>
-                  </Form.Check.Label>
-                </Form.Check>
-                <Form.Check className='shipping-method-box' type='radio' id=''>
-                  <Form.Check.Input type='radio' isValid />
-                  <Form.Check.Label>
-                    <span className='shipping-method-title'>
-                      Express US Shipping
-                    </span>{' '}
-                    <span className='shipping-method-price'>$11.99</span>
-                  </Form.Check.Label>
-                </Form.Check>
-              </Form>
-    
-            
-              <Button className='cont-pmt' variant='purple'>
-                CONTINUE TO PAYMENT
-              </Button>
-           
+            <Form className='shipping-method-form'>
+              <Form.Check className='shipping-method-box' type='radio' id=''>
+                <Form.Check.Input
+                  className='shipping-method-radio'
+                  type='radio'
+                  isValid
+                />
+                <Form.Check.Label>
+                  <span className='shipping-method-title'>
+                    Standard US Shipping
+                  </span>{' '}
+                  <span className='shipping-method-price'>$5.99</span>
+                </Form.Check.Label>
+              </Form.Check>
+              <Form.Check className='shipping-method-box' type='radio' id=''>
+                <Form.Check.Input
+                  className='shipping-method-radio'
+                  type='radio'
+                  isValid
+                />
+                <Form.Check.Label>
+                  <span className='shipping-method-title'>
+                    Express US Shipping
+                  </span>{' '}
+                  <span className='shipping-method-price'>$11.99</span>
+                </Form.Check.Label>
+              </Form.Check>
+            </Form>
+
+            <Button className='cont-pmt' variant='purple'>
+              CONTINUE TO PAYMENT
+            </Button>
+
             {/* <InputGroup className='mb-2 shipping-method-placeholder'>
               <InputGroup.Prepend>
                 <InputGroup.Radio aria-label='Radio button for following text input' />

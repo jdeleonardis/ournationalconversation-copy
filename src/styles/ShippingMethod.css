@@ -1,9 +1,9 @@
-/* 3. shipping-method */
+/* 2. SHIPPING METHOD */
 
 /* Rectangle 118 */
 .shipping-method {
   /* Extra Light Gray */
-padding-left: .5em;
+  padding-left: 0.5em;
   background: #f2f2f2;
   /* Card Shadow */
 
@@ -17,98 +17,93 @@ padding-left: .5em;
 /* Rectangle 125 */
 .Rectangle-125 {
   height: 4px;
-  
+
   /* Purple */
-  
+
   background: #2c1c59;
 }
 
-.shipping-method-menu {
+.shipping-method-form {
+  /* justify-content: space-around; */
   /* margin-bottom: 2.5em; */
-  /* padding: 0em 1.75em; */
+
   /* padding-left: 1em; */
   /* padding-right: 2.8em; */
-  
 }
 
-
-
 .shipping-method-box {
+  /* padding: .1em; */
   margin-left: 1em;
   width: 92%;
   /* Rectangle 2 */
-height: 2.9em;
-margin-bottom: 1em;
+  height: 2.5em;
+  margin-bottom: 1em;
 
-/* position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%; */
+ justify-content: space-around;
 
-background: #FFFFFF;
-/* True Black */
+  background: #ffffff;
+  /* True Black */
 
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 4px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.shipping-method-radio{
+  left: 1.85em;
+  top: .35em;
+
 }
 
 .shipping-method-title {
   /* Standard US Shipping */
-
-
-position: absolute;
-/* width: 189px;
+top: 0.45em;
+  position: absolute;
+  /* width: 189px;
 height: 21px; */
-left: 3em;
-top: .75em;
+  left: 3em;
+  /* top: .75em; */
 
-/* Sub Filter */
+  /* Sub Filter */
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 17px;
-line-height: 21px;
-/* identical to box height */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+  /* identical to box height */
 
+  /* Black - Text Color */
 
-/* Black - Text Color */
-
-color: #1E1E1E;
+  color: #1e1e1e;
 }
+
 /* shipping-method METHOD */
 .shipping-method-price {
- /* Price */
+  /* Price */
+top: 0.8em;
+  position: absolute;
+  /* width: 40px; */
+  /* height: 18px; */
+  right: 1em;
 
+  float: inline-end;
 
-position: absolute;
-/* width: 40px; */
-/* height: 18px; */
-right: 1em;
-top: 1em;
+  /* Overline */
 
-/* Overline */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 17px;
-text-align: right;
-letter-spacing: 0.015em;
-text-transform: uppercase;
+  /* Black - Text Color */
 
-/* Black - Text Color */
-
-color: #1E1E1E;
+  color: #1e1e1e;
 }
-
-
-
-
-
 
 /* Continue to Payment */
 .cont-pmt {
