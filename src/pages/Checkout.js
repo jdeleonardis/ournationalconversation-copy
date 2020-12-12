@@ -4,8 +4,11 @@ import { Helmet } from 'react-helmet';
 import TopHorizontalLine from '../components/Misc/TopHorizontalLine';
 import ShoppingCartCard from '../components/Content/ContentCards/ShoppingCartCard';
 import PaymentCard from '../components/Content/ContentCards/PaymentCard';
+import OrderConfirmation from '../components/Content/ContentCards/OrderConfirmation';
+
 
 import '../styles/Pages.css';
+
 
 export class StoreCheckout extends Component {
   render() {
@@ -30,8 +33,11 @@ export class StoreCheckout extends Component {
             </Row>
             <br />
             <Row>
+              
               <Col md={6}>
                 <PaymentCard />
+                <br/>
+                <OrderConfirmation/>
               </Col>
               <Col md={6}>
                 <ShoppingCartCard />

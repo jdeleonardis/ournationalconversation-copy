@@ -3,7 +3,7 @@
 /* Rectangle 118 */
 .payment {
   /* Extra Light Gray */
-
+padding-left: .5em;
   background: #f2f2f2;
   /* Card Shadow */
 
@@ -171,9 +171,9 @@
 
 /* PAY NOW */
 .pay-now {
-  margin-left: 24.5em;
+  margin-left: 24em;
   margin-bottom: 1em;
-  float: right;
+  /* float: right; */
 
   /* Button */
 

@@ -1,0 +1,217 @@
+/* 3. order */
+
+/* Rectangle 118 */
+.order {
+  /* Extra Light Gray */
+padding-left: .5em;
+  background: #f2f2f2;
+  /* Card Shadow */
+
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+}
+
+.title-dp {
+  width: 100%;
+}
+.order-title {
+  margin: 0em;
+  padding: 0em;
+  height: 2.5em;
+
+  /* Headline 5 */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.001em;
+  text-transform: capitalize;
+
+  /* Purple */
+
+  color: #2c1c59;
+}
+
+/* Rectangle 125 */
+.Rectangle-125 {
+  height: 4px;
+
+  /* Purple */
+
+  background: #2c1c59;
+}
+
+.order-menu {
+  margin-bottom: 2.5em;
+  padding: 0em 1.2em;
+}
+
+/* THANK YOU! */
+.thank-you {
+ 
+  /* position: absolute;
+  left: 14.99%;
+  right: 47.78%;
+  top: 14.37%;
+  bottom: 79.05%; */
+
+  /* Headline 2 */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 43px;
+  /* identical to box height */
+
+  text-align: start;
+
+  /* Purple */
+
+  color: #2c1c59;
+}
+
+
+.order-num {
+  /* Order #19283 */
+
+margin-left: 3.2em;
+/* position: absolute;
+height: 17px;
+left: 91px;
+right: 405px;
+top: 137px; */
+
+/* Overline */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+letter-spacing: 0.015em;
+text-transform: uppercase;
+
+/* Purple */
+
+color: #2C1C59;
+}
+
+.confirmation-title {
+  /* Your order is confirmed. */
+
+
+/* position: absolute;
+height: 40px;
+left: 25px;
+right: 234px;
+top: 179px; */
+
+/* Headline 5 */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 30px;
+letter-spacing: 0.001em;
+text-transform: capitalize;
+
+/* Purple */
+
+color: #2C1C59;
+}
+
+.confirmation-text {
+  /* Confirmation has been sent to your email address provided. Please check your email for updates on your oder status. */
+
+
+/* position: absolute;
+height: 48px;
+left: 25px;
+right: 25px;
+top: 219px; */
+
+/* Body 2 */
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+letter-spacing: 0.005em;
+
+/* Purple */
+
+color: #2C1C59;
+
+
+}
+
+.cs-info-title {
+  /* Shipping address */
+
+
+/* position: absolute;
+height: 17px;
+left: 27px;
+right: 428px;
+top: 337px; */
+
+/* Overline */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+letter-spacing: 0.015em;
+text-transform: uppercase;
+
+/* Purple */
+
+color: #2C1C59;
+}
+
+
+
+
+
+
+/* PAY NOW */
+.return-to-store {
+  /* RETURN TO STORE */
+
+margin-left: 20em;
+  margin-bottom: 1em;
+  /* float: right; */
+/* position: absolute; */
+/* width: 158px; */
+/* height: 20px; */
+/* left: calc(50% - 158px/2); */
+/* top: calc(50% - 20px/2); */
+
+/* Button */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.0125em;
+text-transform: uppercase;
+
+/* White */
+
+color: #FFFFFF;
+}

@@ -96,7 +96,7 @@ const ShoppingCartOverlay = () => {
 
             <div className='shopping-cart-bottom'>
               <Row className='shopping-cart-checkout'>
-                <Button className='checkout-btn' variant=''>
+                <Button className='checkout-btn' variant='' href='/checkout'>
                   <span id='checkout'>CHECKOUT</span>{' '}
                 </Button>
               </Row>
@@ -116,7 +116,9 @@ const ShoppingCartOverlay = () => {
               </Row>
               <Row>
                 <Button className='shopping-cart-cont' variant=''>
-                  <span id='continue-shopping'>CONITUE SHOPPING</span>
+                  <span id='continue-shopping' href='/store'>
+                    CONITUE SHOPPING
+                  </span>
                 </Button>
               </Row>
             </div>
