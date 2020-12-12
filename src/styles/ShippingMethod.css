@@ -1,0 +1,135 @@
+/* 3. shipping-method */
+
+/* Rectangle 118 */
+.shipping-method {
+  /* Extra Light Gray */
+padding-left: .5em;
+  background: #f2f2f2;
+  /* Card Shadow */
+
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+}
+
+.title-dp {
+  width: 100%;
+}
+
+/* Rectangle 125 */
+.Rectangle-125 {
+  height: 4px;
+  
+  /* Purple */
+  
+  background: #2c1c59;
+}
+
+.shipping-method-menu {
+  /* margin-bottom: 2.5em; */
+  /* padding: 0em 1.75em; */
+  /* padding-left: 1em; */
+  /* padding-right: 2.8em; */
+  
+}
+
+
+
+.shipping-method-box {
+  margin-left: 1em;
+  width: 92%;
+  /* Rectangle 2 */
+height: 2.9em;
+margin-bottom: 1em;
+
+/* position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%; */
+
+background: #FFFFFF;
+/* True Black */
+
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+.shipping-method-title {
+  /* Standard US Shipping */
+
+
+position: absolute;
+/* width: 189px;
+height: 21px; */
+left: 3em;
+top: .75em;
+
+/* Sub Filter */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 21px;
+/* identical to box height */
+
+
+/* Black - Text Color */
+
+color: #1E1E1E;
+}
+/* shipping-method METHOD */
+.shipping-method-price {
+ /* Price */
+
+
+position: absolute;
+/* width: 40px; */
+/* height: 18px; */
+right: 1em;
+top: 1em;
+
+/* Overline */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+text-align: right;
+letter-spacing: 0.015em;
+text-transform: uppercase;
+
+/* Black - Text Color */
+
+color: #1E1E1E;
+}
+
+
+
+
+
+
+/* Continue to Payment */
+.cont-pmt {
+  margin-left: 17.2em;
+  margin-bottom: 1em;
+  /* float: right; */
+
+  /* Button */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.0125em;
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #ffffff;
+}
