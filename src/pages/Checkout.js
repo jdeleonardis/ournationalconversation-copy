@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
-import TopHorizontalLine from '../components/Misc/TopHorizontalLine';
+
 import ShoppingCartCard from '../components/Content/ContentCards/ShoppingCartCard';
+import CustomerInformation from '../components/Content/ContentCards/CustomerInformation';
 import ShippingMethod from '../components/Content/ContentCards/ShippingMethod';
 import PaymentCard from '../components/Content/ContentCards/PaymentCard';
 import OrderConfirmation from '../components/Content/ContentCards/OrderConfirmation';
@@ -36,6 +37,8 @@ export class StoreCheckout extends Component {
             <Row>
               
               <Col md={6}>
+                <CustomerInformation/>
+                <br/>
                 <ShippingMethod/>
                 <br/>
                 <PaymentCard />

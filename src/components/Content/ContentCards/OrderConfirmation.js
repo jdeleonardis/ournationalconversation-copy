@@ -107,7 +107,7 @@ class OrderConfirmation extends Component {
                 <p className='confirmation-text'>VISA ending in XXXX</p>
               </Col>
             </Row>
-            <br/>
+            <br />
             <Row>
               <Button className='return-to-store' variant='purple'>
                 RETURN TO STORE
