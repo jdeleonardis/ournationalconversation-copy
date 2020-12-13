@@ -46,7 +46,7 @@ const ShoppingCartCard = () => {
             </Col>
           </Row>
           <br />
-          <Row>
+          {/* <Row>
             <Col className='your-items-promo' xs={8} md={8}>
               <Form.Control
                 type='text'
@@ -54,9 +54,9 @@ const ShoppingCartCard = () => {
                 className='rectangle-2'
               />
             </Col>
-            <Col xs={4} md={3}>
+            <Col xs={4} md={4}>
               <Button
-                size='xl'
+                // size='xl'
                 className='your-items-apply'
                 variant='purple'
                 type='submit'
@@ -64,7 +64,25 @@ const ShoppingCartCard = () => {
                 APPLY
               </Button>
             </Col>
-          </Row>
+          </Row> */}
+          <Form.Row>
+            <Col xs={6} md={10}>
+              <Form.Control
+                className=''
+                placeholder='PROMO CODE'
+              />
+            </Col>
+            <Col xs={6} md={2}>
+              <Button
+                // size='xl'
+                className='your-items-apply'
+                variant='purple'
+                type='submit'
+              >
+                APPLY
+              </Button>
+            </Col>
+          </Form.Row>
           <hr className='line-84' />
           <Row>
             <Col className='your-items-sub' xs={4} md={9}>

@@ -44,9 +44,8 @@ class OrderConfirmation extends Component {
         <Button variant='' size='' className='nf-btn' onClick={this.showMenu}>
           <span className='order-title'>
             {' '}
-            4.&nbsp;ORDER CONFIRMATION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            4.&nbsp;ORDER
+            CONFIRMATION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <hr className='Rectangle-125' />
           </span>
         </Button>

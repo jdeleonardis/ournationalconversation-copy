@@ -3,7 +3,7 @@
 /* Rectangle 118 */
 .payment {
   /* Extra Light Gray */
-padding-left: .5em;
+padding-left: .25em;
   background: #f2f2f2;
   /* Card Shadow */
 
@@ -66,6 +66,24 @@ padding-left: .5em;
   color: #2c1c59;
 }
 
+.payment-box{
+  /* padding: .1em; */
+  /* margin-left: 1em; */
+  width: 99%;
+  /* Rectangle 2 */
+  height: 2.5em;
+  margin-bottom: 1em;
+
+ justify-content: space-around;
+
+  background: #ffffff;
+  /* True Black */
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
 /* Payment content */
 
 /* Credit Card */
@@ -85,24 +103,51 @@ padding-left: .5em;
 
 /* toppng 1 */
 #basic-addon1 {
-  height: 2.4em;
-  left: 25em;
-  right: 0em;
-  top: 0em;
+  position: absolute;
+
+  /* height: 2.4em; */
+  /* left: 25em; */
+  right: 1.5em;
+  top: 0.5em;
 
   /* background: url(toppng.png); */
 }
 
+.credit-card-img {
+  width: 40%;
+  margin-top: -.55em;
+  margin-right: .2em;
+}
+
+.paypal-img {
+  width: 20%;
+  margin-top: 0em;
+  margin-right: .2em;
+}
+
+.amazon-pay-img{
+  width: 22%;
+  margin-top: 0.35em;
+  margin-right: .2em;
+}
+
 .credit-card-i {
-  margin: 2em;
-  padding: 2em;
-  justify-content: 1em;
-  font-size: larger;
+  /* margin: 2em; */
+  /* padding: 2em; */
+  position: relative;
+  justify-content: space-between;
+  font-size: 2em;
+  text-align: right;
+  float: right !important;
 }
 
 /* NAME ON CARD */
 .credit-card-info {
   /* Search bar */
+/* left: 1em; */
+width: 100%;
+margin-left: 0.5em;
+margin-right: 0.8em;
 
   font-family: Montserrat;
   font-style: normal;

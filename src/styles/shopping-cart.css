@@ -188,6 +188,21 @@
   border-radius: 4px;
 }
 
+.your-items-apply {
+  /* promo button */
+  align-items: flex-end;
+  text-align: right;
+  /* position: absolute; */
+  /* width: 84px; */
+  /* height: 40px; */
+
+  /* Purple */
+  color: white;
+
+  background: #2c1c59;
+  border-radius: 5px;
+}
+
 .rectangle-2 {
   /* Rectangle 2 */
 
@@ -200,20 +215,6 @@
   background: #ffffff;
 }
 
-.your-items-apply {
-  /* promo button */
-  align-items: flex-end;
-  text-align: right;
-  /* position: absolute; */
-  width: 84px;
-  height: 40px;
-
-  /* Purple */
-  color: white;
-
-  background: #2c1c59;
-  border-radius: 5px;
-}
 
 .line-84 {
   /* Line 84 */
