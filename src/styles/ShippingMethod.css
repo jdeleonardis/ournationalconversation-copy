@@ -10,12 +10,37 @@
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 }
 
+.sm-title {
+  margin: 0em;
+  padding: 0em;
+  height: 2.5em;
+  margin-right: 8.7em;
+  /* Headline 5 */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.001em;
+  text-transform: capitalize;
+
+  /* Purple */
+
+  color: #2c1c59;
+}
+
+.shipping-method-btn {
+  text-align: start;
+  margin-right: 5.3em;
+}
+
 .title-dp {
   width: 100%;
 }
 
 /* Rectangle 125 */
-.Rectangle-125 {
+.sm-Rectangle-125 {
   height: 4px;
 
   /* Purple */
@@ -24,22 +49,17 @@
 }
 
 .shipping-method-form {
-  /* justify-content: space-around; */
-  /* margin-bottom: 2.5em; */
-margin-top: 1em;
-  /* padding-left: 1em; */
-  /* padding-right: 2.8em; */
+  margin-top: 1em;
 }
 
 .shipping-method-box {
-  /* padding: .1em; */
   margin-left: 1em;
   width: 92%;
   /* Rectangle 2 */
   height: 2.5em;
   margin-bottom: 1em;
 
- justify-content: space-around;
+  justify-content: space-around;
 
   background: #ffffff;
   /* True Black */
@@ -49,20 +69,16 @@ margin-top: 1em;
   border-radius: 4px;
 }
 
-.shipping-method-radio{
+.shipping-method-radio {
   left: 1.85em;
-  top: .35em;
-
+  top: 0.35em;
 }
 
 .shipping-method-title {
   /* Standard US Shipping */
-top: 0.45em;
+  top: 0.45em;
   position: absolute;
-  /* width: 189px;
-height: 21px; */
   left: 3em;
-  /* top: .75em; */
 
   /* Sub Filter */
 
@@ -81,10 +97,8 @@ height: 21px; */
 /* shipping-method METHOD */
 .shipping-method-price {
   /* Price */
-top: 0.8em;
+  top: 0.8em;
   position: absolute;
-  /* width: 40px; */
-  /* height: 18px; */
   right: 1em;
 
   float: inline-end;
@@ -107,12 +121,10 @@ top: 0.8em;
 
 /* Continue to Payment */
 .cont-pmt {
-   margin-left: 16.5em;
+  margin-left: 16.5em;
   width: 45%;
-  /* margin-left: 10.85em; */
   margin-bottom: 1em;
-  /* float: right; */
-position: block;
+  position: block;
   /* Button */
 
   font-family: Montserrat;

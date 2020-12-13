@@ -41,12 +41,11 @@ class CustomerInformation extends Component {
   render() {
     return (
       <div className='customer-info'>
-        <Button variant='' size='' className='nf-btn ' onClick={this.showMenu}>
+        <Button variant=''  className='nf-btn ' onClick={this.showMenu}>
           <span className='customer-info-title'>
-            1.&nbsp;CUSTOMER INFORMATION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <hr className='Rectangle-125' />
+            1.&nbsp;CUSTOMER INFORMATION
           </span>
+          <hr className='cs-Rectangle-125' />
         </Button>
 
         {this.state.showMenu ? (

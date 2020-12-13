@@ -42,12 +42,8 @@ class OrderConfirmation extends Component {
     return (
       <div className='order'>
         <Button variant='' size='' className='nf-btn' onClick={this.showMenu}>
-          <span className='order-title'>
-            {' '}
-            4.&nbsp;ORDER
-            CONFIRMATION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <hr className='Rectangle-125' />
-          </span>
+          <span className='order-title'> 4.&nbsp;ORDER CONFIRMATION</span>
+          <hr className='oc-Rectangle-125' />
         </Button>
 
         {this.state.showMenu ? (

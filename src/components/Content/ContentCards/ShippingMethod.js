@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
-import { Button, InputGroup, FormControl, Row, Col,Form } from 'react-bootstrap';
+import {
+  Button,
+  InputGroup,
+  FormControl,
+  Row,
+  Col,
+  Form
+} from 'react-bootstrap';
 
 import '../../../styles/ShippingMethod.css';
 
@@ -34,12 +41,9 @@ class ShippingMethod extends Component {
   render() {
     return (
       <div className='shipping-method'>
-        <Button variant='' size='' className='nf-btn' onClick={this.showMenu}>
-          <span className='payment-title'>
-            {' '}
-            2.&nbsp;SHIPPING METHOD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <hr className='Rectangle-125' />
-          </span>
+        <Button variant='' size='' className='nf-btn ' onClick={this.showMenu}>
+          <span className='sm-title'> 2.&nbsp;SHIPPING METHOD</span>
+          <hr className='sm-Rectangle-125' />
         </Button>
 
         {this.state.showMenu ? (
@@ -81,36 +85,6 @@ class ShippingMethod extends Component {
             <Button className='cont-pmt' variant='purple'>
               CONTINUE TO PAYMENT
             </Button>
-
-            {/* <InputGroup className='mb-2 shipping-method-placeholder'>
-              <InputGroup.Prepend>
-                <InputGroup.Radio aria-label='Radio button for following text input' />
-              </InputGroup.Prepend>
-              <FormControl
-                // className='shipping-method-placeholder'
-                placeholder='Same as shipping address'
-                aria-label='Text input with radio button'
-              />
-            </InputGroup>
-            <InputGroup className='mb-3 billing-placeholder'>
-              <InputGroup.Prepend>
-                <InputGroup.Radio
-                  placeholder='Standard US Shipping'
-                  aria-label='Radio button for following text input'
-                />
-
-              </InputGroup.Prepend>
-              <FormControl
-                className=''
-                placeholder='Use a different address'
-                aria-label='Text input with radio button'
-              />
-            </InputGroup>
-            <InputGroup className=' '>
-              <Button className='cont-pmt' variant='purple'>
-                CONTINUE TO PAYMENT
-              </Button>
-            </InputGroup> */}
           </div>
         ) : null}
       </div>

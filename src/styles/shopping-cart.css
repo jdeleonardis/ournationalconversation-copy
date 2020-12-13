@@ -1,6 +1,8 @@
 /* Shopping cart summary */
 
 .your-items {
+  border: none;
+  text-decoration: none;
   /* Card Shadow */
 
   /* Extra Light Gray */
@@ -12,13 +14,12 @@
 }
 
 .your-items-title {
-  margin: 0em;
-  padding: 0em;
   /* YOUR ITEMS (1) */
 
   position: relative;
 
   margin: auto;
+  padding-top: 1em;
 
   /* Headline 5 */
 
@@ -45,12 +46,6 @@
   grid-gap: 1rem;
 
   align-items: center;
-}
-
-.rectangle124 {
-  /* Extra Light Gray */
-
-  background: #f2f2f2;
 }
 
 .your-items-table {
@@ -192,9 +187,6 @@
   /* promo button */
   align-items: flex-end;
   text-align: right;
-  /* position: absolute; */
-  /* width: 84px; */
-  /* height: 40px; */
 
   /* Purple */
   color: white;
@@ -215,27 +207,14 @@
   background: #ffffff;
 }
 
-
 .line-84 {
   /* Line 84 */
-
-  /* position: absolute;
-left: 4.13%;
-right: 4.13%;
-top: 60.44%;
-bottom: 39.56%; */
 
   border: 1px solid #000000;
 }
 
 .your-items-sub {
   /* SUBTOTAL */
-
-  /* position: absolute;
-  width: 82px;
-  height: 18px;
-  left: calc(50% - 82px / 2 - 237px);
-  top: calc(50% - 18px / 2 + 110.5px); */
 
   /* Subhead 3 */
 
@@ -253,7 +232,7 @@ bottom: 39.56%; */
 
 .your-items-total {
   /* TOTAL */
-
+  margin-bottom: 1em;
   /* Headline 7 */
 
   font-family: Roboto;

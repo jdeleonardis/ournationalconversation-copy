@@ -6,9 +6,9 @@ import '../../../styles/shopping-cart.css';
 
 const ShoppingCartCard = () => {
   return (
-    <div className='your-items'>
-      <Card border='light' className='rectangle124' fuild>
-        <Card.Header className='your-items-contents'>
+    <div className=''>
+      <Card className='your-items'>
+        <Card.Header variant='' className='your-items-contents'>
           <Row>
             <h3 className='your-items-title'>YOUR ITEMS (1{})</h3>
           </Row>
@@ -46,35 +46,13 @@ const ShoppingCartCard = () => {
             </Col>
           </Row>
           <br />
-          {/* <Row>
-            <Col className='your-items-promo' xs={8} md={8}>
-              <Form.Control
-                type='text'
-                placeholder='PROMO CODE'
-                className='rectangle-2'
-              />
-            </Col>
-            <Col xs={4} md={4}>
-              <Button
-                // size='xl'
-                className='your-items-apply'
-                variant='purple'
-                type='submit'
-              >
-                APPLY
-              </Button>
-            </Col>
-          </Row> */}
+
           <Form.Row>
             <Col xs={6} md={10}>
-              <Form.Control
-                className=''
-                placeholder='PROMO CODE'
-              />
+              <Form.Control className='' placeholder='PROMO CODE' />
             </Col>
             <Col xs={6} md={2}>
               <Button
-                // size='xl'
                 className='your-items-apply'
                 variant='purple'
                 type='submit'
