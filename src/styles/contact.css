@@ -7,8 +7,8 @@
 #contact-card-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  text-align: left;
-  margin-bottom: 20px;
+  text-align: left !important;
+  margin-bottom: 25px;
 }
 
 #contact-subtitle {
@@ -16,7 +16,7 @@
   font-weight: 400;
   font-size: 18px;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 
 .label {
@@ -92,7 +92,7 @@ MEDIA QUERIES
   }
 
   .contact-caret-con {
-    margin-right: 27px !important;
+    margin-right: 10px !important;
     margin-bottom: 15px;
   }
 
@@ -113,7 +113,7 @@ MEDIA QUERIES
   }
 
   .contact-caret-con {
-    margin-right: 27px !important;
+    margin-right: 10px !important;
     margin-bottom: 15px;
   }
 
@@ -134,7 +134,7 @@ MEDIA QUERIES
   }
 
   .contact-caret-con {
-    margin-right: 27px !important;
+    margin-right: 10px !important;
     margin-bottom: 15px;
   }
 
@@ -155,7 +155,7 @@ MEDIA QUERIES
   }
 
   .contact-caret-con {
-    margin-right: 27px !important;
+    margin-right: 10px !important;
     margin-bottom: 15px;
   }
 
@@ -177,7 +177,7 @@ MEDIA QUERIES
   }
 
   .contact-caret-con {
-    margin-right: 29px !important;
+    margin-right: 10px !important;
     margin-bottom: 15px;
   }
 
@@ -200,12 +200,12 @@ MEDIA QUERIES
   }
 
   .contact-caret-con {
-    margin-right: 17px !important;
+    margin-right: 10px !important;
     margin-bottom: 15px;
   }
 
   option {
-    font-size: 8.5px;
+    font-size: 7px;
   }
 }
 
@@ -223,12 +223,12 @@ MEDIA QUERIES
   }
 
   .contact-caret-con {
-    margin-right: 14px !important;
+    margin-right: 10px !important;
     margin-bottom: 15px;
   }
 
   option {
-    font-size: 8.5px;
+    font-size: 7px;
   }
 }
 
@@ -246,11 +246,11 @@ MEDIA QUERIES
   }
 
   .contact-caret-con {
-    margin-right: 14px !important;
+    margin-right: 10px !important;
     margin-bottom: 15px;
   }
 
   option {
-    font-size: 8.5px;
+    font-size: 7px;
   }
 }
