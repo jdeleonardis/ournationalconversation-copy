@@ -95,6 +95,10 @@ MEDIA QUERIES
     margin-right: 27px !important;
     margin-bottom: 15px;
   }
+
+  option {
+    font-size: 10px;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 980px) {
@@ -111,6 +115,10 @@ MEDIA QUERIES
   .contact-caret-con {
     margin-right: 27px !important;
     margin-bottom: 15px;
+  }
+
+  option {
+    font-size: 10px;
   }
 }
 
@@ -129,6 +137,10 @@ MEDIA QUERIES
     margin-right: 27px !important;
     margin-bottom: 15px;
   }
+
+  option {
+    font-size: 10px;
+  }
 }
 
 @media screen and (min-width: 551px) and (max-width: 640px) {
@@ -145,6 +157,10 @@ MEDIA QUERIES
   .contact-caret-con {
     margin-right: 27px !important;
     margin-bottom: 15px;
+  }
+
+  option {
+    font-size: 10px;
   }
 }
 
@@ -163,6 +179,10 @@ MEDIA QUERIES
   .contact-caret-con {
     margin-right: 29px !important;
     margin-bottom: 15px;
+  }
+
+  option {
+    font-size: 8.5px;
   }
 }
 
@@ -183,6 +203,10 @@ MEDIA QUERIES
     margin-right: 17px !important;
     margin-bottom: 15px;
   }
+
+  option {
+    font-size: 8.5px;
+  }
 }
 
 @media screen and (min-width: 401px) and (max-width: 430px) {
@@ -202,6 +226,10 @@ MEDIA QUERIES
     margin-right: 14px !important;
     margin-bottom: 15px;
   }
+
+  option {
+    font-size: 8.5px;
+  }
 }
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
@@ -220,5 +248,9 @@ MEDIA QUERIES
   .contact-caret-con {
     margin-right: 14px !important;
     margin-bottom: 15px;
+  }
+
+  option {
+    font-size: 8.5px;
   }
 }
