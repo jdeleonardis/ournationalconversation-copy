@@ -213,7 +213,7 @@ export default function App() {
   return (
     <Fragment>
       <div className='modal-container-signup'>
-        {/* <Container className='modal-container-signup' fluid> */}
+        <Container className='modal-container-signup' fluid>
         <Card.Body id='signup-card-body'>
           <Card.Title id='signup-card-title'>Sign up for ONC</Card.Title>
           <Card.Subtitle id='signup-card-subtitle' className='mb-2'>
@@ -319,7 +319,7 @@ export default function App() {
             </Button>
           </form>
         </Card.Body>
-        {/* </Container> */}
+        </Container>
       </div>
     </Fragment>
   );

@@ -21,13 +21,8 @@ const HeaderSignup = () => {
       </Button>
 
       <Modal
-      // style={{margin:"0", padding:'0'}}
         show={show}
         onHide={() => setShow(false)}
-        style={{paddingTop : '0em !important'}}
-        // dialogClassName='modal-90w'
-        // aria-labelledby='example-custom-modal-styling-title'
-        // center
       >
         <SignupComponent />
       </Modal>
