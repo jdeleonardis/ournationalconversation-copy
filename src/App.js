@@ -10,6 +10,10 @@ import Newsletter from './pages/Newsletter';
 import Store from './pages/Store';
 import Checkout from './pages/Checkout';
 import Contact from './pages/Contact';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
+import Advertisers from './pages/Advertisers';
+import Donors from './pages/Donors';
 import HeaderReact from './components/Misc/HeaderReact';
 import SearchBar from './components/Filters/SearchBar';
 import LocalNews from './pages/LocalNews';
@@ -38,6 +42,10 @@ function App() {
 					<Route exact path="/writerdashboard" component={WriterDashboard} />
 					<Route exact path="/newsletter" component={Newsletter} />
 					<Route exact path="/about" component={About} />
+					<Route exact path="/privacy" component={Privacy} />
+					<Route exact path="/terms" component={Terms} />
+					<Route exact path="/advertisers" component={Advertisers} />
+					<Route exact path="/donors" component={Donors} />
 
 					<Route exact path="/news" component={News} />
 					<Route exact path="/localnews" component={LocalNews} />
