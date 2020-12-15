@@ -2,6 +2,8 @@ import React, { Component, Fragment } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import RailButtons from '../components/Misc/RailButtons';
+import AboutMemberCard from '../components/Content/ContentCards/AboutTeamCard';
+
 import '../styles/aboutpage.css';
 
 export class Webisodes extends Component {
@@ -53,17 +55,32 @@ export class Webisodes extends Component {
 									<RailButtons />
 								</div>
 							</Col>
-							<Col md={9}>
-								<Row>
-									&nbsp;&nbsp;
-									<div className="texttitle">MEET OUR MANAGEMENT TEAM</div>
-									&nbsp;&nbsp;
-									<div className="dividerAbout"></div>&nbsp;&nbsp;&nbsp;
-								</Row>
-								<Row>
-									<Col></Col>
-								</Row>
-							</Col>
+							<div>
+								<Col md={9}>
+									<Row>
+										&nbsp;&nbsp;
+										<div className="texttitle">MEET OUR MANAGEMENT TEAM</div>
+										&nbsp;&nbsp;
+										<div className="dividerAbout"></div>&nbsp;&nbsp;&nbsp;
+									</Row>
+									<Row>
+										<Col md={4}>
+											<AboutMemberCard />
+										</Col>
+
+										<Col md={4}>
+											<AboutMemberCard />
+										</Col>
+										<Col md={4}>
+											<AboutMemberCard />
+										</Col>
+
+										<Col md={4}>
+											<AboutMemberCard />
+										</Col>
+									</Row>
+								</Col>
+							</div>
 						</Row>
 						<Row></Row>
 					</Container>
