@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import Solution from '../components/Content/ContentBoards/ContentBoard';
-
 import GlobalButton from '../components/Misc/GlobalButton';
 import News from '../components/Content/ContentBoards/NewsBoard';
 import NewsCard from '../components/Content/ContentCards/NewsCard';
@@ -84,8 +83,6 @@ const Home = () => {
             </Col>
             <Col md={3}></Col>
           </Row>
-
-          
         </Container>
       </div>
     </Fragment>

@@ -11,6 +11,21 @@
   margin-left: auto;
 }
 
+.modal-content {
+  width: 550px !important;
+  background-color: #f3f2f2 !important;
+}
+
+#signup-card-body {
+  /* margin-bottom: 40px; */
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+#signup-card-title {
+  margin-top: -10px;
+}
+
 .notvalid-msg-clear {
   display: none;
 }
@@ -352,6 +367,7 @@ MEDIA QUERIES
   }
 
   #new-to-site {
+    font-family: 'Montserrat', sans-serif !important;
     font-size: 14px;
   }
 

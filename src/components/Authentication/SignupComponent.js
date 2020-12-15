@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react';
 import countries from './Countries';
-
 import { Container, Card, Button } from 'react-bootstrap';
 import '../../App.css';
 import '../../styles/Signup.css';
 import '../../styles/Country.css';
+import Radium from 'radium';
 
-export default function App() {
+const SignupComponent = () => {
+  // export default function App() {
   const [userName, setUserName] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
@@ -210,117 +211,147 @@ export default function App() {
     event.preventDefault();
   };
 
+  const queryStyle = {
+    '@media screen and (min-width: 981px) and (max-width: 1200px)': {
+      fontSize: '1rem',
+    },
+    '@media screen and (min-width: 769px) and (max-width: 980px)': {
+      fontSize: '1rem',
+    },
+    '@media screen and (min-width: 641px) and (max-width: 768px)': {
+      fontSize: '1rem',
+    },
+    '@media screen and (min-width: 551px) and (max-width: 640px)': {
+      fontSize: '1rem',
+    },
+    '@media screen and (min-width: 471px) and (max-width: 550px)': {
+      fontSize: '1rem',
+    },
+    '@media screen and (min-width: 431px) and (max-width: 470px)': {
+      fontSize: '1rem',
+    },
+    '@media screen and (min-width: 401px) and (max-width: 430px)': {
+      fontSize: '1rem',
+    },
+    '@media screen and (min-width: 100px) and (max-width: 400px)': {
+      fontSize: '1rem',
+    },
+  };
+
   return (
     <Fragment>
       <div className='modal-container-signup'>
         <Container className='modal-container-signup' fluid>
-        <Card.Body id='signup-card-body'>
-          <Card.Title id='signup-card-title'>Sign up for ONC</Card.Title>
-          <Card.Subtitle id='signup-card-subtitle' className='mb-2'>
-            <div id='new-to-site'>It's quick and easy.</div>
-          </Card.Subtitle>
+          <Card.Body id='signup-card-body'>
+            <Card.Title id='signup-card-title'>Sign up for ONC</Card.Title>
+            <Card.Subtitle id='signup-card-subtitle' className='mb-2'>
+              <div id='new-to-site'>It's quick and easy.</div>
+            </Card.Subtitle>
 
-          <form onSubmit={handleSubmit}>
-            <div className='input-container-name'>
-              <input
-                className='form-input-field name-input'
-                name='userName'
-                placeholder='USERNAME'
-                value={userName}
-                onChange={(e) => setUserName(e.target.value)}
-              />
-            </div>
-            <div className='hidden-err-msg' id='username-notblank'></div>
-            <div className='hidden-err-msg' id='username-notvalid'></div>
+            <form onSubmit={handleSubmit}>
+              <div className='input-container-name'>
+                <input
+                  className='form-input-field name-input'
+                  name='userName'
+                  placeholder='USERNAME'
+                  value={userName}
+                  onChange={(e) => setUserName(e.target.value)}
+                />
+              </div>
+              <div className='hidden-err-msg' id='username-notblank'></div>
+              <div className='hidden-err-msg' id='username-notvalid'></div>
 
-            <div className='input-container-email'>
-              <input
-                className='form-input-field email-input'
-                name='email'
-                placeholder='EMAIL'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-            <div className='hidden-err-msg' id='email-notblank'></div>
-            <div className='hidden-err-msg' id='email-notvalid'></div>
+              <div className='input-container-email'>
+                <input
+                  className='form-input-field email-input'
+                  name='email'
+                  placeholder='EMAIL'
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <div className='hidden-err-msg' id='email-notblank'></div>
+              <div className='hidden-err-msg' id='email-notvalid'></div>
 
-            <div className='input-container'>
-              <input
-                className='pw-input'
-                id='password'
-                name='password'
-                type='password'
-                placeholder='PASSWORD'
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-              <span>
-                <span
-                  id='show_password'
-                  onClick={pwToggle}
-                  className='eye-con fas fa-eye-slash'
-                ></span>
-              </span>
-            </div>
-            <div className='hidden-err-msg' id='password-notblank'></div>
-            <div className='hidden-err-msg' id='password-notvalid'></div>
-
-            <div className='input-container2'>
-              <input
-                className='pw-input2'
-                id='password2'
-                name='password'
-                type='password'
-                placeholder='CONFIRM PASSWORD'
-                value={password2}
-                onChange={(e) => setPassword2(e.target.value)}
-              />
-              <span>
-                <span
-                  id='show_password2'
-                  onClick={pwToggle}
-                  className='eye-con fas fa-eye-slash'
-                ></span>
-              </span>
-            </div>
-            <div className='hidden-err-msg' id='password2-notblank'></div>
-            <div className='hidden-err-msg' id='password2-notvalid'></div>
-
-            <label id='dropdown-label'>
-              <div className='input-div'>
-                <select
-                  id='dropdown'
-                  name='country'
-                  value={country}
-                  onChange={(e) => setCountry(e.target.value)}
-                  required
-                >
-                  <option key=''>SELECT COUNTRY</option>
-                  {countries.map((country) => (
-                    <option key={country}>{country}</option>
-                  ))}
-                </select>
-
-                <span className='icon-span '>
-                  <span className='caret-con fas fa-chevron-down fa-lg'></span>
+              <div className='input-container'>
+                <input
+                  className='pw-input'
+                  id='password'
+                  name='password'
+                  type='password'
+                  placeholder='PASSWORD'
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+                <span>
+                  <span
+                    id='show_password'
+                    onClick={pwToggle}
+                    className='eye-con fas fa-eye-slash'
+                  ></span>
                 </span>
               </div>
-            </label>
+              <div className='hidden-err-msg' id='password-notblank'></div>
+              <div className='hidden-err-msg' id='password-notvalid'></div>
 
-            <Button
-              // href='/'
-              id='signup-btn'
-              variant='primary'
-              type='submit'
-              block
-            >
-              SIGN UP
-            </Button>
-          </form>
-        </Card.Body>
+              <div className='input-container2'>
+                <input
+                  className='pw-input2'
+                  id='password2'
+                  name='password'
+                  type='password'
+                  placeholder='CONFIRM PASSWORD'
+                  value={password2}
+                  onChange={(e) => setPassword2(e.target.value)}
+                />
+                <span>
+                  <span
+                    id='show_password2'
+                    onClick={pwToggle}
+                    className='eye-con fas fa-eye-slash'
+                  ></span>
+                </span>
+              </div>
+              <div className='hidden-err-msg' id='password2-notblank'></div>
+              <div className='hidden-err-msg' id='password2-notvalid'></div>
+
+              <label id='dropdown-label'>
+                <div className='input-div'>
+                  <select
+                    id='dropdown'
+                    name='country'
+                    value={country}
+                    onChange={(e) => setCountry(e.target.value)}
+                    required
+                  >
+                    <option key=''>SELECT COUNTRY</option>
+                    {countries.map((country) => (
+                      <option style={queryStyle} key={country}>
+                        {country}
+                      </option>
+                    ))}
+                  </select>
+
+                  <span className='icon-span '>
+                    <span className='caret-con fas fa-chevron-down fa-lg'></span>
+                  </span>
+                </div>
+              </label>
+
+              <Button
+                // href='/'
+                id='signup-btn'
+                variant='primary'
+                type='submit'
+                block
+              >
+                SIGN UP
+              </Button>
+            </form>
+          </Card.Body>
         </Container>
       </div>
     </Fragment>
   );
-}
+};
+export default Radium(SignupComponent);

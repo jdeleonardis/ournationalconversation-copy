@@ -28,7 +28,7 @@ const Contact = () => {
                   <Card.Body>
                     <Card.Title id='contact-card-title'>CONTACT</Card.Title>
                     <Card.Subtitle id='login-card-subtitle' className='mb-2'>
-                      <div id='contact-subtitle'>
+                      <div id='contact-subtitle-text'>
                         We’d love to hear from you! Send us a question or
                         comment and we’ll be in touch as soon as possible.
                       </div>
