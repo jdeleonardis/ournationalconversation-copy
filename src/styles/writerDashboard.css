@@ -37,14 +37,27 @@
   border-radius: 4px;
 }
 
+#addTag-btn {
+  margin-top: 2px !important;
+}
+
 #addTag-btn,
 #submitArticle-btn{
   background-color: #2c1c59 !important;
+  border-color: #2c1c59 !important;
 }
 
 #addTag-btn:hover,
 #submitArticle-btn:hover {
   color: black
+}
+
+#addTag-btn:active,
+#addTag-btn:focus,
+#submitArticle-btn:active,
+#submitArticle-btn:focus {
+  outline: none !important;
+  box-shadow: none;
 }
 
 #saveDraft-btn {
@@ -54,7 +67,7 @@
   margin-right: 20px;
 }
 
-#saveDraft-btn:hover {
+#saveDraft-btn:hover{
   background-color: #2c1c59 !important;
   color: #ffffff !important;
 }
@@ -65,9 +78,11 @@
 
 .individualTag {
   width: 30% !important;
-  margin-right: 10px;
-  border-radius: 4px;
+  margin-right: 10px;    
+  border-left-width: 1px !important;
+  border-radius: 4px !important;
   color: #2c1c59 !important;
+  background-color: #f3f2f2 !important;
   border-color: #2c1c59 !important;
 }
 
@@ -89,4 +104,13 @@
 
 .se-toolbar {
   background-color:#D1D0D0 !important;
+}
+
+.purpleX {
+  color: #2c1c59 !important;
+  opacity: 1 !important;
+}
+
+.purpleX:hover {  
+  opacity: .65 !important;
 }

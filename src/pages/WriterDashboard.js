@@ -108,6 +108,24 @@ export class WriterDashboard extends Component {
     return validationError
   }
 
+  validateNewTag = () => {
+    let validationError = false
+    let validationIssue = []
+    if (this.state.newTag === '') {      
+      validationIssue.push('tag')
+      validationError = true
+    }
+
+    if (validationError) {
+      this.setState({validationError: true, validationIssue: validationIssue})
+    }
+    else
+    {
+      this.setState({validationError: false, validationIssue: []})
+    }    
+    return validationError
+  }  
+
   submitArticle = (e) => {
     e.preventDefault();
     e.stopPropagation();
@@ -125,7 +143,9 @@ export class WriterDashboard extends Component {
   addTag = (e) => {
     e.preventDefault();
     e.stopPropagation();
-    this.setState(prevState => ({ tagList: [...this.state.tagList, this.state.newTag], newTag: ''}));
+    if (!this.validateNewTag()) {
+      this.setState(prevState => ({ tagList: [...this.state.tagList, this.state.newTag], newTag: ''}));
+    }
   }
 
   removeTag = (value,e) => {
@@ -216,13 +236,11 @@ export class WriterDashboard extends Component {
                         </Form.Group>
                         <Form.Group controlId='articleCategories'>
                           <ArticleCategoryRadioButtons 
-                            active={this.state.articleCategory}
-                            validationError={this.state.validationError}
-                            validationIssue={this.state.validationIssue}
+                            state={this.state}
                             changeHandler={this.changeHandler}/>
                         </Form.Group>
                         <Form.Group controlId='newsTopics'>                          
-                          <NewsTopicRadioButtons 
+                          <NewsTopicRadioButtons                             
                             articleCategory={this.state.articleCategory}
                             active={this.state.newsTopic}
                             validationError={this.state.validationError}
@@ -238,13 +256,11 @@ export class WriterDashboard extends Component {
                             changeHandler={this.changeHandler}/>                           
                         </Form.Group>  
                         <Form.Group controlId='keywordTags'>
-                          <KeywordTags 
-                            articleCategory={this.state.articleCategory}
+                          <KeywordTags                             
                             addTag={this.addTag}
                             removeTag={this.removeTag}
                             changeHandler={this.changeHandler}
-                            newTag={this.state.newTag}
-                            tagList={this.state.tagList}/>                           
+                            state={this.state}/>
                         </Form.Group>   
                         <WriterDashboardSubmitButtons 
                           saveDraft={this.saveDraft}
