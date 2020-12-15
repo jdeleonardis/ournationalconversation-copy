@@ -324,7 +324,9 @@ const SignupComponent = () => {
                     onChange={(e) => setCountry(e.target.value)}
                     required
                   >
-                    <option key=''>SELECT COUNTRY</option>
+                    <option style={queryStyle} key=''>
+                      SELECT COUNTRY
+                    </option>
                     {countries.map((country) => (
                       <option style={queryStyle} key={country}>
                         {country}
