@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import RailButtons from '../components/Misc/RailButtons';
 import AboutMemberCard from '../components/Content/ContentCards/AboutTeamCard';
-
+import data from '../data/cardTempData/aboutteam.json';
 import '../styles/aboutpage.css';
 
 export class Webisodes extends Component {
@@ -64,20 +64,11 @@ export class Webisodes extends Component {
 										<div className="dividerAbout"></div>&nbsp;&nbsp;&nbsp;
 									</Row>
 									<Row>
-										<Col md={4}>
-											<AboutMemberCard />
-										</Col>
-
-										<Col md={4}>
-											<AboutMemberCard />
-										</Col>
-										<Col md={4}>
-											<AboutMemberCard />
-										</Col>
-
-										<Col md={4}>
-											<AboutMemberCard />
-										</Col>
+										{data.map(data => (
+											<Col md={4}>
+												<AboutMemberCard data={data} />
+											</Col>
+										))}
 									</Row>
 								</Col>
 							</div>
