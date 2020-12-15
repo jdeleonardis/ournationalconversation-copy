@@ -212,114 +212,114 @@ export default function App() {
 
   return (
     <Fragment>
-      <div>
-        <Container className='modal-container-signup' fluid>
-          <Card.Body id='signup-card-body'>
-            <Card.Title id='signup-card-title'>Sign up for ONC</Card.Title>
-            <Card.Subtitle id='signup-card-subtitle' className='mb-2'>
-              <div id='new-to-site'>It's quick and easy.</div>
-            </Card.Subtitle>
+      <div className='modal-container-signup'>
+        {/* <Container className='modal-container-signup' fluid> */}
+        <Card.Body id='signup-card-body'>
+          <Card.Title id='signup-card-title'>Sign up for ONC</Card.Title>
+          <Card.Subtitle id='signup-card-subtitle' className='mb-2'>
+            <div id='new-to-site'>It's quick and easy.</div>
+          </Card.Subtitle>
 
-            <form onSubmit={handleSubmit}>
-              <div className='input-container-name'>
-                <input
-                  className='form-input-field name-input'
-                  name='userName'
-                  placeholder='USERNAME'
-                  value={userName}
-                  onChange={(e) => setUserName(e.target.value)}
-                />
-              </div>
-              <div className='hidden-err-msg' id='username-notblank'></div>
-              <div className='hidden-err-msg' id='username-notvalid'></div>
+          <form onSubmit={handleSubmit}>
+            <div className='input-container-name'>
+              <input
+                className='form-input-field name-input'
+                name='userName'
+                placeholder='USERNAME'
+                value={userName}
+                onChange={(e) => setUserName(e.target.value)}
+              />
+            </div>
+            <div className='hidden-err-msg' id='username-notblank'></div>
+            <div className='hidden-err-msg' id='username-notvalid'></div>
 
-              <div className='input-container-email'>
-                <input
-                  className='form-input-field email-input'
-                  name='email'
-                  placeholder='EMAIL'
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </div>
-              <div className='hidden-err-msg' id='email-notblank'></div>
-              <div className='hidden-err-msg' id='email-notvalid'></div>
+            <div className='input-container-email'>
+              <input
+                className='form-input-field email-input'
+                name='email'
+                placeholder='EMAIL'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className='hidden-err-msg' id='email-notblank'></div>
+            <div className='hidden-err-msg' id='email-notvalid'></div>
 
-              <div className='input-container'>
-                <input
-                  className='pw-input'
-                  id='password'
-                  name='password'
-                  type='password'
-                  placeholder='PASSWORD'
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-                <span>
-                  <span
-                    id='show_password'
-                    onClick={pwToggle}
-                    className='eye-con fas fa-eye-slash'
-                  ></span>
+            <div className='input-container'>
+              <input
+                className='pw-input'
+                id='password'
+                name='password'
+                type='password'
+                placeholder='PASSWORD'
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <span>
+                <span
+                  id='show_password'
+                  onClick={pwToggle}
+                  className='eye-con fas fa-eye-slash'
+                ></span>
+              </span>
+            </div>
+            <div className='hidden-err-msg' id='password-notblank'></div>
+            <div className='hidden-err-msg' id='password-notvalid'></div>
+
+            <div className='input-container2'>
+              <input
+                className='pw-input2'
+                id='password2'
+                name='password'
+                type='password'
+                placeholder='CONFIRM PASSWORD'
+                value={password2}
+                onChange={(e) => setPassword2(e.target.value)}
+              />
+              <span>
+                <span
+                  id='show_password2'
+                  onClick={pwToggle}
+                  className='eye-con fas fa-eye-slash'
+                ></span>
+              </span>
+            </div>
+            <div className='hidden-err-msg' id='password2-notblank'></div>
+            <div className='hidden-err-msg' id='password2-notvalid'></div>
+
+            <label id='dropdown-label'>
+              <div className='input-div'>
+                <select
+                  id='dropdown'
+                  name='country'
+                  value={country}
+                  onChange={(e) => setCountry(e.target.value)}
+                  required
+                >
+                  <option key=''>SELECT COUNTRY</option>
+                  {countries.map((country) => (
+                    <option key={country}>{country}</option>
+                  ))}
+                </select>
+
+                <span className='icon-span '>
+                  <span className='caret-con fas fa-chevron-down fa-lg'></span>
                 </span>
               </div>
-              <div className='hidden-err-msg' id='password-notblank'></div>
-              <div className='hidden-err-msg' id='password-notvalid'></div>
+            </label>
 
-              <div className='input-container2'>
-                <input
-                  className='pw-input2'
-                  id='password2'
-                  name='password'
-                  type='password'
-                  placeholder='CONFIRM PASSWORD'
-                  value={password2}
-                  onChange={(e) => setPassword2(e.target.value)}
-                />
-                <span>
-                  <span
-                    id='show_password2'
-                    onClick={pwToggle}
-                    className='eye-con fas fa-eye-slash'
-                  ></span>
-                </span>
-              </div>
-              <div className='hidden-err-msg' id='password2-notblank'></div>
-              <div className='hidden-err-msg' id='password2-notvalid'></div>
-
-              <label id='dropdown-label'>
-                <div className='input-div'>
-                  <select
-                    id='dropdown'
-                    name='country'
-                    value={country}
-                    onChange={(e) => setCountry(e.target.value)}
-                    required
-                  >
-                    <option key=''>SELECT COUNTRY</option>
-                    {countries.map((country) => (
-                      <option key={country}>{country}</option>
-                    ))}
-                  </select>
-
-                  <span className='icon-span '>
-                    <span className='caret-con fas fa-chevron-down fa-lg'></span>
-                  </span>
-                </div>
-              </label>
-
-              <Button
-                // href='/'
-                id='signup-btn'
-                variant='primary'
-                type='submit'
-                block
-              >
-                SIGN UP
-              </Button>
-            </form>
-          </Card.Body>
-        </Container>
+            <Button
+              // href='/'
+              id='signup-btn'
+              variant='primary'
+              type='submit'
+              block
+            >
+              SIGN UP
+            </Button>
+          </form>
+        </Card.Body>
+        {/* </Container> */}
       </div>
     </Fragment>
   );

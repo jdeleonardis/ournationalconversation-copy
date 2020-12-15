@@ -6,8 +6,8 @@ import LoginComponent from './LoginComponent';
 const HeaderLogin = () => {
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
 
   return (
     <>

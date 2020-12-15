@@ -129,85 +129,85 @@ export default function App() {
 
   return (
     <Fragment>
-      <div>
-        <Container className='modal-container-login' fluid>
-          <Card.Body id='login-card-body'>
-            <Card.Title id='login-card-title'>Log in to ONC</Card.Title>
-            <Card.Subtitle id='login-card-subtitle' className='mb-2'>
-              <div id='new-to-site'>
-                New to this site?
-                <span id='sign-up'>
-                  <a href='/'>Sign Up</a>
-                </span>
-              </div>
-            </Card.Subtitle>
+      <div className='modal-container-login'>
+        {/* <Container className='modal-container-login' fluid> */}
+        <Card.Body id='login-card-body'>
+          <Card.Title id='login-card-title'>Log in to ONC</Card.Title>
+          <Card.Subtitle id='login-card-subtitle' className='mb-2'>
+            <div id='new-to-site'>
+              New to this site?
+              <span id='sign-up'>
+                <a href='/'>Sign Up</a>
+              </span>
+            </div>
+          </Card.Subtitle>
 
-            <form onSubmit={handleSubmit}>
-              <div className='input-container-email'>
-                <input
-                  className='form-input-field email-input'
-                  name='email'
-                  placeholder='USERNAME OR EMAIL'
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </div>
-              <div className='hidden-err-msg' id='email-notblank'></div>
-              <div className='hidden-err-msg' id='email-notvalid'></div>
+          <form onSubmit={handleSubmit}>
+            <div className='input-container-email'>
+              <input
+                className='form-input-field email-input'
+                name='email'
+                placeholder='USERNAME OR EMAIL'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className='hidden-err-msg' id='email-notblank'></div>
+            <div className='hidden-err-msg' id='email-notvalid'></div>
 
-              <div className='input-container'>
-                <input
-                  className='pw-input'
-                  id='password'
-                  name='password'
-                  type='password'
-                  placeholder='PASSWORD'
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-                <span>
-                  <span
-                    id='show_password'
-                    onClick={pwToggle}
-                    className='eye-con fas fa-eye-slash'
-                  ></span>
-                </span>
-              </div>
-              <div className='hidden-err-msg' id='password-notblank'></div>
-              <div className='hidden-err-msg' id='password-notvalid'></div>
+            <div className='input-container'>
+              <input
+                className='pw-input'
+                id='password'
+                name='password'
+                type='password'
+                placeholder='PASSWORD'
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <span>
+                <span
+                  id='show_password'
+                  onClick={pwToggle}
+                  className='eye-con fas fa-eye-slash'
+                ></span>
+              </span>
+            </div>
+            <div className='hidden-err-msg' id='password-notblank'></div>
+            <div className='hidden-err-msg' id='password-notvalid'></div>
 
-              <Form.Group id='remember-group' controlId='formBasicCheckbox'>
-                <span id='forgot'>
-                  <a href='/'>Forgot Password?</a>
-                </span>
-                <Form.Check
-                  id='remember-me'
-                  type='checkbox'
-                  label='Remember me'
-                />
-              </Form.Group>
+            <Form.Group id='remember-group' controlId='formBasicCheckbox'>
+              <span id='forgot'>
+                <a href='/'>Forgot Password?</a>
+              </span>
+              <Form.Check
+                id='remember-me'
+                type='checkbox'
+                label='Remember me'
+              />
+            </Form.Group>
 
-              <Button
-                // href='/'
-                id='login-btn'
-                variant='primary'
-                type='submit'
-                block
-              >
-                LOG IN
-              </Button>
-              <h2 className='or-h2' id='or-text'>
-                <span>OR</span>
-              </h2>
-              <Button id='facebook-login-btn' variant='primary' type='submit'>
-                LOG IN WITH FACEBOOK
-              </Button>
-              <Button id='google-login-btn' variant='danger' type='submit'>
-                LOG IN WITH GOOGLE
-              </Button>
-            </form>
-          </Card.Body>
-        </Container>
+            <Button
+              // href='/'
+              id='login-btn'
+              variant='primary'
+              type='submit'
+              block
+            >
+              LOG IN
+            </Button>
+            <h2 className='or-h2' id='or-text'>
+              <span>OR</span>
+            </h2>
+            <Button id='facebook-login-btn' variant='primary' type='submit'>
+              LOG IN WITH FACEBOOK
+            </Button>
+            <Button id='google-login-btn' variant='danger' type='submit'>
+              LOG IN WITH GOOGLE
+            </Button>
+          </form>
+        </Card.Body>
+        {/* </Container> */}
       </div>
     </Fragment>
   );

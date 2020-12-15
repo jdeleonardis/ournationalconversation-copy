@@ -6,8 +6,8 @@ import SignupComponent from './SignupComponent';
 const HeaderSignup = () => {
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
 
   return (
     <>
@@ -24,6 +24,7 @@ const HeaderSignup = () => {
       // style={{margin:"0", padding:'0'}}
         show={show}
         onHide={() => setShow(false)}
+        style={{paddingTop : '0em !important'}}
         // dialogClassName='modal-90w'
         // aria-labelledby='example-custom-modal-styling-title'
         // center
