@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 
 function AboutTeamCard(props) {
 	return (
-		<Card>
+		<Card style={{ borderStyle: 'none' }}>
 			<Card.Img
 				src={props.data.img}
 				alt="Card image"
