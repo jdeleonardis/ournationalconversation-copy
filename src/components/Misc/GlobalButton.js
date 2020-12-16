@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import '../../styles/global-btn.css';
-
+debugger;
 const GlobalButton = props => {
 	return (
 		<Button
@@ -19,6 +19,7 @@ const GlobalButton = props => {
 				float: `${props.float}`,
 			}}
 			variant="outline-primary"
+			onClick={props.method}
 		>
 			{props.label}
 		</Button>
