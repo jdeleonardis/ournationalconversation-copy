@@ -1,22 +1,21 @@
 import React, { Component, Fragment } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Accordion, Card, Button } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 
-import ShoppingCartCard from '../components/Content/ContentCards/ShoppingCartCard';
+import CheckoutSteps from '../components/Content/ContentCards/CheckoutSteps';
 import CustomerInformation from '../components/Content/ContentCards/CustomerInformation';
 import ShippingMethod from '../components/Content/ContentCards/ShippingMethod';
 import PaymentCard from '../components/Content/ContentCards/PaymentCard';
 import OrderConfirmation from '../components/Content/ContentCards/OrderConfirmation';
-
+import ShoppingCartCard from '../components/Content/ContentCards/ShoppingCartCard';
 
 import '../styles/Pages.css';
-
 
 export class StoreCheckout extends Component {
   render() {
     const style = {
-      textAlign: 'center',
-      width: '104%'
+      // textAlign: 'center',
+      // width: '104%'
     };
 
     return (
@@ -35,18 +34,18 @@ export class StoreCheckout extends Component {
             </Row>
             <br />
             <Row>
-              
               <Col md={6}>
-                <CustomerInformation/>
-                <br/>
-                <ShippingMethod/>
-                <br/>
+                <CustomerInformation />
+                <br />
+                <ShippingMethod />
+                <br />
                 <PaymentCard />
-                <br/>
-                <OrderConfirmation/>
+                <br />
+                <OrderConfirmation />
               </Col>
               <Col md={6}>
                 <ShoppingCartCard />
+                {/* <CheckoutSteps /> */}
               </Col>
             </Row>
           </Container>

@@ -53,7 +53,7 @@ class ShippingMethod extends Component {
               this.dropdownMenu = element;
             }}
           >
-            <Form className='shipping-method-form'>
+            <Form className='shipping-method-form' id='shipping-method'>
               <Form.Check className='shipping-method-box' type='radio' id=''>
                 <Form.Check.Input
                   className='shipping-method-radio'

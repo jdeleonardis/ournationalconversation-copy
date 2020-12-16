@@ -41,7 +41,7 @@ class CustomerInformation extends Component {
   render() {
     return (
       <div className='customer-info'>
-        <Button variant=''  className='nf-btn ' onClick={this.showMenu}>
+        <Button variant='' className='nf-btn ' onClick={this.showMenu}>
           <span className='customer-info-title'>
             1.&nbsp;CUSTOMER INFORMATION
           </span>
@@ -55,7 +55,7 @@ class CustomerInformation extends Component {
               this.dropdownMenu = element;
             }}
           >
-            <Form>
+            <Form id='customer-information'>
               <Form.Group>
                 <Form.Label className='payment-method mb-3 '>EMAIL</Form.Label>
                 <Form.Control
@@ -153,7 +153,11 @@ class CustomerInformation extends Component {
             </Form>
 
             <InputGroup className=' '>
-              <Button className='cont-shipping-method' variant='purple'>
+              <Button
+                className='cont-shipping-method'
+                variant='purple'
+                href='/#shipping-method'
+              >
                 CONTINUE TO SHIPPING METHOD
               </Button>
             </InputGroup>
