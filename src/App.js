@@ -21,39 +21,41 @@ import Footer from './components/Misc/Footer';
 import About from './pages/About';
 import MockArticles from './components/Misc/MockArticles';
 import DemoSearchFilter from './components/Filters/DemoSearchFilter';
+import AboutInterns from './pages/AboutInterns';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
-  return (
-    <Router>
-      <div className='App'>
-        <HeaderReact />
-        <SearchBar />
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/opinions' component={Opinions} />
-          <Route exact path='/podcasts' component={Podcasts} />
-          <Route exact path='/webisodes' component={Webisodes} />
-          <Route exact path='/store' component={Store} />
-          <Route exact path='/checkout' component={Checkout} />
-          <Route exact path='/contact' component={Contact} />
-          <Route exact path='/writerdashboard' component={WriterDashboard} />
-          <Route exact path='/newsletter' component={Newsletter} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/news' component={News} />
-          <Route exact path='/localnews' component={LocalNews} />
+	return (
+		<Router>
+			<div className="App">
+				<HeaderReact />
+				<SearchBar />
+				<Switch>
+					<Route exact path="/" component={Home} />
+					<Route exact path="/opinions" component={Opinions} />
+					<Route exact path="/podcasts" component={Podcasts} />
+					<Route exact path="/webisodes" component={Webisodes} />
+					<Route exact path="/store" component={Store} />
+					<Route exact path="/checkout" component={Checkout} />
+					<Route exact path="/contact" component={Contact} />
+					<Route exact path="/writerdashboard" component={WriterDashboard} />
+					<Route exact path="/newsletter" component={Newsletter} />
+					<Route exact path="/about" component={About} />
+					<Route exact path="/aboutInterns" component={AboutInterns} />
+					<Route exact path="/news" component={News} />
+					<Route exact path="/localnews" component={LocalNews} />
 
-          {/* Test Filter Components by Judy */}
-          <Route exact path='/demo' component={DemoSearchFilter} />
+					{/* Test Filter Components by Judy */}
+					<Route exact path="/demo" component={DemoSearchFilter} />
 
-          <Route exact path='/mockarticles' component={MockArticles} />
-        </Switch>
-      </div>
-      <Footer />
-    </Router>
-  );
+					<Route exact path="/mockarticles" component={MockArticles} />
+				</Switch>
+			</div>
+			<Footer />
+		</Router>
+	);
 }
 
 export default App;

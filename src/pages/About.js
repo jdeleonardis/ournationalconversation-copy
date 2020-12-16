@@ -5,8 +5,9 @@ import RailButtons from '../components/Misc/RailButtons';
 import AboutMemberCard from '../components/Content/ContentCards/AboutTeamCard';
 import data from '../data/cardTempData/aboutteam.json';
 import GlobalButton from '../components/Misc/GlobalButton';
-import '../styles/aboutpage.css';
 
+import '../styles/aboutpage.css';
+debugger;
 export class AboutPage extends Component {
 	render() {
 		return (
@@ -81,6 +82,7 @@ export class AboutPage extends Component {
 											</Col>
 										))}
 									</Row>
+
 									<div style={{ textAlign: 'center' }}>
 										<GlobalButton
 											className="global-btn"
@@ -88,25 +90,9 @@ export class AboutPage extends Component {
 											padding="7px 55px"
 											fontWeight="700"
 											label="MEET OUR INTERNS"
+											link="/aboutInterns"
 										/>
 									</div>
-								</Col>
-							</div>
-							<div>
-								<Col md={9}>
-									<Row>
-										&nbsp;&nbsp;&nbsp;
-										<div className="texttitle">MEET OUR INTERNS</div>
-										&nbsp;&nbsp;
-										<div className="dividerAbout"></div>&nbsp;&nbsp;&nbsp;
-									</Row>
-									<Row>
-										{data.map(data => (
-											<Col md={4}>
-												<AboutMemberCard data={data} />
-											</Col>
-										))}
-									</Row>
 								</Col>
 							</div>
 						</Row>
