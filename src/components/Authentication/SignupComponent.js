@@ -4,10 +4,8 @@ import { Container, Card, Button } from 'react-bootstrap';
 import '../../App.css';
 import '../../styles/Signup.css';
 import '../../styles/Country.css';
-import Radium from 'radium';
 
-const SignupComponent = () => {
-  // export default function App() {
+export default function App() {
   const [userName, setUserName] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
@@ -211,33 +209,6 @@ const SignupComponent = () => {
     event.preventDefault();
   };
 
-  const queryStyle = {
-    '@media screen and (min-width: 981px) and (max-width: 1200px)': {
-      fontSize: '1rem',
-    },
-    '@media screen and (min-width: 769px) and (max-width: 980px)': {
-      fontSize: '1rem',
-    },
-    '@media screen and (min-width: 641px) and (max-width: 768px)': {
-      fontSize: '1rem',
-    },
-    '@media screen and (min-width: 551px) and (max-width: 640px)': {
-      fontSize: '1rem',
-    },
-    '@media screen and (min-width: 471px) and (max-width: 550px)': {
-      fontSize: '1rem',
-    },
-    '@media screen and (min-width: 431px) and (max-width: 470px)': {
-      fontSize: '1rem',
-    },
-    '@media screen and (min-width: 401px) and (max-width: 430px)': {
-      fontSize: '1rem',
-    },
-    '@media screen and (min-width: 100px) and (max-width: 400px)': {
-      fontSize: '1rem',
-    },
-  };
-
   return (
     <Fragment>
       <div className='modal-container-signup'>
@@ -324,11 +295,9 @@ const SignupComponent = () => {
                     onChange={(e) => setCountry(e.target.value)}
                     required
                   >
-                    <option style={queryStyle} key=''>
-                      SELECT COUNTRY
-                    </option>
+                    <option key=''>SELECT COUNTRY</option>
                     {countries.map((country) => (
-                      <option style={queryStyle} key={country}>
+                      <option className='list-of-countries' key={country}>
                         {country}
                       </option>
                     ))}
@@ -355,5 +324,4 @@ const SignupComponent = () => {
       </div>
     </Fragment>
   );
-};
-export default Radium(SignupComponent);
+}

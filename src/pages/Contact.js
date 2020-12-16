@@ -37,7 +37,7 @@ const Contact = () => {
                       <Form.Group controlId='formBasicEmail'>
                         <Form.Label className='label'>SUBJECT</Form.Label>
 
-                        <label id='dropdown-label'>
+                        <label className='sub' id='dropdown-label'>
                           <div className='input-div'>
                             <select
                               id='dropdown'
@@ -48,7 +48,12 @@ const Contact = () => {
                             >
                               <option key=''>SELECT SUBJECT</option>
                               {subjects.map((subject) => (
-                                <option key={subject}>{subject}</option>
+                                <option
+                                  className='list-of-subjects'
+                                  key={subject}
+                                >
+                                  {subject}
+                                </option>
                               ))}
                             </select>
                             <span className='icon-span '>

@@ -20,10 +20,7 @@ const HeaderSignup = () => {
         SIGN UP
       </Button>
 
-      <Modal
-        show={show}
-        onHide={() => setShow(false)}
-      >
+      <Modal show={show} onHide={() => setShow(false)}>
         <SignupComponent />
       </Modal>
     </>
