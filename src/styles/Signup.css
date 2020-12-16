@@ -274,11 +274,11 @@ input::-moz-placeholder {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-input {
-  /* This global styling will affect radio input styling in other components, class/id highly recommended  comment by Judy */
-  /* padding-right: 2.4em; */
-  /* height: 2em; */
-}
+/* This global styling will affect radio input styling in other components, class/id highly recommended  comment by Judy */
+/* input {
+  padding-right: 2.4em;
+  height: 2em;
+} */
 
 input::-ms-reveal {
   display: none;
@@ -304,6 +304,10 @@ MEDIA QUERIES
     margin-bottom: 15px;
   }
 
+  option.country-inner-label {
+    font-size: 1rem;
+  }
+
   option.list-of-countries {
     font-size: 1rem;
   }
@@ -323,6 +327,10 @@ MEDIA QUERIES
   .caret-con {
     margin-right: 27px !important;
     margin-bottom: 15px;
+  }
+
+  option.country-inner-label {
+    font-size: 1rem;
   }
 
   option.list-of-countries {
@@ -346,6 +354,10 @@ MEDIA QUERIES
     margin-bottom: 15px;
   }
 
+  option.country-inner-label {
+    font-size: 1rem;
+  }
+
   option.list-of-countries {
     font-size: 1rem;
   }
@@ -365,6 +377,10 @@ MEDIA QUERIES
   .caret-con {
     margin-right: 27px !important;
     margin-bottom: 15px;
+  }
+
+  option.country-inner-label {
+    font-size: 1rem;
   }
 
   option.list-of-countries {
@@ -420,6 +436,10 @@ MEDIA QUERIES
     font-size: 14px;
   }
 
+  option.country-inner-label {
+    font-size: 14px;
+  }
+
   option.list-of-countries {
     font-size: 14px;
   }
@@ -469,6 +489,10 @@ MEDIA QUERIES
     font-size: 12px;
   }
 
+  option.country-inner-label {
+    font-size: 12px;
+  }
+
   option.list-of-countries {
     font-size: 12px;
   }
@@ -505,6 +529,10 @@ MEDIA QUERIES
     margin-bottom: 15px;
   }
 
+  option.country-inner-label {
+    font-size: 12px;
+  }
+
   option.list-of-countries {
     font-size: 12px;
   }
@@ -539,6 +567,10 @@ MEDIA QUERIES
   .caret-con {
     margin-right: 14px !important;
     margin-bottom: 15px;
+  }
+
+  option.country-inner-label {
+    font-size: 12px;
   }
 
   option.list-of-countries {

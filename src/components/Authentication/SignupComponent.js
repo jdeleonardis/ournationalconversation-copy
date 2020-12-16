@@ -295,7 +295,9 @@ export default function App() {
                     onChange={(e) => setCountry(e.target.value)}
                     required
                   >
-                    <option key=''>SELECT COUNTRY</option>
+                    <option className='country-inner-label' key=''>
+                      SELECT COUNTRY
+                    </option>
                     {countries.map((country) => (
                       <option className='list-of-countries' key={country}>
                         {country}
