@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 import CheckoutSteps from '../components/Content/ContentCards/CheckoutSteps';
 import CustomerInformation from '../components/Content/ContentCards/CustomerInformation';
 import ShippingMethod from '../components/Content/ContentCards/ShippingMethod';
-import PaymentCard from '../components/Content/ContentCards/PaymentCard';
+import PaymentCard from '../components/Content/ContentCards/Payment';
 import OrderConfirmation from '../components/Content/ContentCards/OrderConfirmation';
 import ShoppingCartCard from '../components/Content/ContentCards/ShoppingCartCard';
 
@@ -35,6 +35,12 @@ export class StoreCheckout extends Component {
             <br />
             <Row>
               <Col md={6}>
+                <CheckoutSteps />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 <CustomerInformation />
                 <br />
                 <ShippingMethod />
@@ -45,7 +51,6 @@ export class StoreCheckout extends Component {
               </Col>
               <Col md={6}>
                 <ShoppingCartCard />
-                {/* <CheckoutSteps /> */}
               </Col>
             </Row>
           </Container>

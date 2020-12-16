@@ -13,9 +13,9 @@ import creditCard from '../../../img/creditCard.png';
 import payPal from '../../../img/paypal.png';
 import amazonPay from '../../../img/amazonPay.png';
 
-import '../../../styles/paymentcard.css';
+import '../../../styles/payment.css';
 
-class PaymentCard extends Component {
+class Payment1 extends Component {
   constructor() {
     super();
 
@@ -46,18 +46,7 @@ class PaymentCard extends Component {
   render() {
     return (
       <div className='payment'>
-        <Button variant='' size='' className='nf-btn' onClick={this.showMenu}>
-          <span className='payment-title'>3.&nbsp;PAYMENT</span>
-          <hr className='pmt-Rectangle-125' />
-        </Button>
-
-        {this.state.showMenu ? (
-          <div
-            className='payment-menu '
-            ref={(element) => {
-              this.dropdownMenu = element;
-            }}
-          >
+        
             <Form className='shipping-method-form'>
               <h5 className='payment-method mb-3 '>PAYMENT METHOD</h5>
               <Form.Check className='payment-box' type='radio' id=''>
@@ -163,11 +152,10 @@ class PaymentCard extends Component {
                 </Button>
               </InputGroup>
             </Form>
-          </div>
-        ) : null}
+   
       </div>
     );
   }
 }
 
-export default PaymentCard;
+export default Payment1;

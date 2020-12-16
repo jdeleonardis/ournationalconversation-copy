@@ -1,5 +1,5 @@
 import React, { useState, Component } from 'react';
-import { Modal, Button, Container, Row, Col, Image } from 'react-bootstrap';
+import { Modal, Button, Container, Row, Col, Image,Badge } from 'react-bootstrap';
 
 import bookCover from '../../../img/book-cover.jpg';
 

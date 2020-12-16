@@ -2,10 +2,10 @@ import React, { Component, Fragment } from 'react';
 import { Container, Row, Col, Accordion,Card,Button } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 
-import CustomerInformation from './CustomerInformation';
-import ShippingMethod from './ShippingMethod';
-import PaymentCard from './PaymentCard';
-import OrderConfirmation from './OrderConfirmation';
+import CustomerInformation1 from './CustomerInformation1';
+import ShippingMethod1 from './ShippingMethod1';
+import Payment1 from './Payment1';
+import OrderConfirmation1 from './OrderConfirmation1';
 
 
 import '../../../styles/checkoutsteps.css';
@@ -30,41 +30,37 @@ export class CheckoutSteps extends Component {
               <hr className='cs-Rectangle-125' />
             </Accordion.Toggle>
             <Accordion.Collapse eventKey='0'>
-              <CustomerInformation />
-            </Accordion.Collapse>
-            <Accordion.Collapse eventKey='1'>
-              <Button
-                className='cont-shipping-method'
-                variant='purple'
-                onClick={this.closeMenu}
-                href='/1'
-              >
-                CONTINUE TO SHIPPING METHOD
-              </Button>
+              <CustomerInformation1 />
             </Accordion.Collapse>
           </Card>
+          <br />
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey='1'>
-              
+              <span className='sm-title'> 2.&nbsp;SHIPPING METHOD</span>
+              <hr className='sm-Rectangle-125' />
             </Accordion.Toggle>
             <Accordion.Collapse eventKey='1'>
-              <ShippingMethod />
+              <ShippingMethod1 />
             </Accordion.Collapse>
           </Card>
+          <br />
           <Card>
-            <Accordion.Toggle as={Card.Header} eventKey='1'>
-              Click me!
+            <Accordion.Toggle as={Card.Header} eventKey='2'>
+              <span className='payment-title'>3.&nbsp;PAYMENT</span>
+              <hr className='pmt-Rectangle-125' />
             </Accordion.Toggle>
             <Accordion.Collapse eventKey='2'>
-              <PaymentCard />
+              <Payment1 />
             </Accordion.Collapse>
           </Card>
+          <br />
           <Card>
-            <Accordion.Toggle as={Card.Header} eventKey='1'>
-              Click me!
+            <Accordion.Toggle as={Card.Header} eventKey='3'>
+              <span className='order-title'> 4.&nbsp;ORDER CONFIRMATION</span>
+              <hr className='oc-Rectangle-125' />
             </Accordion.Toggle>
             <Accordion.Collapse eventKey='3'>
-              <OrderConfirmation />
+              <OrderConfirmation1 />
             </Accordion.Collapse>
           </Card>
         </Accordion>
