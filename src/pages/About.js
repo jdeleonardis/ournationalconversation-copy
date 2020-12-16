@@ -82,6 +82,23 @@ export class Webisodes extends Component {
 									</Row>
 								</Col>
 							</div>
+							<div>
+								<Col md={9}>
+									<Row>
+										&nbsp;&nbsp;&nbsp;
+										<div className="texttitle">MEET OUR INTERN TEAM</div>
+										&nbsp;&nbsp;
+										<div className="dividerAbout"></div>&nbsp;&nbsp;&nbsp;
+									</Row>
+									<Row>
+										{data.map(data => (
+											<Col md={4}>
+												<AboutMemberCard data={data} />
+											</Col>
+										))}
+									</Row>
+								</Col>
+							</div>
 						</Row>
 						<Row></Row>
 					</Container>
