@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import RailButtons from '../components/Misc/RailButtons';
 import AboutMemberCard from '../components/Content/ContentCards/AboutTeamCard';
 import data from '../data/cardTempData/aboutteam.json';
+import GlobalButton from '../components/Misc/GlobalButton';
 import '../styles/aboutpage.css';
 
 export class Webisodes extends Component {
@@ -80,13 +81,22 @@ export class Webisodes extends Component {
 											</Col>
 										))}
 									</Row>
+									<div style={{ textAlign: 'center' }}>
+										<GlobalButton
+											className="global-btn"
+											margin="25px 0"
+											padding="7px 55px"
+											fontWeight="700"
+											label="MEET OUR INTERNS"
+										/>
+									</div>
 								</Col>
 							</div>
 							<div>
 								<Col md={9}>
 									<Row>
 										&nbsp;&nbsp;&nbsp;
-										<div className="texttitle">MEET OUR INTERN TEAM</div>
+										<div className="texttitle">MEET OUR INTERNS</div>
 										&nbsp;&nbsp;
 										<div className="dividerAbout"></div>&nbsp;&nbsp;&nbsp;
 									</Row>
