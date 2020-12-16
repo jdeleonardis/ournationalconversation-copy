@@ -1,6 +1,8 @@
 .theBox {
 	background-color: #f2f2f2;
+	font-family: 'Montserrat', sans-serif;
 }
+
 /* fix this later */
 .dividerAbout {
 	flex-grow: 1;

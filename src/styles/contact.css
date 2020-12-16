@@ -96,7 +96,11 @@ MEDIA QUERIES
     margin-bottom: 15px;
   }
 
-  option {
+  option.subject-inner-label {
+    font-size: 10px;
+  }
+
+  option.list-of-subjects {
     font-size: 10px;
   }
 }
@@ -117,8 +121,12 @@ MEDIA QUERIES
     margin-bottom: 15px;
   }
 
-  option {
-    font-size: 10px;
+  option.subject-inner-label {
+    font-size: 9.5px;
+  }
+
+  option.list-of-subjects {
+    font-size: 9.5px;
   }
 }
 
@@ -138,8 +146,12 @@ MEDIA QUERIES
     margin-bottom: 15px;
   }
 
-  option {
-    font-size: 10px;
+  option.subject-inner-label {
+    font-size: 9.5px;
+  }
+
+  option.list-of-subjects {
+    font-size: 9.5px;
   }
 }
 
@@ -159,7 +171,11 @@ MEDIA QUERIES
     margin-bottom: 15px;
   }
 
-  option {
+  option.subject-inner-label {
+    font-size: 10px;
+  }
+
+  option.list-of-subjects {
     font-size: 10px;
   }
 }
@@ -181,8 +197,12 @@ MEDIA QUERIES
     margin-bottom: 15px;
   }
 
-  option {
-    font-size: 8.5px;
+  option.subject-inner-label {
+    font-size: 8px;
+  }
+
+  option.list-of-subjects {
+    font-size: 8px;
   }
 }
 
@@ -204,7 +224,11 @@ MEDIA QUERIES
     margin-bottom: 15px;
   }
 
-  option {
+  option.subject-inner-label {
+    font-size: 7px;
+  }
+
+  option.list-of-subjects {
     font-size: 7px;
   }
 }
@@ -227,7 +251,11 @@ MEDIA QUERIES
     margin-bottom: 15px;
   }
 
-  option {
+  option.subject-inner-label {
+    font-size: 7px;
+  }
+
+  option.list-of-subjects {
     font-size: 7px;
   }
 }
@@ -250,7 +278,11 @@ MEDIA QUERIES
     margin-bottom: 15px;
   }
 
-  option {
+  option.subject-inner-label {
+    font-size: 7px;
+  }
+
+  option.list-of-subjects {
     font-size: 7px;
   }
 }

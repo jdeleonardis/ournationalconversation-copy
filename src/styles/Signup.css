@@ -17,7 +17,6 @@
 }
 
 #signup-card-body {
-  /* margin-bottom: 40px; */
   width: 100%;
   border-radius: 0.25rem;
 }
@@ -275,11 +274,11 @@ input::-moz-placeholder {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-input {
-  /* This global styling will affect radio input styling in other components, class/id highly recommended  comment by Judy */
-  /* padding-right: 2.4em; */
-  /* height: 2em; */
-}
+/* This global styling will affect radio input styling in other components, class/id highly recommended  comment by Judy */
+/* input {
+  padding-right: 2.4em;
+  height: 2em;
+} */
 
 input::-ms-reveal {
   display: none;
@@ -304,6 +303,14 @@ MEDIA QUERIES
     margin-right: 27px !important;
     margin-bottom: 15px;
   }
+
+  option.country-inner-label {
+    font-size: 1rem;
+  }
+
+  option.list-of-countries {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 980px) {
@@ -320,6 +327,14 @@ MEDIA QUERIES
   .caret-con {
     margin-right: 27px !important;
     margin-bottom: 15px;
+  }
+
+  option.country-inner-label {
+    font-size: 1rem;
+  }
+
+  option.list-of-countries {
+    font-size: 1rem;
   }
 }
 
@@ -338,6 +353,14 @@ MEDIA QUERIES
     margin-right: 27px !important;
     margin-bottom: 15px;
   }
+
+  option.country-inner-label {
+    font-size: 1rem;
+  }
+
+  option.list-of-countries {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 551px) and (max-width: 640px) {
@@ -354,6 +377,14 @@ MEDIA QUERIES
   .caret-con {
     margin-right: 27px !important;
     margin-bottom: 15px;
+  }
+
+  option.country-inner-label {
+    font-size: 1rem;
+  }
+
+  option.list-of-countries {
+    font-size: 1rem;
   }
 }
 
@@ -404,6 +435,14 @@ MEDIA QUERIES
     margin-top: 2px;
     font-size: 14px;
   }
+
+  option.country-inner-label {
+    font-size: 14px;
+  }
+
+  option.list-of-countries {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 431px) and (max-width: 470px) {
@@ -449,6 +488,14 @@ MEDIA QUERIES
     margin-top: 5px;
     font-size: 12px;
   }
+
+  option.country-inner-label {
+    font-size: 12px;
+  }
+
+  option.list-of-countries {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 401px) and (max-width: 430px) {
@@ -481,12 +528,20 @@ MEDIA QUERIES
     margin-right: 14px !important;
     margin-bottom: 15px;
   }
+
+  option.country-inner-label {
+    font-size: 12px;
+  }
+
+  option.list-of-countries {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
   /* .container {
-      background-color: pink;
-    } */
+    background-color: pink;
+  } */
 
   .input-container-name .name-input,
   .input-container-email .email-input {
@@ -512,5 +567,13 @@ MEDIA QUERIES
   .caret-con {
     margin-right: 14px !important;
     margin-bottom: 15px;
+  }
+
+  option.country-inner-label {
+    font-size: 12px;
+  }
+
+  option.list-of-countries {
+    font-size: 12px;
   }
 }
