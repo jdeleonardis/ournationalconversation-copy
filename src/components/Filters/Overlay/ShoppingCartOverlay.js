@@ -19,6 +19,10 @@ const ShoppingCartOverlay = () => {
         onClick={() => setShow(true)}
       >
         <i class='fas fa-shopping-cart' />
+        <Badge pill id='item-in-cart' variant='danger'>
+          9
+        </Badge>
+        <span className='sr-only'>items in cart</span>
         VIEW CART
       </Button>
 

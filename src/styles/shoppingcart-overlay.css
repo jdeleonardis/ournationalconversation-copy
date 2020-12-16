@@ -42,7 +42,16 @@
 }
 
 .fa-shopping-cart {
-  padding-right: 0.75em;
+  padding-right: 1em;
+}
+
+#item-in-cart{
+  margin: 0;
+  padding:0.15em 0.35em;
+  position: absolute;
+  /* left: 36.5em; */
+  margin-left: -1.75em;
+  margin-top: 0.35em;
 }
 
 .shopping-cart {
