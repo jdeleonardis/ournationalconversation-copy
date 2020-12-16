@@ -7,7 +7,7 @@ import data from '../data/cardTempData/aboutteam.json';
 import GlobalButton from '../components/Misc/GlobalButton';
 import '../styles/aboutpage.css';
 
-export class Webisodes extends Component {
+export class AboutPage extends Component {
 	render() {
 		return (
 			<Fragment>
@@ -118,4 +118,4 @@ export class Webisodes extends Component {
 	}
 }
 
-export default Webisodes;
+export default AboutPage;
