@@ -46,7 +46,9 @@ const Contact = () => {
                               onChange={(e) => setSubject(e.target.value)}
                               required
                             >
-                              <option key=''>SELECT SUBJECT</option>
+                              <option className='subject-inner-label' key=''>
+                                SELECT SUBJECT
+                              </option>
                               {subjects.map((subject) => (
                                 <option
                                   className='list-of-subjects'
