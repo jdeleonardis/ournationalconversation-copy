@@ -40,6 +40,7 @@ const SortBy = (props) => {
               <Dropdown.Item href='#/action-2'>NEWEST</Dropdown.Item>
               <Dropdown.Item href='#/action-3'>OLDEST</Dropdown.Item>
               <Dropdown.Item href='#/action-4'>MOST COMMENTS</Dropdown.Item>
+              <Dropdown.Item href='#/action-5'>MOST LIKES</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </div>
