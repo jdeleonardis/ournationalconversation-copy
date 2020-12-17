@@ -14,7 +14,10 @@ class ShippingMethod1 extends Component {
   
   render() {
     return (
-      <div className='shipping-method shipping-method-form '>
+      <div
+        className='shipping-method shipping-method-form '
+        eventKey='#shipping-method'
+      >
         <Form
           className='shipping-method-form shipping-method-menu'
           id='shipping-method'

@@ -189,7 +189,7 @@
   text-align: right;
 
   /* Purple */
-  color: white;
+  color: white!important;
 
   background: #2c1c59;
   border-radius: 5px;

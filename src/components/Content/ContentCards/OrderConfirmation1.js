@@ -15,7 +15,7 @@ class OrderConfirmation1 extends Component {
   
   render() {
     return (
-      <div className='order'>
+      <div className='order' eventKey='#order-confirmation'>
         <Card.Body variant='flush'>
           <h2 className='thank-you'>
             <i class='far fa-check-circle '></i> THANK YOU!

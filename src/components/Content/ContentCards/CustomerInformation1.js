@@ -15,7 +15,10 @@ class CustomerInformation1 extends Component {
 
   render() {
     return (
-      <div className='customer-info customer-info-menu '>
+      <div
+        className='customer-info customer-info-menu '
+        eventKey='#customer-information'
+      >
         <Form id='customer-information'>
           <Form.Group>
             <Form.Label className='payment-method mb-3 '>EMAIL</Form.Label>
@@ -114,7 +117,7 @@ class CustomerInformation1 extends Component {
           <Button
             className='cont-shipping-method'
             variant='purple'
-            href='/#shipping-method'
+            href='#shipping-method'
           >
             CONTINUE TO SHIPPING METHOD
           </Button>

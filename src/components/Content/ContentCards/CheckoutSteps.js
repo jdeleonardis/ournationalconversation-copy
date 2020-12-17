@@ -38,7 +38,7 @@ function CheckoutSteps() {
             <hr className='cs-Rectangle-125' />
           </Accordion.Toggle>
           <Accordion.Collapse eventKey='0'>
-            <CustomerInformation1 />
+            <CustomerInformation1  />
           </Accordion.Collapse>
         </Card>
         <br />
@@ -48,7 +48,7 @@ function CheckoutSteps() {
             <hr className='sm-Rectangle-125' />
           </Accordion.Toggle>
           <Accordion.Collapse eventKey='1'>
-            <ShippingMethod1 />
+            <ShippingMethod1  />
           </Accordion.Collapse>
         </Card>
         <br />
@@ -68,7 +68,7 @@ function CheckoutSteps() {
             <hr className='oc-Rectangle-125' />
           </Accordion.Toggle>
           <Accordion.Collapse eventKey='3'>
-            <OrderConfirmation1 />
+            <OrderConfirmation1  />
           </Accordion.Collapse>
         </Card>
       </Accordion>
