@@ -90,9 +90,11 @@ const NewFiltersExpanded = () => {
         <Tab.Container id='left-tabs-example' defaultActiveKey='first'>
           <Row className='news-filters-tabs'>
             <Col sm={3}>
-              <Nav variant='tabs' className='flex-column tabs'>
-                <Nav.Item className=''>
-                  <Nav.Link eventKey='first'>TOP STORIES</Nav.Link>
+              <Nav variant='tabs' className='flex-column '>
+                <Nav.Item>
+                  <Nav.Link className='tabs' eventKey='first'>
+                    TOP STORIES
+                  </Nav.Link>
                 </Nav.Item>
                 <Nav.Item className=''>
                   <Nav.Link eventKey='second'>LOCAL STORIES</Nav.Link>
