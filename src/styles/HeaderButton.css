@@ -1,49 +1,46 @@
-:root{
-    --primary:#3acbf7;
-
+:root {
+  --primary: #3acbf7;
 }
 
-.headerbtn{
-    border-radius: 4px; /* pixels */
-    outline: none;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 3%;
-    float: left;
+.headerbtn {
+  border-radius: 4px; /* pixels */
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 3%;
+  float: left;
 }
 
-.headerbtn:hover{
-    padding: 10px 13px;
-    transition: all 0.4s ease-out;
-    background: white;
-    color: red;
-    
-    
+.headerbtn:hover {
+  padding: 10px 13px;
+  transition: all 0.4s ease-out;
+  background: white;
+  color: red;
 }
 
-.btn--primary{
-  background-color: transparent;;
+.btn--primary {
+  background-color: transparent;
 }
 
-.btn--outline{
-    background-color: transparent;
-    color: white;
-    padding: 8px 20px;
-    border-radius: 4px;
-    border: 1px solid var(--primary);
-    transition: all 0.3s ease-out;
+.btn--outline {
+  background-color: transparent;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
 }
 
-.btn--medium{
-    padding: 8px 20px;
-    border-radius: 4px;
-    font-size: 15px;
-    color: white;
+.btn--medium {
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 15px;
+  color: white;
 }
 
-.btn--large{
-    padding: 12px 26px;
-    border-radius: 4px;
-    font-size: 15px;
-    color: white;
+.btn--large {
+  padding: 12px 26px;
+  border-radius: 4px;
+  font-size: 15px;
+  color: white;
 }
