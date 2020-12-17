@@ -11,37 +11,14 @@ import {
 import '../../../styles/ShippingMethod.css';
 
 class ShippingMethod1 extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      showMenu: false
-    };
-
-    this.showMenu = this.showMenu.bind(this);
-    this.closeMenu = this.closeMenu.bind(this);
-  }
-
-  showMenu(event) {
-    event.preventDefault();
-
-    this.setState({ showMenu: true }, () => {
-      document.addEventListener('click', this.closeMenu);
-    });
-  }
-
-  closeMenu(event) {
-    if (!this.dropdownMenu.contains(event.target)) {
-      this.setState({ showMenu: false }, () => {
-        document.removeEventListener('click', this.closeMenu);
-      });
-    }
-  }
-
+  
   render() {
     return (
-      <div className='shipping-method'>
-        <Form className='shipping-method-form' id='shipping-method'>
+      <div className='shipping-method shipping-method-form '>
+        <Form
+          className='shipping-method-form shipping-method-menu'
+          id='shipping-method'
+        >
           <Form.Check className='shipping-method-box' type='radio' id=''>
             <Form.Check.Input
               className='shipping-method-radio'

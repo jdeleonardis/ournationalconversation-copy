@@ -44,7 +44,7 @@
 
 .payment-menu {
   /* margin-bottom: 2.5em; */
-  padding: 0em 1.2em;
+  padding: 0em 1.25em;
 }
 
 /* PAYMENT METHOD */
@@ -67,7 +67,7 @@
 }
 
 .payment-box {
-  width: 98%;
+  width: 100%;
   /* Rectangle 2 */
   height: 2.5em;
   margin-bottom: 1em;
@@ -139,8 +139,8 @@
   /* Search bar */
 
   width: 100%;
-  margin-left: 0.5em;
-  margin-right: 0.75em;
+  margin-left: 0.75em;
+  margin-right: 0.5em;
 
   font-family: Montserrat;
   font-style: normal;
@@ -209,7 +209,8 @@
 
 /* PAY NOW */
 .pay-now {
-  margin-left: 24em;
+  width: 25%;
+  margin-left: 23em;
   margin-bottom: 1em;
   float: right;
 

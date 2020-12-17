@@ -6,7 +6,9 @@ import {
   Col,
   Button,
   ButtonGroup,
-  DropdownButton
+  DropdownButton,
+  Accordion,
+  Card
 } from 'react-bootstrap';
 import NewFiltersExpanded from './Expended/NewFiltersExpanded';
 import CustomButton from './Expended/CustomButton';
@@ -32,10 +34,9 @@ const SearchBar = (props) => {
               menuAlign={{ lg: 'left' }}
               variant='purple'
             >
-              <NewFiltersExpanded
-                style={{ padding: '100', margin: '100', border: 'none' }}
-              />
+              <NewFiltersExpanded />
             </DropdownButton>
+            
           </Nav>
         </Col>
         <Col xs={6} md={7}>

@@ -12,6 +12,7 @@ import FilterBarStore from './FilterBarStore';
 import LocationOverlay from './Overlay/LocationOverlay';
 import ShoppingCartOverlay from './Overlay/ShoppingCartOverlay';
 
+import NewFiltersExpanded from './Expended/NewFiltersExpanded';
 import CustomButton from './Expended/CustomButton';
 import CustomDropdown from './Expended/CustomDropdown';
 import PrefixingComponents from './Expended/PrefixingComponents';
@@ -22,8 +23,6 @@ class DemoSearchFilter extends Component {
   render() {
     return (
       <>
-        <br />
-        <br />
         <Container>
           <Row className='demo'>
             <Col md={3}>
@@ -54,8 +53,8 @@ class DemoSearchFilter extends Component {
               <br />
               <br />
               {/* Expanded Components & Overlay */}
-              <ShoppingCartOverlay />
-              <LocationOverlay />
+              {/* <ShoppingCartOverlay /> */}
+              {/* <LocationOverlay /> */}
               <br />
 
               <br />

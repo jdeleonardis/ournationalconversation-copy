@@ -32,7 +32,7 @@
 
 .shipping-method-btn {
   text-align: start;
-  margin-right: 5.3em;
+  /* margin-right: 5.3em; */
 }
 
 .title-dp {
@@ -49,17 +49,19 @@
 }
 
 .shipping-method-form {
-  margin-top: 1em;
+  /* margin-top: 1em; */
+  
+  padding: 1em 1.5em 1em 0.75em;
 }
 
 .shipping-method-box {
-  margin-left: 1em;
-  width: 92%;
+  /* margin-left: 1em; */
+  width: 105%;
   /* Rectangle 2 */
   height: 2.5em;
   margin-bottom: 1em;
 
-  justify-content: space-around;
+  /* justify-content: space-around; */
 
   background: #ffffff;
   /* True Black */
@@ -121,10 +123,10 @@
 
 /* Continue to Payment */
 .cont-pmt {
-  margin-left: 16.5em;
-  width: 45%;
+  margin-left: 15.2em;
+  width: 51%;
   margin-bottom: 1em;
-  position: block;
+  position: relative;
   /* Button */
 
   font-family: Montserrat;

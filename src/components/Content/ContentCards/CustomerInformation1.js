@@ -11,36 +11,11 @@ import {
 import '../../../styles/CustomerInformation.css';
 
 class CustomerInformation1 extends Component {
-  constructor() {
-    super();
 
-    this.state = {
-      showMenu: false
-    };
-
-    this.showMenu = this.showMenu.bind(this);
-    this.closeMenu = this.closeMenu.bind(this);
-  }
-
-  showMenu(event) {
-    event.preventDefault();
-
-    this.setState({ showMenu: true }, () => {
-      document.addEventListener('click', this.closeMenu);
-    });
-  }
-
-  closeMenu(event) {
-    if (!this.dropdownMenu.contains(event.target)) {
-      this.setState({ showMenu: false }, () => {
-        document.removeEventListener('click', this.closeMenu);
-      });
-    }
-  }
 
   render() {
     return (
-      <div className='customer-info'>
+      <div className='customer-info customer-info-menu '>
         <Form id='customer-information'>
           <Form.Group>
             <Form.Label className='payment-method mb-3 '>EMAIL</Form.Label>
