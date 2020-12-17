@@ -12,9 +12,11 @@ function WriterDashboardHeader() {
                     </h2>
                 </Col>
                 <Col>
-                    <div style={{fontSize: 'smaller', textAlign: 'right'}}>
+                    <div className='loggedIn'>
                     You are writing as <a href='Jane Doe'> Jane Doe</a>
-                    <a href="Log in to another account"><u>Log in to another account</u></a>
+                    <div id='anotherAccount'>
+                        <a href="Log in to another account"><u>Log in to another account</u></a>
+                    </div>
                     </div>
                 </Col>
             </Row>

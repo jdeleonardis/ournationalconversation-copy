@@ -19,7 +19,8 @@ export class Privacy extends Component {
 						<Row>
 							<Col md={9}>
 								<div class="genericBox">
-									<h1>PRIVACY</h1>
+									<h2>PRIVACY</h2>
+									<br></br>
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
 										a congue erat. Vestibulum ante ipsum primis in faucibus orci

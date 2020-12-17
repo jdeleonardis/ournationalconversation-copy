@@ -19,7 +19,8 @@ export class Terms extends Component {
 						<Row>
 							<Col md={9}>
 								<div class="genericBox">
-									<h1>TERMS OF USE</h1>
+									<h2>TERMS OF USE</h2>
+									<br></br>
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
 										a congue erat. Vestibulum ante ipsum primis in faucibus orci

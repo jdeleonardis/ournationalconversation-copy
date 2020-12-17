@@ -38,6 +38,11 @@ function NewsletterOverlay() {
       setValidation ({error: true, issue:'Please enter a phone number.'})
       return false
     }
+    //still need to validate phone number!!!
+    // else if (subData.breaking === true) {
+    //   setValidation ({error: true, issue:'Please enter a phone number.'})
+    //   return false
+    // }    
     else
     {
       return true
@@ -84,7 +89,6 @@ function NewsletterOverlay() {
       <Modal
         show={show}
         onHide={() => setShow(false)}
-        dialogClassName='modal-90w'
         className='newsletter-overlay'
       >
         <Modal.Header
@@ -99,12 +103,12 @@ function NewsletterOverlay() {
             newsletters are sent in the morning and afternoon Monday-Friday, then once daily on Saturday and Sunday.</p>
 
             <Form onSubmit={submitSubscription}>  
-              <Form.Group controlId='formEmailAddress'>
-                <Form.Label style={{fontSize: 'small', color: '#808182'}}>EMAIL ADDRESS</Form.Label>
+              <Form.Group>
+                <Form.Label id='emailHeader'>EMAIL ADDRESS</Form.Label>
                 <Form.Control 
                   type='email'
+                  id='emailEntry'
                   name='emailaddress'
-                  style={{fontSize: 'small'}}
                   placeholder='ENTER EMAIL ADDRESS'                  
                   onChange={changeHandler}
                   required />
@@ -116,12 +120,11 @@ function NewsletterOverlay() {
                 <Form.Control 
                   id="subPhoneNumber"
                   type='text'                  
-                  name='phonenumber'
-                  style={{fontSize: 'small'}}
+                  name='phonenumber'                  
                   onChange={changeHandler}
-                  placeholder='ENTER PHONE NUMBER' />
+                  placeholder='ENTER CELL PHONE NUMBER' />
                   <div className={validation.error ? '' : 'invisible'}>                  
-                    <Form.Label style={{fontSize: 'small', color: 'red'}}>{validation.issue}</Form.Label>
+                    <Form.Label className='errorText'>{validation.issue}</Form.Label>
                   </div>
               </Form.Group>
 

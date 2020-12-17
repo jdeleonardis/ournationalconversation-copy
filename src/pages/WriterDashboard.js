@@ -176,22 +176,24 @@ export class WriterDashboard extends Component {
                       <br />
                       <Form onSubmit={this.submitArticle}>  
                         <Form.Group controlId='formBasicHeadline'>
-                          <Form.Label style={{fontSize: 'small', color: '#808182'}}>HEADLINE</Form.Label>
+                          <Form.Label className='sectionHeaders'>HEADLINE</Form.Label>
                           <Form.Control 
                             type='text'
+                            id='headlineText'
                             style={{fontWeight: 'bold'}}
                             name='headline'
                             value={this.state.headline}
                             onChange={this.changeHandler}
                             required />
                             <div className={this.state.validationError && this.state.validationIssue.indexOf('headline') >= 0 ? '' : 'height0 invisible'}>
-                              <Form.Label style={{fontSize: 'small', color: 'red'}}>Please enter a headline.</Form.Label>
+                              <Form.Label className="errorText">Please enter a headline.</Form.Label>
                             </div>
                         </Form.Group>
                         <Form.Group controlId='formBasicArticleSummary'>
-                          <Form.Label style={{fontSize: 'small', color: '#808182'}}>ARTICLE SUMMARY</Form.Label>
+                          <Form.Label className='sectionHeaders'>ARTICLE SUMMARY</Form.Label>
                           <Form.Control
                             as='textarea'
+                            id='articleSummary'
                             rows='4'
                             style={{resize: 'none'}}
                             name='articleSummary'
@@ -199,13 +201,14 @@ export class WriterDashboard extends Component {
                             onChange={this.changeHandler}
                             required />
                             <div className={this.state.validationError && this.state.validationIssue.indexOf('articlesummary') >= 0 ? '' : 'height0 invisible'}>
-                              <Form.Label style={{fontSize: 'small', color: 'red'}}>Please enter an article summary.</Form.Label>
+                              <Form.Label className="errorText">Please enter an article summary.</Form.Label>
                             </div>
                         </Form.Group>
                         <Form.Group controlId='ckeditor'>
-                          <Form.Label style={{fontSize: 'small', color: '#808182'}}>ARTICLE</Form.Label>
+                          <Form.Label className='sectionHeaders'>ARTICLE</Form.Label>
                           <SunEditor 
-                            setOptions={{
+                            setOptions={{                              
+                              defaultStyle: "font-family: Roboto; font-size: 16px; font-weight: 400; line-height: 24px; color: #1E1E1E",
                               height: 300,
                               buttonList: [
                                 ['undo', 'redo'],
@@ -225,13 +228,13 @@ export class WriterDashboard extends Component {
                             onChange={this.sunEditorChangeHandler} 
                           />
                           <div className={this.state.validationError && this.state.validationIssue.indexOf('article') >= 0 ? '' : 'height0 invisible'}>
-                            <Form.Label style={{fontSize: 'small', color: 'red'}}>Please enter an article.</Form.Label>
+                            <Form.Label className="errorText">Please enter an article.</Form.Label>
                           </div>                            
-                          <div className="rightAlign" style={{fontSize: 'small'}}>
+                          <div id='wordCount' className="rightAlign" style={{fontSize: 'small'}}>
                             {this.state.wordCount}/1000 words
                           </div>
                           <div className="rightAlign" style={{fontSize: 'small'}}>
-                            MAY NOT NEED!! PREVIEW IN RTE<i id='fa-draft' className='fa fa-edit'></i><a href="Preview Draft"><u>Preview Draft</u></a>
+                            DONT NEED!! PREVIEW IN RTE <i id='fa-draft' className='fa fa-edit'></i><a href="Preview Draft"><u>Preview Draft</u></a>
                           </div>
                         </Form.Group>
                         <Form.Group controlId='articleCategories'>

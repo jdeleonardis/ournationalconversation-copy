@@ -5,7 +5,7 @@ function ArticleCategoryRadioButtons(props) {
 
     return (  
         <>
-            <Form.Label style={{fontSize: 'small', color: '#808182'}}>ARTICLE CATEGORY</Form.Label>
+            <Form.Label className='sectionHeaders'>ARTICLE CATEGORY</Form.Label>
             <br />
             <Row> 
                 <Col md={2}>
@@ -16,7 +16,7 @@ function ArticleCategoryRadioButtons(props) {
                 </Col>                
             </Row>
             <div className={props.state.validationError && props.state.validationIssue.indexOf('articlecategory') >= 0 ? '' : 'height0 invisible'}>
-                <Form.Label style={{fontSize: 'small', color: 'red'}}>Please select an article category.</Form.Label>
+                <Form.Label className="errorText">Please select an article category.</Form.Label>
             </div>
         </>
     )

@@ -7,7 +7,7 @@ function PolicyTopicRadioButtons(props) {
         <>
         {/* this should be verified. if solution, enable/show the policy topics? */}
         <div style={props.articleCategory==="Solution" ? {} : {pointerEvents: "none", opacity: "0.4"}}>
-        <Form.Label style={{fontSize: 'small', color: '#808182'}}>POLICY TOPIC</Form.Label>
+        <Form.Label className='sectionHeaders'>POLICY TOPIC</Form.Label>
             <Row> 
                 <Col md={3}>
                     <ButtonGroup vertical name="policyTopic">   
@@ -17,7 +17,7 @@ function PolicyTopicRadioButtons(props) {
                         <label className="newsLabel"><input className="newsRadio" type="radio" id="foreignPolicy" name="policyTopic" value="Foreign Policy" onClick={props.changeHandler} checked={props.active === 'Foreign Policy'}/> Foreign Policy & Defense</label>            
                     </ButtonGroup>
                 </Col>
-                <Col md={3}>
+                <Col md={4}>
                 <ButtonGroup vertical name="policyTopic">   
                     <label className="newsLabel"><input className="newsRadio" type="radio" id="infrastructure" name="policyTopic" value="Infrastructure" onClick={props.changeHandler} checked={props.active === 'Infrastructure'}/> Infrastructure</label>            
                     <label className="newsLabel"><input className="newsRadio" type="radio" id="science" name="policyTopic" value="Science" onClick={props.changeHandler} checked={props.active === 'Science'}/> Science, Climate, & Technology</label>
@@ -32,7 +32,8 @@ function PolicyTopicRadioButtons(props) {
                 </ButtonGroup>  
                 <Form.Group controlId='formOtherPolicy'>                          
                     <Form.Control
-                    type='text'                            
+                    type='text'     
+                    className='otherTopic'                          
                     name='otherPolicyTopic'
                     placeholder='Enter Other Topic'
                     onChange={props.changeHandler}/>
@@ -40,10 +41,10 @@ function PolicyTopicRadioButtons(props) {
                 </Col>      
             </Row>            
             <div className={props.validationError && props.validationIssue.indexOf('policytopic') >= 0 ? '' : 'height0 invisible'}>
-                <Form.Label style={{fontSize: 'small', color: 'red'}}>Please select a policy topic.</Form.Label>
+                <Form.Label className="errorText">Please select a policy topic.</Form.Label>
             </div>
             <div className={props.validationError && props.validationIssue.indexOf('otherpolicytopic') >= 0 ? '' : 'height0 invisible'}>
-                <Form.Label style={{fontSize: 'small', color: 'red'}}>Please enter a topic for 'Other'.</Form.Label>
+                <Form.Label className="errorText">Please enter a topic for 'Other'.</Form.Label>
             </div> 
         </div>
         </>

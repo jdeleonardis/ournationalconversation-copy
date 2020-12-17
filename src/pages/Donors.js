@@ -19,7 +19,8 @@ export class Donors extends Component {
 						<Row>
 							<Col md={9}>
 								<div class="genericBox">
-									<h1>DONORS / CONTRIBUTORS / INVESTORS</h1>
+									<h2>DONORS / CONTRIBUTORS / INVESTORS</h2>
+									<br></br>
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
 										a congue erat. Vestibulum ante ipsum primis in faucibus orci
