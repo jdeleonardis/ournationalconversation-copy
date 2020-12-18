@@ -8,7 +8,7 @@
 .onc-logo {
   margin-left: 2em;
   color: #fff;
-
+  width: 85%;
   cursor: pointer;
 }
 
@@ -19,7 +19,7 @@
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 10%;
   line-height: 1em;
   /* identical to box height */
 
@@ -80,9 +80,9 @@
   /* margin: 0px ; */
 }
 
+/* Rectangle 92 */
 .rectangle-92 {
-  /* Rectangle 92 */
-  margin-right: 2.8em;
+  /* margin-right: 2.8em; */
   width: 96%;
 
   background: #f6f6f6;

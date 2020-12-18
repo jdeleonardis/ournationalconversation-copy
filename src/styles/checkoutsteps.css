@@ -1,0 +1,10 @@
+.checkout-steps {
+  border: none;
+  word-wrap: break-word;
+  background-color: none !important;
+  background-clip: none !important;
+  border: none !important;
+  border-radius: 0rem !important;
+  padding-left: 2em;
+}
+

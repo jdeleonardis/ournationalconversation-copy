@@ -1,5 +1,14 @@
 import React, { useState, Component } from 'react';
-import { Modal, Button, Container, Row, Col, Image,Badge } from 'react-bootstrap';
+import {
+  Modal,
+  Button,
+  Container,
+  Row,
+  Col,
+  Image,
+  Badge,
+  Breadcrumb
+} from 'react-bootstrap';
 
 import bookCover from '../../../img/book-cover.jpg';
 
@@ -20,7 +29,7 @@ const ShoppingCartOverlay = () => {
       >
         <i class='fas fa-shopping-cart' variant='outline-primary' />
         <Badge pill id='item-in-cart' variant='danger'>
-          9
+          10
         </Badge>
         <span className='sr-only'>items in cart</span>
         VIEW CART
@@ -100,30 +109,40 @@ const ShoppingCartOverlay = () => {
 
             <div className='shopping-cart-bottom'>
               <Row className='shopping-cart-checkout'>
-                <Button className='checkout-btn' variant='' href='/checkout'>
-                  <span id='checkout'>CHECKOUT</span>{' '}
-                </Button>
-              </Row>
+                <Col md={2}></Col>
+                <Col md={8}>
+                  <Row>
+                    <Button
+                      className='checkout-btn'
+                      variant='purple'
+                      href='/checkout'
+                    >
+                      <span id='checkout'>CHECKOUT</span>{' '}
+                    </Button>
+                  </Row>
+                  <Row>
+                    <Col md={5}>
+                      <div id=''></div>
+                      <div className='line-or-left'></div>
+                    </Col>
+                    <Col md={2}>
+                      <p className='shopping-cart-or'>OR</p>
+                    </Col>
+                    <Col md={5}>
+                      <div id=''>;</div>
+                      <div className='line-or-right'></div>
+                    </Col>
+                  </Row>
 
-              <Row>
-                <Col md={5}>
-                  <div id=''></div>
-                  <div className='line-or-left'></div>
+                  <Button
+                    className='shopping-cart-cont'
+                    variant='link'
+                    href='/store'
+                  >
+                    <span id='continue-shopping'>CONTINUE SHOPPING</span>
+                  </Button>
                 </Col>
-                <Col md={1}>
-                  <p className='shopping-cart-or'>OR</p>
-                </Col>
-                <Col md={5}>
-                  <div id=''>;</div>
-                  <div className='line-or-right'></div>
-                </Col>
-              </Row>
-              <Row>
-                <Button className='shopping-cart-cont' variant=''>
-                  <span id='continue-shopping' href='/store'>
-                    CONITUE SHOPPING
-                  </span>
-                </Button>
+                <Col md={2}></Col>
               </Row>
             </div>
           </Container>

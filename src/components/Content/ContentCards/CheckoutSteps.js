@@ -25,7 +25,8 @@ function CheckoutSteps() {
   const radios = [
     { name: 'Active', value: '1' },
     { name: 'Radio', value: '2' },
-    { name: 'Radio', value: '3' }
+    { name: 'Radio', value: '3' },
+    { name: 'Radio', value: '4' }
   ];
   return (
     <>

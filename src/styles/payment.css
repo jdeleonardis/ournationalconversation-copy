@@ -43,12 +43,11 @@
 }
 
 .payment-menu {
-  /* margin-bottom: 2.5em; */
   padding: 0em 1.25em;
 }
 
 /* PAYMENT METHOD */
-.payment-method {
+.checkout-subtitle {
   /* Overline */
 
   font-family: Montserrat;
@@ -104,7 +103,6 @@
   position: absolute;
   right: 1.5em;
   top: 0.5em;
-
   /* background: url(toppng.png); */
 }
 
@@ -160,7 +158,6 @@
 /* image 10 */
 #basic-addon2 {
   position: relative;
-
   width: 4em;
 
   /* background: url(image.png); */
@@ -229,5 +226,5 @@
 
   /* White */
 
-  color: #ffffff!important;
+  color: #ffffff !important;
 }

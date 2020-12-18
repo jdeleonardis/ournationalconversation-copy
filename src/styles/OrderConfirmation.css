@@ -13,6 +13,7 @@
 .title-dp {
   width: 100%;
 }
+
 .order-title {
   margin: 0em;
   padding: 0em;
@@ -63,9 +64,8 @@
   color: #2c1c59;
 }
 
+/* Order #19283 */
 .order-num {
-  /* Order #19283 */
-
   margin-left: 3.2em;
 
   /* Overline */
@@ -85,9 +85,8 @@
   color: #2c1c59;
 }
 
+/* Your order is confirmed. */
 .confirmation-title {
-  /* Your order is confirmed. */
-
   /* Headline 5 */
 
   font-family: Montserrat;
@@ -103,9 +102,8 @@
   color: #2c1c59;
 }
 
+/* Confirmation has been sent to your email address provided. Please check your email for updates on your oder status. */
 .confirmation-text {
-  /* Confirmation has been sent to your email address provided. Please check your email for updates on your oder status. */
-
   /* Body 2 */
 
   font-family: Roboto;
@@ -122,9 +120,8 @@
   color: #2c1c59;
 }
 
+/* Shipping address */
 .cs-info-title {
-  /* Shipping address */
-
   /* Overline */
 
   font-family: Montserrat;
@@ -164,5 +161,5 @@
 
   /* White */
 
-  color: #ffffff!important;
+  color: #ffffff !important;
 }

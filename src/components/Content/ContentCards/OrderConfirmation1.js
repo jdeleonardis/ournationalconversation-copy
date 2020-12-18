@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import {
   Button,
@@ -6,13 +5,13 @@ import {
   FormControl,
   Row,
   Col,
-  Alert,Card
+  Alert,
+  Card
 } from 'react-bootstrap';
 
 import '../../../styles/OrderConfirmation.css';
 
 class OrderConfirmation1 extends Component {
-  
   render() {
     return (
       <div className='order' eventKey='#order-confirmation'>
@@ -68,8 +67,7 @@ class OrderConfirmation1 extends Component {
           </Row>
           <br />
           <Row>
-            <Button className='return-to-store' variant='purple'
-            href='/store'>
+            <Button className='return-to-store' variant='purple' href='/store'>
               RETURN TO STORE
             </Button>
           </Row>

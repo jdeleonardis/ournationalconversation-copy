@@ -1,9 +1,9 @@
 /* Shopping cart summary */
 
+/* Card Shadow */
 .your-items {
   border: none;
   text-decoration: none;
-  /* Card Shadow */
 
   /* Extra Light Gray */
 
@@ -13,11 +13,9 @@
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 }
 
+/* YOUR ITEMS (1) */
 .your-items-title {
-  /* YOUR ITEMS (1) */
-
   position: relative;
-
   margin: auto;
   padding-top: 1em;
 
@@ -38,7 +36,6 @@
 }
 
 /* Shopping cart contents */
-
 .your-items-contents {
   position: relative;
   color: #2c1c59;
@@ -48,12 +45,10 @@
   align-items: center;
 }
 
+/* Group 182 */
+/* Item */
 .your-items-table {
-  /* Group 182 */
-
   margin-top: 1em;
-
-  /* Item */
 
   /* Overline */
 
@@ -71,6 +66,7 @@
 
   color: #2c1c59;
 }
+
 .middle-col {
   text-align: center;
 }
@@ -79,9 +75,8 @@
   text-align: right;
 }
 
+/* Rectangle 37 */
 .Rectangle-37 {
-  /* Rectangle 37 */
-
   height: 4px;
 
   /* Purple */
@@ -90,14 +85,12 @@
 }
 
 /* image 7 */
-
 .your-items-img {
   margin: auto;
 }
 
+/* Title */
 .your-items-des {
-  /* Title */
-
   /* Subhead 3 */
   margin: auto;
   font-family: Montserrat;
@@ -112,8 +105,7 @@
   color: #19191d;
 }
 
-/* Price */
-
+/* Qty */
 .your-items-qty {
   /* Overline */
 
@@ -130,14 +122,14 @@
 
   color: #1e1e1e;
 }
-.your-items-price {
-  /* Price */
 
+/* Price */
+.your-items-price {
   margin-top: 1.5em;
 }
 
+/* Overline */
 .item-price {
-  /* Overline */
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -152,8 +144,8 @@
   color: #1e1e1e;
 }
 
+/* PROMO CODE */
 .your-items-promo {
-  /* PROMO CODE */
   margin: auto;
   margin-left: 1em;
   padding: 0em;
@@ -179,43 +171,37 @@
 
   border: 1px solid #000000;
   box-sizing: i;
-
   border-radius: 4px;
 }
 
+/* promo button */
 .your-items-apply {
-  /* promo button */
   align-items: flex-end;
   text-align: right;
 
   /* Purple */
-  color: white!important;
-
+  color: white !important;
   background: #2c1c59;
   border-radius: 5px;
 }
 
+/* Rectangle 2 */
 .rectangle-2 {
-  /* Rectangle 2 */
-
   position: relative;
   left: 0%;
   right: 0%;
   top: 0%;
   bottom: 0%;
-
   background: #ffffff;
 }
 
+/* Line 84 */
 .line-84 {
-  /* Line 84 */
-
   border: 1px solid #000000;
 }
 
+/* SUBTOTAL */
 .your-items-sub {
-  /* SUBTOTAL */
-
   /* Subhead 3 */
 
   font-family: Montserrat;
@@ -230,8 +216,8 @@
   color: #2c1c59;
 }
 
+/* TOTAL */
 .your-items-total {
-  /* TOTAL */
   margin-bottom: 1em;
   /* Headline 7 */
 
@@ -247,9 +233,8 @@
   color: #2c1c59;
 }
 
+/* Price */
 .your-items-total-price {
-  /* Price */
-
   /* Headline 7 */
 
   font-family: Roboto;

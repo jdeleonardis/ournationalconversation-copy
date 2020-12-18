@@ -2,7 +2,8 @@ import React from 'react';
 import { Navbar, Nav, Image, Col, Row, Button } from 'react-bootstrap';
 import LoginModalButtonAndComponent from '../Authentication/LoginModalButtonAndComponent';
 import SignupModalButtonAndComponent from '../Authentication/SignupModalButtonAndComponent';
-import logo from '../../img/Logo_Shorthand.png';
+import oncLogo from '../../img/onc-logo.png';
+
 import '../../styles/HeaderReact.css';
 
 const HeaderReact = (props) => {
@@ -12,13 +13,13 @@ const HeaderReact = (props) => {
         <Col xs={3} md={2}>
           <Nav.Item>
             <Nav.Link href='/'>
-              <Image className='onc-logo' src={logo} roundedCircle />
+              <Image className='onc-logo' src={oncLogo} roundedCircle />
             </Nav.Link>
           </Nav.Item>
         </Col>
         <Col xs={9} md={10}>
           <Nav className='justify-content-end' activeKey=''>
-            <Col xs={6} md={9}>
+            <Col xs={9} md={9}>
               <Nav.Item>
                 <Nav.Link className='header-title' eventKey='disabled' disabled>
                   OUR NATIONAL CONVERSATION

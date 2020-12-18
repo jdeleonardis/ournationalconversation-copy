@@ -22,9 +22,9 @@ class CustomerInformation1 extends Component {
       >
         <Form id='customer-information'>
           <Form.Group>
-            <Form.Label className='payment-method mb-3 '>EMAIL</Form.Label>
+            <Form.Label className='checkout-subtitle mb-3 '>EMAIL</Form.Label>
             <Form.Control
-              className='credit-card-placeholder mb-2'
+              className='checkout-placeholder mb-2'
               type='email'
               placeholder='EMAIL ADDRESS'
             />
@@ -39,19 +39,19 @@ class CustomerInformation1 extends Component {
             </Form.Check>
           </Form.Group>
           <Form.Group className='' controlId='formGridAddress1'>
-            <Form.Label className='payment-method mb-3 '>
+            <Form.Label className='checkout-subtitle mb-3 '>
               SHIPPING ADDRESS
             </Form.Label>
             <Form.Row>
               <Col>
                 <Form.Control
-                  className='credit-card-placeholder mb-2'
+                  className='checkout-placeholder mb-2'
                   placeholder='FIRST NAME'
                 />
               </Col>
               <Col>
                 <Form.Control
-                  className='credit-card-placeholder mb-2'
+                  className='checkout-placeholder mb-2'
                   placeholder='LAST NAME'
                 />
               </Col>
@@ -59,7 +59,7 @@ class CustomerInformation1 extends Component {
             <Form.Row>
               <Col>
                 <Form.Control
-                  className='credit-card-placeholder mb-2'
+                  className='checkout-placeholder mb-2'
                   placeholder='ADDRESS'
                 />
               </Col>
@@ -67,22 +67,19 @@ class CustomerInformation1 extends Component {
             <Form.Row>
               <Col>
                 <Form.Control
-                  className='credit-card-placeholder mb-2'
+                  className='checkout-placeholder mb-2'
                   placeholder='APT/SUITE'
                 />
               </Col>
               <Col>
-                <Form.Control
-                  className='credit-card-placeholder mb-2'
-                  placeholder='CITY'
-                />
+                <Form.Control className='checkout-placeholder mb-2' placeholder='CITY' />
               </Col>
             </Form.Row>
 
             <Form.Row>
               <Col>
                 <Form.Control
-                  className='credit-card-placeholder mb-2'
+                  className='checkout-placeholder mb-2'
                   placeholder='COUNTRY'
                   as='select'
                   defaultValue='Choose...'
@@ -94,7 +91,7 @@ class CustomerInformation1 extends Component {
 
               <Col>
                 <Form.Control
-                  className='credit-card-placeholder mb-2'
+                  className='checkout-placeholder mb-2'
                   placeholder='STATE'
                   as='select'
                   defaultValue='Choose...'
@@ -106,25 +103,13 @@ class CustomerInformation1 extends Component {
 
               <Col>
                 <Form.Control
-                  className='credit-card-placeholder mb-2'
+                  className='checkout-placeholder mb-2'
                   placeholder='ZIP CODE'
                 />
               </Col>
             </Form.Row>
           </Form.Group>
-        </Form>
-
-        {/* <InputGroup className=' '>
-          <Button
-            className='cont-shipping-method'
-            variant='purple'
-            href='#shipping-method'
-          >
-            CONTINUE TO SHIPPING METHOD
-          </Button>
-        </InputGroup> */}
-        <Card>
-          <Accordion.Toggle className='checkout-steps' as={Card.body} eventKey='1'>
+          <Accordion.Toggle className='checkout-steps' eventKey='1'>
             <Button
               className='cont-shipping-method'
               variant='purple'
@@ -136,7 +121,16 @@ class CustomerInformation1 extends Component {
           <Accordion.Collapse eventKey='1'>
             <ShippingMethod1 />
           </Accordion.Collapse>
-        </Card>
+        </Form>
+        {/* <InputGroup className=' '>
+          <Button
+            className='cont-shipping-method'
+            variant='purple'
+            href='#shipping-method'
+          >
+            CONTINUE TO SHIPPING METHOD
+          </Button>
+        </InputGroup> */}
       </div>
     );
   }

@@ -1,4 +1,3 @@
-import { CreditCard } from '@material-ui/icons';
 import React, { Component } from 'react';
 import {
   Button,
@@ -16,7 +15,6 @@ import payPal from '../../../img/paypal.png';
 import amazonPay from '../../../img/amazonPay.png';
 import OrderConfirmation1 from './OrderConfirmation1';
 
-
 import '../../../styles/payment.css';
 
 class Payment1 extends Component {
@@ -24,7 +22,7 @@ class Payment1 extends Component {
     return (
       <div className='payment' eventKey='#payment'>
         <Form className='shipping-method-form'>
-          <h5 className='payment-method mb-3 '>PAYMENT METHOD</h5>
+          <h5 className='checkout-subtitle mb-3 '>PAYMENT METHOD</h5>
           <Form.Check className='payment-box' type='radio' id=''>
             <Form.Check.Input
               className='shipping-method-radio'
@@ -122,13 +120,6 @@ class Payment1 extends Component {
               </span>
             </Form.Check.Label>
           </Form.Check>
-          {/* <InputGroup className='mb-2' variant=''>
-            <Button className='pay-now' variant='purple'>
-              PAY NOW
-            </Button>
-          </InputGroup> */}
-        </Form>
-        <Card>
           <Accordion.Toggle
             className='checkout-steps'
             as={Card.body}
@@ -141,7 +132,12 @@ class Payment1 extends Component {
           <Accordion.Collapse eventKey='3'>
             <OrderConfirmation1 />
           </Accordion.Collapse>
-        </Card>
+          {/* <InputGroup className='mb-2' variant=''>
+            <Button className='pay-now' variant='purple'>
+              PAY NOW
+            </Button>
+          </InputGroup> */}
+        </Form>
       </div>
     );
   }
