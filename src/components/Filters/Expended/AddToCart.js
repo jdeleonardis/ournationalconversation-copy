@@ -30,8 +30,7 @@ class ItemInCart extends PureComponent {
       imageSrc: 'book-cover.jpg'
     },
     getProductLocalization: getDefaultLocalization('product', 'en', {
-      ...bookLocalization,
-  
+      ...bookLocalization
     }),
     getCheckoutButtonLocalization: getDefaultLocalization(
       'checkoutButton',
@@ -88,7 +87,6 @@ class ItemInCart extends PureComponent {
       <div className='container'>
         <ProductComponent
           {...product}
-  
           onAddProduct={
             addProduct
             // Help product to get into the cart
@@ -99,8 +97,6 @@ class ItemInCart extends PureComponent {
           }
           getLocalization={getProductLocalization}
         />
-
-        
       </div>
     );
   }
