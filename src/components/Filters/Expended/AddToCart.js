@@ -11,23 +11,9 @@ import 'animate.css/animate.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
 const { getDefaultLocalization } = cartLocalization;
-
-// You may take localization object from wherever you want, that's just an example
-// For more information, see localization section
 const bookLocalization = {
-  // color: 'Color',
-  // book: 'book case',
-  // red: 'Red',
-  // green: 'Green',
-  // yellow: 'Yellow',
-  // GBP: '£',
-  // EUR: '€',
-  book:'book',
+  book: 'book',
   USD: '$'
-};
-
-const bookPropertiesWithAdditionalCostLocalization = {
-  yellow: 'Yellow (+{cost}{localizedCurrency})'
 };
 
 class ItemInCart extends PureComponent {
@@ -37,41 +23,22 @@ class ItemInCart extends PureComponent {
       name: 'book',
       id: 'book',
       path: '/shop/book/',
-      // properties: {
-      //   color: [
-      //     'red',
-      //     'green',
-      //     {
-      //       additionalCost: {
-      //         GBP: 1,
-      //         EUR: 2,
-      //         USD: 3.5
-      //       },
-      //       value: 'yellow'
-      //     }
-      //   ]
-      // },
-      // propertiesToShowInCart: ['color'],
-      prices: { 
-        // GBP: 70, EUR: 80, 
-        USD: 90 },
+      prices: {
+        USD: 90
+      },
       currency: 'USD',
       imageSrc: 'book-cover.jpg'
     },
     getProductLocalization: getDefaultLocalization('product', 'en', {
       ...bookLocalization,
-      ...bookPropertiesWithAdditionalCostLocalization
+  
     }),
     getCheckoutButtonLocalization: getDefaultLocalization(
       'checkoutButton',
       'en',
       bookLocalization
     ),
-    getCartLocalization: getDefaultLocalization(
-      'cart',
-      'en',
-      bookLocalization
-    )
+    getCartLocalization: getDefaultLocalization('cart', 'en', bookLocalization)
   };
 
   addProduct = (key, product, currency) =>
@@ -91,11 +58,6 @@ class ItemInCart extends PureComponent {
 
   generateProductKey = (id, properties) =>
     `${id}/${Object.entries(properties).join('_')}`;
-
-  updateProduct = (key, updatedProduct) => void console.log(':)');
-
-  removeProduct = (key) => void console.log(':C');
-
   render() {
     const {
       addProduct,
@@ -126,7 +88,7 @@ class ItemInCart extends PureComponent {
       <div className='container'>
         <ProductComponent
           {...product}
-          checkoutButton={checkoutButtonElement}
+  
           onAddProduct={
             addProduct
             // Help product to get into the cart
@@ -138,25 +100,7 @@ class ItemInCart extends PureComponent {
           getLocalization={getProductLocalization}
         />
 
-        <CartComponent
-          products={
-            products
-            // Provide your own product's Object(Look at Products)
-          }
-          onUpdateProduct={
-            updateProduct
-            // Update something
-          }
-          getLocalization={getCartLocalization}
-          currency='USD'
-          onRemoveProduct={
-            removeProduct
-            // Remove something
-          }
-          checkoutButton={checkoutButtonElement}
-          isCartEmpty={false}
-          getLocalization={getCartLocalization}
-        />
+        
       </div>
     );
   }

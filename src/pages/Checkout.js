@@ -51,6 +51,7 @@ export class StoreCheckout extends Component {
               </Col>
               <Col md={6}>
                 <ShoppingCartCard />
+               
               </Col>
             </Row>
           </Container>

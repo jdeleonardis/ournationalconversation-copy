@@ -17,6 +17,9 @@ import CustomButton from './Expended/CustomButton';
 import CustomDropdown from './Expended/CustomDropdown';
 import PrefixingComponents from './Expended/PrefixingComponents';
 
+import ItemInCart from './Expended/ItemInCart';
+import AddToCart from './Expended/AddToCart';
+
 import '../../styles/demo.css';
 
 class DemoSearchFilter extends Component {
@@ -24,6 +27,7 @@ class DemoSearchFilter extends Component {
     return (
       <>
         <Container>
+          <AddToCart />
           <Row className='demo'>
             <Col md={3}>
               <SearchBox />
@@ -44,7 +48,6 @@ class DemoSearchFilter extends Component {
               <br />
               <br />
               <SortByLocal />
-
               <br />
               <br />
               <br />
@@ -56,12 +59,11 @@ class DemoSearchFilter extends Component {
               {/* <ShoppingCartOverlay /> */}
               {/* <LocationOverlay /> */}
               <br />
-
               <br />
               <CustomButton />
               <CustomDropdown />
               <br />
-              <PrefixingComponents />
+              <PrefixingComponents /> <ItemInCart />
             </Col>
             {/* Right Rail Buttons */}
             <Col md={3}>
