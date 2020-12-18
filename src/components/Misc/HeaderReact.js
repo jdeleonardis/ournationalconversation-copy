@@ -1,9 +1,8 @@
 import React from 'react';
 import { Navbar, Nav, Image, Col, Row, Button } from 'react-bootstrap';
-import HeaderLogin from '../Authentication/HeaderLogin';
-import HeaderSignup from '../Authentication/HeaderSignup';
+import LoginModalButtonAndComponent from '../Authentication/LoginModalButtonAndComponent';
+import SignupModalButtonAndComponent from '../Authentication/SignupModalButtonAndComponent';
 import logo from '../../img/Logo_Shorthand.png';
-
 import '../../styles/HeaderReact.css';
 
 const HeaderReact = (props) => {
@@ -27,9 +26,9 @@ const HeaderReact = (props) => {
               </Nav.Item>
             </Col>
             <Col xs={3} md={3} className='btn-group'>
-              <Nav.Item>
-                <HeaderLogin />
-                <HeaderSignup />
+              <Nav.Item className='btn-toolbar'>
+                <LoginModalButtonAndComponent />
+                <SignupModalButtonAndComponent />
               </Nav.Item>
             </Col>
           </Nav>

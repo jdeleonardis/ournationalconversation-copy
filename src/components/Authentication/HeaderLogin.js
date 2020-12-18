@@ -15,11 +15,7 @@ const HeaderLogin = () => {
         LOG IN
       </Button>
 
-      <Modal
-        show={show}
-        onHide={() => setShow(false)}
-  
-      >
+      <Modal show={show} onHide={() => setShow(false)}>
         <LoginComponent />
       </Modal>
     </>

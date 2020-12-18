@@ -24,7 +24,8 @@ export class Advertisers extends Component {
 						<Row>
 							<Col md={9}>
 								<div class="genericBox">
-									<h1>ADVERTISERS</h1>
+									<h2>ADVERTISERS</h2>
+									<br></br>
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
 										a congue erat. Vestibulum ante ipsum primis in faucibus orci

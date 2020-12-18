@@ -1,3 +1,20 @@
+#nav-signup-btn:hover {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* remove default border when clicking on button */
+#nav-signup-btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#nav-signup-btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+/* ============================================= */
+
 .container,
 .container-fluid,
 .container-lg,
@@ -19,10 +36,11 @@
 #signup-card-body {
   width: 100%;
   border-radius: 0.25rem;
+  margin-bottom: -10px;
 }
 
 #signup-card-title {
-  margin-top: -10px;
+  margin-top: -30px;
 }
 
 .notvalid-msg-clear {
@@ -83,6 +101,7 @@ select {
 .caret-con {
   margin-right: 27px !important;
   margin-bottom: 15px;
+  color: #929292 !important;
 }
 
 /* ========================
@@ -112,7 +131,8 @@ PASSWORD TOGGLE STYLES
 
 .eye-con {
   margin-right: 15px;
-  color: #bfbfbf;
+  /* color: #bfbfbf; */
+  color: #929292;
 }
 
 .caret-con {

@@ -23,6 +23,11 @@ import MockArticles from './components/Misc/MockArticles';
 import DemoSearchFilter from './components/Filters/DemoSearchFilter';
 import AboutInterns from './pages/AboutInterns';
 
+//used for temporary landing page. remove at some point
+import HeaderTempLandingPage from './components/Misc/HeaderTempLandingPage';
+import TempLandingPage from './pages/TempLandingPage';
+//end temp landing page
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -32,6 +37,8 @@ function App() {
 			<div className="App">
 				<HeaderReact />
 				<SearchBar />
+				{/* used for temporary landing page header. remove at some point */}
+				{/* <HeaderTempLandingPage /> */}
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/opinions" component={Opinions} />
@@ -46,6 +53,14 @@ function App() {
 					<Route exact path="/aboutInterns" component={AboutInterns} />
 					<Route exact path="/news" component={News} />
 					<Route exact path="/localnews" component={LocalNews} />
+					<Route exact path="/privacy" component={Privacy} />
+					<Route exact path="/terms" component={Terms} />
+					<Route exact path="/advertisers" component={Advertisers} />
+					<Route exact path="/donors" component={Donors} />
+
+
+					{/* used for temporary landing page header. remove at some point */}
+					<Route exact path="/templandingpage" component={TempLandingPage} />					
 
 					{/* Test Filter Components by Judy */}
 					<Route exact path="/demo" component={DemoSearchFilter} />

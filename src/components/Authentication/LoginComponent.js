@@ -129,7 +129,7 @@ export default function App() {
 
   return (
     <Fragment>
-      <div >
+      <div>
         {/* Fixed the top space issue -- padding top:15px from container */}
         <Container className='modal-container-login' fluid>
           <Card.Body id='login-card-body'>
@@ -138,7 +138,9 @@ export default function App() {
               <div id='new-to-site'>
                 New to this site?
                 <span id='sign-up'>
-                  <a href='/'>Sign Up</a>
+                  <a className='signup-a' href='/'>
+                    Sign Up
+                  </a>
                 </span>
               </div>
             </Card.Subtitle>
@@ -179,12 +181,14 @@ export default function App() {
 
               <Form.Group id='remember-group' controlId='formBasicCheckbox'>
                 <span id='forgot'>
-                  <a href='/'>Forgot Password?</a>
+                  <a className='forgot-a' href='/'>
+                    Forgot Password?
+                  </a>
                 </span>
                 <Form.Check
                   id='remember-me'
                   type='checkbox'
-                  label='Remember me'
+                  label='Remember Me'
                 />
               </Form.Group>
 

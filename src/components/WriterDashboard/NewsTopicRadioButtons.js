@@ -8,7 +8,7 @@ function NewsTopicRadioButtons(props) {
         <>
         {/* this should be verified. if opinion, enable/show the news topics? */}
         <div style={props.articleCategory==="Opinion" ? {} : {pointerEvents: "none", opacity: "0.4"}}>
-            <Form.Label style={{fontSize: 'small', color: '#808182'}}>NEWS TOPIC</Form.Label>
+            <Form.Label className='sectionHeaders'>NEWS TOPIC</Form.Label>
             <Row> 
                 <Col md={3}>
                     <ButtonGroup vertical name="newsTopic">   
@@ -18,7 +18,7 @@ function NewsTopicRadioButtons(props) {
                         <label className="newsLabel"><input className="newsRadio" type="radio" id="business" name="newsTopic" value="Business" onClick={props.changeHandler} checked={props.active === 'Business'}/> Business</label>            
                     </ButtonGroup>
                 </Col>
-                <Col md={3}>
+                <Col md={4}>
                 <ButtonGroup vertical name="newsTopic">   
                     <label className="newsLabel"><input className="newsRadio" type="radio" id="tech" name="newsTopic" value="Tech" onClick={props.changeHandler} checked={props.active === 'Tech'}/> Tech</label>            
                     <label className="newsLabel"><input className="newsRadio" type="radio" id="health" name="newsTopic" value="Health" onClick={props.changeHandler} checked={props.active === 'Health'}/> Health</label>
@@ -35,7 +35,8 @@ function NewsTopicRadioButtons(props) {
                 </ButtonGroup>  
                 <Form.Group controlId='formOtherNews'>                          
                     <Form.Control
-                    type='text'                            
+                    type='text'          
+                    className='otherTopic'                  
                     name='otherNewsTopic'
                     placeholder='Enter Other Topic'
                     onChange={props.changeHandler}/>
@@ -43,10 +44,10 @@ function NewsTopicRadioButtons(props) {
                 </Col>      
             </Row> 
             <div className={props.validationError && props.validationIssue.indexOf('newstopic') >= 0 ? '' : 'height0 invisible'}>
-                <Form.Label style={{fontSize: 'small', color: 'red'}}>Please select a news topic.</Form.Label>
+                <Form.Label className="errorText">Please select a news topic.</Form.Label>
             </div>
             <div className={props.validationError && props.validationIssue.indexOf('othernewstopic') >= 0 ? '' : 'height0 invisible'}>
-                <Form.Label style={{fontSize: 'small', color: 'red'}}>Please enter a topic for 'Other'.</Form.Label>
+                <Form.Label className="errorText">Please enter a topic for 'Other'.</Form.Label>
             </div>            
         </div>
         </>

@@ -3,6 +3,7 @@ import 'react-responsive-modal/styles.css';
 import { Button } from 'react-bootstrap';
 import { Modal } from 'react-responsive-modal';
 import LoginComponent from './LoginComponent';
+import '../../styles/login.css';
 
 export default class App extends React.Component {
   state = {
@@ -14,15 +15,19 @@ export default class App extends React.Component {
   onCloseModal = () => {
     this.setState({ open: false });
   };
+
   render() {
     const { open } = this.state;
     return (
       <div>
         <Button
+          id='nav-login-btn'
           style={{
-            margin: '10px'
+            margin: '10px',
+            color: '#ffffff',
+            textDecoration: 'none',
           }}
-          variant='success'
+          variant='link'
           onClick={this.onOpenModal}
         >
           LOG IN

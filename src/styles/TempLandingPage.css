@@ -1,0 +1,39 @@
+#comingSoon,
+#checkOutBook{
+    width: 507px;
+    height: 43px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 43px;
+    /* display: flex; */
+    /* align-items: center; */
+    color: #1E1E1E;
+}
+
+#checkOutBook{
+    width: 100%;
+    text-align: center;
+}
+
+
+#joinONC {
+    width: 508px;
+    height: 60px;        
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #1E1E1E; 
+    margin-top: 8px;
+}
+
+#ourBlog {  
+    margin-top: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 35px;    
+}

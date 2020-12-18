@@ -1,14 +1,71 @@
+.loggedIn {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 20px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .004em;
+  color: #676767
+}
+
+#anotherAccount {
+  margin-top: 4px;
+}
+
 #writers-dashboard-card{
   background-color: #f3f2f2;
   margin-bottom: 40px;
 }
 
-.rightAlign {  
-  text-align: right;
+.sectionHeaders {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 17.07px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .015em;
+  color: #676767
 }
 
-.ck-editor__editable {
-  min-height: 350px;
+.sectionSubHeaders {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 17.5px;
+  font-family: 'Roboto', sans-serif;  
+  color: #929292
+}
+
+#headlineText {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 23px;
+  font-family: 'Roboto', sans-serif;  
+  color: #1E1E1E
+}
+
+#articleSummary {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  font-family: 'Roboto', sans-serif;  
+  color: #1E1E1E
+}
+
+#wordCount {
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  font-family: 'Montserrat', sans-serif;  
+  color: #929292
+}
+
+.rightAlign {  
+  text-align: right;
 }
 
 .newsRadio {
@@ -17,9 +74,33 @@
 
 .newsLabel { 
   vertical-align: baseline;  
-  font-size: small;
-  font-weight: bold;
-  width: 275px;
+  font-size: 17px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 21px;
+  font-family: 'Montserrat', sans-serif;  
+  color: #1E1E1E;
+  width: 295px;
+}
+
+.otherTopics { 
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+  font-family: 'Montserrat', sans-serif;  
+  color: #1E1E1E;
+}
+
+#tagEntry {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.0125em;
+  text-transform: uppercase;
+  color: #000000
 }
 
 #addTag-btn,
@@ -77,13 +158,21 @@
 }
 
 .individualTag {
-  width: 30% !important;
-  margin-right: 10px;    
-  border-left-width: 1px !important;
-  border-radius: 4px !important;
-  color: #2c1c59 !important;
+  width: auto !important;  
+  box-sizing: border-box;  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.0125em;
+  text-transform: uppercase;
+  color: #2C1C59 !important;
+  margin-right: 10px;
   background-color: #f3f2f2 !important;
   border-color: #2c1c59 !important;
+  border-left-width: 1px !important;
+  border-radius: 5px !important;
 }
 
 #fa-draft {
@@ -113,4 +202,12 @@
 
 .purpleX:hover {  
   opacity: .65 !important;
+}
+
+.errorText {
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;  
+  font-family: 'Roboto', sans-serif;  
+  color: red
 }
