@@ -7,17 +7,19 @@ import {
   Row,
   Col,
   Image,
-  Form
+  Form,
+  Card,
+  Accordion
 } from 'react-bootstrap';
 import creditCard from '../../../img/creditCard.png';
 import payPal from '../../../img/paypal.png';
 import amazonPay from '../../../img/amazonPay.png';
+import OrderConfirmation1 from './OrderConfirmation1';
+
 
 import '../../../styles/payment.css';
 
 class Payment1 extends Component {
-  
-
   render() {
     return (
       <div className='payment' eventKey='#payment'>
@@ -120,12 +122,26 @@ class Payment1 extends Component {
               </span>
             </Form.Check.Label>
           </Form.Check>
-          <InputGroup className='mb-2' variant=''>
+          {/* <InputGroup className='mb-2' variant=''>
             <Button className='pay-now' variant='purple'>
               PAY NOW
             </Button>
-          </InputGroup>
+          </InputGroup> */}
         </Form>
+        <Card>
+          <Accordion.Toggle
+            className='checkout-steps'
+            as={Card.body}
+            eventKey='3'
+          >
+            <Button className='pay-now' variant='purple'>
+              PAY NOW
+            </Button>
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey='3'>
+            <OrderConfirmation1 />
+          </Accordion.Collapse>
+        </Card>
       </div>
     );
   }

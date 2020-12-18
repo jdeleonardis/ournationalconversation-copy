@@ -5,14 +5,15 @@ import {
   FormControl,
   Row,
   Col,
-  Form
+  Form,
+  Card,
+  Accordion
 } from 'react-bootstrap';
+import ShippingMethod1 from './ShippingMethod1';
 
 import '../../../styles/CustomerInformation.css';
 
 class CustomerInformation1 extends Component {
-
-
   render() {
     return (
       <div
@@ -113,7 +114,7 @@ class CustomerInformation1 extends Component {
           </Form.Group>
         </Form>
 
-        <InputGroup className=' '>
+        {/* <InputGroup className=' '>
           <Button
             className='cont-shipping-method'
             variant='purple'
@@ -121,7 +122,21 @@ class CustomerInformation1 extends Component {
           >
             CONTINUE TO SHIPPING METHOD
           </Button>
-        </InputGroup>
+        </InputGroup> */}
+        <Card>
+          <Accordion.Toggle className='checkout-steps' as={Card.body} eventKey='1'>
+            <Button
+              className='cont-shipping-method'
+              variant='purple'
+              href='#shipping-method'
+            >
+              CONTINUE TO SHIPPING METHOD
+            </Button>
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey='1'>
+            <ShippingMethod1 />
+          </Accordion.Collapse>
+        </Card>
       </div>
     );
   }

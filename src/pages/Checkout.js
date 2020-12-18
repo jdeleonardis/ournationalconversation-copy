@@ -36,7 +36,7 @@ export class StoreCheckout extends Component {
             <Row>
               <Col md={6}>
                 <CheckoutSteps />
-                <br />
+                {/* <br />
                 <br />
                 <br />
                 <br />
@@ -47,7 +47,7 @@ export class StoreCheckout extends Component {
                 <br />
                 <PaymentCard />
                 <br />
-                <OrderConfirmation />
+                <OrderConfirmation /> */}
               </Col>
               <Col md={6}>
                 <ShoppingCartCard />

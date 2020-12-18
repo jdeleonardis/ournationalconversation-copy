@@ -5,8 +5,11 @@ import {
   FormControl,
   Row,
   Col,
-  Form
+  Form,
+  Card,
+  Accordion
 } from 'react-bootstrap';
+import Payment1 from './Payment1';
 
 import '../../../styles/ShippingMethod.css';
 
@@ -48,9 +51,23 @@ class ShippingMethod1 extends Component {
           </Form.Check>
         </Form>
 
-        <Button className='cont-pmt' variant='purple'>
+        {/* <Button className='cont-pmt' variant='purple'>
           CONTINUE TO PAYMENT
-        </Button>
+        </Button> */}
+        <Card>
+          <Accordion.Toggle
+            className='checkout-steps'
+            as={Card.body}
+            eventKey='2'
+          >
+            <Button className='cont-pmt' variant='purple'>
+              CONTINUE TO PAYMENT
+            </Button>
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey='2'>
+            <Payment1 />
+          </Accordion.Collapse>
+        </Card>
       </div>
     );
   }

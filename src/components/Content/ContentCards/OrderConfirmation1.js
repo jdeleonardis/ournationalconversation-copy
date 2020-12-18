@@ -68,7 +68,8 @@ class OrderConfirmation1 extends Component {
           </Row>
           <br />
           <Row>
-            <Button className='return-to-store' variant='purple'>
+            <Button className='return-to-store' variant='purple'
+            href='/store'>
               RETURN TO STORE
             </Button>
           </Row>
