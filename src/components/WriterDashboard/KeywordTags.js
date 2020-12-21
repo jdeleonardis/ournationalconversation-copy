@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, Row, Col, Button, ListGroup } from "react-bootstrap";
+import GlobalButtonReverse from '../Misc/GlobalButtonReverse'
 
 function KeywordTags(props) {  
 
@@ -28,16 +29,15 @@ function KeywordTags(props) {
                 <Col md={2}>
                     {props.state.tagList.length < 3 
                     ? 
-                        <Button
-                            id='addTag-btn'
-                            onClick={props.addTag}
-                        >
-                        ADD TAG
-                        </Button>
+                        <GlobalButtonReverse 
+                            fontSize='16px'
+                            margin= '0px 0px 12px 0px'
+                            method={props.addTag}
+                            label="ADD TAG"
+                        />                        
                     :
                         <Button disabled
                             id='addTag-btn'
-                            onClick={props.addTag}
                         >
                         ADD TAG
                         </Button>}

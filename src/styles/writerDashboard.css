@@ -103,54 +103,13 @@
   color: #000000
 }
 
-#addTag-btn,
-#submitArticle-btn,
-#saveDraft-btn {
-  font-family: Montserrat;
-  font-style: normal;
-  clear: both;  
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.0125em;  
-  margin-top: 0px;
-  margin-bottom: 12px;
-  border-radius: 4px;
-}
-
 #addTag-btn {
-  margin-top: 2px !important;
-}
-
-#addTag-btn,
-#submitArticle-btn{
+  font-family: Montserrat;
+  font-style: normal;  
+  font-size: 16px;    
+  margin-top: 0px;
+  margin-bottom: 12px;  
   background-color: #2c1c59 !important;
-  border-color: #2c1c59 !important;
-}
-
-#addTag-btn:hover,
-#submitArticle-btn:hover {
-  color: black
-}
-
-#addTag-btn:active,
-#addTag-btn:focus,
-#submitArticle-btn:active,
-#submitArticle-btn:focus {
-  outline: none !important;
-  box-shadow: none;
-}
-
-#saveDraft-btn {
-  color: #2c1c59 !important;
-  background-color: #f3f2f2;
-  border-color: #2c1c59 !important;
-  margin-right: 20px;
-}
-
-#saveDraft-btn:hover{
-  background-color: #2c1c59 !important;
-  color: #ffffff !important;
 }
 
 .buttonRight {  

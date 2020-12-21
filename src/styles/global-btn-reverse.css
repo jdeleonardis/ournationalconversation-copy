@@ -1,0 +1,15 @@
+.global-btn-reverse {
+    font-family: 'Montserrat', sans-serif;
+    color: white !important;
+    /* border-color: #2c1c59 !important; */
+  }
+  
+  .global-btn-reverse:hover {
+    color: black !important;
+  }
+  
+  /* .global-btn-reverse:active,
+  .global-btn-reverse:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  } */
