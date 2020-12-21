@@ -1,9 +1,8 @@
 import React from 'react';
-import * as library from './constants/cardConstants';
-import { Card, Image, Col, Row, Container } from 'react-bootstrap';
-debugger;
+import { Image, Col, Row } from 'react-bootstrap';
+
 function BodyType(props) {
-	return props.type === 'PODCAST' || props.type === 'WEBISODE' ? (
+	return props.type === 'PODCAST' || props.type === 'WEBISODE' || props.type === 'BLOG'? (
 		<div style={{ marginTop: '1rem' }}>
 			<Row>
 				<Col>
@@ -64,7 +63,8 @@ function BodyType(props) {
 				</Col>
 			</Row>
 		</div>
-	) : (
+	) : 
+	(
 		<div>d </div>
 	);
 }

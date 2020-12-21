@@ -1,22 +1,21 @@
-import React, { Fragment } from 'react';
-import { Row, Col, Container, Button } from 'react-bootstrap';
+import React, { useState, Fragment } from 'react';
+import { Row, Container } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
-import Solution from '../components/Content/ContentBoards/ContentBoard';
+import TemporaryLandingPageLeftColumn from '../components/TermporaryLandingPage/TemporaryLandingPageLeftColumn'
+import TemporaryLandingPageRightColumn from '../components/TermporaryLandingPage/TemporaryLandingPageRightColumn'
 
-import GlobalButton from '../components/Misc/GlobalButton';
-import News from '../components/Content/ContentBoards/NewsBoard';
-import NewsCard from '../components/Content/ContentCards/NewsCard';
-import TopHorizontalLine from '../components/Misc/TopHorizontalLine';
-import RailButtons from '../components/Misc/RailButtons';
-import data from '../data/cardTempData/solution.json';
-import '../styles/TempLandingPage.css';
-import bookCover from '../img/book-cover.jpg';
 
 const TempLandingPage = () => {
 
-  const watchOurVideo = () => {
-    alert("watch video")
-  }
+  const [emailAddress, setEmailAddress] = useState('');
+
+  const submitSubscription = () => {
+    alert(emailAddress)
+  }    
+
+  const changeHandler = (e) => {    
+    setEmailAddress(e.target.value)
+  }   
 
   return (
     <Fragment>
@@ -27,52 +26,11 @@ const TempLandingPage = () => {
         <Container className='container' fluid>
           <br />
           <Row>
-            <Col md={6}>
-                <Container>
-                    <div id='comingSoon'>
-                        COMING SOON
-                    </div>                    
-                    <div id='joinONC'>
-                        Join ONC.com, a non-partisan news, opinion, and solution platform.
-                    </div>
-                    <br></br>
-                    <Button
-                        id='submitArticle-btn'
-                        onClick={watchOurVideo}
-                    >
-                        WATCH OUR VIDEO
-                    </Button>                    
-                    <div id='ourBlog'>
-                        Our Blog
-                    </div>                    
-
-                </Container>
-              <div
-                // style={{
-                //   width: '104%',
-                //   marginLeft: '-15px',
-                // }}
-              >
-                <NewsCard />
-              </div>
-            </Col>
-            <Col md={6}>
-                <Container>
-                    <div id='checkOutBook'>
-                        Check Out Our Book
-                    </div>
-                    <img src={bookCover} 
-                        style={{
-                        width: '100%',
-                        padding: '20px 100px 20px'}}/>
-                    <Button
-                        id='submitArticle-btn'
-                        onClick={watchOurVideo}
-                    >
-                        BUY IT ON AMAZON
-                    </Button>
-                </Container>
-            </Col>
+            <TemporaryLandingPageLeftColumn />
+            <TemporaryLandingPageRightColumn 
+              changeHandler={changeHandler}
+              submitSubscription={submitSubscription}
+            />
           </Row>          
         </Container>
       </div>

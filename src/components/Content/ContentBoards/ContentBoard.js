@@ -7,11 +7,19 @@ debugger;
 const Solutions = props => {
 	return (
 		<div>
-			<Container>
-				{props.data.map(data => (
-					<ContentCard type={props.type} data={data} />
-				))}
-			</Container>
+			{props.type != 'BLOG' ? (
+				<Container>
+					{props.data.map(data => (
+						<ContentCard type={props.type} data={data} />
+					))}
+				</Container>
+			) : (
+				<>
+					{props.data.map(data => (
+						<ContentCard type={props.type} data={data} />
+					))}
+				</>
+			)}
 		</div>
 	);
 };

@@ -1,0 +1,32 @@
+[
+    {
+        "title":"Integrate Distributed Initiatives",
+        "text":"Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
+        "source":"CNN",
+        "imgsrc":"https://randomuser.me/api/portraits/women/75.jpg"
+    },
+    {
+        "title":"Grow Transparent Synergies",
+        "text":"Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
+        "source":"Reuters",
+        "imgsrc":"https://randomuser.me/api/portraits/women/76.jpg"
+    },
+    {
+        "title":"Bleeding-edge Bandwidth",
+        "text":"Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
+        "source":"CNN",
+        "imgsrc":"https://randomuser.me/api/portraits/men/80.jpg"
+    },
+    {
+        "title":"Recontextualize Magnetic Infomediaries",
+        "text":"Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
+        "source":"ABC News",
+        "imgsrc":"https://randomuser.me/api/portraits/women/84.jpg"
+    },
+    {
+        "title":"Utilize Turn-key Vortals",
+        "text":"Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+        "source":"Reuters",
+        "imgsrc":"https://randomuser.me/api/portraits/men/18.jpg"
+    }
+]
