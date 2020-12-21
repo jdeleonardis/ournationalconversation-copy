@@ -17,8 +17,8 @@ import CustomButton from './Expended/CustomButton';
 import CustomDropdown from './Expended/CustomDropdown';
 import PrefixingComponents from './Expended/PrefixingComponents';
 
-import ItemInCart from './Expended/ItemInCart';
-import AddToCart from './Expended/AddToCart';
+// import ItemInCart from './Expended/ItemInCart';
+// import AddToCart from './Expended/AddToCart';
 
 import '../../styles/demo.css';
 
@@ -27,7 +27,7 @@ class DemoSearchFilter extends Component {
     return (
       <>
         <Container>
-          <AddToCart />
+//           <AddToCart />
           <Row className='demo'>
             <Col md={3}>
               <SearchBox />
@@ -63,7 +63,7 @@ class DemoSearchFilter extends Component {
               <CustomButton />
               <CustomDropdown />
               <br />
-              <PrefixingComponents /> <ItemInCart />
+//               <PrefixingComponents /> <ItemInCart />
             </Col>
             {/* Right Rail Buttons */}
             <Col md={3}>
